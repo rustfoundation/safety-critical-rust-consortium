@@ -1,5 +1,8 @@
-# PROJECT NAME
-Project Description
+# SAFETY CRITICAL RUST CONSORTIUM
+
+In June 2024, the Rust Foundation, AdaCore, Arm, Ferrous Systems, HighTec EDV-Systeme GmbH, Lynx Software Technologies, OxidOS, TECHFUND, TrustInSoft, Veecle, and Woven by Toyota jointly announced the Safety-Critical Rust Consortium. The primary objective of this group will be to support the responsible use of the Rust programming language in safety-critical software — systems whose failure can impact human life or cause severe environmental or property harm.
+
+See the full announcement [here](https://foundation.rust-lang.org/news/announcing-the-safety-critical-rust-consortium/).
 
 ## [Code of Conduct][code-of-conduct]
 
