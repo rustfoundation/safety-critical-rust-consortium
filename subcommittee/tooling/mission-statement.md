@@ -7,7 +7,7 @@
 ## State of Rust Safety-Critical Tooling
 
 | Purpose | Requirement | Tool | Status |
-|---------|-------------|------|-------|
+|---------|-------------|------|--------|
 | Qualified Compiler | ? | [Ferrocene](https://ferrocene.dev/en/) | Available for `aarch64-nostd` |
 | Certified Core Library | SIL-4 / ASIL-D out of context | N/A | In progress by Ferrocene / Adacore / HighTec |
 | Coding Style Verification | MISRA-C, ... | Rust Compiler, Clippy and probably additional tools required to verify and evaluate the application of the coding standard developed by the Code Guidelines Subcommittee | OxidOS can provide a mapping of MISRA-C Rules to the Rust Compiler |
