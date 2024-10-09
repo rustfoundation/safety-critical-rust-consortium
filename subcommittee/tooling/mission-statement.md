@@ -10,7 +10,7 @@
 |---------|-------------|------|-------|
 | Qualified Compiler | ? | [Ferrocene](https://ferrocene.dev/en/) | Available for `aarch64-nostd` |
 | Certified Core Library | SIL-4 / ASIL-D out of context | N/A | In progress by Ferrocene / Adacore / HighTec |
-| Coding Style Verification | MISRA-C, ... | Rust Compiler, Clippy and pribably additional tools required to verify and evaluate the application of the coding standard developed by the Code Guidelines Subcommittee | OxidOS can provide a mapping of MISRA-C Rules to the Rust Compiler |
+| Coding Style Verification | MISRA-C, ... | Rust Compiler, Clippy and probably additional tools required to verify and evaluate the application of the coding standard developed by the Code Guidelines Subcommittee | OxidOS can provide a mapping of MISRA-C Rules to the Rust Compiler |
 | MC/DC Coverage report | ... | N/A | not available - LLVM might provide some tools |
 | Static Analysis Tools | probably similar to Polyspace | N/A | an assesement about what the rust compiler covers is necessary |
 | Code Matrics Generator | Cyclomatic Complexity, ... | N/A | not available |
