@@ -20,7 +20,7 @@ An effort led out of the [AUTOSAR Foundation](https://www.autosar.org/) titled t
 
 > [...] The decision to form a subgroup within the Working Group for Functional Safety (WG-SAF) is a consequence. The subgroup will officially get started on April 2022 and plans to produce two documents. One of the documents will be providing guidance on how Rust can be utilized in the context of AUTOSAR Adaptive Platform projects. The other document will propose Coding Guidelines on Rust.
 
-The status of these coding guidelines is unclear.
+An outcome of this working group is the [Explanation of ARA Applications in Rust](https://www.autosar.org/fileadmin/standards/R23-11/AP/AUTOSAR_AP_EXP_ARARustApplications.pdf) document which outlines the API which can be used to write Rust applications within an Adaptive AUTOSAR environment.
 
 ## Other Safety-Critial Guidelines
 
