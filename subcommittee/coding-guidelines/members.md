@@ -5,7 +5,7 @@
 - Alex Celeste
 - Florian Gilcher
 - Pete LeVasseur (Initial Chair)
-- Erik Jonkers
+- Marc Schoolderman
 - Jordan McQueen
 - Christof Petig
 - Alex Vochescu
