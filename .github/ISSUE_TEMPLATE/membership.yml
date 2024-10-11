@@ -1,6 +1,6 @@
 name: Consortium Membership
 description: Application to become a Safety Critical Rust Consortium Member
-title: Membership Application for [INSERT COMPANY, INSTITUION, YOUR NAME, OR OTHER ENTITY]
+title: Membership Application for [INSERT COMPANY, INSTITUTION, YOUR NAME, OR OTHER ENTITY]
 labels: [membership, 'status: needs review']
 assignees: 
   - joelmarcey
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attribute:
       value: |
-        The Safety Critical Rust Consortium was announced in June 2024 with a goal to support the responsible use of Rust in Safety Critical software. The mission of the consortium is to improve the suitability of Rust in safety critical applications.
+        The [Safety Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) was [announced](https://foundation.rust-lang.org/news/announcing-the-safety-critical-rust-consortium/) in June 2024 with a goal to support the responsible use of Rust in Safety Critical software. The mission of the consortium is to improve the suitability of Rust in safety critical applications.
         
         Membership into the consortium is free and available to those with a noted and vested interested in the safety critical space. There are two types of membership:
         - Producer: An active participant in the consortium, helping drive its mission
