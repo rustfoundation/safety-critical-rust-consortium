@@ -2,7 +2,7 @@
 
 Hi there 👋
 
-We're happy to have your interest in coding guidelines for Rust deployed in safety-critical applications.
+We're happy to have your interest in tooling for Rust deployed in safety-critical applications.
 
 Thank you @PLeVasseur for the great template of a subcommittee.
 
