@@ -10,7 +10,7 @@ Thank you @PLeVasseur for the great template of a subcommittee.
 
 The Safety-Critical Rust Consortium got kickstarted at [RustConf24](https://rustconf.com/) where we identified a need for several subcommittees to help organize initiatives around safety-critical Rust.
 
-Tooling was one of the high interest topics that we have discussed, so the mebers decoided to form a subcommitee for this.
+Tooling was one of the high interest topics that we have discussed, so the members decided to form a subcommitee for this.
 
 ## Subcommittee Mission Statement
 
