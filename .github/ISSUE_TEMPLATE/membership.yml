@@ -6,7 +6,7 @@ assignees:
   - joelmarcey
 body:
   - type: markdown
-    attribute:
+    attributes:
       value: |
         The [Safety Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) was [announced](https://foundation.rust-lang.org/news/announcing-the-safety-critical-rust-consortium/) in June 2024 with a goal to support the responsible use of Rust in Safety Critical software. The mission of the consortium is to improve the suitability of Rust in safety critical applications.
         
