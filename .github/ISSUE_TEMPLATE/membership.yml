@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: entity-name
     attributes:
-      label: If you represent a company, institution, consortium, or other entity, please enter it here:
+      label: If you represent a company, institution, consortium, or other entity, please enter it here.
       description: If you are representing other than yourself, please enter it. Otherwise, keep the default as 'individual'.
       placeholder: Individual
     validations:
