@@ -4,6 +4,10 @@ In June 2024, the Rust Foundation, AdaCore, Arm, Ferrous Systems, HighTec EDV-Sy
 
 See the full announcement [here](https://foundation.rust-lang.org/news/announcing-the-safety-critical-rust-consortium/).
 
+## Membership
+
+Membership to the Safety Critical Rust Consortium is free. Please file this GitHub issue to submit your membership application.
+
 ## [Code of Conduct][code-of-conduct]
 
 The [Rust Foundation][rust-foundation] has adopted a Code of Conduct that we
@@ -11,7 +15,7 @@ expect project participants to adhere to. Please read [the full
 text][code-of-conduct] so that you can understand what actions will and will not
 be tolerated.
 
-## Contributing
+## Contributing to This Repository
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 

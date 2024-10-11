@@ -1,0 +1,64 @@
+name: Consortium Membership
+description: Application to become a Safety Critical Rust Consortium Member
+title: Membership Application for [INSERT COMPANY, INSTITUION, YOUR NAME, OR OTHER ENTITY]
+labels: [membership, 'status: needs review']
+assignees: 
+  - joelmarcey
+body:
+  - type: markdown
+    attribute:
+      value: |
+        The Safety Critical Rust Consortium was announced in June 2024 with a goal to support the responsible use of Rust in Safety Critical software. The mission of the consortium is to improve the suitability of Rust in safety critical applications.
+        
+        Membership into the consortium is free and available to those with a noted and vested interested in the safety critical space. There are two types of membership:
+        - Producer: An active participant in the consortium, helping drive its mission
+        - Observers: A passive participant who wants to keep up with the consortium's happenings. Observers generally virtually attend meetings and listen in.
+        
+        This distinction is mainly for housekeeping purposes. You can choose which type of membership you plan to be initially and change it as needed.
+
+        If you do become a member of the consortium, you will be added to the consortium mailing list, which is currently the only non-public asset of the consortium at this point.
+  - type: input
+    id: Name
+    attributes:
+      label: What is your name?
+    validations:
+      required: true
+  - type: dropdown
+    id: representation
+    attributes:
+      label: Do you represent a company, institution, consortium, yourself or other entity?
+      description: In what capacity will you be represented as a member of the consortium?
+        - label: Company
+          required: false
+        - label: Institution (Academic, etc.)
+          required: false
+        - label: Consortium
+          required: false
+        - label: Myself
+          required: false
+        - label: Other Entity
+          required: false
+    validations:
+      required: true
+  - type: textarea
+    id: entity-name
+    attributes:
+      label: If you represent a company, institution, consortium, or other entity, please enter it here:
+      description: If you are representing other than yourself, please enter it. Otherwise, keep the default as 'individual'.
+      placeholder: Individual
+    validations:
+      required: true
+  - type: textarea
+    id: why-interested
+    attributes:
+      label: Why are you interested in joining the Safety Critical Rust Consortium?
+      description: If applicable, describe work that you are doing or planning to do in the safety critical space.
+    validations:
+      required: true
+  - type: dropdown
+    id: membership-type
+    attributes:
+      label: Do you plan to be a producer or observer in the consortium?
+      description: See above for the distinction between these two membership types. They are used mainly for housekeeping purposes and can be changed.
+    validations:
+      required: true
