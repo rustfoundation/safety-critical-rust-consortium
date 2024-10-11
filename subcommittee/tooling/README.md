@@ -15,7 +15,7 @@ Tooling was one of the high interest topics that we have discussed, so the membe
 ## Subcommittee Mission Statement
 
 A community-vetted minimal required tooling package to be able to certify Rust in safety-critical applications.
-A document with a list of the minimal required tools and their development status. A possible curricula used for training in safety critical Rust (this is still te be determined of we need a different subcommittee for it).
+A document with a list of the minimal required tools and their development status. A possible curricula used for training in safety critical Rust (this is still to be determined of we need a different subcommittee for it).
 
 Please see further details in our [mission statement](mission-statement.md).
 
