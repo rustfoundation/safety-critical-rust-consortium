@@ -28,16 +28,13 @@ body:
     attributes:
       label: Do you represent a company, institution, consortium, yourself or other entity?
       description: In what capacity will you be represented as a member of the consortium?
-        - label: Company
-          required: false
-        - label: Institution (Academic, etc.)
-          required: false
-        - label: Consortium
-          required: false
-        - label: Myself
-          required: false
-        - label: Other Entity
-          required: false
+      options:
+        - Company
+        - Institution (Academic, etc.)
+        - Consortium
+        - Myself
+        - Other Entity
+      default: 0
     validations:
       required: true
   - type: textarea
@@ -60,5 +57,9 @@ body:
     attributes:
       label: Do you plan to be a producer or observer in the consortium?
       description: See above for the distinction between these two membership types. They are used mainly for housekeeping purposes and can be changed.
+      options:
+        - Producer
+        - Observer
+      default: 1
     validations:
       required: true
