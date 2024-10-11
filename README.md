@@ -6,7 +6,9 @@ See the full announcement [here](https://foundation.rust-lang.org/news/announcin
 
 ## Consortium Membership
 
-Membership to the Safety Critical Rust Consortium is free. Please [file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) to submit your membership application.
+Membership to the Safety Critical Rust Consortium is free. Please [file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) to submit your membership application. 
+
+If for some reason you are unable or willing to file the application for membership via a GitHub issue, please send an email to `safety-critical-rust-consortium-contact [at] rustfoundation [dot] org`.
 
 ## [Code of Conduct][code-of-conduct]
 
