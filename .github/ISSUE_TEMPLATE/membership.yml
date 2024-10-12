@@ -41,8 +41,8 @@ body:
     id: entity-name
     attributes:
       label: If you represent a company, institution, consortium, or other entity, please enter it here.
-      description: If you are representing other than yourself, please enter it. Otherwise, keep the default as 'individual'.
-      placeholder: Individual
+      description: If you are representing other than yourself, please enter it. Otherwise, type 'Individual'.
+      placeholder: Type company or entity name, or type "Individual" 
     validations:
       required: true
   - type: textarea
