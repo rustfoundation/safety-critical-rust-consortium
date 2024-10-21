@@ -17,10 +17,18 @@ body:
         This distinction is mainly for housekeeping purposes. You can choose which type of membership you plan to be initially and change it as needed.
 
         If you do become a member of the consortium, you will be added to the consortium mailing list, which is currently the only non-public asset of the consortium at this point.
+
+        Also, don't forget to join the consortium's [Zulip channel](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium).
   - type: input
     id: Name
     attributes:
       label: What is your name?
+    validations:
+      required: true
+  - type: input
+    id: Email
+    attributes:
+      label: What is your preferred email address?
     validations:
       required: true
   - type: dropdown

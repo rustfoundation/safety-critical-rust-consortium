@@ -10,6 +10,8 @@ Membership to the Safety Critical Rust Consortium is free. Please [file this Git
 
 If for some reason you are unable or willing to file the application for membership via a GitHub issue, please send an email to `safety-critical-rust-consortium-contact [at] rustfoundation [dot] org`.
 
+Whether you become a member or not, you can join the consortium's [public Zulip channel](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium) to keep up with various happenings.
+
 ## [Code of Conduct][code-of-conduct]
 
 The [Rust Foundation][rust-foundation] has adopted a Code of Conduct that we
