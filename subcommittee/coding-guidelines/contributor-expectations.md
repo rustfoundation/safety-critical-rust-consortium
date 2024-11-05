@@ -21,4 +21,4 @@ Its fine to switch between them given on your current constraints. It is useful 
 
 ## Some fine print
 
-The Coding Guideline group is a Rust Foundation group and follows its policies, particular its [Code of Conduct](https://foundation.rust-lang.org/policies/code-of-conduct/).
+The Coding Guideline groups is a Rust Foundation group and follows its policies, particular its [Code of Conduct](https://foundation.rust-lang.org/policies/code-of-conduct/).
