@@ -52,13 +52,14 @@ Joel Marcey
 * **Logistics**  
   * Set up a Google Document space for the consortium  
     * We could also consider converting Google docs to markdown and putting them in GitHub too. Need to see if that makes sense  
-* [**Contributor Expectations**](../../contributor-expectations.md)
+* **Contributor Expectations**
   * Expectations  
     * Follow Rust Code of Conduct  
     * Participation mainly targeted towards senior engineers  
     * Folks should be actively contributing  
     * Understanding Rust and/or safety critical  
   * How are the guidelines enforced?  
+  * (These are _not_ presented here due to decision to rework these in 2024-11-11 meeting)
 * [**Mission Statement**](../../mission-statement.md)
   * Develop a community-vetted coding guideline for Rust in safety-critical applications  
   * Provide feedback offline  
