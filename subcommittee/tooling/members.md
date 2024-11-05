@@ -11,3 +11,4 @@
 - Alexandru Radovici (OxidOS Automotive)
 - Bogdan Genis (OxidOS Automotive)
 - Orson Pessin (OxidOS Automotive)
+- Florian Gilcher (Ferrous Systems)
