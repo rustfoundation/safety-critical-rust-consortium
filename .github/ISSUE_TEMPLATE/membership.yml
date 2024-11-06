@@ -1,7 +1,7 @@
 name: Consortium Membership
 description: Application to become a Safety Critical Rust Consortium Member
 title: Membership Application for [INSERT COMPANY, INSTITUTION, YOUR NAME, OR OTHER ENTITY]
-labels: [membership, 'status: needs review']
+labels: ["membership application"]
 assignees: 
   - joelmarcey
 body:
