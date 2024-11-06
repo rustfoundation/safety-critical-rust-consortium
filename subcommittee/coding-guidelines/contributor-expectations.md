@@ -15,7 +15,7 @@ The group benefits most from:
 
 There's two general modes of contribution that are useful to put yourself in:
 * Drafting and writing: you take over work items to work on in between meetings. You have knowledge you want to contribute.
-* Observing: you mainly look at other people producing content, and give feedback and wisdom. Maybe you're the person that observers the corner everyone else has overlooked?
+* Observing: you mainly look at other people producing content, and give feedback and wisdom. Maybe you're the person that observes the corner everyone else has overlooked?
 
 Its fine to switch between them given on your current constraints. It is useful to the people running the group to understand which mode you are currently in.
 
