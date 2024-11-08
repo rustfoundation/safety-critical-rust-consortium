@@ -6,6 +6,7 @@ By default, Rust is a safe programming language. Outside of  `unsafe`,  Rust pro
 
 There are reasonable use cases to use the `unsafe` keyword such as:
 
+* (register) access to memory mapped I/O (as a common use-case in safety-related systems)
 * interop through Rust’s C FFI  
 * complex safety invariants that cannot be verified by the Rust compiler
 
