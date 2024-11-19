@@ -1,6 +1,6 @@
 # Examples of `unsafe` to work into chapter
 
-The following are examples of `unsafe` code usage we could use to work into a chapter of the [Learn unsafe Rust](https://github.com/google/learn_unsafe_rust) book. These are not exhaustive, but give a starting point for something of a practium on typical considerations of using `unsafe`.
+The following are examples of `unsafe` code usage we could use to work into a chapter of the [Learn unsafe Rust](https://github.com/google/learn_unsafe_rust) book. These are not exhaustive, but give a starting point for something of a practicum for using `unsafe`.
 
 ## Example 1 
 
