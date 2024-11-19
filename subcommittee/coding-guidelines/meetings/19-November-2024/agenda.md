@@ -2,6 +2,7 @@
 
 ## Agenda
 
+0. Meeting recordings / transcriptions - Live discussion
 1. Acceptance of Previous Meeting Minutes 
 2. Shift meeting time 2 hours earlier to accomodate Asia participants (Pete LeVasseur)
 3. Contributor Expectations - Approval (Pete LeVasseur)
