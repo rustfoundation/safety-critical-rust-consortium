@@ -51,7 +51,7 @@ The Rust project has also produced the Rustonomicon, which goes at some places i
 
 SAE International’s JA1020 (WIP) is also ongoing work in this space \[3\].
 
-The Learn unsafe Rust book work in progress \[4\].
+The Learn unsafe Rust book (WIP) \[4\].
 
 \[1\]: [https://rust-lang.github.io/unsafe-code-guidelines/](https://rust-lang.github.io/unsafe-code-guidelines/)  
 \[2\]: [https://doc.rust-lang.org/nomicon/](https://doc.rust-lang.org/nomicon/)  
