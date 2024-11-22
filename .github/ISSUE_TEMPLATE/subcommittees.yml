@@ -47,7 +47,7 @@ body:
   - type: dropdown
     id: subcommittee-membership-type
     attributes:
-      label: [ONLY FILL THIS OUT IF YOU ARE A PRODUCER IN THE CONSORTIUM. IF YOU ARE AN OBSERVER, YOU WILL BE AN OBSERVER IN THE SUBCOMMITTEE BY DEFAULT] Do you plan to be a producer or observer in this subcommittee?
+      label: ONLY FILL THIS OUT IF YOU ARE A PRODUCER IN THE CONSORTIUM. IF YOU ARE AN OBSERVER, YOU WILL BE AN OBSERVER IN THE SUBCOMMITTEE BY DEFAULT.. Do you plan to be a producer or observer in this subcommittee?
       description: If you are a producer in the consortium, choose if you plan to be active in the subcommittee (producer) or passive (observer)
       options:
         - Producer
