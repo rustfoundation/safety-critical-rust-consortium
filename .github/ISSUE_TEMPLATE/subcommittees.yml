@@ -16,7 +16,7 @@ body:
         2. [Tooling](https://github.com/JoelMarcey/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
 
         Use this form to join one of those committees. If you want to join more than one subcommittee, fill out this form multiple times.
- - type: dropdown
+  - type: dropdown
     id: current-consortium-member
     attributes:
       label: Are you already a member of the Safety Critical Rust Consortium?
