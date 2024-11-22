@@ -1,4 +1,4 @@
-name: Add membership application to membership GitHub roject
+name: Add membership application to membership GitHub Project
 
 on:
   issues:
