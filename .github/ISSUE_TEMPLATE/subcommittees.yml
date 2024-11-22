@@ -22,8 +22,8 @@ body:
       label: Are you already a member of the Safety Critical Rust Consortium?
       description: If you are not already a member of the Safety Critical Rust Consortium, please join first as described above before filling out this form.
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
       default: 1
     validations:
       required: true  
