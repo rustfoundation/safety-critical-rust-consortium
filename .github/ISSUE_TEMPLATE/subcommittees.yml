@@ -1,0 +1,55 @@
+name: Consortium Subcommittee Membership
+description: Application to join a Safety Critical Rust Consortium Sub Committee
+title: Subcommittee Join Request for [NAME]
+labels: ["subcommittee application"]
+assignees: 
+  - joelmarcey, PLeVasseur, alexandruradovici
+body:
+  - type: markdown
+    attributes:
+      value: |
+        NOTE: IF YOU HAVE NOT YET SUBMITTED AN APPLICATION TO JOIN THE SAFETY CRITICAL RUST CONSORTIUM ITSELF, PLEASE [DO SO FIRST](https://github.com/rustfoundation/safety-critical-rust-consortium?tab=readme-ov-file#consortium-membership) BEFORE FILLING OUT THIS FORM.
+        
+        The [Safety Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) currently has two subcommittees:
+
+        1. [Coding Guidelines](https://github.com/JoelMarcey/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
+        2. [Tooling](https://github.com/JoelMarcey/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
+
+        Use this form to join one of those committees. If you want to join more than one subcommittee, fill out this form multiple times.
+ - type: dropdown
+    id: current-consortium-member
+    attributes:
+      label: Are you already a member of the Safety Critical Rust Consortium?
+      description: If you are not already a member of the Safety Critical Rust Consortium, please join first as described above before filling out this form.
+      options:
+        - Yes
+        - No
+      default: 1
+    validations:
+      required: true  
+  - type: input
+    id: Name
+    attributes:
+      label: What is your name?
+    validations:
+      required: true
+  - type: dropdown
+    id: subcommittee
+    attributes:
+      label: What subcommittee would you like to join?
+      description: Choose which subcommittee you would like to join.
+      options:
+        - Coding Guidelines
+        - Tooling
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: subcommittee-membership-type
+    attributes:
+      label: [ONLY FILL THIS OUT IF YOU ARE A PRODUCER IN THE CONSORTIUM. IF YOU ARE AN OBSERVER, YOU WILL BE AN OBSERVER IN THE SUBCOMMITTEE BY DEFAULT] Do you plan to be a producer or observer in this subcommittee?
+      description: If you are a producer in the consortium, choose if you plan to be active in the subcommittee (producer) or passive (observer)
+      options:
+        - Producer
+        - Observer
+      default: 1

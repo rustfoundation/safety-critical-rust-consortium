@@ -12,6 +12,19 @@ If for some reason you are unable or willing to file the application for members
 
 Whether you become a member or not, you can join the consortium's [public Zulip channel](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium) to keep up with various happenings.
 
+### Subcommittee Membership
+
+The Safety Critical Rust Consortium has subcommittees that focuses on specific areas of work. 
+
+Right now there are two subcommittees:
+
+1. Coding Guidelines
+2. Tooling
+
+After you join the consortium, you can apply to be a member of one or more of the subcommittees as well.
+
+*Note: If you are an observer of the consortium, you will be an observer in the subcommittee. If you are a producer of the consortium, you can choose*
+
 ## [Code of Conduct][code-of-conduct]
 
 The [Rust Foundation][rust-foundation] has adopted a Code of Conduct that we
