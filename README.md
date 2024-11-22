@@ -18,10 +18,10 @@ The Safety Critical Rust Consortium has subcommittees that focuses on specific a
 
 Right now there are two subcommittees:
 
-1. Coding Guidelines
-2. Tooling
+1. [Coding Guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
+2. [Tooling](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
 
-After you join the consortium, you can apply to be a member of one or more of the subcommittees as well.
+After you join the consortium, you can [apply by filing a GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey%2C+PLeVasseur%2C+alexandruradovici&labels=subcommittee+application&projects=&template=subcommittees.yml&title=Subcommittee+Join+Request+for+%5BNAME%5D) to be a member of one or more of the subcommittees as well.
 
 *Note: If you are an observer of the consortium, you will be an observer in the subcommittee. If you are a producer of the consortium, you can choose*
 
