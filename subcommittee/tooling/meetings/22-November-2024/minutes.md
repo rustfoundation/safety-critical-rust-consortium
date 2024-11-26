@@ -40,23 +40,6 @@ The group decided that most of the works should be performed asynchronously.
 
 To encourage open discussions, the group decided to work under the [Chatham House Rule] (https://en.wikipedia.org/wiki/Chatham_House_Rule).
 
-Standards:
-ASIL, SIL, ISO 178
-Do we feel that we can structure the work in a way that we have all this diff indust. contributing to the same framework?
-
-Many standards are identical, they just to things diff for historical reasons. Aero being an outlyer here. Aero cert. is more comlplicated, they want to see a project, no standalone.
-
-We would like to have a common ground tools. Ex we all need at some point MC/DC.
-
-For instance cyclo compex, certified test runner, it might be possible to get cargo to do that, maybe clippy. Not sure when can cert. clippy beyond ASIL B/D?
-
-The certification of any tools is not the goal of this group.
-
-What is the tool independent need that all need to cover? Every tools needs some degree MC/DC etc.
-
-How to find cross standard obj to be filled by the tools.
-
-Here are open source tools that fill the needs to a certain point. If there are prop tools that we agree we should advance, ok.
 
 
 ### Needs
