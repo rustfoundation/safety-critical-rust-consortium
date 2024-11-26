@@ -11,7 +11,7 @@
 - Jordan McQueen (Woven by Toyota)
 - Orson Pessin (OxidOS)
 - Sasha Pourcelot (Trust in Soft)
-- Alexandru Radovici (Rust Foundation)
+- Alexandru Radovici (Moderator)
 
 ## Subjects
 
