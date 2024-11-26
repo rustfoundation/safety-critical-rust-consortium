@@ -8,7 +8,7 @@
 - Felix Gilcher (Ferrous Systems)
 - Julius Gustavson (Volvo Cars)
 - Tiago Manczak
-- Jordan McQueen (Vowen by Toyota)
+- Jordan McQueen (Woven by Toyota)
 - Orson Pessin (OxidOS)
 - Sasha Pourcelot (Trust in Soft)
 - Alexandru Radovici (Rust Foundation)
