@@ -1,14 +1,14 @@
-# Coding Guidelines Subcommittee Meeting on 2024-11-19
+# Coding Guidelines Subcommittee Meeting on 2024-11-19 @ 6pm UTC
 
 ## Agenda
 
 0. Meeting recordings / transcriptions - Live discussion
-1. Acceptance of Previous Meeting Minutes
+1. Acceptance of [Previous Meeting Minutes](../2024-November-05/minutes.md)
 2. Shift meeting time 2 hours earlier to accommodate Asia participants (Pete LeVasseur)
 3. Contributor Expectations - Approval (Pete LeVasseur)
 4. Safe Usage of Unsafe Guidelines - Check-in (Pete LeVasseur)
-    a. Learn unsafe Rust - Offline Review & Q&A
-    b. Examples of unsafe patterns - Chapter writeup
+  * [Learn `unsafe` Rust](https://github.com/google/learn_unsafe_rust) - Offline Review & Q&A
+  * [Examples of unsafe patterns](../../initiatives/safe-use-of-unsafe-guidelines/unsafe-example-usage.md) - Chapter writeup
 5. MISRA + Rust (Alex Celeste)
 6. Round table
 

@@ -2,7 +2,7 @@
 
 ## Agenda
 
-1. Acceptance of Previous Meeting Minutes
+1. Acceptance of [Previous Meeting Minutes](../2024-October-22/minutes.md)
 2. Contributor Expectations - Online discussion (Pete LeVasseur)
 3. Safe Use of Unsafe Guidelines - Online discussion (Pete LeVasseur)
 4. MISRA + Rust (Alex Celeste)
