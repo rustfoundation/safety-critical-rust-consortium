@@ -117,7 +117,7 @@ Supplemental material to the agenda can be found on the [GitHub repo](https://gi
 * AF: Deadlocks and checked/unchecked arithmetic are examples of stuff outside of this
 * WP: Would this committee want to bless Cargo Vet or create recommendations for crates?
 * PL: Getting involved with Cargo Vet is a good idea
-* PL: There is a proposal to change the unsafe keyword
+* PL: Niko expressed a [thought](https://github.com/rust-lang/rfcs/pull/3484#issuecomment-2039501484) to change the safe keyword to trusted in Rust 2027
 * JW: Addressing the unsafe keyword first is good idea until different certifications are published
 * DD: Different levels of assurance could be addressed by annotating guidelines with levels of severity
 * PL: It does make sense to categorize how unsafe each example and pattern would be
