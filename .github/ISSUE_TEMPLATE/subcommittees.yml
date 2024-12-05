@@ -1,7 +1,7 @@
 name: Consortium Subcommittee Membership
 description: Application to join a Safety Critical Rust Consortium Sub Committee
 title: Subcommittee Join Request for [NAME]
-labels: ["subcommittee application"]
+labels: ["subcommittee join request"]
 assignees: 
   - joelmarcey, PLeVasseur, alexandruradovici
 body:
