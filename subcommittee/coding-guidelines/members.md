@@ -9,3 +9,9 @@
 - Jordan McQueen
 - Christof Petig
 - Alex Vochescu
+- Dillon McEwan
+- Enow Scott
+- Andrew Fernandes
+- Douglas Deslauriers
+- Oreste Bernardi
+
