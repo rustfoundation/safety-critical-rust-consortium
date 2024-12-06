@@ -43,8 +43,9 @@ characteristics table.
 
 There’s also an approximate mapping of Safety Critical mappings across levels at
 the bottom of this document:
-https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level Of course, we’re
-not sure how accurate it is, but it may be useful as a starting summary.
+https://en.wikipedia.org/wiki/Automotive_Safety_Integrity_Level
+Of course, we’re not sure how accurate it is, but it may be useful as a starting
+summary.
 
 [New member joins and introductions happen.]
 
