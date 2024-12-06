@@ -14,4 +14,6 @@
 - Andrew Fernandes
 - Douglas Deslauriers
 - Oreste Bernardi
+- Alexandru Radovici
+- Joe Johnson
 
