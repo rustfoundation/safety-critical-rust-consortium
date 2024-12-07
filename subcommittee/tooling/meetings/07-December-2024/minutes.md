@@ -83,8 +83,8 @@ traceability? For example, link time optimization, etc.
 Let’s take an action item to investigate the above, on what the constraints
 might be for preserving traceability and source to obj code tracing.
 
-Source code the obj code tracing may be something that has to be solved at the
-compiler level or at the LLVM level, to offer the right feature/flag or
+Source code to obj code tracing may be something that has to be solved at the
+compiler level or at the LLVM level, e.g. offer the right feature/flag or
 optimizing the debugging information.
 
 We will schedule the next meeting for the second week in January.
