@@ -238,14 +238,14 @@ running in microcontroller changes the voltage and clock based on
 required system mode.
 
 <p align="center">
-<img src="./images/safe_lld_fig1.png"  alt="Figure 1 HW System" height="200">
+<img src="./rust-embedded-lld-safe-definitions-images/safe_lld_fig1.png"  alt="Figure 1 HW System" height="200">
 </p>
 
 Software is structured as in the below picture. All components provide
 safe API.
 
 <p align="center">
-<img src="./images/safe_lld_fig2.png"  alt="Figure 2 SW architecture" height="200">
+<img src="./rust-embedded-lld-safe-definitions-images/safe_lld_fig2.png"  alt="Figure 2 SW architecture" height="200">
 </p>
 
 For each software component shall be documented which part of system is
@@ -256,7 +256,7 @@ considering just the microcontroller but excluding the voltage regulator
 because they should be generic and usable for any system.
 
 <p align="center">
-<img src="./images/safe_lld_fig3.png"  alt="Figure 3 Scope of microcontroller LLD" height="200">
+<img src="./rust-embedded-lld-safe-definitions-images/safe_lld_fig3.png"  alt="Figure 3 Scope of microcontroller LLD" height="200">
 </p>
 
 Voltage regulator driver requires a SPI low level driver in order and
@@ -265,7 +265,7 @@ from microcontroller + voltage regulator. Voltage regulator driver is
 supposed to be generic and independent of the device connected to the
 output of voltage regulator.
 <p align="center">
-<img src="./images/safe_lld_fig4.png"  alt="Figure 4 Scope of voltage regulator driver and microcontroller LLD" height="200">
+<img src="./rust-embedded-lld-safe-definitions-images/safe_lld_fig4.png"  alt="Figure 4 Scope of voltage regulator driver and microcontroller LLD" height="200">
 </p>
 Finally, system mode manager API shall guarantee the freedom from
 undefined behavior of full system as described in Figure 1 HW system.
@@ -286,10 +286,10 @@ Rust:
 
 [^1]: https://spec.ferrocene.dev/unsafety.html
 [^2]: https://doc.rust-lang.org/nomicon/safe-unsafe-meaning.html
-[^3]: https://doc.rust-lang.org/std/keyword.unsafe.html\#the-different-meanings-of-unsafe
-[^4]: https://spec.ferrocene.dev/glossary.html\#undefined-behavior
+[^3]: https://doc.rust-lang.org/std/keyword.unsafe.html#the-different-meanings-of-unsafe
+[^4]: https://spec.ferrocene.dev/glossary.html#term_undefined_behavior
 [^5]: https://doc.rust-lang.org/reference/behavior-considered-undefined.html
 [^6]: https://docs.rs/svd2rust/latest/svd2rust/
 [^7]: https://docs.rust-embedded.org/embedonomicon/dma.html
 [^8]: https://github.com/rust-embedded/svd2rust/issues/714
-[^9]: https://doc.rust-lang.org/std/os/unix/io/index.html\#procselfmem-and-similar-os-features
+[^9]: https://doc.rust-lang.org/std/os/unix/io/index.html#procselfmem-and-similar-os-features
