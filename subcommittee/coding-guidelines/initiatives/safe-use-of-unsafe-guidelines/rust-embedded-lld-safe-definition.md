@@ -1,4 +1,4 @@
-# Rust Embedded Low Level Drivers and Safe Definition
+# Rust Embedded Low Level Drivers (LLD) and Safe Definition
 
 - [Rust Embedded Low Level Drivers and Safe Definition](#markdown-header-rust-embedded-low-level-drivers-and-safe-definition)
   - [Introduction](#markdown-header-introduction)
