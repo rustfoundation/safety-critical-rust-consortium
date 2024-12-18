@@ -103,7 +103,7 @@ Ferrocene specification defines it as “unbounded error”[^4] or in other
 words: everything could happen.
 
 Rust Reference manual provide a non-exhaustive list of “undefined
-behaviors”[^5] The following behavior are worth to mentioned because it
+behaviors”[^5] The following behavior are worth mentioning because it
 involves hardware:
 
   - *Executing code compiled with platform features that the current
