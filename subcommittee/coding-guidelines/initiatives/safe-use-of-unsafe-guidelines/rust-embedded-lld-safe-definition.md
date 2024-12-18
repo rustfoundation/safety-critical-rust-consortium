@@ -93,7 +93,7 @@ to use unsafe functions fulfilling all requirements described in the
 documentation to avoid undefined behavior.
 
 This simplifies code review and bug identification. The developers shall
-inspect first unsafe blocks in case application shows an undefined
+inspect first unsafe blocks in case the application shows an undefined
 behavior. However, this doesn`t exclude that a function developer forgot
 to mark a function as “unsafe”.
 
