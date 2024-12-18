@@ -87,7 +87,7 @@ Moreover, the keyword `unsafe` is used in multiple context[^3]:
   - *unsafe impl*: the contract necessary to implement the trait has
     been checked by the programmer and is guaranteed to be respected.
 
-In this discussion only unsafe blocks and unsafe functions. Unsafe
+This discussion only covers unsafe blocks and unsafe functions. Unsafe
 functions can be called only in unsafe blocks and the user shall ensure
 to use unsafe functions fulfilling all requirements described in the
 documentation to avoid undefined behavior.
