@@ -273,7 +273,7 @@ undefined behavior of full system as described in Figure 1 HW system.
 ## Conclusions
 
 In this document I tried to show why the measures required to have safe
-LLD are not clear. The reason roots down to the definition of “undefined
+LLD are not clear. The reason derives from the definition of “undefined
 behavior”. This is a call for Rust community and Rust specification
 writers to have an unambiguous and well-defined description of
 “undefined behavior” that includes HW drivers.
