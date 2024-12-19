@@ -13,4 +13,4 @@
 | Coding Style Verification | MISRA-C, ... | Rust Compiler, Clippy and probably additional tools required to verify and evaluate the application of the coding standard developed by the Code Guidelines Subcommittee | OxidOS can provide a mapping of MISRA-C Rules to the Rust Compiler |
 | MC/DC Coverage report | ... | N/A | not available - LLVM might provide some tools |
 | Static Analysis Tools | probably similar to Polyspace | N/A | an assesement about what the rust compiler covers is necessary |
-| Code Matrics Generator | Cyclomatic Complexity, ... | N/A | not available |
+| Code Metrics Generator | Cyclomatic Complexity, ... | N/A | not available |
