@@ -1,6 +1,6 @@
 # Rust Embedded Low Level Drivers (LLD) and Safe Definition
 
-- [Rust Embedded Low Level Drivers and Safe Definition](#markdown-header-rust-embedded-low-level-drivers-and-safe-definition)
+- [Rust Embedded Low Level Drivers (LLD) and Safe Definition](#markdown-header-rust-embedded-low-level-drivers-lld-and-safe-definition)
   - [Introduction](#markdown-header-introduction)
   - [What does mean safe for Rust language.](#markdown-header-what-does-mean-safe-for-rust-language)
     - [What is “undefined behavior” in Rust?](#markdown-header-what-is-undefined-behavior-in-rust)
@@ -38,8 +38,7 @@ microcontrollers but they implement a minimal logic to configure and
 operate properly the device accordingly with microcontroller or
 microprocessor specification.
 
-Rust developers expect to use safe libraries or more exactly libraries
-that doesn`t have unsafe API.
+Rust developers expect to [sound](https://rust-lang.github.io/unsafe-code-guidelines/glossary.html#soundness-of-code--of-a-library) libraries.
 
 When I tried to understand what need to be done to offer safe low level
 drivers, I found that there is no clear definition of what does mean
