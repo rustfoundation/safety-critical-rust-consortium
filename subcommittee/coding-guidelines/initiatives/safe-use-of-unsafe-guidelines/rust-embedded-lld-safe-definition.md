@@ -126,7 +126,7 @@ or microprocessor?
 
   - undefined behavior is not tested in simulation and in production.
     
-      - Every behavior could happen.
+      - Any behavior could happen.
 
   - undefined behavior can be different from device to device.
 
