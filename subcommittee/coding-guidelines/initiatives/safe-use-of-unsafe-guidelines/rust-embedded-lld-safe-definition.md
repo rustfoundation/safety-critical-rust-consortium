@@ -221,8 +221,8 @@ I think it is quite clear that a clear unambiguous and widely accepted
 definition of undefined behavior in Rust language especially when HW is
 involved is missing.
 
-While waiting a widely better definition in coming Rust specification, I
-would propose the following to solve this issue:
+While waiting for a vastly better definition in an upcoming Rust
+specification, I would propose the following to solve this issue:
 
   - HW undefined behavior shall be considered when developing low level
     drivers.
