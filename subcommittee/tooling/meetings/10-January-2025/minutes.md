@@ -15,7 +15,7 @@
 We decided to fill the *Needs to Standards* mapping asynchronously
 using GitHub comments until the next meeting.
 
-| Need ID | Required By Standard | Tools |
+| Need ID | Relevant Standard Rule | Tools |
 |---------|----------------------|-------|
 | DC      | ASIL-D, SIL-4, ...   | llvm  |
 | MC      |                      | llvm + 3rd party (wip) |
