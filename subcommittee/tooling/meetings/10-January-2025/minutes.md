@@ -21,6 +21,8 @@ using GitHub comments until the next meeting.
 | MC      |                      | llvm + 3rd party (wip) |
 | Qualified Compiler | ASIL-D , ...  | ferroccene, ada-core |
 | Fault Injection Tests | ASIL-D, ... |  |
+| Test Coverage | | |
+| Formal Methods | ASIL-D | [kani](https://model-checking.github.io/kani/) |
 
 ## Next Meeting
 
