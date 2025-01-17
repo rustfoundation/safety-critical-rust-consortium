@@ -20,7 +20,7 @@ The second meeting of the Safety Critical Rust Consortium meeting will be held o
     - Goals moving forward
     - Other full consortium discussion items
   - Form new subcommittees? (@JoelMarcey, all)
-- Lunch
+- Lunch (on your own)
 - Rust Specification Update and Discussion (@JoelMarcey)
 - Breakout groups (1 hour)
   - Coding Guidelines (@PLeVasseur)
