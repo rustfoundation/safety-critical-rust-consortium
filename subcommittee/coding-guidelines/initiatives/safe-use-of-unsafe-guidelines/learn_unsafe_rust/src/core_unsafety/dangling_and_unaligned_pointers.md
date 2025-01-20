@@ -27,3 +27,54 @@ fn safe_pointer_arithmetic() {
     }
 }
 ```
+
+## Read Unaligned Pointer
+
+TODO:
+- Add text building from the pointer arithmetic example.
+- Briefly explain and refer to packed structs.
+- Refer to `std::ptr::read_unaligned`.
+- Consider better labelling of safety bits as in previous as well as the examples on the other page?
+- Consider if the unsafe function can be better wrapped 
+- Anything additional to show relevant to the chapter regarding how the PackedHeader can be used?
+
+```rust
+#[repr(C, packed)]
+struct PackedHeader {
+    id: u16,
+    length: u16,
+    checksum: u32,
+}
+
+/// Reads a `PackedHeader` from a raw byte buffer.
+///
+/// # Safety
+/// - The buffer must have at least 8 bytes (size of the `PackedHeader`).
+///
+/// It is implicitly assumed that the data matches the layout and endianness
+/// of `PackedHeader`.
+///
+/// Returns a `PackedHeader` by reading the data handling the packed struct
+/// based on unaligned access with `std::ptr::read_unaligned`.
+unsafe fn read_packed_header(data: &[u8]) -> PackedHeader {
+    assert!(data.len() >= 8, "Buffer is too small.");
+
+    let id_ptr = data.as_ptr() as *const u16;
+    let length_ptr = id_ptr.add(1);
+    let checksum_ptr = length_ptr.add(1) as *const u32;
+
+    let id = std::ptr::read_unaligned(id_ptr);
+    let length = std::ptr::read_unaligned(length_ptr);
+    let checksum = std::ptr::read_unaligned(checksum_ptr);
+
+    PackedHeader { id, length, checksum }
+}
+
+fn main() {
+    let data: [u8; 8] = [0x01, 0x02, 0x05, 0x00, 0xFF, 0xEE, 0xCC, 0xDD];
+
+    unsafe {
+        let _header = read_packed_header(&data);
+    }
+}
+```
