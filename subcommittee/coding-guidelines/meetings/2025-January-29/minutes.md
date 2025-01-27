@@ -3,7 +3,7 @@
 ## Agenda
 
 1. Acceptance of [Previous Meeting Minutes](../2025-January-15/minutes.md)
-2. `unsafe` Docs Review Task Force - progress report (Pete LeVasseur)
+2. `unsafe` Docs Review Task Force - progress report (Douglas Deslauriers)
 3. `unsafe` Practicum Chapter Task Force - progress report (Jordan McQueen)
 4. Progress report on booklet to define `unsafe` terms and scope (Andrew Fernandes)
 5. Round table
