@@ -30,19 +30,15 @@ fn safe_pointer_arithmetic() {
 
 ## Read Unaligned Pointer
 
-TODO:
-- Add text building from the pointer arithmetic example.
-- Briefly explain and refer to packed structs.
-- Refer to `std::ptr::read_unaligned`.
-- Consider better labelling of safety bits as in previous as well as the examples on the other page?
-- Consider if the unsafe function can be better wrapped 
-- Anything additional to show relevant to the chapter regarding how the PackedHeader can be used?
+Pointer arithmetic, in particular, adding an offset to a pointer via [`add`](https://doc.rust-lang.org/std/primitive.pointer.html#method.add) as shown in the previous example, is useful to create an `unaligned pointer`. We may want to read from an unaligned pointer when, for example, working on a network communication protocol in a memory-constrained context.
+
+Using the `packed` modifier together with `C` *representation*, the order of fields in the layout of a struct as well as lowering the padding between them can be [guaranteed](https://doc.rust-lang.org/reference/type-layout.html#r-layout.repr.alignment.intro). The following code exemplifies the safe use of the unsafe `std::ptr::read_unaligned` function.
 
 ```rust
 #[repr(C, packed)]
 struct PackedHeader {
-    id: u16,
-    length: u16,
+    id: u8,
+    length: u8,
     checksum: u32,
 }
 
@@ -57,9 +53,9 @@ struct PackedHeader {
 /// Returns a `PackedHeader` by reading the data handling the packed struct
 /// based on unaligned access with `std::ptr::read_unaligned`.
 unsafe fn read_packed_header(data: &[u8]) -> PackedHeader {
-    assert!(data.len() >= 8, "Buffer is too small.");
+    assert!(data.len() >= 6, "Buffer is too small.");
 
-    let id_ptr = data.as_ptr() as *const u16;
+    let id_ptr = data.as_ptr() as *const u8;
     let length_ptr = id_ptr.add(1);
     let checksum_ptr = length_ptr.add(1) as *const u32;
 
@@ -71,7 +67,7 @@ unsafe fn read_packed_header(data: &[u8]) -> PackedHeader {
 }
 
 fn main() {
-    let data: [u8; 8] = [0x01, 0x02, 0x05, 0x00, 0xFF, 0xEE, 0xCC, 0xDD];
+    let data: [u8; 6] = [0x01, 0x02, 0x05, 0x00, 0xFF, 0xDD];
 
     unsafe {
         let _header = read_packed_header(&data);
