@@ -18,4 +18,6 @@
 - Joe Johnson
 - Lukas Wirth
 - Andrew Herridge
+- Fernando Jose
+- Markus Hosch
 

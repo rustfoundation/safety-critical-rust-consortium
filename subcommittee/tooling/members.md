@@ -14,6 +14,6 @@
 - Wayne Chang (SpruceID)
 - Munawar Hafiz (OpenRefactory)
 - Joe Johnson (Modularity Inc.)
-- Oreste Bernardi
+- Oreste Bernardi (Infineon)
 - Tiago Manczak
 - Alexandru Radovici (Moderator)
