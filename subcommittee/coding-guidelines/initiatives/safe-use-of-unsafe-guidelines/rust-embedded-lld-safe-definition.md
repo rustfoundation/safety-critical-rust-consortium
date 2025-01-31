@@ -115,10 +115,9 @@ hardware.
 
 ## Hardware undefined behavior
 
-In many data sheet or user manual of micro-controller and microprocessor
-is used the term *undefined behavior* and in these documents is
-described how to avoid the conditions that could generate an undefined
-behavior.
+In the data sheets or user manuals of many micro-controllers and 
+microprocessors the term *undefined behavior* is used mostly to describe
+how to avoid the conditions that could generate an undefined behavior.
 
 What does mean *undefined behavior* in the context of microcontrollers
 or microprocessor?
