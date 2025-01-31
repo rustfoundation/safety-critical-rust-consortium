@@ -199,12 +199,9 @@ documentation:
 *Rust`s safety guarantees only cover what the program itself can do, and
 not what entities outside the program can do to it.*
 
-However, I still see the same conflicting usage of unsafe as in the
-previous chapter:
+Previous sentence is conflicting with the following:
 
-  - C API are by default unsafe. Are not referring to external C
-    program? If the previous definition holds, they should be considered
-    safe.
+  - C API of external libraries are by default unsafe.
 
   - HW undefined behavior is already included in Rust Reference:
     “*Executing code compiled with platform features that the current
