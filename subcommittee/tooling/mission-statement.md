@@ -26,7 +26,7 @@
 | Automatic generation of unit/integration tests based on equivalence classes and boundary values | ISO26262 Part 6 (9.4.4 & 10.4.4) ASIL B/C/D | N/A | Example of automatic test generator based on equivalence classe and boundary values: [VectorCast](https://www.vector.com/us/en/products/products-a-z/software/vectorcast/?gad_source=1&gclid=EAIaIQobChMIyMKCgvn3igMVM0-RBR1s9BOkEAAYASAAEgJM2_D_BwE#c336977),  [TESSY](https://www.razorcat.com/en/product-tessy.html) |
 Fault injection test | ISO26262 Part 6 (9.4.2 ASIL D, 10.4.2 ASIL C/D) | [mutagen](https://github.com/llogiq/mutagen), [cargo-mutants] (https://mutants.rs/) | No ISO qualified tools available |
 Requirement based test | ISO 26262 Part 6 (9.4.2 & 10.4.2 ASIL A/B/C/D) | [mantra](https://crates.io/crates/mantra) | No ISO qualified tool available |
-
+| Formal Methods |  | [kani](https://model-checking.github.io/kani/) | |
 
 
 
