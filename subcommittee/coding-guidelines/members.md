@@ -20,4 +20,4 @@
 - Andrew Herridge
 - Fernando Jose
 - Markus Hosch
-
+- Samuel Tardieu
