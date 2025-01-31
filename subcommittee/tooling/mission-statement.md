@@ -8,14 +8,15 @@
 
 | Purpose | Requirement | Tool | Status |
 |---------|-------------|------|--------|
-| Qualified Compiler | ? | [Ferrocene](https://ferrocene.dev/en/) | Available for `aarch64-nostd` |
+| Qualified Compiler | ISO26262  | [Ferrocene](https://ferrocene.dev/en/), AdaCore | Available for `aarch64-nostd` |
 | Certified Core Library | SIL-4 / ASIL-D out of context | N/A | In progress by Ferrocene / Adacore / HighTec |
 | Coding Style Verification | MISRA-C, ... | Rust Compiler, Clippy and probably additional tools required to verify and evaluate the application of the coding standard developed by the Code Guidelines Subcommittee | OxidOS can provide a mapping of MISRA-C Rules to the Rust Compiler |
 |Statement Coverage| ISO26262 Part6 9.4.5 ASIL A/B | | |
 |Function coverage| ISO26262 Part 6 10.4.6 ASIL C/D | | |
 |Call coverage| ISO26262 Part 6 10.4.6 ASIL C/D | | |
 |Branch Coverage | ISO26262 Part6 9.4.5 ASIL B/C/D | | | 
-| MC/DC Coverage report | ISO26262 Part6 9.4.5 ASIL D | N/A | not available - LLVM might provide some tools |
+| DC Coverage report | ISO26262 Part6 9.4.5 ASIL D, SIL-4 | N/A | not available - LLVM might provide some tools |
+| MC Coverage report | ISO26262 Part6 9.4.5 ASIL D, SIL-4 | N/A | not available - LLVM might provide some tools + 3rd party (wip) |
 | Static Analysis Tools | probably similar to Polyspace | N/A | an assesement about what the rust compiler covers is necessary |
 | Code Metrics Generator | Cyclomatic Complexity, ... | N/A | not available |
 |Unambiguous graphical representation|ISO26262 ASIL B/C/D | N/A | Graphical representation specific not available. Autosar Rust defined a Enterprise Architect profile See chapter 6.6 of [Explanation of ARA Applications in Rust](https://www.autosar.org/fileadmin/standards/R23-11/AP/AUTOSAR_AP_EXP_ARARustApplications.pdf)|
