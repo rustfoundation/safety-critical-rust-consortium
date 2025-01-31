@@ -16,4 +16,5 @@
 - Joe Johnson (Modularity Inc.)
 - Oreste Bernardi (Infineon)
 - Tiago Manczak
+- Koppany Pazman (HighTec)
 - Alexandru Radovici (Moderator)
