@@ -56,7 +56,7 @@ unsafe fn read_packed_header(data: &[u8]) -> PackedHeader {
 
     let id_ptr = data.as_ptr() as *const u8;
     // SAFETY: pointer arithmetic within the bounds of the buffer.
-    let length_ptr = id_ptr.add(1);
+    let length_ptr = id_ptr.add(1) as *const u8;
     let checksum_ptr = length_ptr.add(1) as *const u32;
 
     // SAFETY: the *_ptr pointers are "valid" for reads and they
