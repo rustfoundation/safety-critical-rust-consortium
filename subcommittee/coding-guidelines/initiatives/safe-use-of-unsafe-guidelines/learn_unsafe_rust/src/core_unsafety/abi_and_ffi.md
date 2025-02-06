@@ -48,3 +48,86 @@ single property* is the exact same. This is obviously also true for Rust, and ju
 declaration of a struct is not enough. Instead, the correct target triple has to be chosen, and both the Rust compiler
 and the C compiler used to compile a program part using that same struct needs to be configured such that the ABI
 matches the ABI that is defined by the target triple that has been configured for the Rust crate.
+
+## FFI in Rust
+
+The basic building block of Rust's FFI is the support for (almost? check whether there are gaps) the whole set of the
+interaction mechanics the C language offers. The major building blocks are
+
+* The provisioning of basic data types that are compatible across language boundaries.
+* Describing complex data types by means of structures, arrays and unions of other complex types or basic data types.
+* Calling a subroutine with a set of parameters and at most one return value.
+* Offering functions that can be called by foreign languages.
+* Accessing global memory defined (and possibly initialized) by a foreign language.
+
+All other language building blocks supported by either language need to be projected onto these building blocks.
+
+The following sections briefly describe these building blocks. For more details one can follow the references.
+
+### Basic data types and FFI
+
+A lot of Rust's basic data types (especially integral types) have corresponding types in C. However, there is no direct
+and universal match of Rust's basic types to C's basic types. Instead, it is a good idea to use type aliases that exist
+on each side. This is a type mapping list that universally works on all platforms:
+
+| Rust type             | C type             |
+|-----------------------|--------------------|
+| u8                    | uint8_t            |
+| i8                    | int8_t             |
+| u16                   | uint16_t           |
+| i16                   | int16_t            |
+| u32                   | uint32_t           |
+| i32                   | int32_t            |
+| u64                   | uint64_t           |
+| i64                   | int64_t            |
+| std::ffi::c_char      | char               |
+| std::ffi::c_schar     | signed char        |
+| std::ffi::c_uchar     | unsigned char      |
+| std::ffi::c_int       | (signed) int       |
+| std::ffi::c_uint      | unsigned int       |
+| std::ffi::c_short     | (signed) short     |
+| std::ffi::c_ushort    | unsigned short     |
+| std::ffi::c_long      | (signed) long      |
+| std::ffi::c_ulong     | unsigned long      |
+| std::ffi::c_longlong  | (signed) long long |
+| std::ffi::c_ulonglong | unsigned long long |
+| std::ffi::c_double    | double             |
+| std::ffi::c_float     | float              |
+
+Pointers are guaranteed to be compatible. There's a slight gotcha, though: It is legal in Rust to create so-called fat
+pointers. This happens if you create a pointer to a slice or a trait object, since both entities need more than just a
+pointer to the start of the data. However, the Rust compiler will warn in case such a pointer is used on an FFI
+boundary.
+
+### Calling subroutines from Rust
+
+When one wants to call a subroutine that is implemented by a foreign language, this subroutine has to be declared in an
+`extern` block. A simple example of such a block looks like this (2024 edition):
+
+```rust
+unsafe extern "C" {
+    fn externally_defined_routine(arg1: u32, arg2: *mut Complex) -> bool;
+}
+```
+
+Since the Rust compiler cannot check whether the signature of the declaration matches the declaration of the subroutine
+on the foreign language, the whole `extern` block is marked as unsafe (Note: The `unsafe` keyword was optional in older
+editions but doesn't change the semantics of subroutine declarations in the `extern` block).
+
+Calling such a subroutine almost works like calling an ordinary function. However, since the Rust compiler cannot know
+whether the called subroutine violates any of the Rust safety guarantees, calling an external subroutine also needs to
+be wrapped in an `unsafe` block, like this:
+
+```rust
+let mut complex = Complex { ... };
+let success = unsafe {
+    externally_defined_routine(24, &mut complex)
+};
+...
+```
+
+Notice that the Rust compiler also checks whether the subroutine signature is compatible with the C language. If a type
+is used which is not supported by C and warns in such a case. It is strongly advisable to rework the signature if such
+an `improper_ctype` warning appears as the chances for undefined behavior are high, and even if the program works in
+a particular version of Rust, this might change any time in case the memory layout of such a type changes due to the
+updated Rust version.
