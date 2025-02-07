@@ -17,26 +17,28 @@ using GitHub comments until the next meeting.
 
 | Need ID | Relevant Standard Rule | Tools |
 |---------|----------------------|-------|
-| DC Coverage | ASIL-D, SIL-4, ...   | llvm (19, rustc 1.82) - unstable, no macros / pattern matching  |
-| MC Coverage |                      | llvm (19, rustc 1.82) + 3rd party (AdaCore report generator + stabilize the feature + end of this year) - unstable, no macros / pattern matching |
-| Statement Coverage | ASIL-A | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
-| Function coverage | ASIL-C | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
-| Call coverage | ASIL-C | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
-| Branch Coverage | ASIL-B | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
-| Qualified Compiler | ASIL-D , ...  | ferroccene, Ada Core |
-| Fault Injection Tests | ASIL-D, ... |  |
-| Test Coverage | ASIL-, SIL-, ... | llvm (19), cargo-test, [mantra?](https://community.infineon.com/t5/Blogs/Requirements-Traceability-with-mantra/ba-p/864822#.) |
+| DC Coverage | ASIL-D, SIL-4, DAL-A, DAL-B   | llvm (19, rustc 1.82) - unstable, no macros / pattern matching  |
+| MC Coverage | DAL-A                     | llvm (19, rustc 1.82) + 3rd party (AdaCore report generator + stabilize the feature + end of this year) - unstable, no macros / pattern matching |
+| Statement Coverage | ASIL-A, DAL-A, DAL-B, DAL-C | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
+| Function coverage | ASIL-C, DAL-A, DAL-B, DAL-C | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
+| Call coverage | ASIL-C, DAL-A, DAL-B, DAL-C | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
+| Branch Coverage | ASIL-B, DAL-A, DAL-B, DAL-C | llvm (19, rustc 1.82) - unstable, no macros / pattern matching, [cargo-tarpaulin](https://github.com/xd009642/tarpaulin) |
+| Qualified Compiler | ASIL-D, DAL-A, DAL-B, DAL-C, DAL-D  | ferroccene, Ada Core |
+| Fault Injection Tests | ASIL-D, DAL-A, DAL-B, DAL-C, DAL-D |  |
+| Test Coverage | ASIL-, SIL-, DAL-A, DAL-B, DAL-C, DAL-D | llvm (19), cargo-test, [mantra?](https://community.infineon.com/t5/Blogs/Requirements-Traceability-with-mantra/ba-p/864822#.) |
 | Underfined Behaviour Absence | ASIL-D? | [verifast](https://github.com/verifast/verifast) - wip, [creusot](https://github.com/creusot-rs/creusot) - wip, works only for safe rust, [gillian-creusot](wip - not in a usable state, works for unsafe rust), [kani](https://model-checking.github.io/kani/) |
-| Static Analysis Tools | (ask Oreste Bernardi) | probably similar to Polyspace, an assesement about what the rust compiler covers is necessary |
+| Static Analysis Tools | (ask Oreste Bernardi), DAL-A, DAL-B, DAL-C | probably similar to Polyspace, an assesement about what the rust compiler covers is necessary. For DO-178 such tools support the "source code conformity" objective. |
 | Formal Methods | ASIL-D | does this mean more than UB? |
-| Code Metrics - Cyclomatic Complexity |  | Ada Core - has a tool on the roadmap eventually, clippy - some sort of estimation, it complains if a function is too long |
+| Code Metrics - Cyclomatic Complexity | DAL-A, DAL-B, DAL-C | Ada Core - has a tool on the roadmap eventually, clippy - some sort of estimation, it complains if a function is too long. For DO-178 such tools support the "source code conformity" objective. |
 | Code Traceability | | |
 
-### Nots
+### Notes
 - we would talk to the coding standard team for metrics (RustNation topic)
     - safe/unsafe
 - how do we handle macros - discussion with the coding standards team (RustNation topic)
     - there is some work in the rust upstream - cargo-expand
+- "undefined behavior" is to be used carefully for Rust because there is a difference between UB in Rust and UB in C, e.g. [for interger overflows](https://github.com/rust-lang/rfcs/blob/master/text/0560-integer-overflow.md). Definition of [undefined behavior for Rust](https://doc.rust-lang.org/reference/behavior-considered-undefined.html) and [what is excluded](https://doc.rust-lang.org/reference/behavior-not-considered-unsafe.html#integer-overflow) which is to be related to the C sense of UB.
+
 
 
 
