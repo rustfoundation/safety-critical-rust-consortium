@@ -10,7 +10,8 @@
   * Items we'd like to bring to wider consortium attention
 3. `unsafe` Formulate Chapter Material Task Force - progress report (Pete LeVasseur)
 4. `unsafe` Practicum Chapter Task Force - progress report (Pete LeVasseur)
-5. Round table
+5. Safety Pamphlet - progress report (Andrew Fernandes)
+6. Round table
 
 Supplemental material to the agenda can be found on the [GitHub repo](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines).
 
@@ -43,5 +44,5 @@ Any material to read before the meeting should be included here.
 
 ### Tracking Issues
 
-[\[Coding Guidelines\] Learn unsafe Rust \- Practicum Chapter Draft](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/122)
-[\[Coding Guidelines\] Formulate Chapter Material for Learn unsafe Rust](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/123)
+* [\[Coding Guidelines\] Learn unsafe Rust \- Practicum Chapter Draft](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/122)
+* [\[Coding Guidelines\] Formulate Chapter Material for Learn unsafe Rust](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/123)
