@@ -18,4 +18,5 @@
 - Tiago Manczak
 - Koppany Pazman (HighTec)
 - Manuel Hatzl
+- Xander Cesari (Pictorus Inc)
 - Alexandru Radovici (Moderator)
