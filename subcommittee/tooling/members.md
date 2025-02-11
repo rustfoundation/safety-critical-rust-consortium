@@ -17,4 +17,5 @@
 - Oreste Bernardi (Infineon)
 - Tiago Manczak
 - Koppany Pazman (HighTec)
+- Manuel Hatzl
 - Alexandru Radovici (Moderator)
