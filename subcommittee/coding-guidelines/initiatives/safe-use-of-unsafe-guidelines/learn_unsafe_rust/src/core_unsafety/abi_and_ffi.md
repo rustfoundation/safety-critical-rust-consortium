@@ -99,6 +99,23 @@ pointers. This happens if you create a pointer to a slice or a trait object, sin
 pointer to the start of the data. However, the Rust compiler will warn in case such a pointer is used on an FFI
 boundary.
 
+### Complex types
+
+Rust (like the majority of other languages) allows for combining basic datatypes to complex datatypes in various ways.
+A subset thereof can also be used across language boundaries. This is true for arrays, structs and unions. Enums and
+tuples cannot be used and doing so will lead to a compiler warning.
+
+When defining types that are used across the language boundary it is of utmost importance to define the same type with
+the exact same layout as in the other language. Failing to do so will inevitably lead to data corruption and undefined
+behavior.
+
+Although data definitions can be a potential source of undefined behavior, they are _not_ marked `unsafe` since the
+definitions themselves do not cause undefined behavior. The actual trigger for such undefined behavior is in fact a
+`extern` function definition or global variable definition, respectively: If such objects reference a data definition
+that does not fit the definition of the data type in the foreign language, such a type usage acts like an unchecked,
+unsafe type cast. Since the compiler cannot check type consistency across languages, these items need to be marked
+`unsafe`.
+
 ### Calling subroutines from Rust
 
 When one wants to call a subroutine that is implemented by a foreign language, this subroutine has to be declared in an
