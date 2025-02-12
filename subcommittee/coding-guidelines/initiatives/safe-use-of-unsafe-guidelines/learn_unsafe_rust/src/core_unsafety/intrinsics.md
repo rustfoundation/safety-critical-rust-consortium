@@ -5,7 +5,7 @@ Rust provides a set of compiler intrinsics as part of `core` and `std` respectiv
 
 Most of them are marked as experimental, unstable and useable in nightly versions of the compiler.
 
-For many, there is already stabilized API available.
+Many intrinsics are accessible though a stabilized API located elsewhere in the Standard or Core Library. The documentation for each intrinsic typically references the stabilized API.
 
 Thus, the clear recommendation is not using the experimental compiler intrinsics in a safety-critical project.
 
