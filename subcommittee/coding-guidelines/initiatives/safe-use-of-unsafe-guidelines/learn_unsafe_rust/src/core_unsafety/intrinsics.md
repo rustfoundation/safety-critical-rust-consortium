@@ -9,5 +9,7 @@ For many, there is already stabilized API available.
 
 Thus, the clear recommendation is not using the experimental compiler intrinsics in a safety-critical project.
 
-With `transmute` there is one major exception. However, `transmute` is handled in other parts of the guidelines.
+There are only few functions that are not marked as experimental: `copy`, `copy_nonoverlapping`, `write_bytes`, `transmute`.
+`transmute` is probably the most well-known and widely used of these APIs.
+`transmute` is handled in other parts of the guidelines.
 
