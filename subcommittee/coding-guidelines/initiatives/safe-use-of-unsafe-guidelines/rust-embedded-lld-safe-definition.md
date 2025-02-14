@@ -109,7 +109,7 @@ involves hardware:
     platform does not support (see target\_feature), except if the
     platform explicitly documents this to be safe.*
 
-Before discussing safe/unsafe in Low Level Drivers let`s see the meaning
+Before discussing safe/unsafe in Low Level Drivers let's see the meaning
 of “undefined behavior” in the context of microcontroller/microprocessor
 hardware.
 
