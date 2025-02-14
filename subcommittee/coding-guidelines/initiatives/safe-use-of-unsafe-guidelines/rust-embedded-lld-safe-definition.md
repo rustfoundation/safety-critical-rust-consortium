@@ -273,7 +273,7 @@ behavior”. This is a call for Rust community and Rust specification
 writers to have an unambiguous and well-defined description of
 “undefined behavior” that includes HW drivers.
 
-I described a proposal inspired by ISO23232 out of context element that
+I described a proposal inspired by ISO26262 out of context element that
 is applicable to LLD and still preserve one of the main advantages of
 Rust:
 
