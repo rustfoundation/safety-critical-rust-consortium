@@ -196,7 +196,7 @@ it can open special file */proc/self/mem* that allows unchecked full
 access to process memory. Moreover, it is stated the following in the
 documentation:
 
-*Rust`s safety guarantees only cover what the program itself can do, and
+*Rust's safety guarantees only cover what the program itself can do, and
 not what entities outside the program can do to it.*
 
 Previous sentence is conflicting with the following:
