@@ -35,6 +35,7 @@ Pointer arithmetic, in particular, adding an offset to a pointer via [`add`](htt
 Using the [`packed` modifier](https://doc.rust-lang.org/reference/type-layout.html#r-layout.repr.align-packed) together with [`C` *representation*](https://doc.rust-lang.org/nomicon/other-reprs.html#reprc), the order of fields in the layout of a struct as well as lowering the padding between them can be [guaranteed](https://doc.rust-lang.org/reference/type-layout.html#r-layout.repr.alignment.intro). The following code exemplifies the safe use of the unsafe [`std::ptr::read_unaligned`](https://doc.rust-lang.org/std/ptr/fn.read_unaligned.html) function.
 
 ```rust
+#[derive(Debug, PartialEq)]
 #[repr(C, packed)]
 struct PackedHeader {
     id: u8,
@@ -71,8 +72,10 @@ unsafe fn read_packed_header(data: &[u8]) -> PackedHeader {
 fn main() {
     let data: [u8; 6] = [0x01, 0x02, 0x05, 0x00, 0xFF, 0xDD];
 
+    let mut _header = PackedHeader{id: 0, length: 0, checksum: 0};
     unsafe {
-        let _header = read_packed_header(&data);
+        _header = read_packed_header(&data);
     }
+    assert_eq!(_header, PackedHeader{id: 1, length: 2, checksum: 0xDDFF0005});
 }
 ```
