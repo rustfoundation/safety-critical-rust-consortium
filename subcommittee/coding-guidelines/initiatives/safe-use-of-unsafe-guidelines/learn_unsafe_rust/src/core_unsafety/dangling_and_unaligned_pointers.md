@@ -32,7 +32,7 @@ fn safe_pointer_arithmetic() {
 
 Pointer arithmetic, in particular, adding an offset to a pointer via [`add`](https://doc.rust-lang.org/std/primitive.pointer.html#method.add) as shown in the previous example, is useful to create an `unaligned pointer`. We may want to read from an unaligned pointer when, for example, working on a network communication protocol in a memory-constrained context.
 
-Using the `packed` modifier together with `C` *representation*, the order of fields in the layout of a struct as well as lowering the padding between them can be [guaranteed](https://doc.rust-lang.org/reference/type-layout.html#r-layout.repr.alignment.intro). The following code exemplifies the safe use of the unsafe [`std::ptr::read_unaligned`](https://doc.rust-lang.org/std/ptr/fn.read_unaligned.html) function.
+Using the [`packed` modifier](https://doc.rust-lang.org/reference/type-layout.html#r-layout.repr.align-packed) together with [`C` *representation*](https://doc.rust-lang.org/nomicon/other-reprs.html#reprc), the order of fields in the layout of a struct as well as lowering the padding between them can be [guaranteed](https://doc.rust-lang.org/reference/type-layout.html#r-layout.repr.alignment.intro). The following code exemplifies the safe use of the unsafe [`std::ptr::read_unaligned`](https://doc.rust-lang.org/std/ptr/fn.read_unaligned.html) function.
 
 ```rust
 #[repr(C, packed)]
