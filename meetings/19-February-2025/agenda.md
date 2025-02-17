@@ -2,12 +2,13 @@
 
 The second meeting of the Safety Critical Rust Consortium meeting will be held on 19 February 2025 from 9 AM - 4 PM GMT/UTC in London, UK. Below is the proposed agenda. Additional suggestions welcome; please suggest a change or comment on the pull request associated with this agenda item.
 
-- Welcome (@JoelMarcey)
+- Welcome and Meeting Logistics (@JoelMarcey)
 - Consortium Logistics (@JoelMarcey)
   - Membership Moving Forward
   - Public information in the GitHub repo
     - Names and Companies?
   - Welcoming new members
+  - Production of Work
 - Subcommittee Reports
   - Coding Guidelines (@PLeVasseur)
     - Status
@@ -26,12 +27,12 @@ The second meeting of the Safety Critical Rust Consortium meeting will be held o
   - Coding Guidelines (@PLeVasseur)
   - Tooling (@alexandruradovici)
   - Specification (@JoelMarcey)
-- Close (@JoelMarcey)
+- Meeting Close (@JoelMarcey)
   - Post-mortem
     - What worked well?
     - What can be improved?
   - Next meeting
-    - RustConf?
+    - RustConf? Rust NL? Somewhere else?
     
 
 
