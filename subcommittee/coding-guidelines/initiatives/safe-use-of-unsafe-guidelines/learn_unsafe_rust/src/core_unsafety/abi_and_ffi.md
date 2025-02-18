@@ -133,7 +133,7 @@ editions but doesn't change the semantics of subroutine declarations in the `ext
 
 Calling such a subroutine almost works like calling an ordinary function. However, since the Rust compiler cannot know
 whether the called subroutine violates any of the Rust safety guarantees, calling an external subroutine also needs to
-be wrapped in an `unsafe` block, like this:
+be wrapped in an `unsafe` block by default, like this:
 
 ```rust
 let mut complex = Complex { ... };
@@ -143,8 +143,34 @@ let success = unsafe {
 ...
 ```
 
+You can, however, explicitly declare an external function declaration as `safe`, in which case you can call this
+function just like an ordinary Rust function.
+
 Notice that the Rust compiler also checks whether the subroutine signature is compatible with the C language. If a type
-is used which is not supported by C and warns in such a case. It is strongly advisable to rework the signature if such
-an `improper_ctype` warning appears as the chances for undefined behavior are high, and even if the program works in
-a particular version of Rust, this might change any time in case the memory layout of such a type changes due to the
-updated Rust version.
+is used which is not supported by C, the Rust compiler emits a warning. It is strongly advised to rework the signature
+if such an `improper_ctype` warning appears as the chances for undefined behavior are high, and even if the program
+works in a particular version of Rust, this might change any time in case the memory layout of such a type changes due
+to the updated Rust version.
+
+### Offering subroutines to a foreign language
+
+Strictly speaking, this is not really a thing for the Learn Unsafe Rust endeavour since offering a callable over the
+foreign function interface is not unsafe by itself since the Rust compiler can prove the absence of unsafe code _inside_
+Rust code just fine. However, this does not mean that you cannot cause undefined behavior here in the same way this
+happens also for the other direction: If the signatures are not compatible, this will almost ineviatably lead to
+misinterpretation of data and undefined behavior. But since the cause is not on Rust's side, there is no need to mark
+such functions as `unsafe`.
+
+### Shared static data
+
+It is also possible to use static data that has been defined by program parts that have been written in another
+language. Such data is also declared inside an `extern` block, just like foreign functions. However, since they're
+externally defined, they do not need an initializer as it is the responsibility of the foreign translation unit to
+initialize statics before the execution of the program's entry point. Since the compiler cannot verify whether the data
+type definition fits the one from the foreign language, any access to such a static variable is unsafe by default. Just
+like with foreign subroutine, you can also declare such a variable as `safe` so that you can access it just like a Rust
+static variable.
+
+Notice that Rust requires static data to be initialized before _any_ Rust code runs. This is typically fine since any
+static data will, in usual environments, be initialized by code that runs before the actual `main` function is called.
+For C, this is true even if the static does not have an explicit initializer. In this case, the memory is zeroed.
