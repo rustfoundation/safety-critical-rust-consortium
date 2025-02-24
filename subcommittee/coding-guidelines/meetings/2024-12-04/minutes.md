@@ -2,7 +2,7 @@
 
 ## Agenda
 
-1. Acceptance of [Previous Meeting Minutes](../2024-November-19/minutes.md)
+1. Acceptance of [Previous Meeting Minutes](../2024-12-04/minutes.md)
 2. Open a discussion on timelines/milestones for goals (Pete LeVasseur)
 3. `unsafe` Practicum Chapter Task Force - progress report (Pete LeVasseur)
 4. `unsafe` Docs Review Task Force - progress report (Pete LeVasseur)
