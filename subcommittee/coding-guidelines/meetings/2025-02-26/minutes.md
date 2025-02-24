@@ -43,6 +43,7 @@ Any material to read before the meeting should be included here.
 ### GitHub Project Board for Work Items
 
 * [Work Item Board](https://github.com/orgs/rustfoundation/projects/1)
+* [Coding guidelines published](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/188#issue-2869798433): Proposes a way of work to tackle the coding guidelines
 
 ### Tracking Issues
 
