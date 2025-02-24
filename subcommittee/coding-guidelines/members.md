@@ -32,4 +32,5 @@
 | Abir Abbas              | Individual                             | Producer                    | @mdabir1203        |
 | Arthur Hicken           | Parasoft                               | Producer                    | @codecurmudgeon    |
 | Espen Halsaa Albrektsen | Sonair AS                              | Observer                    | @espenalb          |
+| Koppany Pazman          | HighTec                                | Observer                    | @pazmank           |
 
