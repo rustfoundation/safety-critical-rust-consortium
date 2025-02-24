@@ -16,15 +16,15 @@ Subcommittee has worked on fleshing out Learn unsafe Rust as a means to work tog
 
 We came out of the consortium meeting with a clear mandate for prioritization of work in the following fashion:
 
-| Activity | Priority (P0 \= higher, P3 \= lower) | Rationale |
-| :---- | :---- | :---- |
-| Coding Guidelines | P0 | Blocker for some organizations to adoption |
-| Coding Guidelines Standards Matrix and Rationale | P0 | Blocker for some organizations to adoption |
-| Useful safe patterns, e.g. compile-time deadlock prevention | P1 | Practical ways to make Rust code more suitable to safety-critical are great to share |
-| “Decoder ring” pamphlet between safety-critical and Rust communities | P2 | “Safe” between safety-critical and Rust can mean different things and can lead to confusion |
-| How-to on edge cases, e.g. C++ exceptions over FFI, panic unwinding | P3 | Less (or not) documented issues that may come up and be challenging to solve if unaware |
-| Learn unsafe Rust contributions | P3 | Useful hands-on material to use if stuck in an edge case where unsafe is needed. Unsafe comes up fairly often in safety-critical and embedded. |
-
+| Activity                                                             | Priority (P0 = higher, P3 = lower) | Rationale                                                                                                                                      |
+|----------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Coding Guidelines                                                    | P0                                 | Blocker for some organizations to adoption                                                                                                     |
+| Coding Guidelines Standards Matrix and Rationale                     | P0                                 | Blocker for some organizations to adoption                                                                                                     |
+| Review and consider use case for MISRA draft of guidelines for Rust  | P0                                 | Existing material in draft status can be a good starting point for many organizations                                                          |
+| Useful safe patterns, e.g. compile-time deadlock prevention          | P1                                 | Practical ways to make Rust code more suitable to safety-critical are great to share                                                           |
+| “Decoder ring” pamphlet between safety-critical and Rust communities | P2                                 | “Safe” between safety-critical and Rust can mean different things and can lead to confusion                                                    |
+| How-to on edge cases, e.g. C++ exceptions over FFI, panic unwinding  | P3                                 | Less (or not) documented issues that may come up and be challenging to solve if unaware                                                        |
+| Learn unsafe Rust contributions                                      | P3                                 | Useful hands-on material to use if stuck in an edge case where unsafe is needed. Unsafe comes up fairly often in safety-critical and embedded. |
 # Action Items
 
 The below action items came out of our discussions. Marking these as all the responsibility of Pete LeVasseur to either complete or delegate.
