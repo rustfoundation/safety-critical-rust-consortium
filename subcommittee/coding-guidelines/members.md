@@ -34,4 +34,5 @@
 | Espen Halsaa Albrektsen | Sonair AS                              | Observer                    | @espenalb          |
 | Koppany Pazman          | HighTec                                | Observer                    | @pazmank           |
 | Nadhmi JAZI             | Ampere Software Technology             | Observer                    | @jazi007           |
+| Felix Gilcher           | Ferrous Systems                        | Producer                    | @Xylakant          |
 
