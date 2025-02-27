@@ -453,7 +453,7 @@ hardware. It's a targeting issue.
 Supporting specific triples (host-target-os) is a thing that can be supported
 and developed on a vendor basis.
 
-Espresso has not been merged upstream yet; you can't just use the regular
+Espressif has not been merged upstream yet; you can't just use the regular
 toolchain yet.
 
 Open Q: What are the artifacts?
