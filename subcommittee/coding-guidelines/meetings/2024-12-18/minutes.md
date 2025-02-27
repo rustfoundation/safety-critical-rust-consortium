@@ -2,7 +2,7 @@
 
 ## Agenda
 
-1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2024-December-04/minutes.md)  
+1. Acceptance of [Previous Meeting Minutes](../2024-12-04/minutes.md)  
 2. `unsafe` Docs Review Task Force \- progress report (Pete LeVasseur)  
 3. `unsafe` Practicum Chapter Task Force \- progress report (Pete LeVasseur)  
 4. Round table

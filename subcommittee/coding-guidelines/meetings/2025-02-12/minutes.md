@@ -2,7 +2,7 @@
 
 ## Agenda
 
-1. Acceptance of [Previous Meeting Minutes](../2025-January-29/minutes.md)
+1. Acceptance of [Previous Meeting Minutes](../2025-01-29/minutes.md)
 2. Consortium report (Pete LeVasseur)
   * Work items
   * Status
