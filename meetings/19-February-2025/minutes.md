@@ -41,6 +41,7 @@
 - Zsolt Szépes
 - Samuel Tardieu
 - Celina Val
+- Alexandru Vochescu
 - Jonas Wolf
 
 ## Set up / opening discussion
