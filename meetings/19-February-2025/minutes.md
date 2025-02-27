@@ -6,6 +6,43 @@
 | [decision]  | Something decided on |
 | [important] | Key information      |
 
+## Attendees
+
+- Tony Aiello
+- Pietro Albini
+- Espen Albrektsen
+- Cristiana Andrei
+- Yuri Astrakhan
+- Monadic Cat
+- Alex Celeste
+- Xander Cesari
+- Sarah Dietrich
+- Scott Enow
+- Arnaud Fontaine
+- Felix Gilcher
+- Julius Gustavsson
+- Arthur Hicken
+- Markus Hosch
+- Takeo Kondo
+- Pete LeVasseur
+- Joel Marcey
+- Jordan McQueen
+- Drew Miller
+- Benjamin Monate
+- Walter Pearce
+- Joni Pelham
+- Christof Petig
+- Sasha Pourcelot
+- Koppany Pozman
+- Samuel Preston
+- Alexandru Radovici
+- Dan Slipper
+- Tyler Stevens
+- Zsolt Szépes
+- Samuel Tardieu
+- Celina Val
+- Jonas Wolf
+
 ## Set up / opening discussion
 
 Start time: 9:30am
