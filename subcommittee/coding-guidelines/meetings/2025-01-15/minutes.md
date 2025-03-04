@@ -2,7 +2,7 @@
 
 ## Agenda
 
-1. Acceptance of [Previous Meeting Minutes](../2024-December-18/minutes.md)
+1. Acceptance of [Previous Meeting Minutes](../2024-12-18/minutes.md)
 2. Discuss organizing the `unsafe` topics we cover to be able to form a chapter per person for Learn unsafe Rust (Pete LeVasseur)
 3. Distinction in work items for `unsafe` and other safety-critical topics (Andrew Fernandes)
 4. `unsafe` Docs Review Task Force - progress report (Pete LeVasseur)
