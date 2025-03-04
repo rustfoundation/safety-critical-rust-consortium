@@ -1,8 +1,10 @@
-# Safety-Critical Rust Consortium Report
+# Safety-Critical Rust Consortium Report from Coding Guidelines Subcommittee
 
-## Coding Guidelines Subcommittee
+Date: Feb 19, 2025
 
-Feb 19, 2025
+Location: London, UK
+
+_Note_: This is a coding guidelines-specific report out from our group. For more detailed, consortium-wide notes please see these excellent [notes and summary](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/meetings/19-February-2025).
 
 # Executive Summary
 
