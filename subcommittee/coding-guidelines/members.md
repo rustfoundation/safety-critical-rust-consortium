@@ -33,6 +33,7 @@
 | Arthur Hicken           | Parasoft                               | Producer                    | @codecurmudgeon    |
 | Espen Halsaa Albrektsen | Sonair AS                              | Observer                    | @espenalb          |
 | Koppany Pazman          | HighTec                                | Observer                    | @pazmank           |
+| Joni Pelham             | Cranfield University                   | Producer                    | @jonititan         |
 | Nadhmi JAZI             | Ampere Software Technology             | Observer                    | @jazi007           |
 | Felix Gilcher           | Ferrous Systems                        | Producer                    | @Xylakant          |
 | Lukas Wirth             | Ferrous Systems                        | Producer                    | @Veykril           |
