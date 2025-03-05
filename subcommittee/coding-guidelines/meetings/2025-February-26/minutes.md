@@ -1,3 +1,68 @@
+# Coding Guidelines Subcommittee Meeting on 2025-02-26 @ 3pm UTC
+
+| Search Key  | Description          |
+|-------------|----------------------|
+| [todo]      | Action Item          |
+| [decision]  | Something decided on |
+| [important] | Key information      |
+
+## Attendees
+
+* Koppany Pazman  
+* Pete LeVasseur, 🤒  
+* Alexandru Radovici 🙂  
+* Espen Albrektsen 🙂  
+* Andrew Fernandes ☕️  
+* Douglas Deslauriers 🙂  
+* Oreste Bernardi  
+* Sarah Dietrich 🙂  
+* Julius Gustavsson 🤧   
+* Alexandru Vochescu  🙂  
+* Christof Petig 😪  
+* Monadic Cat 😸  
+* Arthur Hicken 🙃  
+* Joel Marcey 🥱
+
+## Agenda
+
+1. Acceptance of [Previous Meeting Minutes](https://docs.google.com/document/d/1lIZpx-fB-G_3B_E4_X6-Rj1IpjGHw4VaeVZ3vruFSbc/edit?tab=t.0#heading=h.whcij9ekv763)  
+2. Housekeeping \- No recordings, no AI transcriptions, use Chatham House Rule for notes, limit invites to members (Pete)  
+3. `unsafe` Formulate Chapter Material Task Force \- report ([Markus](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/182), [Jonas](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/148), [Pete](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/154))  
+4. `unsafe` Practicum Chapter Task Force \- report (Joni)  
+5. Safety Pamphlet \- progress (Andrew Fernandes)  
+6. GitHub board walkthrough \- prioritization, way of work, wrap-up of Learn unsafe Rust contributions (Pete)  
+7. Round table
+
+Supplemental material to the agenda can be found on the [GitHub repo](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines).
+
+
+**Notetaker:**
+
+* Espen Albrektsen
+
+## Housekeeping section
+
+* Document space: [coding-guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)  
+* Zulip: [safety-critical-consortium: Coding Guidelines](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium/topic/Coding.20Guidelines)  
+* [Work Item Board](https://github.com/orgs/rustfoundation/projects/1)
+
+
+
+## Material
+
+Any material to read before the meeting should be included here.
+
+### GitHub Project Board for Work Items
+
+* [Work Item Board](https://github.com/orgs/rustfoundation/projects/1)  
+* [Coding guidelines published](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/188#issue-2869798433): Proposes a way of work to tackle the coding guidelines
+
+### Tracking Issues
+
+* [\[Coding Guidelines\] Learn unsafe Rust \- Practicum Chapter Draft](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/122)  
+* [\[Coding Guidelines\] Formulate Chapter Material for Learn unsafe Rust](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/123)
+
+
 ## Meeting Minutes
 
 * Acceptance of previous meeting minutes  
@@ -24,14 +89,14 @@
   * Intrinsics  
     * Some work done, teaching material needs work.   
     * Currently a guideline, explaining where to find intrinsics, will be reoriented to become teaching material  
-  *   
+
 * `unsafe` Practicum Chapter Task Force \- report (Joni)  
   * Intro chapter to learn unsafe Rust  
   * Author not in call, so no update  
-  * **TODO:** Pete \- follow up offline  
+  * [todo] Pete \- follow up offline  
 * Safety Pamphlet \- progress (Andrew Fernandes)  
   * Thinking has been done, not so much writing  
-  * unsafe as Rust keyword vs unsafe as “don’t do this” vs Safgety Critical  
+  * unsafe as Rust keyword vs unsafe as “don’t do this” vs Safety Critical  
   * DO-178 goes to lengths to reiterate that this is *not* a safety critical standard \- it only lists objectives  
   * Struggling to decide how to map the objective to Rust guidelines  
   * Round the table  
@@ -62,7 +127,7 @@
   * XL issues will need to broken into smaller chunks. Work will be tracked on smaller work items.  
   * Current prioritization makes sense and was approved  
   * [https://github.com/rustfoundation/safety-critical-rust-consortium/issues/188](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/188)   
-    * Plan is to start with the Rust lang book \- then add safety guidelines for each chapter in the language book  
+    * [decision] Plan is to start with the Rust lang book \- then add safety guidelines for each chapter in the language book  
       * Goal is not to make it certifiable \- but to make it a starting point for someone in the industry to use the guidelines as a start point for certification arguments  
       * Need to be careful of not restricting the language *to* much  
       * Need to communicate intent \- that some feature is not recommended for safety, it can still be perfectly good in a “normal” application  
@@ -90,7 +155,7 @@
 
 **Action items:**
 
-- Pete \- follow up offline on “`unsafe` Practicum Chapter Task Force \- report (Joni”  
-- Pete \- break down XL issue \#188 into smaller issues.  
+- [todo] Pete \- follow up offline on “`unsafe` Practicum Chapter Task Force \- report (Joni)”  
+- [todo] Pete \- break down XL issue \#188 into smaller issues.  
   Then Zulip request votes on most important / painful topics  
   Initial list create by Pete, everyone can add
