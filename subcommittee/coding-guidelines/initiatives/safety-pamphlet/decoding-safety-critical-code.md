@@ -54,7 +54,7 @@ These standards often require rigorous development processes, documentation, tes
 
 ### Case Study: Avionics
 
-When reading the comparatively short DO-178C / ED-12C guidance document — a mere 144 pages, including all front and back matter! — it is notable just _how much_ of the document deals with verification. Considerable effort is spent detailing the combination of reviews, analysis, and testing required to formally demonstrate that the output of each mandated software lifecycle process is correct with respect to its input. Specifically, of the 71 objectives required to be met for the highest assurance level,  Level “A”, 43 objectives apply to verification alone, regardless of what defensive programming strategies are employed.
+When reading the comparatively short DO-178C / ED-12C guidance document — a mere 144 pages, including all front and back matter! — it is notable just _how much_ of the document deals with verification. Considerable effort is spent detailing the combination of reviews, analysis, and testing required to formally demonstrate that the output of each mandated software lifecycle process is correct with respect to its input. Specifically, of the 71 objectives required to be met for the highest assurance level, Level “A”, 43 objectives apply to verification alone, regardless of what defensive programming strategies are employed.
 
 For this reason, DO-178C / ED-12C is sometimes called a “correctness” standard rather than a “safety standard” because “safety-critical” assurance is achieved by having confidence that the software meets its detailed and complete requirements. Indeed, from DO-178C, Section 2.3, Page 12:
 
