@@ -11,7 +11,7 @@ To be explicit, there are _multiple_ concepts that can be easily conflated:
 
 ## Unsafe Code
 
-For example, despite the fear-inducing label and _unlike_ other languages such as C or C++, `unsafe` Rust [_cannot_ cause undefined behavior](https://doc.rust-lang.org/std/keyword.unsafe.html#unsafe-abilities). In fact, to a first-order approximation, the the unsafe superset of safe Rust has only three main extra abilities:
+For example, despite the fear-inducing label and _unlike_ other languages such as C or C++, `unsafe` Rust [_cannot_ cause undefined behavior](https://doc.rust-lang.org/std/keyword.unsafe.html#unsafe-abilities). In fact, to a first-order approximation, the unsafe superset of safe Rust has only three main extra abilities:
 
 * the ability to dereference raw pointers,
 * the ability to mutate global variables, and
