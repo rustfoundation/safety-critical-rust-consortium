@@ -3,11 +3,13 @@
 ## Agenda
 
 1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-January-29/minutes.md)  
-1. Review proposal(s) for coding guidelines against requirements (Pete, others?)
-1. `unsafe` Formulate Chapter Material Task Force \- report (Markus, Jonas, Pete)  
-1. `unsafe` Practicum Chapter Task Force \- report (Joni)  
-1. Safety Pamphlet \- progress (Andrew Fernandes)  
-1. Round table
+2. Review proposal(s) for coding guidelines against requirements (Pete, others?)
+3. Proposal to modify Ferrocene Language Specification with paragaph IDs thatre tied to content hash (Pete)
+4. Proposal to have upstreamed Ferrocene Language Specification with t-spec have paragaph IDs that are tied to content hash (Pete)
+5. `unsafe` Formulate Chapter Material Task Force \- report (Markus, Jonas, Pete)  
+6. `unsafe` Practicum Chapter Task Force \- report (Joni)  
+7. Safety Pamphlet \- progress (Andrew Fernandes)  
+8. Round table
 
 Supplemental material to the agenda can be found on the [GitHub repo](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines).
 
