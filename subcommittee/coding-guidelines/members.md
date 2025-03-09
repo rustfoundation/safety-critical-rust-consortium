@@ -36,4 +36,5 @@
 | Nadhmi JAZI             | Ampere Software Technology             | Observer                    | @jazi007           |
 | Felix Gilcher           | Ferrous Systems                        | Producer                    | @Xylakant          |
 | Lukas Wirth             | Ferrous Systems                        | Producer                    | @Veykril           |
+| Joni Pelham             | Individual                             | Producer                    | @jonititan         |
 
