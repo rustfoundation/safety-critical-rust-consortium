@@ -5,10 +5,11 @@
 1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-January-29/minutes.md)  
 2. Review proposal(s) for coding guidelines against requirements (Pete, others?)
 3. Proposal to ensure upstreamed Ferrocene Language Specification with t-spec keeps paragraph-ids.json with paragraph IDs tied to content hashes (Pete)
-4. `unsafe` Formulate Chapter Material Task Force \- report (Markus, Jonas, Pete)  
-5. `unsafe` Practicum Chapter Task Force \- report (Joni)  
-6. Safety Pamphlet \- progress (Andrew Fernandes)  
-7. Round table
+4. MISRA C Addendum 6 (Rust) Brief (Alex)
+5. `unsafe` Formulate Chapter Material Task Force \- report (Markus, Jonas, Pete)  
+6. `unsafe` Practicum Chapter Task Force \- report (Joni)  
+7. Safety Pamphlet \- progress (Andrew Fernandes)  
+8. Round table
 
 Supplemental material to the agenda can be found on the [GitHub repo](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines).
 
