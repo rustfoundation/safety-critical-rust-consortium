@@ -25,7 +25,7 @@
 
 ## Agenda
 
-1. Acceptance of [Previous Meeting Minutes](https://docs.google.com/document/d/1lIZpx-fB-G_3B_E4_X6-Rj1IpjGHw4VaeVZ3vruFSbc/edit?tab=t.0#heading=h.whcij9ekv763)  
+1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-02-12/minutes.md)  
 2. Housekeeping \- No recordings, no AI transcriptions, use Chatham House Rule for notes, limit invites to members (Pete)  
 3. `unsafe` Formulate Chapter Material Task Force \- report ([Markus](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/182), [Jonas](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/148), [Pete](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/154))  
 4. `unsafe` Practicum Chapter Task Force \- report (Joni)  
