@@ -19,9 +19,53 @@ In fact, to a [first-order approximation](https://doc.rust-lang.org/nomicon/what
 * the ability to mutate global variables, and
 * the ability to access fields of `union` types.
 
-Note that none of these are generally considered "unsafe" in other languages, even if they are considered "unwise" or indicative of poor programming practices, and may be unavoidably necessary such as accessing low-level hardware registers in embedded programming.
+Note that none of these are generally considered "unsafe" in other languages, even if they are considered "unwise" or indicative of poor programming practices, and may be **unavoidably necessary**, for example such as accessing low-level hardware registers in embedded programming. Consider the following _common_ embedded idiom for setting a low-level MCU clock peripheral in "C":
 
-In fact, by carefully encapsulating raw pointer dereferencing, the `unsafe` keyword allows Rust to manipulate raw peripheral memory with abstractions that provide [**strong static guarantees**](https://docs.rust-embedded.org/book/static-guarantees/index.html), making encapsulated-unsafe Rust _far safer_ --- meaning "less bug prone" --- than other programming languages.
+```c
+void
+da1469x_clock_sys_xtal32m_init(void)
+{
+    uint32_t reg;
+    int xtalrdy_cnt;
+
+    /* Number of lp_clk cycles (~30.5us) */
+    xtalrdy_cnt = MYNEWT_VAL(MCU_CLOCK_XTAL32M_SETTLE_TIME_US) * 10 / 305;
+
+    reg = CRG_XTAL->XTALRDY_CTRL_REG;
+    reg &= ~(CRG_XTAL_XTALRDY_CTRL_REG_XTALRDY_CLK_SEL_Msk |
+             CRG_XTAL_XTALRDY_CTRL_REG_XTALRDY_CNT_Msk);
+    reg |= xtalrdy_cnt;
+    CRG_XTAL->XTALRDY_CTRL_REG = reg;
+}
+```
+
+Preprocessor macros, definitions, and manual `u32` bit-masking and -shifting are common patterns, and in the "C" world are usually _not_ considered unsafe.
+
+In fact, by carefully encapsulating raw pointer dereferencing, the `unsafe` keyword allows Rust to manipulate raw peripheral memory with abstractions that provide [**strong static guarantees**](https://docs.rust-embedded.org/book/static-guarantees/index.html), making encapsulated-unsafe Rust _far safer_ --- meaning "less bug prone" --- than other programming languages. For example, in Rust, a completely type-safe and _zero-cost_ similar abstraction could be written as:
+
+```rust
+fn apply_config(&self) {
+    let c = T::regs().config();
+    match &self.master_clock {
+        Some(MasterClock { freq, ratio }) => {
+            c.mode().write(|w| w.set_mode(vals::Mode::MASTER));
+            c.mcken().write(|w| w.set_mcken(true));
+            c.mckfreq().write(|w| w.set_mckfreq(freq.to_register_value()));
+            c.ratio().write(|w| w.set_ratio(ratio.to_register_value()));
+        }
+        None => {
+            c.mode().write(|w| w.set_mode(vals::Mode::SLAVE));
+        }
+    };
+
+    c.swidth().write(|w| w.set_swidth(self.config.sample_width.into()));
+    c.align().write(|w| w.set_align(self.config.align.into()));
+    c.format().write(|w| w.set_format(self.config.format.into()));
+    c.channels().write(|w| w.set_channels(self.config.channels.into()));
+}
+```
+
+
 
 ## Safety-Critical Code
 
@@ -41,7 +85,7 @@ Here's a small sampling of some of the more common software standards that addre
   - ISO 26262 --- This standard is specifically for functional safety in road vehicles. It addresses the safety of electrical and electronic systems within automobiles.
   - ISO / SAE 21434 --- A cybersecurity standard jointly developed by [ISO](https://en.wikipedia.org/wiki/ISO) and [SAE](https://en.wikipedia.org/wiki/SAE_International) working groups that proposes cybersecurity measures for the development lifecycle of road vehicles.
   - AUTOSAR (AUTomotive Open System ARchitecture) --- an industry development partnership that develops and establishes an open and standardized software architecture for automotive electronic control units.
-  - MISRA (Motor Industry Software Reliability Association) --- an organization that produces guidelines for the software developed for electronic components used in the automotive industry.
+  - MISRA (Motor Industry Software Reliability Association) --- an organization that produces guidelines for the software developed for electronic components used in the automotive industry, but has been widely adopted in other industries, both formally and informally, as well.
 - **Aerospace**
   - DO-178C / ED-12C --- The primary document by which the certification authorities such as [FAA](https://en.wikipedia.org/wiki/Federal_Aviation_Administration), [EASA](https://en.wikipedia.org/wiki/European_Aviation_Safety_Agency) and [Transport Canada](https://en.wikipedia.org/wiki/Transport_Canada) approve all commercial software-based aerospace systems.
   - DO-330 --- Describes how the tools _used_ to comply with DO-178C / ED-12C must be developed.
@@ -62,3 +106,7 @@ For this reason, DO-178C / ED-12C is sometimes called a "correctness" standard r
 
 > Development of software to a software [design assurance] level does not imply the assignment of a failure rate for that software. Thus, software reliability rates based on software levels cannot be
 > used by the system safety assessment process in the same way as hardware failure rates.
+
+## Recommendations
+
+==TO DO==
