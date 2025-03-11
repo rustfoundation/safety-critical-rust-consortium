@@ -104,8 +104,46 @@ When reading the comparatively short DO-178C / ED-12C guidance document --- a me
 
 For this reason, DO-178C / ED-12C is sometimes called a "correctness" standard rather than a "safety standard" because "safety-critical" assurance is achieved by having confidence that the software meets its detailed and complete requirements. Indeed, from DO-178C, Section 2.3, Page 12:
 
-> Development of software to a software [design assurance] level does not imply the assignment of a failure rate for that software. Thus, software reliability rates based on software levels cannot be
-> used by the system safety assessment process in the same way as hardware failure rates.
+> Development of software to a software [design assurance] level does not imply the assignment of a failure rate for that software. Thus, software reliability rates based on software levels cannot be used by the system safety assessment process in the same way as hardware failure rates.
+
+Taken _very_ informally, the chain of thought is that software will be "safe" if:
+
+* the software behaves as designed, but...
+* the design has to be _thorough_ and _extremely complete_, and
+* that means _really, really_ tested in ways that _try hard_ to break it, and
+* all of this must be _thoroughly_ documented and _traceable_.
+
+For example, consider a common event in non-Rust languages: and invalid memory access that causes a bus fault and inadvertent CPU reset. Following the chain of thought above, we would:
+
+* require that the software have "no unintentional restarts" --- a high level requirement
+* enumerate all the things that can cause a restart, in this case, a bus fault
+* determine all the things that can cause a bus fault --- one of them being an invalid memory access
+* require defensive programming techniques to make invalid memory accesses difficult or impossible to write
+* depending on the criticality level of the software, verify that the machine code matches the high-level language specification
+* at every requirement, at every level, write positive- and negative- behavior tests to show the requirements are complete, necessary and sufficient
+
+Notice that "safe" _does not appear in the above_. The code is "safe" as a _side-effect_ of "most definitely" conforming to a "very complete and thorough" set of specifications and requirements.
+
+That's a very different view of "safety" than commonly assumed!
+
+#### Not Necessarily Straightforward
+
+A last bit of emphasis regarding how important a technically-precise definition of "safety-critical" is, suppose by heroic and thorough work we had proven that our software, from the machine-code level on up, precisely matched specification, and those specifications were complete beyond reproach. No execution path unaccounted for! All possible control flows mapped and tested! We have achieved full safety criticality, right?
+
+Right?
+
+Not necessarily.
+
+At this point we may indeed have proven that unintended behavior of our software is impossible.
+
+But what if there is a very rare, undocumented and unknown but in the CPU hardware that is rarely or sporadically triggered? What if it's in the CPU low-level hardware design? Or perhaps we just got unlucky and it was a manufacturing defect in that one piece of silicon? Or perhaps just a stray [cosmic ray](https://en.wikipedia.org/wiki/Cosmic_ray#Effect_on_electronics) was at the wrong place at the wrong time?
+
+At the highest levels of criticality, "safety-critical" coding practices might be summarized as:
+
+* write software such that "surprising" things are impossible, but
+* handle the impossible cases too... just in case.
+
+Always remembering that ["dead code" should usually be removed](https://stackoverflow.com/a/15700228)... _(but that's a discussion worthy of a separate, new discussion all on its own...)_
 
 ## Recommendations
 
