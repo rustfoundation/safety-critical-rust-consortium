@@ -126,7 +126,7 @@ Notice that "safe" _does not appear in the above_. The code is "safe" as a _side
 
 That's a very different view of "safety" than commonly assumed!
 
-#### Not Necessarily Straightforward
+### Not Necessarily Straightforward
 
 A last bit of emphasis regarding how important a technically-precise definition of "safety-critical" is, suppose by heroic and thorough work we had proven that our software, from the machine-code level on up, precisely matched specification, and those specifications were complete beyond reproach. No execution path unaccounted for! All possible control flows mapped and tested! We have achieved full safety criticality, right?
 
@@ -134,9 +134,11 @@ Right?
 
 Not necessarily.
 
-At this point we may indeed have proven that unintended behavior of our software is impossible.
+At this point we **may** indeed have "proven" that unintended behavior of our software is "impossible".
 
-But what if there is a very rare, undocumented and unknown but in the CPU hardware that is rarely or sporadically triggered? What if it's in the CPU low-level hardware design? Or perhaps we just got unlucky and it was a manufacturing defect in that one piece of silicon? Or perhaps just a stray [cosmic ray](https://en.wikipedia.org/wiki/Cosmic_ray#Effect_on_electronics) was at the wrong place at the wrong time?
+But what if there is a very rare, undocumented and unknown but in the CPU hardware that is rarely or sporadically triggered? What if the bug is in the CPU low-level hardware design? Or perhaps we just got unlucky and it was a manufacturing defect in that affects only one (our) piece of silicon? Or perhaps just a stray [cosmic ray](https://en.wikipedia.org/wiki/Cosmic_ray#Effect_on_electronics) was at the wrong place at the wrong time?
+
+Although they are "hardware" events, our software may indeed need to handle these types of issues _even if the hardware follows its own hardware-specific "safety-critical" standards!_
 
 At the highest levels of criticality, "safety-critical" coding practices might be summarized as:
 
@@ -147,4 +149,6 @@ Always remembering that ["dead code" should usually be removed](https://stackove
 
 ## Recommendations
 
-==TO DO==
+* Always keep in mind the _specific_ definitions of "unsafe" and "safety-critical" that you're working with
+* Remember that "safety-critical" coding doesn't _have_ to be a bad experience... but it probably will be "thorough"
+* Your tools can greatly help or hinder you meeting functional or documentation or verification goals, and this is one of the areas that Rust strives to be firmly on the "good helper" side
