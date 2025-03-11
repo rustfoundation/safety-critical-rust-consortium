@@ -1,4 +1,4 @@
-# Coding Guidelines Subcommittee Meeting on 2025-02-26 @ 3pm UTC
+# Coding Guidelines Subcommittee Meeting on 2025-03-12 @ 3pm UTC
 
 ## Agenda
 
