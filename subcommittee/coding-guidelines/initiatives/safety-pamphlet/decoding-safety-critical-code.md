@@ -113,7 +113,7 @@ Taken _very_ informally, the chain of thought is that software will be "safe" if
 * that means _really, really_ tested in ways that _try hard_ to break it, and
 * all of this must be _thoroughly_ documented and _traceable_.
 
-For example, consider a common event in non-Rust languages: and invalid memory access that causes a bus fault and inadvertent CPU reset. Following the chain of thought above, we would:
+For example, consider a common event in non-Rust languages: an invalid memory access that causes a bus fault and inadvertent CPU reset. Following the chain of thought above, we would:
 
 * require that the software have "no unintentional restarts" --- a high level requirement
 * enumerate all the things that can cause a restart, in this case, a bus fault
