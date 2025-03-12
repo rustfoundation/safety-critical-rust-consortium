@@ -17,11 +17,25 @@ Supplemental material to the agenda can be found on the [GitHub repo](https://gi
 
 **Please add your name, and an emoji that describes your day.**
 
-* 
+* Pete LeVasseur, 😄
+* Andrew Fernandes (way more awake)
+* Oreste Bernardi 😴
+* Alexandru Vochescu 😴
+* Douglas Deslauriers 🙂
+* Alex Celeste 🥱
+* Julius Gustavsson 🙂
+* Marc Schoolderman 😶‍🌫️
+* Walter Pearce (Rust Foundation) 👾
+* Fernando Jose 🤓
+* Sarah Dietrich 😀
+* Christof Petig 🙂
+* Koppany Pazman
+* Andrew Herridge 😀
+* Sasha Pourcelot ☕
 
 **Notetaker:**
 
-* 
+* Fernando
 
 ## Housekeeping section
 
@@ -35,7 +49,33 @@ Supplemental material to the agenda can be found on the [GitHub repo](https://gi
 
 ## Meeting Minutes
 
-* 
+1. [Previous meeting minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-02-26/minutes.md) accepted without further discussion after mentioning a few of its main topics.
+1. Review coding guidelines proposals
+* Way of working of the guidelines. What are the goals? What are the requirements from the tooling subcommittee?
+* PL opened [an initial proposal](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/226) with the intention of gathering feedback:
+  * It uses Sphinx and Sphinx-Needs.
+  * Demo walk-through: the build generates doctrees and build directories.
+    * .html with organization of the coding guidelines into chapters mapping how it’s done in Ferrocene.
+    * We look into the Types and Traits (source in src/coding-guidelines/types-and-traits.rst) as an example.
+    * Breakdown of the guideline, box with description, status, fls link. "child" requirements, bad and good examples, etc. 
+    * Questions about this output?
+      * Oreste asks about the link on top of the guideline and wonders if there could be a more human-friendly ID as in MISRA (in the case of the Types and Traits example it looks like gui\_xztNdXA...).
+      * Andrew raises the argument that making them more human-friendly increases the chances the IDs would collide (e.g. also when searching for them online).
+      * Stability of this ID is discussed when taking into account it may also come from a checksum. Having it as a checksum is good for differentiating when the guideline evolves and tools may be implementing or supporting different versions of it.
+1. Guidelines discussions / round table
+* Following-up an example about usage of unwrap, Oreste asks how guidelines should cross-reference each other, considering if overlap.
+* Andrew suggests to refrain from rules that prohibit some usage.
+* Following MISRA's way of organizing, different "enforcement" levels may help to organize these use cases. A rule may be required via automatic tool, or via review, another rule recommended.
+  * On the one hand, there’s a risk that the guidelines become a template to be modified. That would oppose a goal of becoming a set of guidelines to aim to comply with.
+  * On the other hand, having broader scope would welcome more users.
+* Alex refers to [MISRA's compliance open document](https://misra.org.uk/app/uploads/2021/06/MISRA-Compliance-2020.pdf). 
+1. Chapter selection for initial guidelines [GH issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/188):
+* DRI for unsafety: Andrew
+  * Contributing: Jonas, Julius, Oreste
+* DRI for concurrency: Jonas
+  * Contributing: Andrew
+* DRI for macros: Pete
+  * Contributing: Oreste, Julius
 
 ## Material
 
