@@ -136,7 +136,7 @@ Not necessarily.
 
 At this point we **may** indeed have "proven" that unintended behavior of our software is "impossible".
 
-But what if there is a very rare, undocumented and unknown but in the CPU hardware that is rarely or sporadically triggered? What if the bug is in the CPU low-level hardware design? Or perhaps we just got unlucky and it was a manufacturing defect in that affects only one (our) piece of silicon? Or perhaps just a stray [cosmic ray](https://en.wikipedia.org/wiki/Cosmic_ray#Effect_on_electronics) was at the wrong place at the wrong time?
+But what if there is a very rare, undocumented and unknown bug in the CPU hardware that is rarely or sporadically triggered? What if the bug is in the CPU low-level hardware design? Or perhaps we just got unlucky and it was a manufacturing defect in that affects only one (our) piece of silicon? Or perhaps just a stray [cosmic ray](https://en.wikipedia.org/wiki/Cosmic_ray#Effect_on_electronics) was at the wrong place at the wrong time?
 
 Although they are "hardware" events, our software may indeed need to handle these types of issues _even if the hardware follows its own hardware-specific "safety-critical" standards!_
 
