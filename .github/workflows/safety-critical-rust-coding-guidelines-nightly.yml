@@ -7,12 +7,6 @@ on:
   # Optional: Allow manual triggering for testing
   workflow_dispatch:
   # Temporary - remove before merging
-  push:
-    paths:
-      - 'subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/**'
-  pull_request:
-    paths:
-      - 'subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/**'
 
 jobs:
   trigger-build:
