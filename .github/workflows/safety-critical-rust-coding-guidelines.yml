@@ -53,6 +53,6 @@ jobs:
         if: always()
         with:
           name: build-logs
-          path: subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/
+          path: subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/build
           retention-days: 7
           compression-level: 6  # Default compression level for a good balance of speed and size
