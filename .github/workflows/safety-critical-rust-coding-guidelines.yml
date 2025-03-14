@@ -35,7 +35,7 @@ jobs:
             echo "=== ERROR DETAILS ==="
             
             # Check for the Sphinx temp error file reference and extract it if present
-            TEMP_ERROR_FILE=$(grep -o '/tmp/sphinx-err-[^ ]*\.log' logs/build.log | head -1)
+            TEMP_ERROR_FILE=$(grep -o '/tmp/sphinx-err-[^ ]*\.log' build/build.log | head -1)
             if [ ! -z "$TEMP_ERROR_FILE" ] && [ -f "$TEMP_ERROR_FILE" ]; then
               echo "==== SPHINX DETAILED TRACEBACK START ===="
               cat "$TEMP_ERROR_FILE"
