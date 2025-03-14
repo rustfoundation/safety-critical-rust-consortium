@@ -1,0 +1,18 @@
+[project]
+name = "safety-critical-rust-coding-guidelines"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "builder",
+    "sphinx>=8.2.3",
+    "sphinx-needs>=5.1.0",
+    "sphinx-rtd-theme>=3.0.2",
+]
+
+[tool.uv.workspace]
+members = ["builder"]
+
+[tool.uv.sources]
+builder = { workspace = true }
