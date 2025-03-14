@@ -1,0 +1,58 @@
+name: Build Safety-Critical Rust Coding Guidelines
+
+on:
+  push:
+    paths:
+      - 'subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/**'
+  pull_request:
+    paths:
+      - 'subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          export PATH="/root/.cargo/bin:$PATH"
+          uv --version
+
+      - name: Build documentation
+        working-directory: subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines
+        run: |
+          mkdir -p build
+          ./make.py 2>&1 | tee build/build.log
+
+          # Check for a wide range of error indicators in the log
+          if grep -q -E "Traceback" build/build.log; then
+            echo "::error::Build errors detected in log"
+            
+            # Extract error contexts and annotate them in the GitHub Actions UI
+            echo "=== ERROR DETAILS ==="
+            
+            # Check for the Sphinx temp error file reference and extract it if present
+            TEMP_ERROR_FILE=$(grep -o '/tmp/sphinx-err-[^ ]*\.log' logs/build.log | head -1)
+            if [ ! -z "$TEMP_ERROR_FILE" ] && [ -f "$TEMP_ERROR_FILE" ]; then
+              echo "==== SPHINX DETAILED TRACEBACK START ===="
+              cat "$TEMP_ERROR_FILE"
+              echo "==== SPHINX DETAILED TRACEBACK END ===="
+              
+              # Save this traceback for artifacts
+              cp "$TEMP_ERROR_FILE" build/sphinx_traceback.log
+            fi
+            
+            exit 1
+          fi
+
+      - name: Archive build logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build-logs
+          path: subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/
+          retention-days: 7
+          compression-level: 6  # Default compression level for a good balance of speed and size
