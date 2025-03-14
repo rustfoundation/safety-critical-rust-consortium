@@ -1,0 +1,28 @@
+name: Nightly Safety-Critical Rust Coding Guidelines Build Schedule
+
+on:
+  schedule:
+    # Run at 02:00 UTC every day
+    - cron: '0 2 * * *'
+  # Optional: Allow manual triggering for testing
+  workflow_dispatch:
+
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Log build start
+        run: echo "Starting nightly build at $(date)"
+        
+    # This is a "setup" job that can add pre-build steps if needed in the future
+    
+  run-build:
+    needs: trigger-build
+    # Call the main build workflow
+    uses: ./.github/workflows/safety-critical-rust-coding-guidelines.yml
+    # If your main workflow is in a different file, adjust the path accordingly
+
+

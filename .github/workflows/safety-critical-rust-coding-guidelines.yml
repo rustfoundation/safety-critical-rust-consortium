@@ -7,6 +7,14 @@ on:
   pull_request:
     paths:
       - 'subcommittee/coding-guidelines/initiatives/safety-critical-rust-coding-guidelines/**'
+  # Add workflow_call trigger to make this workflow reusable
+  workflow_call:
+    # You can add inputs here if needed in the future
+    # inputs:
+    #   example_input:
+    #     required: false
+    #     type: string
+    #     default: 'default value'
 
 jobs:
   build:
