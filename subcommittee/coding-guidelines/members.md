@@ -38,4 +38,7 @@
 | Lukas Wirth             | Ferrous Systems                        | Producer                    | @Veykril           |
 | Joni Pelham             | Individual                             | Producer                    | @jonititan         |
 | Jonas Wolf              | Vector Informatik GmbH                 | Producer                    | @vjonaswolf        |
+| Robert C. Seacord       | Woven by Toyota                        | Producer                    | @rcseacord         |
+| El Araby El Mahdi       | Individual                             | Producer                    | @x0rw              |
+| Achim Kriso             | Vector Informatik GmbH                 | Producer                    | @AchimKriso        |
 
