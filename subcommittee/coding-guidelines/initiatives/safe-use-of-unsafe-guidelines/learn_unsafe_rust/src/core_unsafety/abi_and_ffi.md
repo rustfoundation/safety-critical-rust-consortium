@@ -12,7 +12,13 @@ is a non-comprehensive list of properties an ABI defines:
 * A protocol to generate and handle exceptional errors
 
 Note that not all ABIs define all mentioned categories - if a certain language does not support a certain technology,
-the ABI that supports the technology isn't usually supported well - or not at all.
+the ABI that supports the technology isn't usually supported well - or not at all. Examples of such mechanics:
+
+* C++ exceptions: Since Rust's FFI is C-based, C++ exceptions cannot cross laguage boundaries and must not bubble up to
+  Rust code as Rust does not understand how to handle them and / or perform stack unwinding.
+* Runtime polymorphism: Since this isn't part of C either, Rust's take on virtual methods is very different from what
+  other languages do in that regard. Therefore, there is no out-of-the-box support for runtime polymorphism across the
+  Rust FFI either.
 
 It is usually the task of the linker to collect the bits of a program and merge it into an executable. This will only
 result in a working program if all parts of the program agree on the same ABI. If there are ABI incompatibilities, this
@@ -23,9 +29,18 @@ will usually lead to trouble during program execution, like data corruption or c
 When you're looking for information about linking parts of a program (potentially written in different languages) on the
 internet, one often comes across the term "C ABI". Due to the vast amount of code written in C, the language became a de
 facto standard for compatibility on various levels. That's also the reason why you find that term in Rust source, like
-`repr(C)` or `extern "C"`. However, the C language itself does not define an ABI. Therefore, the term "C ABI" is
-actually misleading, suggesting that there is a common ruleset per platform and any program part that obeys this "C ABI"
-will work flawlessly when linked.
+`repr(C)` or `extern "C"`. However, the C language itself does not define an ABI.  This is underlined by the ISO C
+standard which states in its `Scope` chapter in the second paragraph:
+> 2 This International Standard does not specify
+> - the mechanism by which C programs are transformed for use by a data-processing
+    system;
+> - the mechanism by which C programs are invoked for use by a data-processing
+    system;
+> ...
+
+This basically means that the standard neither says how source is turned into anexecutable nor how this executable is
+actually run on a computer. Therefore, the term "C ABI" is actually misleading, suggesting that there is a common
+ruleset per platform and any program part that obeys this "C ABI" will work flawlessly when linked.
 
 While the C language standard doesn't define the entire ABI, it does impose some restrictions on the ABI, e.g.
 
@@ -70,29 +85,29 @@ A lot of Rust's basic data types (especially integral types) have corresponding 
 and universal match of Rust's basic types to C's basic types. Instead, it is a good idea to use type aliases that exist
 on each side. This is a type mapping list that universally works on all platforms:
 
-| Rust type             | C type             |
-|-----------------------|--------------------|
-| u8                    | uint8_t            |
-| i8                    | int8_t             |
-| u16                   | uint16_t           |
-| i16                   | int16_t            |
-| u32                   | uint32_t           |
-| i32                   | int32_t            |
-| u64                   | uint64_t           |
-| i64                   | int64_t            |
-| std::ffi::c_char      | char               |
-| std::ffi::c_schar     | signed char        |
-| std::ffi::c_uchar     | unsigned char      |
-| std::ffi::c_int       | (signed) int       |
-| std::ffi::c_uint      | unsigned int       |
-| std::ffi::c_short     | (signed) short     |
-| std::ffi::c_ushort    | unsigned short     |
-| std::ffi::c_long      | (signed) long      |
-| std::ffi::c_ulong     | unsigned long      |
-| std::ffi::c_longlong  | (signed) long long |
-| std::ffi::c_ulonglong | unsigned long long |
-| std::ffi::c_double    | double             |
-| std::ffi::c_float     | float              |
+| Rust type               | C type               |
+|-------------------------|----------------------|
+| `u8`                    | `uint8_t`            |
+| `i8`                    | `int8_t`             |
+| `u16`                   | `uint16_t`           |
+| `i16`                   | `int16_t`            |
+| `u32`                   | `uint32_t`           |
+| `i32`                   | `int32_t`            |
+| `u64`                   | `uint64_t`           |
+| `i64`                   | `int64_t`            |
+| `std::ffi::c_char`      | `char`               |
+| `std::ffi::c_schar`     | `signed char`        |
+| `std::ffi::c_uchar`     | `unsigned char`      |
+| `std::ffi::c_int`       | `(signed) int`       |
+| `std::ffi::c_uint`      | `unsigned int`       |
+| `std::ffi::c_short`     | `(signed) short`     |
+| `std::ffi::c_ushort`    | `unsigned short`     |
+| `std::ffi::c_long`      | `(signed) long`      |
+| `std::ffi::c_ulong`     | `unsigned long`      |
+| `std::ffi::c_longlong`  | `(signed) long long` |
+| `std::ffi::c_ulonglong` | `unsigned long long` |
+| `std::ffi::c_double`    | `double`             |
+| `std::ffi::c_float`     | `float`              |
 
 Pointers are guaranteed to be compatible. There's a slight gotcha, though: It is legal in Rust to create so-called fat
 pointers. This happens if you create a pointer to a slice or a trait object, since both entities need more than just a
@@ -102,8 +117,45 @@ boundary.
 ### Complex types
 
 Rust (like the majority of other languages) allows for combining basic datatypes to complex datatypes in various ways.
-A subset thereof can also be used across language boundaries. This is true for arrays, structs and unions. Enums and
-tuples cannot be used and doing so will lead to a compiler warning.
+A subset thereof can also be used across language boundaries. This is true for arrays, structs and unions. Arrays and
+structs are declared just like the native Rust counterpart with an added `#repr(C)` annotation. Unions are less common
+in normal Rust code since they do not store which variant is used a a particular moment which makes them difficult to
+use due to the unsafe blocks needed to read from them. However, some C APIs do contain unions so that they also hove to
+be used on Rust side. Notice that they still need to be annotated with `repr(C)`, despite their C-heavy usage:
+
+```rust
+#[repr(C)]
+union JsonValue {
+    integer: std::ffi::c_int,
+    float: std::ffi::c_double,
+    string: *const std::ffi::c_char,
+}
+```
+
+Contrary to these data types, enums and tuples cannot be used and doing so will lead to a compiler warning:
+
+```rust
+#[repr(C)]
+struct X {
+    t: (u32, u32),
+}
+
+unsafe extern {
+    fn test(x: *mut X);
+}
+```
+leads to
+```
+warning: `extern` block uses type `(u32, u32)`, which is not FFI-safe
+  --> src/main.rs:7:21
+   |
+ 7 |     fn test(x: *mut X);
+   |                ^^^^^^ not FFI-safe
+   |
+   = help: consider using a struct instead
+   = note: tuples have unspecified layout
+   = note: `#[warn(improper_ctypes)]` on by default
+```
 
 When defining types that are used across the language boundary it is of utmost importance to define the same type with
 the exact same layout as in the other language. Failing to do so will inevitably lead to data corruption and undefined
@@ -114,7 +166,35 @@ definitions themselves do not cause undefined behavior. The actual trigger for s
 `extern` function definition or global variable definition, respectively: If such objects reference a data definition
 that does not fit the definition of the data type in the foreign language, such a type usage acts like an unchecked,
 unsafe type cast. Since the compiler cannot check type consistency across languages, these items need to be marked
-`unsafe`.
+`unsafe`:
+
+```c
+struct X {
+    uint64_t val;
+};
+
+X EXPORTED_DATA = { 17 };
+```
+
+```rust
+// Not unsafe, although the definition does not match the type on C with the same name.
+#[repr(C)]
+struct X {
+    val: u32,
+}
+
+// This, however, needs to be unsafe since we now import an external definition and the compiler cannot check whether
+// the type definitions match:
+unsafe extern "C" {
+    static EXPORTED_DATA: X;
+}
+
+fn main() {
+    unsafe {
+        println!("{}", EXPORTED_DATA.val);
+    }
+}
+```
 
 ### Calling subroutines from Rust
 
@@ -144,13 +224,26 @@ let success = unsafe {
 ```
 
 You can, however, explicitly declare an external function declaration as `safe`, in which case you can call this
-function just like an ordinary Rust function.
+function just like an ordinary Rust function. This makes sense if there is no parameter combination that triggers
+undefined behavior in the foreign subroutine; it is therefore advisable to only do this if there is no parameter that,
+by definition, cannot be checked for its validity, e.g. pointers. Since the compiler cannot verify this, it is only
+allowed to put the `safe` qualifier inside an `unsafe` external block and the developer is obligated to check for the
+absence of any unsafe behavior on certain input parameters.
 
 Notice that the Rust compiler also checks whether the subroutine signature is compatible with the C language. If a type
 is used which is not supported by C, the Rust compiler emits a warning. It is strongly advised to rework the signature
-if such an `improper_ctype` warning appears as the chances for undefined behavior are high, and even if the program
-works in a particular version of Rust, this might change any time in case the memory layout of such a type changes due
-to the updated Rust version.
+if such an `improper_ctype` warning (see [Complex types](#complex-types)) appears as the chances for undefined behavior
+are high, and even if the program works in a particular version of Rust, this might change any time in case the memory
+layout of such a type changes due to the updated Rust version.
+
+While this (and following) chapter usually mean `extern "C"` when talking about external linkage, there are also
+other calling conventions that sometimes are used as an alternative to the "standard" C calling convention for a certain
+triple. While these calling conventions are equivalent feature-wise, they emphasize a different optimization target by
+changing aspects like how parameters are being transferred to the subroutine and who is dong the cleanup of the stack.
+Examples are the x86 "fastcall" or "stdcall" calling conventions. Usually, these calling conventions also have to be
+explicitly set also on the C/C++ side. While it is optional to specify the calling convention when declaring a function
+as external and "C" is the default calling convention when omitted, it is recommended to always specify the calling
+convention explicitly so that it's always clear which convention is used on a specific declaration or definition.
 
 ### Offering subroutines to a foreign language
 
@@ -159,7 +252,41 @@ foreign function interface is not unsafe by itself since the Rust compiler can p
 Rust code just fine. However, this does not mean that you cannot cause undefined behavior here in the same way this
 happens also for the other direction: If the signatures are not compatible, this will almost ineviatably lead to
 misinterpretation of data and undefined behavior. But since the cause is not on Rust's side, there is no need to mark
-such functions as `unsafe`.
+such functions as `unsafe`:
+
+Rust side:
+```rust
+#[repr(C)]
+struct SampleType {
+    ...
+}
+
+#[no_mangle]
+extern "C" callable_from_the_outside(val: &SampleType)
+{
+    ...
+}
+```
+
+C side:
+```c
+struct SampleType {
+    ...
+};
+
+void callable_from_the_outside(const char* val);
+
+int main()
+{
+    callable_from_the_outside("Hello, Undefined Behavior!");
+}
+```
+
+`const char*` has the same size and layout as a Rust reference since pointers and Rust references have the same layout
+(see [the reference](https://doc.rust-lang.org/reference/type-layout.html#r-layout.pointer.intro)). Since (thin)
+pointers in C and Rust always have the same size and layout no matter what the pointed-to type is, this will be
+compatible layout-wise. However, Rust expects a struct whereas this example will call the function with an arbitrary
+string which invokes undefined behavior due to the incompatible pointed-to type.
 
 ### Shared static data
 
