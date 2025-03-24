@@ -41,4 +41,5 @@
 | Robert C. Seacord       | Woven by Toyota                        | Producer                    | @rcseacord         |
 | El Araby El Mahdi       | Individual                             | Producer                    | @x0rw              |
 | Achim Kriso             | Vector Informatik GmbH                 | Producer                    | @AchimKriso        |
+| Samuel Wright           | Ferrous Systems                        | Producer                    | @plaindocs         |
 
