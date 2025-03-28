@@ -22,7 +22,7 @@ Feel free to speak up during the meeting to clarify if something has risen to th
 
 ## Submit the meeting minutes to the repo
 
-Following the meeting you will select all the contents of the Google Doc, right click, and then click `Copy as Markdown` on the menu that pops up.
+Following the meeting you will select all the contents of the Google Doc, right click, and then click `Copy as Markdown` on the menu that pops up. You have to make sure Markdown is enabled for the document. Enabling it can be done by navigating to **Tools > Preferences** and checking **Enable Markdown**.
 
 Fork this repository if not done yet.
 
