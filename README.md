@@ -46,6 +46,12 @@ We follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-hou
 
 Following somewhat from above in following Chatham House Rule, we prohibit taking screen or voice recordings. We also disallow any other means of taking transcriptions, such as AI bots.
 
+### Notetaker Role
+
+Thank you for taking this role!
+
+Please reference [this doc](consortium-wide/docs/notetaker-role.md) for more details.
+
 ## Contributing to This Repository
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).

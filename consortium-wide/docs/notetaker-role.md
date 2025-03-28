@@ -1,11 +1,12 @@
-# Coding Guidelines Notetaker
+# Meeting Notetaker
 
 Thank you for taking notes for a session! The following are the steps you will follow.
 
-Reminder that we follow the consortium-wide agreed meeting policies. Please refer to them in the top-level [README](../../
-) under `Meeting Policies`.
+Reminder that we follow the consortium-wide agreed meeting policies. Please refer to them in the [README](../../README.md) under `Meeting Policies`.
 
 ## Take meeting notes live in a Google Docs document
+
+A template for meeting minutes is shared [here](https://docs.google.com/document/d/1vx_Ih9DRXQrHU_pP_uUZWjqvMKzzAR6EkS5lINzT4bA/edit?usp=sharing) should you need it.
 
 During the meeting you'll take meeting minutes of participants' discussion in a Google Docs document that will be shared as the meeting begins.
 
