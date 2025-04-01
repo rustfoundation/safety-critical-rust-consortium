@@ -50,7 +50,7 @@ Following somewhat from above in following Chatham House Rule, we prohibit takin
 
 Thank you for taking this role!
 
-Please reference [this doc](consortium-wide/docs/notetaker-role.md) for more details.
+Please reference [this doc](docs/notetaker-role.md) for more details.
 
 ## Contributing to This Repository
 
