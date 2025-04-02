@@ -3,7 +3,7 @@ description: Application to join a Safety Critical Rust Consortium Subcommittee
 title: Subcommittee Join Request for [NAME]
 labels: ["subcommittee join request"]
 assignees: 
-  - joelmarcey, PLeVasseur, alexandruradovici
+  - joelmarcey, PLeVasseur, alexandruradovici, AlexCeleste
 body:
   - type: markdown
     attributes:
