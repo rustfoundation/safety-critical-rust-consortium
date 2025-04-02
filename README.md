@@ -16,7 +16,7 @@ Whether you become a member or not, you can join the consortium's [public Zulip 
 
 The Safety Critical Rust Consortium has subcommittees that focuses on specific areas of work. 
 
-Right now there are three subcommittees:
+Here are the subcommittees:
 
 1. [Coding Guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
 2. [Tooling](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
