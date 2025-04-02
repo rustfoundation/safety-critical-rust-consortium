@@ -1,9 +1,9 @@
 name: Consortium Subcommittee Membership
-description: Application to join a Safety Critical Rust Consortium Sub Committee
+description: Application to join a Safety Critical Rust Consortium Subcommittee
 title: Subcommittee Join Request for [NAME]
 labels: ["subcommittee join request"]
 assignees: 
-  - joelmarcey, PLeVasseur, alexandruradovici
+  - joelmarcey, PLeVasseur, alexandruradovici, AlexCeleste
 body:
   - type: markdown
     attributes:
@@ -12,9 +12,10 @@ body:
         
         The [Safety Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) currently has two subcommittees:
 
-        1. [Coding Guidelines](https://github.com/JoelMarcey/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
-        2. [Tooling](https://github.com/JoelMarcey/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
-
+        1. [Coding Guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
+        2. [Tooling](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
+        3. [Liaison](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/liaison)
+        
         Use this form to join one of those committees. If you want to join more than one subcommittee, fill out this form multiple times.
   - type: dropdown
     id: current-consortium-member
@@ -41,6 +42,7 @@ body:
       options:
         - Coding Guidelines
         - Tooling
+        - Liaison
       default: 0
     validations:
       required: true
