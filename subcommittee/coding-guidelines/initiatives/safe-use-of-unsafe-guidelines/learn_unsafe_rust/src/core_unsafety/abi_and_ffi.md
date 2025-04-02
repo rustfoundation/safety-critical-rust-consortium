@@ -14,7 +14,7 @@ is a non-comprehensive list of properties an ABI defines:
 Note that not all ABIs define all mentioned categories - if a certain language does not support a certain technology,
 the ABI that supports the technology isn't usually supported well - or not at all. Examples of such mechanics:
 
-* C++ exceptions: Since Rust's FFI is C-based, C++ exceptions cannot cross laguage boundaries and must not bubble up to
+* C++ exceptions: Since Rust's FFI is C-based, C++ exceptions cannot cross language boundaries and must not bubble up to
   Rust code as Rust does not understand how to handle them and / or perform stack unwinding.
 * Runtime polymorphism: Since this isn't part of C either, Rust's take on virtual methods is very different from what
   other languages do in that regard. Therefore, there is no out-of-the-box support for runtime polymorphism across the
@@ -29,7 +29,7 @@ will usually lead to trouble during program execution, like data corruption or c
 When you're looking for information about linking parts of a program (potentially written in different languages) on the
 internet, one often comes across the term "C ABI". Due to the vast amount of code written in C, the language became a de
 facto standard for compatibility on various levels. That's also the reason why you find that term in Rust source, like
-`repr(C)` or `extern "C"`. However, the C language itself does not define an ABI.  This is underlined by the ISO C
+`repr(C)` or `extern "C"`. However, the C language itself does not define an ABI.  This is underlined by the ISO C[^1]
 standard which states in its `Scope` chapter in the second paragraph:
 > 2 This International Standard does not specify
 > - the mechanism by which C programs are transformed for use by a data-processing
@@ -38,7 +38,7 @@ standard which states in its `Scope` chapter in the second paragraph:
     system;
 > ...
 
-This basically means that the standard neither says how source is turned into anexecutable nor how this executable is
+This basically means that the standard neither says how source is turned into an executable nor how this executable is
 actually run on a computer. Therefore, the term "C ABI" is actually misleading, suggesting that there is a common
 ruleset per platform and any program part that obeys this "C ABI" will work flawlessly when linked.
 
@@ -120,7 +120,7 @@ Rust (like the majority of other languages) allows for combining basic datatypes
 A subset thereof can also be used across language boundaries. This is true for arrays, structs and unions. Arrays and
 structs are declared just like the native Rust counterpart with an added `#repr(C)` annotation. Unions are less common
 in normal Rust code since they do not store which variant is used a a particular moment which makes them difficult to
-use due to the unsafe blocks needed to read from them. However, some C APIs do contain unions so that they also hove to
+use due to the unsafe blocks needed to read from them. However, some C APIs do contain unions so that they also have to
 be used on Rust side. Notice that they still need to be annotated with `repr(C)`, despite their C-heavy usage:
 
 ```rust
@@ -177,7 +177,7 @@ X EXPORTED_DATA = { 17 };
 ```
 
 ```rust
-// Not unsafe, although the definition does not match the type on C with the same name.
+// Not unsafe, although the definition does not match the type in C with the same name.
 #[repr(C)]
 struct X {
     val: u32,
@@ -228,22 +228,42 @@ function just like an ordinary Rust function. This makes sense if there is no pa
 undefined behavior in the foreign subroutine; it is therefore advisable to only do this if there is no parameter that,
 by definition, cannot be checked for its validity, e.g. pointers. Since the compiler cannot verify this, it is only
 allowed to put the `safe` qualifier inside an `unsafe` external block and the developer is obligated to check for the
-absence of any unsafe behavior on certain input parameters.
+absence of any unsafe behavior on certain input parameters. Such a declaration then looks like this:
+
+```rust
+unsafe extern "C" {
+    safe fn simple_callable(data: u32) -> bool;
+}
+
+// ...
+
+fn some_function(val: u32) {
+    // No `unsafe` required here!
+    if simple_callable(val) {
+        // ...
+    }
+}
+```
+
+If we assume that this function is defined for any value of its input parameters (which is something that the developer
+has to manually validate!), then it can be declared as `safe` and no `unsafe` block is needed when using it.
 
 Notice that the Rust compiler also checks whether the subroutine signature is compatible with the C language. If a type
 is used which is not supported by C, the Rust compiler emits a warning. It is strongly advised to rework the signature
 if such an `improper_ctype` warning (see [Complex types](#complex-types)) appears as the chances for undefined behavior
-are high, and even if the program works in a particular version of Rust, this might change any time in case the memory
-layout of such a type changes due to the updated Rust version.
+are high. And even if the program works in a particular version of Rust, this might change any time the memory layout
+of such a type changes due to the updated Rust version changing Rust's native ABI, which is at the time of this writing
+not stable.
 
 While this (and following) chapter usually mean `extern "C"` when talking about external linkage, there are also
 other calling conventions that sometimes are used as an alternative to the "standard" C calling convention for a certain
 triple. While these calling conventions are equivalent feature-wise, they emphasize a different optimization target by
 changing aspects like how parameters are being transferred to the subroutine and who is dong the cleanup of the stack.
 Examples are the x86 "fastcall" or "stdcall" calling conventions. Usually, these calling conventions also have to be
-explicitly set also on the C/C++ side. While it is optional to specify the calling convention when declaring a function
-as external and "C" is the default calling convention when omitted, it is recommended to always specify the calling
-convention explicitly so that it's always clear which convention is used on a specific declaration or definition.
+explicitly set also on the C or C++ side. While it is optional to specify the calling convention when declaring a
+function as external and "C" is the default calling convention when omitted, it is recommended to always specify the
+calling convention explicitly so that it's always clear which convention is used on a specific declaration or
+definition.
 
 ### Offering subroutines to a foreign language
 
@@ -301,3 +321,9 @@ static variable.
 Notice that Rust requires static data to be initialized before _any_ Rust code runs. This is typically fine since any
 static data will, in usual environments, be initialized by code that runs before the actual `main` function is called.
 For C, this is true even if the static does not have an explicit initializer. In this case, the memory is zeroed.
+
+## Appendix
+
+### References
+
+[^1]: [ISO/IEC 9899:2024 "Information technology - programming languages - C"](https://www.iso.org/standard/82075.html)
