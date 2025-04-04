@@ -19,6 +19,8 @@ body:
         If you do become a member of the consortium, you will be added to the consortium mailing list, which is currently the only non-public asset of the consortium at this point.
 
         Also, don't forget to join the consortium's [Zulip channel](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium).
+
+        > Note that the name, email address, and any company you provide will be public since GitHub issues are public. We do not use your information for any reason other than for membership purposes.
   - type: input
     id: Name
     attributes:

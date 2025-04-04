@@ -8,6 +8,8 @@ See the full announcement [here](https://foundation.rust-lang.org/news/announcin
 
 Membership to the Safety Critical Rust Consortium is free. Please [file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) to submit your membership application. 
 
+> Note: When you file the issue for membership, the name, email address and any company you provide will be public as GitHub issues are inherently public. We do not use your information for any reason other than membership purposes. 
+
 If for some reason you are unable or willing to file the application for membership via a GitHub issue, please send an email to `safety-critical-rust-consortium-contact [at] rustfoundation [dot] org`.
 
 Whether you become a member or not, you can join the consortium's [public Zulip channel](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium) to keep up with various happenings.
