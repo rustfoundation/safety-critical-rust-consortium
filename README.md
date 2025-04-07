@@ -8,6 +8,8 @@ See the full announcement [here](https://foundation.rust-lang.org/news/announcin
 
 Membership to the Safety Critical Rust Consortium is free. Please [file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) to submit your membership application. 
 
+> Note: When you file the issue for membership, the name, email address and any company you provide will be public as GitHub issues are inherently public. We do not use your information for any reason other than membership purposes. 
+
 If for some reason you are unable or willing to file the application for membership via a GitHub issue, please send an email to `safety-critical-rust-consortium-contact [at] rustfoundation [dot] org`.
 
 Whether you become a member or not, you can join the consortium's [public Zulip channel](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium) to keep up with various happenings.
@@ -16,10 +18,11 @@ Whether you become a member or not, you can join the consortium's [public Zulip 
 
 The Safety Critical Rust Consortium has subcommittees that focuses on specific areas of work. 
 
-Right now there are two subcommittees:
+Here are the subcommittees:
 
 1. [Coding Guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
 2. [Tooling](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
+3. [Liaison](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/liaison)
 
 After you join the consortium, you can [apply by filing a GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey%2C+PLeVasseur%2C+alexandruradovici&labels=subcommittee+application&projects=&template=subcommittees.yml&title=Subcommittee+Join+Request+for+%5BNAME%5D) to be a member of one or more of the subcommittees as well.
 
@@ -31,6 +34,26 @@ The [Rust Foundation][rust-foundation] has adopted a Code of Conduct that we
 expect project participants to adhere to. Please read [the full
 text][code-of-conduct] so that you can understand what actions will and will not
 be tolerated.
+
+## Meeting Policies
+
+We have agreed consortium-wide to follow some meeting policies. The intent is to allow participants to feel comfortable with being candid and foster open collaboration.
+
+### Chatham House Rule
+
+We follow [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule) which essentially means:
+
+> Its guiding spirit is: share the information you receive, but do not reveal the identity of who said it.
+
+### No recordings, no transcriptions
+
+Following somewhat from above in following Chatham House Rule, we prohibit taking screen or voice recordings. We also disallow any other means of taking transcriptions, such as AI bots.
+
+### Notetaker Role
+
+Thank you for taking this role!
+
+Please reference [this doc](docs/notetaker-role.md) for more details.
 
 ## Contributing to This Repository
 
