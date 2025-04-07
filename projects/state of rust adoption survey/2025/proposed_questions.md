@@ -19,6 +19,16 @@ What industry do you work in?
 - [ ] Defense
 - [ ] Other (text entry)
 
+What is your primary role or responsibility related to software development or safety within your organization?
+
+- [ ] Software Engineer
+- [ ] Safety Engineer
+- [ ] Quality Assurance Engineer
+- [ ] Project Manager
+- [ ] R&D Engineer
+- [ ] Engineering Management
+- [ ] Other (text entry)
+
 Do you currently use Rust?
  *Select multiple*
 
@@ -113,3 +123,11 @@ What chip architectures do you work with?
 - [ ] STM32
 - [ ] RISC-V
 - [ ] Other (text entry)
+
+### Open Ended
+
+What kind of support or resources from the Rust community or the Safety Critical Consortium would be most helpful in enabling Rust adoption in your industry?
+	*Text Entry*
+    
+What steps would your organization need to take to seriously consider or adopt Rust for safety-critical projects?
+	*Text Entry*
