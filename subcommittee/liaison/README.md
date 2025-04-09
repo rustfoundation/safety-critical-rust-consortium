@@ -10,7 +10,7 @@ The role of the liaison subcommittee is liaising and collaboration, both within 
 
 ## Members and Membership
 
-To join the liaison subcommittee, be sure you a [member](https://github.com/rustfoundation/safety-critical-rust-consortium?tab=readme-ov-file#consortium-membership) of the overall consortium and then file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey%2C+PLeVasseur%2C+alexandruradovici&labels=subcommittee+application&projects=&template=subcommittees.yml&title=Subcommittee+Join+Request+for+%5BNAME%5D).
+To join the liaison subcommittee, be sure you are a [member](https://github.com/rustfoundation/safety-critical-rust-consortium?tab=readme-ov-file#consortium-membership) of the overall consortium and then file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey%2C+PLeVasseur%2C+alexandruradovici&labels=subcommittee+application&projects=&template=subcommittees.yml&title=Subcommittee+Join+Request+for+%5BNAME%5D).
 
 You can find the list of liaison subcommittee members [here](members.md).
 
