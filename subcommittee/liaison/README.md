@@ -16,5 +16,5 @@ You can find the list of liaison subcommittee members [here](members.md).
 
 ## Where to find us
 
-* There is a `safety-critical-consortium` channel in the [Rust Zulip](https://rust-lang.zulipchat.com/) which contains a topic dedicated to [Coding Guidelines](hhttps://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium/topic/Liaison.20Subcommittee/).
+* There is a `safety-critical-consortium` channel in the [Rust Zulip](https://rust-lang.zulipchat.com/) which contains a topic dedicated to the [Liaison Subcommittee](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium/topic/Liaison.20Subcommittee/).
 * Here! You're welcome to check out what's on offer and provide feedback and suggestions on how to improve.
