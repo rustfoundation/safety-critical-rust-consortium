@@ -17,6 +17,7 @@ While task-based, this is not language agnostic and requires that the source is 
 ### DO-178C
 
 Certification standard for aerospace software systems. This is task-based and generally language-agnostic.
+However some requirements apply to the programming language used. The semantic of the programming language must be defined in a deterministic way, and some features of the programming language may be forbidden to guarantee that property is maintained.
 
 ### TR 24772 Programming language vulnerabilities
 
