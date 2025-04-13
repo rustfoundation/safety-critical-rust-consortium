@@ -2,11 +2,11 @@ State of Safety Critical Rust Adoption Survey
 
 ### Purpose and Justification
 
-While the RSCC has some representation from industry there are many hundreds more companies and thousands more engineers who could be using Rust for safety critical applications. They may have concerns, tooling or standards gaps, or needs of which we are not aware. The intention of this survey is to poll the greater safety critical community - regardless of their current language choices - and document their needs. We hope to identify gaps in standards, tooling, or knowledge that we can then help to fill with our partners and the Rust community at large.
+While the SCRC has some representation from industry there are many hundreds more companies and thousands more engineers who could be using Rust for safety critical applications. They may have concerns, tooling or standards gaps, or needs of which we are not aware. The intention of this survey is to poll the greater safety critical community - regardless of their current language choices - and document their needs. We hope to identify gaps in standards, tooling, or knowledge that we can then help to fill with our partners and the Rust community at large.
 
-While the Rust Foundation has been conducting excellent surveys, for the same reason that the Safety Critical Consortium was needed a more targeted survey is also needed. Certified tooling, standards, and processes like formal methods aren't relevant to the greater Rust community and haven't been addressed by existing surveys.
+While the Rust Foundation has been conducting excellent surveys, for the same reason that the Safety-Critical Rust Consortium was needed a more targeted survey is also needed. Certified tooling, standards, and processes like formal methods may be less relevant to the greater Rust community and haven't been addressed by existing surveys.
 
-In short: the goal is get this survey in front of as many software-adjacent engineers in safety critical industries as possible to identify ways that the consortium can help enable Rust adoption.
+In short: the goal is get this survey in front of as many software-adjacent engineers in safety-critical industries as possible to identify ways that the consortium can help enable Rust adoption.
 
 ### Timing
 
