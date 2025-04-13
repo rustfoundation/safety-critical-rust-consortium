@@ -99,6 +99,7 @@ What were your/your company's primary reasons to switch to Rust?
 ### Not Using Rust but Interested
 
 What advantages are you interested in using Rust for?
+
 - [ ] Memory safety
 - [ ] Tooling (cargo, crates.io, clippy, etc)
 - [ ] Language features (type system, matching, etc)
@@ -119,6 +120,15 @@ What are the primary blockers to using Rust in your safety critical role?
 - [ ] Regulatory hurdles
 - [ ] Legacy Codebase
 - [ ] Training
+- [ ] Other (text entry)
+
+How would you be interested in using Rust in your safety-critical role?
+*Select multiple*
+
+- [ ] Starting a new project in Rust
+- [ ] Rewriting an existing project in Rust
+- [ ] Integrating Rust with an existing codebase
+- [ ] Integrating Rust components into an existing system
 - [ ] Other (text entry)
 
 ### Not Interested in Using Rust
