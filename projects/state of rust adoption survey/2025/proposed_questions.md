@@ -27,7 +27,8 @@ What is the size of the company you work for?
 - [ ] 10 - 49
 - [ ] 50 - 249
 - [ ] 250 - 1000
-- [ ] >  1000
+- [ ] 1000 - 10,000
+- [ ] >  10,000
 
 Approximately how many people actively write Rust at your company?
 
@@ -86,10 +87,15 @@ Which section is shown here depends on the answer to whether the respondent is u
 ### Using Rust
 
 What were your/your company's primary reasons to switch to Rust?
+ *Select multiple*
 
 - [ ] Memory safety
+- [ ] Thread safety
+- [ ] Speed/performance
 - [ ] Tooling (cargo, crates.io, clippy, etc)
 - [ ] Language features (type system, matching, etc)
+- [ ] Safe by default language design
+- [ ] Zero cost abstractions
 - [ ] Specific library/crate/framework
 - [ ] Hiring advantages (interest in Rust/quality of Rust engineers)
 - [ ] Regulatory requirement
@@ -99,10 +105,15 @@ What were your/your company's primary reasons to switch to Rust?
 ### Not Using Rust but Interested
 
 What advantages are you interested in using Rust for?
-
+ *Select multiple*
+ 
 - [ ] Memory safety
+- [ ] Thread safety
+- [ ] Speed/performance
 - [ ] Tooling (cargo, crates.io, clippy, etc)
 - [ ] Language features (type system, matching, etc)
+- [ ] Safe by default language design
+- [ ] Zero cost abstractions
 - [ ] Specific library/crate/framework
 - [ ] Hiring advantages (interest in Rust/quality of Rust engineers)
 - [ ] Regulatory requirement
@@ -141,7 +152,8 @@ What are the primary disadvantages to using Rust in your safety critical role?
 - [ ] Doesn't support my hardware target(s)
 - [ ] Not certifiable
 - [ ] Not enough hirable Rust engineers
-- [ ] Doesn't integrate with my existing codebase
+- [ ] Doesn't integrate with existing codebase
+- [ ] Doesn't integrate with existing process/tooling/build system
 - [ ] Software supply chain concern (open-source)
 - [ ] Don't know enough about it
 - [ ] Other (text entry)
