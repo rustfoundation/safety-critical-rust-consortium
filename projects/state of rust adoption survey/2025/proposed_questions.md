@@ -1,8 +1,16 @@
-Some Proposed Questions
+# Survey Preview
+
+See this link for a preview of the survey:
+
+https://www.surveyhero.com/c/aw4cdiis
+
+(Active 2025-04-16 to 2025-04-21)
+
+# Proposed Questions
 
 ## Prelude
 
-Do you work in a safety critical industry? (Automotive, aerospace, medical, robotics, etc)
+Do you work in a safety-critical industry? (Automotive, aerospace, medical, robotics, etc)
  *Select one*
 
 - [ ] Yes
@@ -43,12 +51,13 @@ What is your primary role or responsibility related to software development or s
 - [ ] Software Engineer
 - [ ] Safety Engineer
 - [ ] Quality Assurance Engineer
+- [ ] Cybersecurity Engineer
+- [ ] DevOps/Tooling Engineer
 - [ ] Project Manager
 - [ ] R&D Engineer
 - [ ] Engineering Management
 - [ ] Startup Owner/Founder
-- [ ] CTO
-- [ ] CEO
+- [ ] C-suite (CTO, CEO, etc)
 - [ ] Other (text entry)
 
 ## Languages
@@ -62,15 +71,17 @@ Do you currently use Rust?
 - [ ] No
 
 What language(s) do you use in your safety critical role?
- *Select multiple*
+ *Select multiple. Including deployed languages and tooling languages.*
 
 - [ ] Rust
 - [ ] C
 - [ ] C++
 - [ ] Ada/SPARK
 - [ ] Python
-- [ ] Java
 - [ ] Other (text entry)
+
+How are you using the programming languages that you're working with?
+  *Text entry*
 
 Would you be interested in using Rust in your safety critical role?
  *Select one*
@@ -84,43 +95,22 @@ Would you be interested in using Rust in your safety critical role?
 
 Which section is shown here depends on the answer to whether the respondent is using Rust, wants to use Rust, or doesn't want to use Rust.
 
-### Using Rust
+### Interested In/Currently Using Rust
 
 What were your/your company's primary reasons to switch to Rust?
  *Select multiple*
 
 - [ ] Memory safety
-- [ ] Thread safety
 - [ ] Speed/performance
 - [ ] Tooling (cargo, crates.io, clippy, etc)
-- [ ] Language features (type system, matching, etc)
-- [ ] Safe by default language design
-- [ ] Zero cost abstractions
+- [ ] Language features (type system, matching, zero cost abstractions, etc)
 - [ ] Specific library/crate/framework
 - [ ] Hiring advantages (interest in Rust/quality of Rust engineers)
 - [ ] Regulatory requirement
 - [ ] Cybersecurity advantages
 - [ ] Other (text entry)
 
-### Not Using Rust but Interested
-
-What advantages are you interested in using Rust for?
- *Select multiple*
- 
-- [ ] Memory safety
-- [ ] Thread safety
-- [ ] Speed/performance
-- [ ] Tooling (cargo, crates.io, clippy, etc)
-- [ ] Language features (type system, matching, etc)
-- [ ] Safe by default language design
-- [ ] Zero cost abstractions
-- [ ] Specific library/crate/framework
-- [ ] Hiring advantages (interest in Rust/quality of Rust engineers)
-- [ ] Regulatory requirement
-- [ ] Cybersecurity advantages
-- [ ] Other (text entry)
-
-What are the primary blockers to using Rust in your safety critical role?
+What are the primary blockers or disadvantages to using Rust in your safety critical role?
  *Select multiple*
 
 - [ ] Lack of Tooling
@@ -128,18 +118,21 @@ What are the primary blockers to using Rust in your safety critical role?
 - [ ] Hiring engineers
 - [ ] Hardware support
 - [ ] Ecosystem (libraries, drivers, etc)
+- [ ] Lack of qualified tooling
 - [ ] Regulatory hurdles
 - [ ] Legacy Codebase
 - [ ] Training
 - [ ] Other (text entry)
 
-How would you be interested in using Rust in your safety-critical role?
+How do you or would you be interested in using Rust in your safety-critical role?
 *Select multiple*
 
 - [ ] Starting a new project in Rust
 - [ ] Rewriting an existing project in Rust
+- [ ] Rewriting part of your codebase in Rust
 - [ ] Integrating Rust with an existing codebase
 - [ ] Integrating Rust components into an existing system
+- [ ] Using C/C++ Interoperability layer
 - [ ] Other (text entry)
 
 ### Not Interested in Using Rust
@@ -160,7 +153,7 @@ What are the primary disadvantages to using Rust in your safety critical role?
 
 ## Tooling
 
-What types of safety critical code tools does your work require?
+What types of safety critical code tools does your work require on a regular basis?
  *Select multiple*
 
 - [ ] Certified compiler
@@ -168,10 +161,20 @@ What types of safety critical code tools does your work require?
 - [ ] Code coverage analysis
 - [ ] Code-requirements traceability
 - [ ] Static Analysis
-- [ ] Code metrics - cyclomatic complexity
+- [ ] Source code metrics (cyclomatic complexity, lines of code, etc)
+- [ ] Post compilation analysis (worst case execution time, stack size, etc)
 - [ ] Linting tools (naming conventions, style guides, etc)
 - [ ] Automated testing (fuzz, prop-based, etc)
 - [ ] Other (text entry)
+
+Are there "best-in-class" libraries or solutions in another language which have features lacking within the Rust ecosystem for your use cases?
+    *Text Entry*
+
+Are there any libraries that are not written in Rust that you would like to use in the Rust ecosystem?
+    *Text Entry*
+
+Are there any crates in the Rust ecosystem that you would use in safety-critical software if it were certified?
+    *Text Entry*
 
 ## Standards/Regulation
 
@@ -230,6 +233,7 @@ To what environments do you deploy your safety critical code?
  *Select multiple*
 
 - [ ] Cloud
+- [ ] WebAssembly
 - [ ] Native applications
 - [ ] Embedded Linux
 - [ ] Embedded with a hypervisor (RTOS, event-driven architecture, etc)
@@ -239,7 +243,8 @@ To what environments do you deploy your safety critical code?
 What chip architectures do you work with?
  *Select multiple*
 
-- [ ] ARM Cortex
+- [ ] ARM Cortex (R or M)
+- [ ] ARM Cortex (A)
 - [ ] Infineon Tricore
 - [ ] x86-x64
 - [ ] PowerPC
@@ -255,8 +260,10 @@ What kind of support or resources from the Rust community or the Safety-Critical
 What steps would your organization need to take to seriously consider or adopt Rust for safety-critical projects?
     *Text Entry*
 
-Are there "best-in-class" libraries or solutions in another language which have features lacking within the Rust ecosystem for your use cases?
-    *Text Entry*
+## Summary
 
-Are there any libraries that are not written in Rust that you would like to use in the Rust ecosystem?
-    *Text Entry*
+Thank you so much for filling out this survey! The Rust Safety-Critical Consortium is looking forward to using this information to identify gaps in the Rust ecosystem and helping to close them.
+
+If you would like to join the consortium, you can [file an issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) in [the GitHub repo for the consortium](https://github.com/rustfoundation/safety-critical-rust-consortium).
+
+Other good ways to stay in touch with the Rust community is to subscribe to [This Week in Rust](https://this-week-in-rust.org/) or [The Embedded Rustacean](https://www.theembeddedrustacean.com/).
