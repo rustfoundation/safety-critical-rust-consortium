@@ -223,8 +223,13 @@ What levels of IEC-62304 do you work with?
 What coding guidelines do you work with in your safety critical work?
 *Select multiple
 
-- [ ] MISRA
+- [ ] MISRA (C)
 - [ ] AEC
+- [ ] AUTOSAR (C++)
+- [ ] JSF AV (C++)
+- [ ] CERT (C, C++, Java)
+- [ ] HIC++
+- [ ] CWE
 - [ ] Other (text entry)
 
 ## Hardware
