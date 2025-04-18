@@ -6,6 +6,8 @@ Below is the proposed agenda. Additional suggestions welcome; please suggest a c
 
 Lunch will be provided to the meeting room.
 
+If we have extra time, we will review open issues and pull requests to see if we can start closing any of those out.
+
 - **9 AM**: Welcome and Meeting Logistics (@JoelMarcey)
   - Welcome New Members
 - **9:15 AM**: Subsidizing costs of in-person meetings (@JoelMarcey)
@@ -22,7 +24,7 @@ Lunch will be provided to the meeting room.
   - Tooling (@alexandruradovici)
   - Liaison (@AlexCeleste)
 - **12:30 PM**: Lunch and free discussion
-- **1:30 PM**: Breakout groups
+- **1:30 PM**: Breakout groups / Review Open Issues and PRs
   - Coding Guidelines (@PLeVasseur)
   - Tooling (@alexandruradovici)
   - Liaison (@AlexCeleste)
