@@ -1,0 +1,37 @@
+# Agenda for Safety Critical Rust Consortium Meeting, 15 May 2025, Utrecht, Netherlands
+
+The second meeting of the Safety Critical Rust Consortium meeting will be held on 15 May 2025 from 9 AM - 3 PM GMT/UTC in Utrecht, Netherlands. 
+
+Below is the proposed agenda. Additional suggestions welcome; please suggest a change or comment on the pull request associated with this agenda item.
+
+Lunch will be provided to the meeting room.
+
+If we have extra time, we will review open issues and pull requests to see if we can start closing any of those out.
+
+- **9 AM**: Welcome and Meeting Logistics (@JoelMarcey)
+  - Welcome New Members
+- **9:15 AM**: Subsidizing costs of in-person meetings (@JoelMarcey)
+  - Try to have consortium members host in cities where we have meetings?
+- **9:30 AM**: Website for consortium information and status (@JoelMarcey)
+  - Domain
+  - Front matter content
+  - Subcommittee content
+- **10:00 AM**: Rust specification update (@JoelMarcey)
+  - Ferrocene Language Specification (FLS) within Rust Project now
+  - Utilizing the specification within our work
+- **10:30 AM**: Subcommittee Reports
+  - Coding Guidelines (@PLeVasseur)
+  - Tooling (@alexandruradovici)
+  - Liaison (@AlexCeleste)
+- **12:30 PM**: Lunch and free discussion
+- **1:30 PM**: Breakout groups / Review Open Issues and PRs
+  - Coding Guidelines (@PLeVasseur)
+  - Tooling (@alexandruradovici)
+  - Liaison (@AlexCeleste)
+  - Specification (@JoelMarcey)
+- **2:30 PM**: Meeting Close (@JoelMarcey)
+  - Post-mortem
+    - What worked well?
+    - What can be improved?
+  - Next meeting?
+- **3:00 PM**: Depart
