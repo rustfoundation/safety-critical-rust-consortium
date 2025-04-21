@@ -42,4 +42,5 @@
 | El Araby El Mahdi       | Individual                             | Producer                    | @x0rw              |
 | Achim Kriso             | Vector Informatik GmbH                 | Producer                    | @AchimKriso        |
 | Samuel Wright           | Ferrous Systems                        | Producer                    | @plaindocs         |
+| Joe Johnson             | Individual                             | Observer                    | @JJohnson357       |
 
