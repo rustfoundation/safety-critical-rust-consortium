@@ -13,14 +13,14 @@
 1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-04-16/minutes.md)
 2. Introduction of new members
 3. Review of [milestone](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1) ahead of RustWeek meetup
-3. Working session:
+4. Working session:
    * Goal: everyone has the ability to build the coding guidelines locally
    * Troubleshooting getting coding guidelines working
-4. Review session: 
+5. Review session:
    * Review [declarative macro guideline PR](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/16)
       * attempt to merge Monday the following week
    * Review other open PRs & issues
-5. Round table
+6. Round table
 
 ## Check-in area
 
