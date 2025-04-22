@@ -16,10 +16,11 @@ If we have extra time, we will review open issues and pull requests to see if we
   - Domain
   - Front matter content
   - Subcommittee content
-- **10:00 AM**: Rust specification update (@JoelMarcey)
+- **10:00 AM**: Safety Critical Survey results and discussion (@MerrimanInd)
+- **10:30 AM**: Rust specification update (@JoelMarcey)
   - Ferrocene Language Specification (FLS) within Rust Project now
   - Utilizing the specification within our work
-- **10:30 AM**: Subcommittee Reports
+- **11:00 AM**: Subcommittee Reports
   - Coding Guidelines (@PLeVasseur)
   - Tooling (@alexandruradovici)
   - Liaison (@AlexCeleste)
