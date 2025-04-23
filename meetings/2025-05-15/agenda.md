@@ -16,6 +16,7 @@ If we have extra time, we will review open issues and pull requests to see if we
   - Domain
   - Front matter content
   - Subcommittee content
+  - Consortium information source of truth - repo or website.
 - **10:00 AM**: Safety Critical Survey results and discussion (@MerrimanInd)
 - **10:30 AM**: Rust specification update (@JoelMarcey)
   - Ferrocene Language Specification (FLS) within Rust Project now
