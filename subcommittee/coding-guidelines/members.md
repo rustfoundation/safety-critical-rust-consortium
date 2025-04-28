@@ -43,4 +43,6 @@
 | Achim Kriso             | Vector Informatik GmbH                 | Producer                    | @AchimKriso        |
 | Samuel Wright           | Ferrous Systems                        | Producer                    | @plaindocs         |
 | Joe Johnson             | Individual                             | Observer                    | @JJohnson357       |
+| Stephen Hedrick         | AdaCore                                | Producer                    | @CartesianXR7      |
+| Yaniv Dan               | Mercedes-Benz                          | Producer                    | @YanivDan-Mercedes |
 
