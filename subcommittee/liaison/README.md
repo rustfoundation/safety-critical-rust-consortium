@@ -8,6 +8,10 @@ The liaison subcommittee will both proactively and reactively collaborate with o
 
 The role of the liaison subcommittee is liaising and collaboration, both within the consortium and, particularly, outside the consortium, with entities such as standards groups, the Rust Project, etc. 
 
+- encourage or increase collaboration between different projects outside the Foundation
+- provide common guidance on referencing, citing, transcluding and quoting other documents without treading on external IP
+- identify opportunities to _upstream_ Rust into external projects and then to engage to make such work happen
+
 ## Members and Membership
 
 To join the liaison subcommittee, be sure you are a [member](https://github.com/rustfoundation/safety-critical-rust-consortium?tab=readme-ov-file#consortium-membership) of the overall consortium and then file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey%2C+PLeVasseur%2C+alexandruradovici&labels=subcommittee+application&projects=&template=subcommittees.yml&title=Subcommittee+Join+Request+for+%5BNAME%5D).
