@@ -23,6 +23,10 @@ If we have extra time, we will review open issues and pull requests to see if we
   - Utilizing the specification within our work
 - **11:00 AM**: Subcommittee Reports
   - Coding Guidelines (@PLeVasseur)
+     - Walkthrough of current progress, process of contributing: 5 mins
+     - Safety-certifiability of `libcore` and `libstd` based on the coding guidelines: 10 mins
+        - Upstreaming of best practices into the Rust Project as deemed feasibly to ease safety-certification.
+     - The degree to which we should align with existing coding standards e.g. MISRA C to ease adoption: 5 mins
   - Tooling (@alexandruradovici)
   - Liaison (@AlexCeleste)
 - **12:30 PM**: Lunch and free discussion
