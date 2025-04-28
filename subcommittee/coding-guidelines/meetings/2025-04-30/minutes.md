@@ -21,7 +21,8 @@
    * Troubleshooting getting coding guidelines build working
 5. Discuss standards matrix and bidirectional linking between guidelines and matrix (matrices?)
 6. Review session:
-   * Review open PRs & issues
+   * Review [proposed subcommitee agenda](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/270#discussion_r2064068874) at RustWeek Consortium meeting, gather more items
+   * Review open [PRs](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pulls) & [issues](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues)
 7. Round table
 
 ## Check-in area
