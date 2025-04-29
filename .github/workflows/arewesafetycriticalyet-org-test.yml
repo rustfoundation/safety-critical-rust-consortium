@@ -32,7 +32,7 @@ jobs:
       - name: Test build website
         working-directory: arewesafetycriticalyet.org
         env:
-          BASE_URL: "/pr-preview/pr-${{ github.event.pull_request.number }}/"
+          BASE_URL: "/safety-critical-rust-consortium/pr-preview/pr-${{ github.event.pull_request.number }}/"
         run: npm run build
   
       # Popular action to deploy to GitHub Pages:
