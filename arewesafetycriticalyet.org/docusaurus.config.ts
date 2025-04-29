@@ -4,6 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const baseUrl = process.env.BASE_URL || '/';
+
 const config: Config = {
   title: 'Are We Safety Critical Yet?',
   tagline: 'It depends 🤔, we have a few certified compilers, a few in-progress of certification products and a few use cases.',
@@ -13,7 +15,7 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

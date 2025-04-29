@@ -30,6 +30,8 @@ jobs:
         run: npm ci
       
       - name: Build website
+        env:
+          BASE_URL: "/pr/${{ github.event.pull_request.number }}/"
         working-directory: arewesafetycriticalyet.org
         run: npm run build
 
@@ -40,7 +42,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
-          publish_dir: ./website/build
+          publish_dir: ./arewesafetycriticalyet.org/build
+          destination_dir: "website"
           cname: arewesafetycriticalyet.org
           # The following lines assign commit authorship to the official
           # GH-Actions bot for deploys to `gh-pages` branch:
