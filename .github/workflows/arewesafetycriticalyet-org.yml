@@ -30,8 +30,6 @@ jobs:
         run: npm ci
       
       - name: Build website
-        env:
-          BASE_URL: "/pr/${{ github.event.pull_request.number }}/"
         working-directory: arewesafetycriticalyet.org
         run: npm run build
 
