@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Are We Safety Critical Yet?',
-  tagline: 'Are we there yet to use Rust in safety critical software?',
+  tagline: 'It depends 🤔, we have a few certified compilers, a few in-progress of certification products and a few use cases.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -36,7 +36,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
+          path: 'docs/main',
+          sidebarPath: './docs/sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -69,9 +70,9 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'coding_guidelines',
-        path: 'coding_guidelines',
+        path: 'docs/coding_guidelines',
         routeBasePath: 'coding_guidelines',
-        sidebarPath: './sidebarsCodingGuidelines.ts',
+        sidebarPath: './docs/sidebarsCodingGuidelines.ts',
         // ... other options
       },
     ],
@@ -79,9 +80,9 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'tooling',
-        path: 'tooling',
+        path: 'docs/tooling',
         routeBasePath: 'tooling',
-        sidebarPath: './sidebarsTooling.ts',
+        sidebarPath: './docs/sidebarsTooling.ts',
         // ... other options
       },
     ],
@@ -89,9 +90,9 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'liaison',
-        path: 'liaison',
+        path: 'docs/liaison',
         routeBasePath: 'liaison',
-        sidebarPath: './sidebarsLiaison.ts',
+        sidebarPath: './docs/sidebarsLiaison.ts',
         // ... other options
       },
     ]
