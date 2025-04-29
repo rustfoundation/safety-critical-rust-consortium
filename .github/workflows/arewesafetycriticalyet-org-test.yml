@@ -36,11 +36,11 @@ jobs:
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Deploy PR to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           # Build output to publish to the `gh-pages` branch:
-          publish_dir: ./website/build
+          publish_dir: ./arewesafetycriticalyet.org/build
           destination_dir: "pr/${{ github.event.pull_request.number }}"
           # The following lines assign commit authorship to the official
           # GH-Actions bot for deploys to `gh-pages` branch:
@@ -49,6 +49,7 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          keep_files: true
 
       - name: Publish the link in a PR comment
         run: |
