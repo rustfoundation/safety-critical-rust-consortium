@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/tooling.svg').default,
     description: (
       <>
-        Aims to define and maintain a minimal, community-approved set of tools required for certifying Rust 
+        Aims to define and maintain a minimal, community-identified set of tools suggested for certifying Rust 
         in safety-critical applications. It maintains documentation on these tools and their development status, 
         helping guide adoption and compliance efforts.
       </>
