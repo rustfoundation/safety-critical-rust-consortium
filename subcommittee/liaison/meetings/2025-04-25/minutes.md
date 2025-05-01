@@ -63,14 +63,14 @@
    1. \[todo\] [Xander Cesari](mailto:xander.cesari@pictor.us) to reach out to ELISA via Red Hat contact  
 4. Linux Foundation provides some funding and services so there is a relationship but not a specific relationship w.r.t SC work  
    Joel can liaise to the LF directly and open avenues for asking the questions about who has which information  
-5. WG23 \-  
-   Similar to the SAE committee issues \- lots of abstentions  
+5. WG23 \- not currently working on this but would accept submissions  
+   Similar to the SAE committee issues \- lots of abstentions, lack of internal knowledge  
    Collect volunteers at the in-person  
    Bring any artifacts associated with this to the in-person  
-6. BSI …  
+6. BSI (not yet contacted for procedural reasons)  
 7. Joel has longstanding relationship with ECMA International (prev chair of C\#)  
    TC12 is the safety standards group  
-   \[todo\] find out what this committee does and see if they have an interest  
+   \[todo\] Joel or Alex to find out what this committee does and see if they have an interest  
 8. Others who have an industry stake in engaging w/ standards \- make a table that maps groups to individuals to look into these  
    \[todo\] Alex to create the table mapping orgs to RIs, ensure that this is merged up right away  
 9. Foundation eng team has joined INCITS to get access to WG21 for the C++/Rust interop work; indirectly connected to the safety-critical work; should have an aspect but at the moment is a relationship-building exercise  
