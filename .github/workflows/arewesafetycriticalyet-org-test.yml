@@ -13,6 +13,8 @@ permissions:
 jobs:
   test-deploy:
     name: Test AreWeSafetyCriticalYet.org Deployment
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
