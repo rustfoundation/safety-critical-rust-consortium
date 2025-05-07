@@ -73,7 +73,9 @@
       - Prescriptive, not proscriptive
     - Guideline Content
       - Amplification
-      - Exception(s), called deviation” in MISRA
+      - Exceptions and Deviations
+        - an exception is what allows for avoiding needing to apply the rule and is baked into the rule
+        - a deviation is something that you'd have to do if not applying a required or advisory rule
     - Rationale
       - JW brought up the fact that MISRA is often blindly followed
         - This can lead to poor outcomes and “blind dislike” of rules
