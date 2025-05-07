@@ -25,11 +25,26 @@
 
 **Please add your name, and an emoji that describes your day.**
 
-* 
+- Pete LeVasseur, 🏃
+- Sam Wright ✈️
+- AndrewFernandes ☕🙂
+- Douglas Deslauriers 🥱
+- Koppany Pazman
+- Jonas Wolf 👂
+- El Mahdi EL Araby ⛰️
+- Achim Kriso 🦆
+- Walter Pearce (Rust Foundation) 🙃
+- Arthur Hicken 🤖
+- Christof Petig 🥚🐇
+- Joel Marcey (Rust Foundation) ✌️
+- Alex Celeste 😔
+- Alexandru Vochescu 🙃
+- Andrew Herridge 😀
+- Lukas Wirth
 
 **Notetaker:**
 
-* 
+* Andrew Fernandes
 
 ## Housekeeping section
 
@@ -43,7 +58,31 @@
 
 ## Meeting Minutes
 
-* 
+- Meeting Minutes Review
+  - Only up to item 4 on the last task list was completed
+  - Douglas Deslauriers moves to accept the minutes
+- Working Session: Style Guidelines
+  - PL reviewed how to contribute via PR
+  - Working through remainder of style guideline (picking up from last week)
+  - Style guidelines:
+    - Discussion WRT the definition of “Scope”
+      - Compare and contrast with MISRA definitions
+      - MISRA’s definition of “Scope” is also under active evolution
+      - Possible looking at preconditions, postconditions, and invariants to provide scope
+    - Tags
+      - Prescriptive, not proscriptive
+    - Guideline Content
+      - Amplification
+      - Exceptions and Deviations (as per MISRA)
+        - an exception is what allows for avoiding needing to apply the rule and is baked into the rule
+        - a deviation is something that you'd have to do if not applying a required or advisory rule
+    - Rationale
+      - JW brought up the fact that MISRA is often blindly followed
+        - This can lead to poor outcomes and “blind dislike” of rules
+        - AF suggested that “simple, easy deviations” are a core requirement in order to disincentivize blind rule-following
+  - **ASK** for members to review current PRs on the [style guidelines](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pulls)
+- Review Session
+  - PL requested minor review and improvements to the CI/CD system
 
 ## Material
 
