@@ -1,4 +1,4 @@
-# Coding Guidelines Subcommittee Meeting on 2025-04-23 @ 10am Eastern Time
+# Coding Guidelines Subcommittee Meeting on 2025-04-30 @ 10am Eastern Time
 
 [Conversion](https://www.worldtimebuddy.com/?qm=1&lid=5,100,2643743,12,1850147&h=5&date=2025-4-30&sln=10-11&hf=1) between common time zones of attendees.
 
