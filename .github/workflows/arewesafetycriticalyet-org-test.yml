@@ -1,7 +1,7 @@
 name: Test AreWeSafetyCriticalYet.org Deployment
 
 on:
-  pull_request:
+  pull_request_target:
     # Review gh actions docs if you want to further define triggers, paths, etc
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
   merge_group:
