@@ -73,7 +73,7 @@
       - Prescriptive, not proscriptive
     - Guideline Content
       - Amplification
-      - Exceptions and Deviations
+      - Exceptions and Deviations (as per MISRA)
         - an exception is what allows for avoiding needing to apply the rule and is baked into the rule
         - a deviation is something that you'd have to do if not applying a required or advisory rule
     - Rationale
