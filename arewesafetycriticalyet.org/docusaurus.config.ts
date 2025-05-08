@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const baseUrl = process.env.BASE_URL || '/website';
+const baseUrl = process.env.BASE_URL || '/';
 
 const config: Config = {
   title: 'Are We Safety Critical Yet?',
