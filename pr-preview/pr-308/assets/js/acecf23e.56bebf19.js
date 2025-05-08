@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarewesafetycriticalyet_org=self.webpackChunkarewesafetycriticalyet_org||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/pr-preview/pr-308/blog","blogTitle":"Blog","authorsListPath":"/pr-preview/pr-308/blog/authors"}')}}]);
