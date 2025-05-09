@@ -29,11 +29,25 @@
 
 **Please add your name, and an emoji that describes your day.**
 
-*
+- Pete LeVasseur, 🧬
+- Alex Celeste ☺️
+- Samuel Wright ☕☕⚰️
+- Koppany Pazman
+- Placeholder
+- Arthur Hicken 🤖
+- Julius Gustavsson 
+- Sasha Pourcelot 🍕
+- Andrew Fernandes 💤☕
+- Placeholder
+- Placeholder
+- Lukas Wirth
+- Enow Scott
+- Achim Kriso
+- El Araby El Mahdi 🐌☕
 
 **Notetaker:**
 
-*
+* Andrew Fernandes
 
 ## Housekeeping section
 
@@ -48,7 +62,30 @@
 
 ## Meeting Minutes
 
-* 
+- *The Hunt for Today’s Notetaker (™)*
+- Review of last weeks’ minutes
+  - Proposed accepting, unanimous pass
+- Discussion on “[How Do We Treat Macros?](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/59)”
+- **[Ask]** for PR fill on [Agenda for May Consortium Meeting](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/270)
+  - **[Ask]** for review of open PRs and issues
+- Review of “Scaffold out down to subsection-level”
+- Suggestion that it was better to have coverage over completion
+- Mention that guidelines *can* overlap
+  - This is to allow fine-grained control
+- **[todo]** **(Action Items)**
+  - **(Pete LeVasseur)** Make the sphinx built output “less noisy”
+  - **(Pete LeVasseur)** Use the “ruff” python formatter on python code (from the “uv” folks)
+  - **(Samuel Wright)** Template generation needs to have extraneous whitespace removed
+  - **(Pete LeVasseur)** Repo deployment might be broken
+  - **(Pete LeVasseur)** For next meeting to return to the punted “Discuss standards matrix and bidirectional linking”
+  - **(Lukas Wirth)** and **(Achim Kriso)** Create PRs (content not neeed, just start them)
+- Sphinx PR build can show diffs of the HTML documentation
+  - Works better at the word/paragraph level rather than “whole page” level
+  - Worked through [this example](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/61)
+- Desire to add other active contributors as additional approvers to the GitHub workflow
+- Two volunteers requested for creating PRs and fleshing out the process (see "todo", above)
+  - Content not needed, just the start of PRs
+- Quick review session
 
 ## Material
 
