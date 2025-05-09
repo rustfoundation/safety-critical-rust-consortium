@@ -1,4 +1,4 @@
-# Members - Coding Guidelines Subcommittee
+# Members
 
 | Member Name             | Affiliation                            | Role                        | GitHub Username    |
 |-------------------------|----------------------------------------|-----------------------------|--------------------|
