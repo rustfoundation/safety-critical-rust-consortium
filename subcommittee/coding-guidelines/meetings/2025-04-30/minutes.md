@@ -76,7 +76,6 @@
   - **(Pete LeVasseur)** Make the sphinx built output “less noisy”
   - **(Pete LeVasseur)** Use the “ruff” python formatter on python code (from the “uv” folks)
   - **(Samuel Wright)** Template generation needs to have extraneous whitespace removed
-  - **(Pete LeVasseur)** Repo deployment might be broken
   - **(Pete LeVasseur)** For next meeting to return to the punted “Discuss standards matrix and bidirectional linking”
   - **(Lukas Wirth)** and **(Achim Kriso)** Create PRs (content not neeed, just start them)
 - Sphinx PR build can show diffs of the HTML documentation
