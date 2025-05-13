@@ -22,5 +22,5 @@
 - Chris de Claverie (GAMA)
 - Felix Gilcher (Ferrous Systems)
 - Espen Albrektsen (Sonair AS)
-- Pete LeVasseur (Vowen by Toyota)
+- Pete LeVasseur (Woven by Toyota)
 - Alexandru Radovici (Moderator)
