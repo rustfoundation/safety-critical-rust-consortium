@@ -15,24 +15,24 @@ body:
         Use this category if you're interested in a crate, library, or a certifiable version of an existing crate.
 
         #### Examples:
-        * Mathematical analysis crate
-        * Certifiable version of `heapless`
+          * Mathematical analysis crate
+          * Certifiable version of `heapless`
 
         ### Internal Rust project tooling
         Use this category if the feature you're interested in is in a Rust Project managed piece of software.
         
         #### Examples:
-        * rustc compiler flag
-        * Clippy lints
-        * Cargo extensions
+          * rustc compiler flag
+          * Clippy lints
+          * Cargo extensions
 
         ### Developer tool
         This would be a development tool, an additional program used in the process of writing or verifying Rust.
 
         #### Examples:
-        * Formal verification tool
-        * IDE
-        * Debugging tools
+          * Formal verification tool
+          * IDE
+          * Debugging tools
   - type: dropdown
     id: tooling-type
     attributes:
