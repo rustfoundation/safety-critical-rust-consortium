@@ -2,10 +2,22 @@ name: Tooling Request
 description: Identification of a gap in the safety-critical tooling ecosystem and request for a solution
 title: Tooling Request
 labels: ["tooling gap analysis", "tooling request"]
-assigness:
+assignees:
   - joelmarcey, alexandruradovici
 body:
   - type: markdown
     attributes:
       value: |
         Use this form to submit a tooling gap analysis.
+  - type: dropdown
+    id: tooling-type
+    attributes:
+      label: What type of tool are you proposing?
+      description: Including
+      options:
+        - 'crate'
+        - 'Internal Rust project tooling (clippy, cargo, etc)'
+        - 'Developer tool (IDE, analysis tool, etc)'
+      default: 1
+    validations:
+      required: true
