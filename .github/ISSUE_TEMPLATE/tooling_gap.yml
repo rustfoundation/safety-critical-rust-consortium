@@ -1,0 +1,11 @@
+name: Tooling Request
+description: Identification of a gap in the safety-critical tooling ecosystem and request for a solution
+title: Tooling Request
+labels: ["tooling gap analysis", "tooling request"]
+assigness:
+  - joelmarcey, alexandruradovici
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to submit a tooling gap analysis.
