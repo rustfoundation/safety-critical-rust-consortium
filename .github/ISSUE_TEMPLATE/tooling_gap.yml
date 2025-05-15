@@ -8,16 +8,62 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form to submit a tooling gap analysis.
+        ## Intention
+        If you or your organization is working in the Rust certification space, preferably directly developing certified software in Rust, and has identified a gap in tooling or process you can submit this form to bring this issue up to the consortium. We will attempt to bring these gaps to the correct organization that may be able to address it. This may be other organizations within the Rust Project or Rust Foundation, the open-source community, tooling vendor companies, or even members of the consortium.
+
+        ### crate/certifiable crate
+        Use this category if you're interested in a crate, library, or a certifiable version of an existing crate.
+
+        Examples:
+        - Mathematical analysis crate
+        - Certifiable version of `heapless`
+
+        ### Internal Rust project tooling
+        Use this category if the feature you're interested in is in a Rust Project managed piece of software.
+        
+        Examples:
+        - rustc compiler flag
+        - Clippy lints
+        - Cargo extensions
+
+        ### Developer tool
+        This would be a development tool, an additional program used in the process of writing or verifying Rust.
+
+        Examples:
+        - Formal verification tool
+        - IDE
+        - Debugging tools
   - type: dropdown
     id: tooling-type
     attributes:
       label: What type of tool are you proposing?
       description: Including
       options:
-        - 'crate'
-        - 'Internal Rust project tooling (clippy, cargo, etc)'
+        - 'crate/certifiable crate'
+        - 'Internal Rust project tooling (rustc, clippy, cargo, etc)'
         - 'Developer tool (IDE, analysis tool, etc)'
       default: 1
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to submit a tooling gap analysis.
+  - type: input
+    id: title
+    attributes:
+      label: What is a summary of the tooling gap you have identified?
+    validations:
+      required: true
+  - type: input
+    id: gap_description
+    attributes:
+      label: Please elaborate on the process you or your organization is attempting and what the pain points are.
+    validations:
+      required: true
+  - type: input
+    id: tool_suggestion
+    attributes:
+      label: Have you identified the tool or improvement that would directly solve your problem? Please list your suggestions here!
+    validations:
+      required: false
