@@ -14,25 +14,25 @@ body:
         ### crate/certifiable crate
         Use this category if you're interested in a crate, library, or a certifiable version of an existing crate.
 
-        Examples:
-        - Mathematical analysis crate
-        - Certifiable version of `heapless`
+        #### Examples:
+        * Mathematical analysis crate
+        * Certifiable version of `heapless`
 
         ### Internal Rust project tooling
         Use this category if the feature you're interested in is in a Rust Project managed piece of software.
         
-        Examples:
-        - rustc compiler flag
-        - Clippy lints
-        - Cargo extensions
+        #### Examples:
+        * rustc compiler flag
+        * Clippy lints
+        * Cargo extensions
 
         ### Developer tool
         This would be a development tool, an additional program used in the process of writing or verifying Rust.
 
-        Examples:
-        - Formal verification tool
-        - IDE
-        - Debugging tools
+        #### Examples:
+        * Formal verification tool
+        * IDE
+        * Debugging tools
   - type: dropdown
     id: tooling-type
     attributes:
@@ -55,13 +55,13 @@ body:
       label: What is a summary of the tooling gap you have identified?
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: gap_description
     attributes:
       label: Please elaborate on the process you or your organization is attempting and what the pain points are.
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: tool_suggestion
     attributes:
       label: Have you identified the tool or improvement that would directly solve your problem? Please list your suggestions here!
