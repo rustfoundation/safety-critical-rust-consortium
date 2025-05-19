@@ -1,6 +1,6 @@
-# Coding Guidelines Subcommittee Meeting on 2025-05-07 @ 10am Eastern Time
+# Coding Guidelines Subcommittee Meeting on 2025-05-21 @ 10am Eastern Time
 
-[Conversion](https://www.worldtimebuddy.com/?qm=1&lid=5,100,2643743,12,1850147&h=5&date=2025-5-7&sln=10-11&hf=1) between common time zones of attendees.
+[Conversion](https://www.worldtimebuddy.com/?qm=1&lid=5,100,2643743,12,1850147&h=5&date=2025-5-21&sln=10-11&hf=1) between common time zones of attendees.
 
 | Search Key | Description |
 | :---- | :---- |
@@ -10,17 +10,14 @@
 
 ## Agenda
 
-1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-04-30/minutes.md)
+1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-05-07/minutes.md)
 2. Introduction of new members
 3. Review of [revised milestone](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1) focused on broad + deep approach to macros chapter - 5 mins
-4. Working session:
-   * Goal: Sketch out broad strokes of macros chapter guidelines titles, everyone snags a guideline to work on
-      * Together we sketch in as many titles as we can to identify "shape" of chapter - 30 mins
-      * We divvy up the sketched in titles to as many folks as we can - 10 mins
-5. Review session:
-   * Review material subcommittee will present at RustWeek Consortium meetup, solicit feedback - 5 mins
+4. Discuss the logistics of pushing coding guidelines through to Clippy lints - 10 mins
+5. Discuss [proposal](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/75#issuecomment-2885697090) for how to proceed with coding guidelines style / scope - 20 mins
+6. Review session:
    * Review open [PRs](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pulls) & [issues](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues) - 5 mins
-6. Round table - 5 mins
+7. Round table - 5 mins
 
 ## Check-in area
 
@@ -36,7 +33,7 @@
 
 * Document space: [coding-guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)  
 * Zulip: [safety-critical-consortium: Coding Guidelines](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium/topic/Coding.20Guidelines)
-* [Early Alpha Milestone](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1) ahead of meeting at RustWeek
+* [Early Alpha Milestone](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1) 
 * [Work Item Board](https://github.com/orgs/rustfoundation/projects/1)
 
 ## Tasks
