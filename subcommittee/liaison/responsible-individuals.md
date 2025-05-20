@@ -4,6 +4,7 @@
 |---------------------------|-----------------------------------------|
 | AUTOSAR                   | Christof Petig                          |
 | BSI                       | Alex Celeste                            |
+| DO-178B                   | Arnaud Fontaine                         |
 | ECMA TC12                 | Joel Marcey                             |
 | ELISA                     | Xander Cesari                           |
 | Ferrous                   | Joel Marcey                             |
