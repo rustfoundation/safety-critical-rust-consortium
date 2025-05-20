@@ -45,4 +45,5 @@
 | Joe Johnson             | Individual                             | Observer                    | @JJohnson357       |
 | Stephen Hedrick         | AdaCore                                | Producer                    | @CartesianXR7      |
 | Yaniv Dan               | Mercedes-Benz                          | Producer                    | @YanivDan-Mercedes |
+| David Svoboda           | Software Engineering Institute (SEI)   | Producer                    | @sei-dsvoboda      |
 
