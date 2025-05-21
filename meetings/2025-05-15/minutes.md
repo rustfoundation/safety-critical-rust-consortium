@@ -80,6 +80,7 @@
 * Markus Hosch 🚲  
 * Marc Schoolderman 🚲😵‍💫  
 * El Araby El Mahdi 🐌
+* Gonzalo Brito 🦀 
 
 **Notetaker:**
 
