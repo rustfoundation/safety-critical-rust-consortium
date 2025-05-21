@@ -1,0 +1,11 @@
+- **Meeting details**: Safety-Critical Consortium Meeting on 15 May 2025 in Utrecht.
+- **Meeting funding**: No material change in the funding model. Will work to try to have members host meetings if held in an applicable location.
+- **Website**: https://arewesafetycriticalyet.org is live. Now need to add more content.
+- **Survey results**: Reviewed [survey results](https://docs.google.com/presentation/d/1bUCP6hYtyLq3jeOgxWRv-El1Babite7o9QNXVpjdgr0/edit?slide=id.g350e3d6870f_0_25#slide=id.g350e3d6870f_0_25). 200+ responses. Key insights particularly around adoption where coding guidelines, materials for making the case, certified compilers and toolings were the main items of need.
+- **Rust specification**: FLS is now part of the Rust project. Working on how to synchronize the FLS and the Reference. RFCs won't yet be blocked on FLS changes, but maybe stabilization could in the future.
+- **Coding guidelines**: Some coding guidelines are landing. Long-term could see coding guidelines as part of a clippy lint of sorts. Aligning with MISRA.
+- **Tooling**: Need to think about the bar on how tools are added to tooling recommendations list. 
+- **Liaison**: The team has specific organization contact points for upstreaming and collaboration including AUTOSAR and WG23.
+- **Next meeting**: No alignment on when the next meeting should be and where. A poll will be created to try to finalize.
+- **MISRA vs. CERT**: MISRA has a deviation process. CERT rarely has a deviation process. Need to decide whether to go more towards a set of rules (like MISRA) or an iterative improvement process (like CERT), or find a more middle ground (if possible).
+- **Streamlining Qualification**: Rust reduces mistakes. Qualification should be easier. Pooling resources to help.  
