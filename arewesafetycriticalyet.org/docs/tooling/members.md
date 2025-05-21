@@ -1,4 +1,7 @@
-# Members - Tooling Subcommittee
+---
+position: 2
+---
+# Members
 
 - Tony Aiello (AdaCore)
 - Jordan McQueen (Woven by Toyota)
