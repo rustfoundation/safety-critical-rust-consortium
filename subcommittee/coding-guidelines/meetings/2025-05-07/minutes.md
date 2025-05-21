@@ -96,7 +96,6 @@ Add here\! We will PR these in\!
 ## Meeting Minutes
 
 * **\[todo\] list**
-  * (PL) Sphinx deployment may be broken on GitHub
   * (OB) Add a GitHub issue regarding macro testability
   * (multiple) assignments for [Macros Chapter Guidelines](#macros-chapter-guidelines)
 * Review of the [revised milestone](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1)
