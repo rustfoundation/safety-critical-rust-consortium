@@ -75,9 +75,6 @@
 
 ## Ideas for Coding Guidelines\! {#ideas-for-coding-guidelines!}
 
-* Blah
-* Blah
-* Blah
 * Clippy lint 2 “absurd comparisons” (concrete defect)
 * Ordered refutable patterns behind irrefutable? (stylistic/subset)
 * If a function makes use of unsafe its body, then the function shall be marked unsafe.
