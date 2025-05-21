@@ -67,21 +67,21 @@ Add here\! We will PR these in\!
 
 * Always use fully qualified module paths in macros (`::std::vec::Vec`)
   * Important to always write the rationale\!
-* Do not hide unsafe blocks within macro expansions
+* **[todo]** **[Espen]** Do not hide unsafe blocks within macro expansions
   * Robert: from CERT / “right” 😆perspective a little too strong, too prohibitive
     * E.g. in CERT may instead require some sort of annotation
   * E.g. what does “hide” mean in this instance?
     * Good word for headline so long as amplification explains this
   * How do we write this rule in a fashion to make clear its importance?
   * How do we write this in a positive manner?
-* use path-based scoping for macro identifiers
+* **[todo]** **[Alex]** use path-based scoping for macro identifiers
 * Establish a strategy how to test macros
-* Macros should be *testable* (both positive and negative tests)
+* **[todo]** **[Andrew]** Macros should be *testable* (both positive and negative tests)
   * Is *“complete testability”* necessary and sufficient for “safety” of macros?
-* procedural macros shall not access external resources
-* procedural macros shall be side effect free (pure)
-* a macro should not be used in place of a function
-* Cyclomatic complexity of macro.
+* **[todo]** **[Alex]** procedural macros shall not access external resources
+* **[todo]** **[Marc]** procedural macros shall be side effect free (pure)
+* **[todo]** **[Mahdi]** a macro should not be used in place of a function
+* **[todo]** **[Oreste]** Cyclomatic complexity of macro.
   * Rationale: In some cases using a macro is safer than not using it. Macro protect from human error when replicating the same code. However complex macros can be more dangerous than manual code. A cyclomatic complexity index could help to decide when is safer to use a macro.
   * “Clone extraction” / “outlining”?
 
