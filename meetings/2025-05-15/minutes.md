@@ -81,6 +81,7 @@
 * Marc Schoolderman 🚲😵‍💫  
 * El Araby El Mahdi 🐌
 * Gonzalo Brito 🦀 
+* Benoit Lietaer🦀 
 
 **Notetaker:**
 

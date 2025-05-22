@@ -24,6 +24,7 @@
 - Arthur Hicken
 - Markus Hosch
 - Takeo Kondo
+- Benoit Lietaer
 - Pete LeVasseur
 - Joel Marcey
 - Jordan McQueen
