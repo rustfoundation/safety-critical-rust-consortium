@@ -165,6 +165,7 @@ Zulip, email, anything else?
 
 - Alex Celeste (Perforce)
 - Arnaud Fontaine (Airbus)
+- Benoit Lietaer (SpaceApps)
 - Christof Petig (Aptiv)
 - Daniel Windham (Atlas Computing)
 - Jeffrey Marshall (Lynx)
