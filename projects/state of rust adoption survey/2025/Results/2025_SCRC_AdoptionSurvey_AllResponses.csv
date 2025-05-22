@@ -311,16 +311,11 @@ Tutorials on how to do it would be great if written by someone."
 - pushing the right tooling, ecosystems, SW Dev. env. and technology choices through team and projets
 - supporting System eng. for safety-critical pack preparation, preparing req. specification accordingly and selecting processes & methodology according to the ECSS standards.
 - supporting mission/operation SW life-cycle (i.e. ISS on-board SW deployment, cyber-security patching, update and network security)
-
-I am a Rust ambassador, in touch with Ferrous System (Ferrocene) for bootstrapping the Rust approach in space SW...but still a long road to go I am afraid :/ 
-
-#OpenForWork
-benoit {dot} lietaer {at} gmail {dot} com ;0)","","x","x","x","","","","","x","x","x","","Yes, I already am","","x","","x","","","","","","paving the road-to-space standards (ECSS), should be a no-brainer...still a long way to go :/","- embedded ecosystem is just a dream come true, with probe-rs, dfmt/rtt, ..
+","","x","x","x","","","","","x","x","x","","Yes, I already am","","x","","x","","","","","","paving the road-to-space standards (ECSS), should be a no-brainer...still a long way to go :/","- embedded ecosystem is just a dream come true, with probe-rs, dfmt/rtt, ..
 - PAC/HAL 'standardization'
 - cargo + crate is the best SDE ever used
 - safety-critical WITHIN the compiler should be a ticket to space...yet I struggle forcing it in project, just because it is not stamped 'ECSS compatible' (Yes, ESA is _that_ simple).","","","x","","","x","","","","","Safety-critical WITHIN the compiler should be a ticket to space...yet I struggle forcing it in project, just because it is not stamped 'ECSS compatible' (Yes, ESA is _that_ simple).","","x","x","","","","","","","","","","","","","","","","","","x","x","x","x","","x","","","x","For (ESA/EU) space domain, we need _now_ formal ISVV, coverage, ECSS certified compiler and","Eureopean Space Agency is still blind to anything that is not stamped 'MISRA': showing/prooving that this IS part of Rust would help...but I am afraid this can only be done by sticking to a (ECSS) standard/certification.
 Having more 'space' grade HW component (MCUs) libs would be a nice-to-have...but I am ready to write it (remember we use very old, dusty but with mission-heritage devices, yes, we still run SPARC/LEON MCUs,....praying for RISC-V to fly).","- ECSS certificed compiler
 - insisting on tooling equivalence, such as vectorcast...","Yes... pretty much all of it !  :)","","","","","","ECSS","","","","","","","","","","","","","","","","","","","","","","","x","","","","","","","","","","","","x","x","x","","","x","","","x","","","","SPARC","I believe it is time we sit at ESA's table and clarify the needs.
-Waving Rust in space CAt. A SW in project shouldn't be something beinf frown at anymore...","I am all in for join efforts, more ESA ITTs, common R&D projects and discussion ! 
-Benoit LIETAER"
+Waving Rust in space CAt. A SW in project shouldn't be something beinf frown at anymore...","I am all in for join efforts, more ESA ITTs, common R&D projects and discussion !"
 "116065944","04/22/2025 8:40:28 am","04/22/2025 8:41:52 am","Started, but not completed yet","Public Collector","-","-","Desktop","","","Yes","","","","","","","","","","Other","","","","","","","","","","","","","","Other","","","","","","","","Java","","","","","x","No, I'm not interested in using Rust","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""
