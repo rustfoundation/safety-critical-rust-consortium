@@ -72,6 +72,10 @@ See [LICENSE-APACHE](LICENSE-APACHE), [LICENSE-MIT](LICENSE-MIT),
 You can also read more under the Foundation's [intellectual property
 policy][ip-policy].
 
+## Privacy Policy
+
+You can read about the consortium's privacy policy [here](privacy-policy).
+
 ## Other Policies
 
 You can read about other Rust Foundation policies in the footer of the Foundation
@@ -81,4 +85,5 @@ You can read about other Rust Foundation policies in the footer of the Foundatio
 [foundation-website]: https://foundation.rust-lang.org
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [media-guide and trademark]: https://foundation.rust-lang.org/policies/logo-policy-and-media-guide/
-[rust-foundation]: https://foundation.rust-lang.org/
+[privacy-policy]: ./PRIVACY.md
+[rust-foundation]: https://rustfoundation.org/
