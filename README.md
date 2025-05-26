@@ -74,7 +74,7 @@ policy][ip-policy].
 
 ## Privacy Policy
 
-You can read about the consortium's privacy policy [here](privacy-policy).
+You can read about the consortium's privacy policy [here](PRIVACY.md).
 
 ## Other Policies
 
