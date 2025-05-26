@@ -1,7 +1,7 @@
 # Privacy
 
 In general, the Safety Critical Rust Consortium adheres to the Rust Foundation's [privacy 
-policy](privacy-policy). 
+policy](https://rustfoundation.org/policy/privacy-policy/). 
 
 That said, the Safety Critical Rust Consortium is an open organization and most everything the consortium does is reflected publicly in its GitHub repositories, including this one, and associated materials. If you proactively post personally identifiable information (PII) in an issue or pull request, that information will be public. 
 
