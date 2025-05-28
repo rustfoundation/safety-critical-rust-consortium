@@ -10,7 +10,7 @@ body:
       value: |
         NOTE: IF YOU HAVE NOT YET SUBMITTED AN APPLICATION TO JOIN THE SAFETY CRITICAL RUST CONSORTIUM ITSELF, PLEASE [DO SO FIRST](https://github.com/rustfoundation/safety-critical-rust-consortium?tab=readme-ov-file#consortium-membership) BEFORE FILLING OUT THIS FORM.
         
-        The [Safety Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) currently has two subcommittees:
+        The [Safety Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) currently has three subcommittees:
 
         1. [Coding Guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines)
         2. [Tooling](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/tooling)
@@ -49,7 +49,7 @@ body:
   - type: dropdown
     id: subcommittee-membership-type
     attributes:
-      label: ONLY FILL THIS OUT IF YOU ARE A PRODUCER IN THE CONSORTIUM. IF YOU ARE AN OBSERVER, YOU WILL BE AN OBSERVER IN THE SUBCOMMITTEE BY DEFAULT.. Do you plan to be a producer or observer in this subcommittee?
+      label: ONLY FILL THIS OUT IF YOU ARE A PRODUCER IN THE CONSORTIUM. IF YOU ARE AN OBSERVER, YOU WILL BE AN OBSERVER IN THE SUBCOMMITTEE BY DEFAULT. Do you plan to be a producer or observer in this subcommittee?
       description: If you are a producer in the consortium, choose if you plan to be active in the subcommittee (producer) or passive (observer)
       options:
         - Producer
