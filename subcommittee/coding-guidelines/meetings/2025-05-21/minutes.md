@@ -112,7 +112,7 @@
   * Suggestion to allow vendors to contribute lints
     * Vendors see this as “kinda’ marketing”
     * But it gets people excited and gets *actual contributions*
-  * Clippy has a 12-week development cycle
+  * Clippy will have a 12-week feature freeze starting on 2025-06-26
     * Small numbers of lints are created, modified, etc continually
   * Logistics of pushing coding guidelines to Clippy lints
     * There were early discussions with a commercial tool vendor about integrating lints
