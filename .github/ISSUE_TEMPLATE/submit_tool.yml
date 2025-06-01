@@ -11,7 +11,9 @@ body:
         ## Submit a Tool to the Consortium
         If you maintain, sell, or use a software tool that would be useful to the safety-critical Rust community we want to hear about it. This might include statis analysis, hardware deployment, compilers, or libraries/crates.
 
-        The consortium may publicize this tool on email publications, websites ([Are We Safety Critical Yet](www.arewesafetycriticalyet.com)), or at meetings. However, we may also deem the tool as not safety-critical, not mature enough (yet), or unmaintained and decline to publish it.
+        The consortium may publicize this tool on email publications, websites ([Are We Safety Critical Yet](www.arewesafetycriticalyet.com)), or at meetings. If we decide to move ahead with featuring the tool we will request more information about the specific uses of the tool as well as ask for a point-of-contact.
+
+        However, we may also deem the tool as not safety-critical, not mature enough (yet), or unmaintained and decline to publish it. In that case we would be happy to reconsider the tool in the future as it develops.
   - type: input
     id: tool_name
     attributes:
@@ -33,7 +35,7 @@ body:
   - type: dropdown
     id: submittor_role
     attributes:
-      label: What's your relationship to this tool?
+      label: What is your role/connection to this tool?
       description: What do you do for/with this tool
       options:
         - 'User or Customer'
