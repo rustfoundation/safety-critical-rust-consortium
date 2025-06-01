@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Process Gap
+        ## Process/Tooling Gap
         If you or your organization is working in the Rust certification space, preferably directly developing certified software in Rust, and has identified a gap in the development process you can submit this form to bring this issue up to the consortium. We will attempt to bring these gaps to the correct organization that may be able to address it, usually through the development of new tools or the modification of existing tooling. This may be other organizations within the Rust Project or Rust Foundation, the open-source community, tooling vendor companies, or even members of the consortium.
 
         Optionally, if you have a good idea of exactly what tool or tool modification would close this process gap we invite you to describe the tool.
@@ -26,7 +26,7 @@ body:
       placeholder: "Example: When clippy lints are generating errors or warning there is terminal content to be printed but when all clippy lints are passing or failing there's no way to generate traceability documentation indicating that the code passed the built-in checks. This would be useful for certification and code auditing."
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: specification
     attributes:
       label: What certification/specification does this process pertain to (if any)?
@@ -71,7 +71,7 @@ body:
   - type: textarea
     id: tool_suggestion
     attributes:
-      label: Have you identified the tool or improvement that would directly solve your problem? Please list your suggestions here!
+      label: What tool or tool improvement would solve this process gap?
       placeholder: "Example: a cargo flag that would generate a log file of all clippy lints that ran and their result"
     validations:
       required: false
