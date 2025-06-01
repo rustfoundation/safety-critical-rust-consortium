@@ -1,0 +1,59 @@
+name: Submit Safety Critical Tool
+description: Submit a safety-critical tool to the consortium
+title: SC Tool Submittal
+labels: ["submit tooling"]
+assigness:
+  - joelmarcey, alexandruradovici
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit a Tool to the Consortium
+        If you maintain, sell, or use a software tool that would be useful to the safety-critical Rust community we want to hear about it. This might include statis analysis, hardware deployment, compilers, or libraries/crates.
+
+        The consortium may publicize this tool on email publications, websites ([Are We Safety Critical Yet](www.arewesafetycriticalyet.com)), or at meetings. However, we may also deem the tool as not safety-critical, not mature enough (yet), or unmaintained and decline to publish it.
+  - type: input
+    id: tool_name
+    attributes:
+      label: What is the name of the tool?
+    validations:
+      required: true
+  - type: textarea
+    id: tool_description
+    attributes:
+      label: What is a description of the tool, what it does, how it would be used?
+    validations:
+      required: true
+  - type: input
+    id: tool_link
+    attributes:
+      label: Link to the tool repo or homepage
+    validations:
+      required: true
+  - type: dropdown
+    id: submittor_role
+    attributes:
+      label: What's your relationship to this tool?
+      description: What do you do for/with this tool
+      options:
+        - 'User or Customer'
+        - 'Creator/Maintainer (open source)'
+        - 'Product Manager/Owner (commercial)'
+        - 'Other'
+    validations:
+      required: true
+  - type: dropdown
+    id: tool_type
+    attributes:
+      label: Tool category
+      description: Specific use and type of this tool
+      options:
+        - "coverage"
+        - "requirements-traceability"
+        - "qualified-compiler"
+        - "test-runner"
+        - "formal-verification"
+        - "static-analysis"
+        - "tests-generation"
+    validations:
+      required: false
