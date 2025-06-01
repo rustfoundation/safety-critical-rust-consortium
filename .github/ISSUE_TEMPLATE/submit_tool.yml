@@ -2,7 +2,7 @@ name: Submit Safety Critical Tool
 description: Submit a safety-critical tool to the consortium
 title: SC Tool Submittal
 labels: ["submit tooling"]
-assigness:
+assignees:
   - joelmarcey, alexandruradovici
 body:
   - type: markdown
