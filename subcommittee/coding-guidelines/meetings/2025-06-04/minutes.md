@@ -11,7 +11,7 @@
 ## Agenda
 
 0. Solicitation of notetaker  
-1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-05-28/minutes.md) (temporarily [here](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/06837cf234014c69b454cc80d019c14507bf79d6/subcommittee/coding-guidelines/meetings/2025-05-28/minutes.md))  
+1. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-05-28/minutes.md)
 2. Introduction of new members  
 3. Review of [revised milestone](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1) focused on broad \+ deep approach to macros chapter \- 5 mins  
 4. Discuss work Alex Celeste has on-going for rewriting style guideline \- 20 mins  
