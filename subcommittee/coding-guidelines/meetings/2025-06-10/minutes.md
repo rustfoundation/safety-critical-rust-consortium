@@ -71,7 +71,7 @@
   * Check if the workflow to contribute with guidelines is user-friendly enough.  
 * [arewesafetycriticalyet.org](http://arewesafetycriticalyet.org)  
   * Deployment of coding guidelines to [coding-guidelines.arewesafetycriticalyet.org](http://coding-guidelines.arewesafetycriticalyet.org) already done\! [todo] PL, thank who took care of it 💌
-    * Fill in resources.md at [docs coding\_guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/arewesafetycriticalyet.org/docs/coding_guidelines) \[todo\] by Jordan.  
+  * Fill in resources.md at [docs coding\_guidelines](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/arewesafetycriticalyet.org/docs/coding_guidelines) \[todo\] by Jordan.  
 * Working session  
   * Guidelines discussion  
     * Safety comments on unsafe blocks. Is any resistance to such a guideline expected?  
