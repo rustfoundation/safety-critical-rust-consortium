@@ -15,7 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/coding_guidelines.svg').default,
     description: (
       <>
-        TODO: fill in the description
+        Develops and maintains coding guidelines focused on safety-critical
+        applications in Rust.
       </>
     ),
   },
@@ -35,7 +36,13 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/liaison.svg').default,
     description: (
       <>
-        TODO: fill in the description
+        The liaison subcommittee will both proactively and reactively
+        collaborate with other subcommittees in the consortium and outside
+        groups such as standards committees, the Rust Project. The committee
+        will work to drive agreement on various, potentially similar, safety
+        critical efforts pertaining to Rust. The committee will also be the
+        point of contact for any potential legal issues that may arise around IP
+        as it pertains to references, upstreaming content and more.
       </>
     ),
   },
