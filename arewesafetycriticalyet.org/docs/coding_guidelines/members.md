@@ -47,3 +47,4 @@
 | Yaniv Dan               | Mercedes-Benz                          | Producer                    | @YanivDan-Mercedes |
 | David Svoboda           | Software Engineering Institute (SEI)   | Producer                    | @sei-dsvoboda      |
 | Félix Fischer           | Individual                             | Producer                    | @felix91gr         |
+| Matthew Butler          | Laurel Lye                             | Observer                    | @maddphysics       |
