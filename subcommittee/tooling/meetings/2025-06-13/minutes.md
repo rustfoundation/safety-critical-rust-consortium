@@ -48,8 +48,8 @@
       * Suggestion: Entry for whether the tool has been used in some safety-critical context, which one and which level  
         * More of this information will be captured in the pull request when adding the tool and reviewed  
         * We could make use of [Pull Request Templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) for follow-up?  
-        * If it’s a user could have “not sure” or similar on the drop down for the GitHub issue template  
-          1. The kinds of information we’d have in the table should probably be publicly available such as license and so on  
+        * If it√ïs a user could have √ínot sure√ì or similar on the drop down for the GitHub issue template  
+          1. The kinds of information we√ïd have in the table should probably be publicly available such as license and so on  
         * Idea: x0rw has [started](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/122) this concept in the coding guidelines  
       * \[decision\] Remaining fields to add \[todo\] Xander Cesari to update  
         * Name & email of maintainer  
@@ -65,14 +65,14 @@
         * Checkbox: References if already in use for safety-critical industry to fulfill requirements of a certification process / assessment process  
 3. Review the initial procedure for submitting new tools \- [tooling new submission](https://docs.google.com/document/d/1hZGU5MCx_sb_8qEhww4l-KtLYyDNdQihQP7Tgtu4QSg/edit?tab=t.0)  
    1. \[todo\] Make a PR opened right away from the issue submitted via the GitHub issue template  
-   2. \[important\] “One way door” from issue \=\> PR, modifications made on PR will not reflect back to issue  
+   2. \[important\] "One way door" from issue \=\> PR, modifications made on PR will not reflect back to issue  
    3. \[decision\] Emphasize that we want to keep the process as async as possible  
       * Collect comments async on the PR  
       * Allow people to come and present about in the meeting as optional, as-needed step  
-      * Have a “last call” label to signal last chance to raise objection via a Request Changes  
+      * Have a √ílast call√ì label to signal last chance to raise objection via a Request Changes  
    4. \[todo\] Alexandru Radovici to move the [tooling new submission](https://docs.google.com/document/d/1hZGU5MCx_sb_8qEhww4l-KtLYyDNdQihQP7Tgtu4QSg/edit?tab=t.0) over to a Markdown file in the repo  
 4. Review the initial procedure for deleting a tool \- [tooling new submission](https://docs.google.com/document/d/1hZGU5MCx_sb_8qEhww4l-KtLYyDNdQihQP7Tgtu4QSg/edit?tab=t.0)  
-   1. Safety-critical moves a little slowly – is 3 months too soon?  
+   1. Safety-critical moves a little slowly √ê is 3 months too soon?  
    2. \[important\] Rust tooling early on in the ecosystem could be moving fast  
    3. \[decision\] Interrupt-driven for modifications provided to us by e.g. maintainers  
    4. \[decision\] Regularly-scheduled clean-up of the tooling list every 6 months  
@@ -84,5 +84,5 @@
       * Procedural macros \=\> can have differing levels of hygiene so the problem exists there too  
       * Declarative macros \=\> partially hygienic so the problem exists  
       * Suggestions for coding guidelines to recommend writing macros in a way that allows easy inspection of the generated code to e.g. determine unit test coverage  
-        * Yes – makes sense. Forbid calling something which could change hygiene  
+        * Yes √ê makes sense. Forbid calling something which could change hygiene  
         * Different edition from the rest of the crate. Not really fixable.
