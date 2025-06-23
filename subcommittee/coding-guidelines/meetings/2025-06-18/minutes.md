@@ -32,7 +32,12 @@
 
 **Notetaker:**
 
-* 
+* Jordan McQueen 🪑🤡
+* Fernando ☀️
+* Lukas Wirth 🙂
+* Yuchen Shen 🇯🇵
+* Thomas Mages 🎉
+* Enow Scott 🙂
 
 ## Housekeeping section
 
