@@ -51,7 +51,14 @@
 
 ## Meeting Minutes
 
-* 
+* Previous minutes accepted
+* New member introduction
+* Intro discussion to clippy lints suitable for creating safety-critical guidelines
+  * The expected goal is to have a GitHub issue for each of the lints that is decided to be added as a guideline
+* Intro discussion to the [Defects vs Subsets PR](http://rustfoundation/safety-critical-rust-coding-guidelines#127), with three different “guideline types”
+  * Discussion about the problems with conversions using `as`, like converting from an integer with wider to size to another type with narrower size.
+* No roundtable items
+* There was an issue folks [mentioned in Zulip](https://rust-lang.zulipchat.com/#narrow/channel/445688-safety-critical-consortium/topic/Coding.20Guidelines/near/524642021) that they couldn’t join the call \[important\] \[todo\] check what happened and try to avoid
 
 ## Material
 
