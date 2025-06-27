@@ -33,7 +33,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: submittor_role
+    id: submitter_role
     attributes:
       label: What is your role/connection to this tool?
       description: What do you do for/with this tool
