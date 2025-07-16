@@ -49,4 +49,5 @@
 | Félix Fischer           | Individual                             | Producer                    | @felix91gr         |
 | Matthew Butler          | Laurel Lye                             | Observer                    | @maddphysics       |
 | Yuchen Shen             | Woven by Toyota                        | Producer                    | @onixie            |
+| Tshepang Mbambo         | Individual                             | Observer                    | @tshepang          |
 
