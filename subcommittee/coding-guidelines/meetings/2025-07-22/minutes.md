@@ -12,13 +12,14 @@
 
 1. Solicitation of notetaker  
 2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-07-02/minutes.md)  
-3. Introduction of new members  
-4. Working session \- 20 mins  
+3. Introduction of new members
+4. Check-in with Felix Fischer about CERT C Integers rules [issue](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/6) - 15 mins
+5. Working session \- 20 mins
    * Read through [CERT C rules](https://wiki.sei.cmu.edu/confluence/display/c/2+Rules) together a bit  
    * Goal: Identify a rough prioritization / ordering of the CERT C rules to build out a roadmap ([issue](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/152))
-5. Review session \- 20 mins  
+6. Review session \- 10 mins
    * Review open [PRs](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pulls) & [issues](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues)  
-6. Round table \- 5 mins
+7. Round table \- 5 mins
 
 
 ## Check-in area
