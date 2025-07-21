@@ -11,7 +11,7 @@
 ## Agenda
 
 1. Solicitation of notetaker  
-2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-07-02/minutes.md)  
+2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-07-16/minutes.md)
 3. Introduction of new members
 4. Check-in with Félix Fischer about CERT C Integers rules [issue](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/6) - 15 mins
 5. Working session \- 20 mins
