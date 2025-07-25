@@ -75,7 +75,6 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 * Need help in Field for citations and references \#128.  Need some help with this in Python and Sphinx on this one as well.  Less of a blocker but still needs to be addressed  
 * Review prioritization of reviewing CERT Sections  
 * \[todo\] Andrew Fernandes to review floating point rules (FLP) David Svoboda  [svoboda@cert.org](mailto:svoboda@cert.org)is also interested in this work.  
-* Felix wants to work on all the sections 😂  
 * \[todo\]  [aceleste@perforce.com](mailto:aceleste@perforce.com) is going to look at Arrays (ARR)  
 * Proceed with integers, floating point, and arrays as a starting point  
 * Other PRs and issues are also pressing.   
