@@ -7,7 +7,7 @@
 | Pete LeVasseur          | Eclipse uProtocol &<br>Woven by Toyota              | @PLeVasseur        |
 | Joel Marcey             | Rust Foundation                                     | @JoelMarcey        |
 | Xander Cesari           | Pictorus Inc.                                       |                    |
-| Arnaud Fontaine         | Airbus                                              |                    |
+| Arnaud Fontaine         | Airbus                                              | @af-airbus         |
 | Robert C. Seacord       | Woven by Toyota                                     | @rcseacord         |
 | Orson Pessin            | OxidOS                                              |                    |
 
