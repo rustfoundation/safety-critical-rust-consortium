@@ -64,7 +64,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 * No new people introduced.  
 * Infrastructure topic, more than one pair of examples per guideline. Mention the other infrastructure topic.  
 * CERT guidelines.  
-  * 32 and 35?  
+  * Unless we overlooked, it appeared that guidelines corresponding to CERT  INT32-C and INT35-C hadn't been added.
   * Taking a look at [the issue inspired by INT34-C](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/156). Call for comments.  
     * It is asked if this is already covered by the checked arithmetic guideline. Encouraged to comment on the issue. A comment will be added \[todo\].  
   * Taking a look at [the issue about categorization](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/152). Call for comments. No comments.  
