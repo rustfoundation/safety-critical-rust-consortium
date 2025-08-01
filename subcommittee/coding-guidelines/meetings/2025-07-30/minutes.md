@@ -80,7 +80,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
   * Call for comments on a new section for pointers and provenance.  
     * It sounds good. It is suggested that provenance isn’t part of integers. It can be part of unsafe, noting that the unsafe section may become rather large.  
   * [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/135](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/135)  
-    * Looks like it is in a good state. Should it be moved to the new system? We start doing it during the meeting. Adding the label. The action is triggered and a pull request opened. It looks like a good start, the code example may have not been copied over correctly \[todo\]  
+    * Looks like it is in a good state. Should it be moved to the new system? We start doing it during the meeting. Adding the label. The action is triggered and a [pull request](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/159) opened. It looks like a good start, although the code example may have not been copied over correctly \[todo\]  
   * Round table  
     * About panics, in addition to static analysis, since they’re in a way similar to unsafe, would it be feasible to use a way similar to what’s used for unsafe? In terms of documentation, justifying it the panicking state.   
       * An initial reaction is checked exceptions.  
