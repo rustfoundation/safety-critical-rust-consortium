@@ -74,7 +74,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
       * Historical context about the use of unsafe added. 3rd party code in cybersecurity. Probably wanted to ban unsafe in that case. In functional safety, differently, "everything is under control". Then, there are interesting categories relating to drivers and what the actual definition of unsafe is; beyond the Rust definition? All in all, avoiding unsafe is desired, but banning it totally is going too far. It would rather be desired to push it to the bottom of the code. A follow-up comment: there will be rules (guidelines) which are only sensible to apply in the context of unsafe.  
     * It’s suggested to refrain from considering the unchecked operations in insolation \[important\].  
   * [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/137](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/137)  
-    * Recommendation to only use types without fixed bitwidths at the language boundaries. But is it practical?  
+    * Recommendation to only use types without fixed bitwidths at the language boundaries. But, is it practical?  
   * [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/158](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/158)  
     * [Similar in CERT C++](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88046339)  
   * Call for comments on a new section for pointers and provenance.  
