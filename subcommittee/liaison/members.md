@@ -10,6 +10,8 @@
 | Arnaud Fontaine         | Airbus                                              |                    |
 | Robert C. Seacord       | Woven by Toyota                                     | @rcseacord         |
 | Orson Pessin            | OxidOS                                              |                    |
+| Christof Petig          | Aptiv                                               | @cpetig            |
+| Florin Baiduc           | Woven by Toyota                                     | @florinbaiduc      |
 
 The Liaison Subcommittee is not currently producing artifacts so there is no
 distinction between Observer and Producer roles.
