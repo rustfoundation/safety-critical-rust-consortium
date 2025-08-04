@@ -4,7 +4,7 @@
 |-------------------------|-----------------------------------------------------|--------------------|
 | Alex Celeste            | Perforce Software                                   | @AlexCeleste       |
 | Sarah Dietrich          | Festo SE & Co. KG                                   | @sarahkarolina     |
-| Pete LeVasseur          | Eclipse uProtocol &<br>Woven by Toyota              | @PLeVasseur        |
+| Pete LeVasseur          | Eclipse uProtocol &<br/>Woven by Toyota             | @PLeVasseur        |
 | Joel Marcey             | Rust Foundation                                     | @JoelMarcey        |
 | Xander Cesari           | Pictorus Inc.                                       |                    |
 | Arnaud Fontaine         | Airbus                                              |                    |

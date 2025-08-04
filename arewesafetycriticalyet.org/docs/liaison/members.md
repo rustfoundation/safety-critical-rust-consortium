@@ -1,10 +1,10 @@
-# Members - Liaison Subcommittee
+# Members
 
 | Member Name             | Affiliation                                         | GitHub Username    |
 |-------------------------|-----------------------------------------------------|--------------------|
 | Alex Celeste            | Perforce Software                                   | @AlexCeleste       |
 | Sarah Dietrich          | Festo SE & Co. KG                                   | @sarahkarolina     |
-| Pete LeVasseur          | Eclipse uProtocol &<br>Woven by Toyota              | @PLeVasseur        |
+| Pete LeVasseur          | Eclipse uProtocol &<br/>Woven by Toyota             | @PLeVasseur        |
 | Joel Marcey             | Rust Foundation                                     | @JoelMarcey        |
 | Xander Cesari           | Pictorus Inc.                                       |                    |
 | Arnaud Fontaine         | Airbus                                              |                    |
@@ -12,6 +12,3 @@
 | Orson Pessin            | OxidOS                                              |                    |
 | Christof Petig          | Aptiv                                               | @cpetig            |
 | Florin Baiduc           | Woven by Toyota                                     | @florinbaiduc      |
-
-The Liaison Subcommittee is not currently producing artifacts so there is no
-distinction between Observer and Producer roles.
