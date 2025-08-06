@@ -50,4 +50,5 @@
 | Matthew Butler          | Laurel Lye                             | Observer                    | @maddphysics       |
 | Yuchen Shen             | Woven by Toyota                        | Producer                    | @onixie            |
 | Tshepang Mbambo         | Individual                             | Observer                    | @tshepang          |
+| Alexander Senier        | Ferrous Systems                        | Producer                    | @senier            |
 
