@@ -15,7 +15,7 @@
 3. Introduction of new members  
 4. Review progress on guidelines incorporated from CERT  
    * [High-level mapping of CERT rule groups to Rust](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/152)
-     * Integers - Felix
+     * Integers - Félix
      * Arrays - Alex
      * Floating Point - Andrew
 5. Intrastructure
