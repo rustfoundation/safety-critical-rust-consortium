@@ -83,26 +83,26 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
   * Floating Point \[Andrew\]  
     * Andrew cannot participate but he is working on guidelines  
 * Teeing up for launch to wider Rust community  
-  * Difficult to create example that violate only one rule \[David\]  
-  * We can start to share with the Rust community what we are doing. Try to complete fist milestone by earlier next month [https://github.com/orgs/rustfoundation/projects/1](https://github.com/orgs/rustfoundation/projects/1)  \[Pete\]  
-  * Felix would like to have a preview rendering of coding guidelines  
-  * Sam will support generating reference addendum, He is going to check the feasibility of section generation.  
+  * Difficult to create example that violate only one rule 
+  * We can start to share with the Rust community what we are doing. Try to complete fist milestone by earlier next month [https://github.com/orgs/rustfoundation/projects/1](https://github.com/orgs/rustfoundation/projects/1)  
+  * A participant would like to have a preview rendering of coding guidelines  
+  * A participant will support generating reference addendum, He is going to check the feasibility of section generation.  
   * How to reference to Misra:  
-    * Felix proposes to look at Mathworks how they reference Misra rules.  
-    * Pete remarks that Mathworks has many lawyers that address possible legal issues.  
-    * A public list of Misra rules titles and references exit (Alex)  
+    * A participant proposes to look at Mathworks how they reference Misra rules.  
+    * A participant remarks that Mathworks has many lawyers that address possible legal issues.  
+    * A public list of Misra rules titles and references exit 
   * [Extract and test Compliant and Non-compliant code blocks](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/91)  
     * It is stalled. Pete call for contribution/help  
   * [Use ruff Python formatter](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/150)  
-    * Pete calls for contribution  
+    * Call for contribution  
 * [Avoidance of panics as a goal?](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/158)  
-  * David: It is not possible to avoid panics completely   
-  * Alex: We need special wording to specify panic  
-  * Achim: Avoid panics always e.g by removing any assert. Forbidding panics shall not be part of guidelines. Add guidelines on how to use panics.  
-  * Espen: agrees with guidelines to avoid panics but it shall not be mandatory. Panic means I don’t trust what is going on.  
-  * Felix: Panics should be used only if there is no other way to handle the situation in a more graceful way  
-  * Douglas: Guidelines shall help developers to identify the operation that can raise a unexpected panic e.g division by zero   
-* Pete: We have to think that these guidelines can be used in different areas.
+  * It is not possible to avoid panics completely   
+  * We need special wording to specify panic  
+  * Avoid panics always e.g by removing any assert. Forbidding panics shall not be part of guidelines. Add guidelines on how to use panics. 
+  *  Agreement to avoid panics but it shall not be mandatory. Panic means I don’t trust what is going on.  
+  * Panics should be used only if there is no other way to handle the situation in a more graceful way  
+  * Guidelines shall help developers to identify the operation that can raise a unexpected panic e.g division by zero   
+* We have to think that these guidelines can be used in different areas.
 
 **Material**  
 Any material to read before the meeting should be included here.
