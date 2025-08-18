@@ -3,7 +3,7 @@ description: Application to become a Safety Critical Rust Consortium Member
 title: Membership Application for [INSERT COMPANY, INSTITUTION, YOUR NAME, OR OTHER ENTITY]
 labels: ["membership application"]
 assignees: 
-  - joelmarcey
+  - PLeVasseur
 body:
   - type: markdown
     attributes:
