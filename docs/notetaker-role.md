@@ -2,7 +2,7 @@
 
 Thank you for taking notes for a session! The following are the steps you will follow.
 
-Reminder that we follow the consortium-wide agreed meeting policies. Please refer to them in the [README](../../README.md) under `Meeting Policies`.
+Reminder that we follow the consortium-wide agreed meeting policies. Please refer to them in the [Meeting policies section of the README](../README.md#meeting-policies).
 
 ## Take meeting notes live in a Google Docs document
 
