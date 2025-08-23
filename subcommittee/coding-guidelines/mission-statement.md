@@ -1,8 +1,8 @@
 # Mission Statement - Coding Guidelines Subcommittee 
 
-Develop a community-vetted coding guideline for Rust in safety-critical applications. A living document that is updated as features are added to Rust and we learn more by doing.
+Develop community-vetted coding guidelines for Rust in safety-critical applications. A living document that is updated as features are added to Rust and we learn more by doing.
 
-The following are relevant safety-critical coding guidelines. We are also interested in adopting knowledge obtained that may currently be in company-specific documents and incorporating these into the coding guideline.
+The following are relevant safety-critical coding guidelines. We are also interested in adopting knowledge obtained that may currently be in company-specific documents and incorporating these into the coding guidelines.
 
 ## State of Rust Safety-Critical Coding Guidelines
 
