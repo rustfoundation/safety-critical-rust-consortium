@@ -75,7 +75,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 * Overview and discussion of the “[Coding Guidelines, Milestone 1](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1)”  
   * Also see the “pre-alpha” [Kanban Board](https://github.com/orgs/rustfoundation/projects/1/views/3) (discussion)  
     * **\[todo\] @PLeVasseur** Proper Kanban-style access permissions  
-    * **\[todo\] PeteLV** Incorporate the KB into the meeting agenda  
+    * **\[todo\] @PLeVasseur** Incorporate the KB into the meeting agenda  
 * Discussion of CERT-C rules  
   * Example working [for the `INT` rules](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/152#issuecomment-3161474482)  
   * Spirited discussion re: integer operation overflow  
