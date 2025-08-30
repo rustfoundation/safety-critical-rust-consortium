@@ -52,3 +52,4 @@
 | Tshepang Mbambo         | Individual                             | Observer                    | @tshepang          |
 | Alexander Senier        | Ferrous Systems                        | Producer                    | @senier            |
 | Antoshkin Mikhail       | Individual                             | Observer                    | @mikhailantoshkin  |
+| Lachlan Dowling         | NVIDIA                                 | Observer                    | @ldowlingnv        |
