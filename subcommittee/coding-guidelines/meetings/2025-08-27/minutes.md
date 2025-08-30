@@ -85,7 +85,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
       * Note: depending on Cargo settings means that info about behavior of the code is no longer local to the code itself  
 * FLS maintenance  
   * Ask for which members are interested in helping maintain the LS  
-    * Please DM PeteLV  
+    * Please DM @PLeVasseur  
   * How to make sure the FLS → RLS stays in sync with the compiler?  
   * Example from Ferrocene ([traceability](https://public-docs.ferrocene.dev/main/qualification/traceability-matrix.html))  
 * Discussion session  
