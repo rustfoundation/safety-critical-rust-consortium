@@ -2,7 +2,7 @@
 
 ### Purpose
 
-The Rust Safety-Critical Consortium's monthly All-Hands meetings are an opportunity for Rust or general safety-critical developers to stay up-to-date with the latest news from safety critical Rust, new tools or projects, and the activities of the consortium itself. They will also provide an opportunity for the consortium to solicit volunteers or call attention to open-source or commercial opportunities.
+The Safety-Critical Rust Consortium's monthly All-Hands meetings are an opportunity for Rust or general safety-critical developers to stay up-to-date with the latest news from safety-critical Rust, new tools or projects, and the activities of the consortium itself. They will also provide an opportunity for the consortium to solicit volunteers or call attention to open-source or commercial opportunities.
 
 All-Hands occur monthly but rotate through three global time slots, to offer convenient times for all time zones. Due to this, each meeting will have some content overlap with the prior two given the expectation that most consortium members will attend only quarterly.
 
