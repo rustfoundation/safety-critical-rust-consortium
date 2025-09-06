@@ -47,7 +47,7 @@ Safety-Critical All-Hands (n-2) Summary
 
 <!-- end_slide -->
 
-News from the World of Safety Critical Rust
+News from the World of Safety-Critical Rust
 ---
 * New compiler released!
 * KITT runs on Rust
