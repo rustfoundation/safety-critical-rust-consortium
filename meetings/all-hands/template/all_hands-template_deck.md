@@ -18,7 +18,7 @@ theme:
           foreground: dark_grey
 ---
 
-Safety Critical All-Hands (n-1) Summary
+Safety-Critical All-Hands (n-1) Summary
 ---
 <!-- column_layout: [2, 1] -->
 <!-- column: 0 -->
