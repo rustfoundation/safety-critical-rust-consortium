@@ -12,7 +12,7 @@ The agenda for each meeting is loosely grouped into:
 
 1. **Quarterly Summary**  
   A brief synopsis of topics covered in prior meetings.
-2. **General Rust Safety Critical News**  
+2. **General Rust Safety-Critical News**  
   News from the world of safety critical Rust such as companies adopting the language, new tools or open-source projects, or breakthroughs in implementation (new certifications, etc).
 3. **Subcommittee Reports**  
   Brief updates from each of the subcommittees regarding what they've been working on or their challenges/needs from the community.
