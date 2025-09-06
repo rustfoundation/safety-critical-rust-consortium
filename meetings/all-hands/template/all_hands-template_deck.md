@@ -32,7 +32,7 @@ Safety-Critical All-Hands (n-1) Summary
 
 <!-- end_slide -->
 
-Safety Critical All-Hands (n-2) Summary
+Safety-Critical All-Hands (n-2) Summary
 ---
 <!-- column_layout: [2, 1] -->
 <!-- column: 0 -->
