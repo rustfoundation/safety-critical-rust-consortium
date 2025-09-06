@@ -21,7 +21,7 @@ The agenda for each meeting is loosely grouped into:
 
 ### Process
 
-The agenda for each All-Hands will be developed in Pull Requests here in the Safety Critical Consortium repo. A branch will be opened for each meeting along with a draft PR against `main`. The agenda and slides can be developed with PRs against the all-hands branch, in comments on the draft PR, or in issues for anything more general.
+The agenda for each All-Hands will be developed in Pull Requests here in the Safety-Critical Rust Consortium repo. A branch will be opened for each meeting along with a draft PR against `main`. The agenda and slides can be developed with PRs against the all-hands branch, in comments on the draft PR, or in issues for anything more general.
 
 Contributors are welcome to build slides directly or suggest topics (such as a news story or tool release) that can then be integrated into the slides. Once the meeting is complete the slides will be exported to a static format and the PR will be merged into main as an archive.
 
