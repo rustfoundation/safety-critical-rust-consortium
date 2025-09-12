@@ -38,7 +38,6 @@
 
 ## Meeting Minutes
 
-* …  
 * Discussion about MC/DC  
   * **\[important\]** experimental/nightly features may be pulled by the project at any time  
     * stronger commitment to unstable  
