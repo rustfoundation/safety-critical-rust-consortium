@@ -51,7 +51,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
   * https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/133
     Heads-up to the autor, added some questions
   * https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/137
-    Heads-up to author, covert to PR?
+    Heads-up to author, convert to PR?
   * https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/174
     Check already-existing comments and point out that the compiler should be able to catch that / tell the developer
     where it _could_ be a problem, at least for constants. Point out the human readability issue?
