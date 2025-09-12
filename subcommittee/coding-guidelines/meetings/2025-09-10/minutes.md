@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-09-10 @ 0900 CEST
+# **Coding Guidelines Subcommittee Meeting on 2025-09-10 @ 0900 CEST**
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=5,100,2643743,12,1850147,2193733,1880252,8,6&h=5&date=2025-9-2&sln=20-21&hf=1) to meeting time in common time zones.
 
