@@ -10,7 +10,6 @@
 
 1. Present new members  
 2. Discussion about the removal of [MC/DC](https://en.wikipedia.org/wiki/Modified_condition/decision_coverage) related code from the Rust compiler and next steps that we would like to take as stakeholders  
-3. 
 
 ## Check-in area
 
