@@ -53,3 +53,5 @@
 | Alexander Senier        | Ferrous Systems                        | Producer                    | @senier            |
 | Antoshkin Mikhail       | Individual                             | Observer                    | @mikhailantoshkin  |
 | Lachlan Dowling         | NVIDIA                                 | Observer                    | @ldowlingnv        |
+| William Barsse          | Airbus S.A.S.                          | Observer                    | @wb-airbus         |
+| Gideon Mueller          | NVIDIA                                 | Observer                    | @GPMueller         |
