@@ -55,3 +55,4 @@
 | Lachlan Dowling         | NVIDIA                                 | Observer                    | @ldowlingnv        |
 | William Barsse          | Airbus S.A.S.                          | Observer                    | @wb-airbus         |
 | Gideon Mueller          | NVIDIA                                 | Observer                    | @GPMueller         |
+| Mehedi Hasan Ridoy      | Individual                             | Producer                    | @senseix21         |
