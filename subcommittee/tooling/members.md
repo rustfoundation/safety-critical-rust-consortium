@@ -17,7 +17,7 @@
 - Oreste Bernardi (Infineon)
 - Tiago Manczak
 - Koppany Pazman (HighTec)
-- Manuel Hatzl
+- Manuel Hatzl (Ferrous Systems)
 - Xander Cesari (Pictorus Inc)
 - Chris de Claverie (GAMA)
 - Felix Gilcher (Ferrous Systems)
@@ -27,4 +27,8 @@
 - Stephen Hedrick (AdaCore)
 - Joe Johnson
 - Antoshkin Mikhail
+- Félix Fischer Marqués
+- Alexander Senier (Ferrous Systems)
+- Lachlan Dowling (NVIDIA)
+- Tshepang Mbambo (Ferrous Systems)
 - Alexandru Radovici (Moderator)
