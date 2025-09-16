@@ -19,7 +19,7 @@
      * [`contributor experience`](https://github.com/orgs/rustfoundation/projects/1/views/4) view  
      * [`coding guideline`](https://github.com/orgs/rustfoundation/projects/1/views/5) view  
 5. Review draft process for submission of coding guidelines. Feedback welcome!
-   * Link to PR will go here when ready
+   * [Pull request](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/149) containing draft process
 6. Development of FLS maintenance capabilities (Pete)  
    * Pete volunteered to champion this [t-spec goal](https://rust-lang.github.io/rust-project-goals/2025h2/FLS-up-to-date-capabilities.html) because we rely on the FLS as an upstream dependency  
    * Pete drafted this [FLS Team \- North Star](https://hackmd.io/@plevasseur/HJb6qomOge/edit) document as a rallying point in the Consortium to gather interest and is looking for feedback  
