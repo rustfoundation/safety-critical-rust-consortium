@@ -56,3 +56,5 @@
 | William Barsse          | Airbus S.A.S.                          | Observer                    | @wb-airbus         |
 | Gideon Mueller          | NVIDIA                                 | Observer                    | @GPMueller         |
 | Mehedi Hasan Ridoy      | Individual                             | Producer                    | @senseix21         |
+| William Cunningham      | Woven by Toyota                        | Observer                    | @wcunning          |
+| Daniel Krippner         | ETAS GmbH                              | Observer                    | @AnotherDaniel     |
