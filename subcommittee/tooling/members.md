@@ -31,4 +31,5 @@
 - Alexander Senier (Ferrous Systems)
 - Lachlan Dowling (NVIDIA)
 - Tshepang Mbambo (Ferrous Systems)
+- William Cunningham (Woven by Toyota)
 - Alexandru Radovici (Moderator)
