@@ -103,7 +103,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
   * It would be nice to link related guidelines, specifically the subset and defect style
   * A “see also” would be quite useful in general
 * FLS Maintenance Topic
-  * Peter is not the point of contact for ensuring the FLS is maintained with future stable releases of Rust
+  * Pete is now the point of contact for ensuring the FLS is maintained with future stable releases of Rust
   * There should be mutual interest from tool, compiler, and library vendors in ensuring this is updated. Especially the compiler vendors
   * Solicitation of volunteers to join the FLS Team
   * Likely the work should be fairly incremental, but sometimes there are releases with many changes
