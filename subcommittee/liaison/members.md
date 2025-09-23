@@ -12,6 +12,7 @@
 | Orson Pessin            | OxidOS                                              |                    |
 | Christof Petig          | Aptiv                                               | @cpetig            |
 | Florin Baiduc           | Woven by Toyota                                     | @florinbaiduc      |
+| Félix Fischer Marqués   | Self                                                | @felix91gr         |
 
 The Liaison Subcommittee is not currently producing artifacts so there is no
 distinction between Observer and Producer roles.

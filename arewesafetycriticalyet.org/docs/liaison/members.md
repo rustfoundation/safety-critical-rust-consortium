@@ -12,3 +12,4 @@
 | Orson Pessin            | OxidOS                                              |                    |
 | Christof Petig          | Aptiv                                               | @cpetig            |
 | Florin Baiduc           | Woven by Toyota                                     | @florinbaiduc      |
+| Félix Fischer Marqués   | Self                                                | @felix91gr         |
