@@ -1,0 +1,344 @@
+# Safety-Critical Rust Tooling Requirements - Annotated Version
+# This file provides a structured and annotated view of the tooling requirements
+# for safety-critical Rust applications based on automotive and aerospace standards
+
+metadata:
+  title: "Safety-Critical Rust Tooling Requirements"
+  version: "1.0"
+  date: "2025-09-29"
+  standards:
+    automotive:
+      name: "ISO-26262"
+      levels: ["ASIL-A", "ASIL-B", "ASIL-C", "ASIL-D"]
+      description: "Automotive Safety Integrity Levels"
+    aerospace:
+      name: "DO-178"
+      levels: ["DAL-A", "DAL-B", "DAL-C", "DAL-D"]
+      description: "Design Assurance Levels for aerospace software"
+
+mission_statement:
+  objectives:
+    - "Aggregate community-vetted minimal required tooling package to be able to certify Rust in safety-critical applications"
+    - "Provide and maintain a document with a list of the minimal required tools and their development status"
+    - "Possibly develop a curricula used for training in safety critical Rust (this is still to be determined if we need a different subcommittee for it)"
+
+# Tool categories organized by functionality
+tool_categories:
+
+  # Code Coverage Tools
+  code_coverage:
+    description: "Tools for measuring how much of the code is executed during testing"
+    
+    decision_coverage:
+      need_id: "DC Coverage"
+      description: "Measures whether boolean expressions in conditions are evaluated to both true and false"
+      minimum_standards:
+        - "ASIL-D"
+        - "DAL-B"
+      tools:
+        - status: "missing"
+
+    modified_condition_coverage:
+      need_id: "MC Coverage" 
+      description: "Each condition in a decision has been shown to independently affect that decision's outcome"
+      minimum_standards:
+        - "ASIL-C"
+        - "DAL-A"
+      tools:
+        - status: "missing"
+
+    statement_coverage:
+      need_id: "Statement Coverage"
+      description: "Measures whether each executable statement is executed"
+      minimum_standards:
+        - "ASIL-A"
+        - "DAL-C"
+      tools:
+        - name: "LLVM Coverage"
+          version: "19 (rustc 1.82)"
+          status: "unstable"
+          limitations:
+            - "no macros support"
+            - "no pattern matching support"
+        - name: "cargo-tarpaulin"
+          url: "https://github.com/xd009642/tarpaulin"
+          status: "community tool"
+
+    function_coverage:
+      need_id: "Function coverage"
+      description: "Measures whether each function is called during testing"
+      minimum_standards:
+        - "ASIL-C"
+        - "DAL-C"
+      tools:
+        - name: "LLVM Coverage"
+          version: "19 (rustc 1.82)"
+          status: "unstable"
+          limitations:
+            - "no macros support"
+            - "no pattern matching support"
+        - name: "cargo-tarpaulin"
+          url: "https://github.com/xd009642/tarpaulin"
+          status: "community tool"
+
+    call_coverage:
+      need_id: "Call coverage"
+      description: "Measures whether each function call is executed"
+      minimum_standards:
+        - "ASIL-C"
+        - "DAL-C"
+      tools:
+        - name: "LLVM Coverage"
+          version: "19 (rustc 1.82)"
+          status: "unstable"
+          limitations:
+            - "no macros support"
+            - "no pattern matching support"
+        - name: "cargo-tarpaulin"
+          url: "https://github.com/xd009642/tarpaulin"
+          status: "community tool"
+
+    branch_coverage:
+      need_id: "Branch Coverage"
+      description: "Measures whether each branch of control structures is executed"
+      minimum_standards:
+        - "ASIL-B"
+        - "DAL-C"
+      tools:
+        - name: "LLVM Coverage"
+          version: "19 (rustc 1.82)"
+          status: "unstable"
+          limitations:
+            - "no macros support"
+            - "no pattern matching support"
+        - name: "cargo-tarpaulin"
+          url: "https://github.com/xd009642/tarpaulin"
+          status: "community tool"
+
+    test_coverage:
+      need_id: "Test Coverage"
+      description: "General test coverage measurement"
+      minimum_standards:
+        - "ASIL-A"
+        - "DAL-D"
+      tools:
+        - name: "LLVM Coverage"
+          version: "19"
+        - name: "cargo-test"
+          description: "Built-in Rust testing framework"
+        - name: "mantra"
+          url: "https://crates.io/crates/mantra"
+          status: "experimental"
+
+  # Compiler and Language Tools
+  compiler_tools:
+    description: "Qualified compilers and language tooling for safety-critical development"
+    
+    qualified_compiler:
+      need_id: "Qualified Compiler"
+      description: "Compiler that has been qualified for safety-critical use"
+      minimum_standards:
+        - "ASIL-D"
+        - "DAL-D"
+      tools:
+        - name: "Ferroccene"
+          description: "Safety-critical Rust toolchain"
+          vendor: "Ferrous Systems"
+          status: "commercial"
+        - name: "Ada Core Rust Toolchain"
+          vendor: "AdaCore"
+          status: "development"
+
+  # Testing Tools
+  testing_tools:
+    description: "Tools for test execution and test generation"
+    
+    fault_injection_tests:
+      need_id: "Fault Injection Tests"
+      description: "Tools to inject faults and test system resilience"
+      minimum_standards:
+        - "ASIL-D"
+        - "DAL-D"
+      tools: []
+      status: "no tools available"
+
+    test_runner:
+      need_id: "Test runner"
+      description: "Tools to execute test suites"
+      minimum_standards: ["all"]
+      tools:
+        - name: "cargo-nextest"
+          url: "https://nexte.st"
+          description: "Next-generation test runner for Rust"
+        - name: "cargo"
+          description: "Built-in Rust package manager and test runner"
+        - name: "defmt-test + probe.rs"
+          description: "Embedded testing framework"
+      notes: "No ISO qualified tools are available"
+      qualified_alternatives:
+        - name: "VectorCast"
+          url: "https://www.vector.com/us/en/products/products-a-z/software/vectorcast/"
+          description: "Qualified test runner for safety-critical applications"
+        - name: "TESSY"
+          url: "https://www.razorcat.com/en/product-tessy.html"
+          description: "Qualified unit testing tool"
+
+    automatic_test_generation:
+      need_id: "Automatic generation of unit/integration tests"
+      description: "Tools that automatically generate tests based on equivalence classes and boundary values"
+      minimum_standards:
+        - "ASIL-B"
+      tools: []
+      status: "no tools available"
+      qualified_alternatives:
+        - name: "VectorCast"
+          description: "Automatic test generator for equivalence classes and boundary values"
+        - name: "TESSY"
+          description: "Automatic test generator for unit testing"
+
+  # Code Analysis Tools
+  static_analysis:
+    description: "Tools for static code analysis and verification"
+    
+    undefined_behavior_absence:
+      need_id: "Undefined Behaviour Absence"
+      description: "Ensuring code does not contain undefined behavior"
+      minimum_standards:
+        - "ASIL-A"
+        - "DAL-C"
+      approach: "Ensured by static analysis and source code conformity"
+      tools:
+        - name: "Rust Compiler"
+          description: "Built-in borrow checker and type system"
+
+    static_analysis_tools:
+      need_id: "Static Analysis Tools"
+      description: "Tools for detecting code issues and enforcing coding standards"
+      minimum_standards:
+        - "DAL-C"
+      tools: []
+      requirements:
+        - "Coding guidelines should specify rules similar to Polyspace"
+        - "Assessment of what the Rust compiler covers is necessary"
+        - "For DO-178, such tools support the source code conformity objective"
+
+    formal_verification:
+      need_id: "Formal Verification"
+      description: "Mathematical proof of program correctness"
+      minimum_standards:
+        - "ASIL-C (recommended)"
+        - "DAL-C (recommended)"
+      tools:
+        - name: "verifast"
+          url: "https://github.com/verifast/verifast"
+          status: "work in progress"
+        - name: "creusot"
+          url: "https://github.com/creusot-rs/creusot"
+          status: "work in progress"
+          limitations: ["works only for safe Rust"]
+        - name: "gillian-creusot"
+          status: "work in progress, not usable"
+          capabilities: ["works for unsafe Rust"]
+        - name: "kani"
+          url: "https://model-checking.github.io/kani/"
+          description: "Model checking tool for Rust"
+      objectives:
+        - "Prove absence of undefined behavior"
+        - "Prove that the code does what it should do"
+        - "Using specifications to prove outputs are correct"
+
+  # Code Quality and Metrics
+  code_quality:
+    description: "Tools for measuring and enforcing code quality"
+    
+    code_metrics:
+      need_id: "Code Metrics - Cyclomatic Complexity"
+      description: "Measuring code complexity"
+      minimum_standards:
+        - "DAL-C"
+      tools:
+        - name: "clippy"
+          description: "Rust linter with complexity warnings"
+          limitations: ["estimation only, complains if function is too long"]
+      notes: "DO-178 linked to source code conformity - tightly linked to code guidelines"
+      roadmap: "AdaCore has a tool on the roadmap eventually"
+
+    naming_convention:
+      need_id: "Use of naming convention"
+      description: "Enforcing consistent naming conventions"
+      minimum_standards:
+        - "ASIL-A"
+      tools:
+        - name: "clippy"
+          description: "Rust linter"
+          limitations: ["Only predefined and generic naming conventions"]
+      gaps: "No available tool that allows defining and enforcing custom naming conventions"
+
+    code_traceability:
+      need_id: "Code Traceability"
+      description: "Linking code to requirements"
+      minimum_standards:
+        - "DO-178 TBD"
+      tools:
+        - name: "mantra"
+          url: "https://crates.io/crates/mantra"
+          description: "Uses code annotation for traceability"
+
+  # Performance and Timing Analysis
+  performance_analysis:
+    description: "Tools for analyzing execution time and performance"
+    
+    execution_time_measurement:
+      need_id: "Measurement of execution time and reaction time"
+      description: "Profiling and timing analysis tools"
+      minimum_standards:
+        - "ASIL-A (depends on requirements)"
+      tools:
+        - name: "perf"
+          description: "Linux performance profiler"
+        - name: "Intel VTune"
+          description: "Intel performance profiler"
+        - name: "flamegraph"
+          description: "Flame graph profiler for Rust"
+        - name: "Rapita"
+          url: "https://www.adacore.com/press/rapita-systems-showcases-adacores-gnat-pro-for-rust-at-hisc"
+          description: "Commercial timing analysis tool"
+      requirements: "For hard real-time applications, non-intrusive profilers are required (typically HW specific)"
+
+  # Design and Documentation
+  design_tools:
+    description: "Tools for system design and documentation"
+    
+    graphical_representation:
+      need_id: "Unambiguous Graphical Representation"
+      description: "UML-like tools for Rust system design"
+      minimum_standards:
+        - "ASIL-B"
+      requirements: "UML-like tool, but for Rust"
+      reference: "AUTOSAR suggests - Explanation of ARA Applications in Rust"
+      url: "https://www.autosar.org/fileadmin/standards/R23-11/AP/AUTOSAR_AP_EXP_ARARustApplications.pdf"
+
+# Gap Analysis
+gaps:
+  critical_missing_tools:
+    - "ISO qualified test runners"
+    - "Automatic test generation tools"
+    - "Custom naming convention enforcement"
+    - "Comprehensive static analysis tools"
+    - "Stable macro and pattern matching coverage"
+    - "Formal verification tools for production use"
+    - "UML-like design tools for Rust"
+
+  development_priorities:
+    - "Stabilize LLVM coverage features for macros and pattern matching"
+    - "Develop qualified test runners"
+    - "Create comprehensive static analysis tooling"
+    - "Mature formal verification tools"
+    - "Develop automatic test generation capabilities"
+
+# Notes and Considerations
+notes:
+  coverage_limitations: "Current LLVM coverage is unstable and doesn't support macros or pattern matching"
+  qualification_status: "Most tools lack formal qualification for safety-critical use"
+  commercial_alternatives: "Qualified commercial tools exist but may not have Rust support"
+  standards_compliance: "Tools must support both automotive (ISO-26262) and aerospace (DO-178) requirements"
