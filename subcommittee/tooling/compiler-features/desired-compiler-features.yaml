@@ -1,0 +1,63 @@
+# Desired Rust Compiler Features for Safety-Critical Applications
+# This file tracks compiler features that are needed for safety-critical Rust development
+# but are currently missing or incomplete in the standard Rust toolchain
+
+metadata:
+  title: "Desired Rust Compiler Features"
+  version: "1.0"
+  date: "2025-10-01"
+  purpose: "Track missing compiler features needed for safety-critical Rust applications"
+  standards:
+    automotive: "ISO-26262 (ASIL-A through ASIL-D)"
+    automotive_cybersecurity: "ISO/SAE 21434 (CAL 1-4)"
+    aerospace: "DO-178 (DAL-A through DAL-D)"
+    industrial: "IEC 61508 (SIL 1-4)"
+
+
+  
+- name: "Stack Protector"
+    description: "Stack buffer overflow detection and protection mechanism"
+    reference_url: "https://developer.arm.com/documentation/dui0774/l/Compiler-Command-line-Options/-fstack-protector---fstack-protector-all---fstack-protector-strong---fno-stack-protector"
+    priority: "High"
+    status: "Missing"
+    limitation: "Stack protection is not available in Rust compiler"
+    github_issue: "https://github.com/rust-lang/rust/issues/114903"
+    rationale: "Required for runtime stack overflow detection in safety-critical systems"
+
+- name: "TrustZone"
+    description: "TrustZone support for ARM Cortex-M processors"
+    reference_url: "https://developer.arm.com/documentation/100690/latest/"
+    priority: "High"
+    status: "unstable"
+    limitation: "TrustZone support is available only on nightly Rust"
+    github_issue: ["https://github.com/rust-lang/rust/issues/81391", "https://github.com/rust-lang/rust/issues/75835"]
+    rationale: "Required for data sagmentation on cortex-m devices"
+
+- name: "Control Flow Integrity (CFI)"
+    description: "Control flow integrity protection against ROP/JOP attacks"
+    reference_url: "https://clang.llvm.org/docs/ControlFlowIntegrity.html"
+    priority: "Medium"
+    status: "Partial"
+    limitation: "Limited CFI support, not comprehensive for all control flow transfers"
+    github_issue: "https://github.com/rust-lang/rust/issues/89653"
+    rationale: "Prevents control flow hijacking attacks in safety-critical applications"
+    
+- name: "Deterministic Code Generation"
+    description: "Reproducible binary output for certification requirements"
+    reference_url: ""
+    priority: "High"
+    status: "Partial"
+    limitation: "Not fully deterministic across different build environments"
+    github_issue: "https://github.com/rust-lang/rust/issues/34902"
+    rationale: "Required for certification processes that mandate reproducible builds"
+
+- name: "Coverage Instrumentation for Macros"
+    description: "Code coverage that includes macro expansions"
+    reference_url: ""
+    priority: "High"
+    status: "Missing"
+    limitation: "Coverage tools cannot instrument macro-generated code"
+    github_issue: "https://github.com/rust-lang/rust/issues/79417"
+    rationale: "Complete coverage analysis required for safety certification"
+
+
