@@ -3,442 +3,182 @@
 # Each tool lists its capabilities and supported safety standards
 
 metadata:
-  title: "Safety-Critical Rust Tools by Name"
+  title: "Rust Tooling for use in Safety Critical Projects"
   version: "1.0"
   date: "2025-09-29"
-  organization: "Tool-centric structure"
-  standards:
-    automotive:
-      name: "ISO-26262"
+  tracked-standards:
+    - name: "ISO-26262"
       levels: ["ASIL-A", "ASIL-B", "ASIL-C", "ASIL-D"]
-      description: "Automotive Safety Integrity Levels"
-    aerospace:
-      name: "DO-178"
-      levels: ["DAL-A", "DAL-B", "DAL-C", "DAL-D"]
-      description: "Design Assurance Levels for aerospace software"
+      description: "Road vehicles - Functional safety"
+    - name: "DO-178C"
+      levels: ["DAL-E", "DAL-D", "DAL-C", "DAL-B", "DAL-A"]
+      description: "Software Considerations in Airborne Systems and Equipment Certification"
+    - name: "IEC 62304"
+      levels: ["Class A", "Class B", "Class C"]
+      description: "Medical device software - software life cycle processes"
+    - name: "IEC 61508"
+      levels: ["SIL-1", "SIL-2", "SIL-3", "SIL-4"]
+      description: "Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems"
 
 # Tools organized alphabetically by name
 tools:
 
-  - name: "Ada Core Rust Toolchain"
-    type: "qualified_compiler"
-    vendor: "AdaCore"
-    status: "development"
-    description: "Safety-critical Rust compiler in development"
-    features:
-      - name: "Qualified Compilation"
-        description: "Compiler that has been qualified for safety-critical use"
-        minimum_standards:
-          - "ASIL-D"
-          - "DAL-D"
-        status: "in_development"
-
   - name: "cargo"
-    type: "test_runner"
-    vendor: "Rust Foundation"
-    status: "stable"
+    type: "package-manager"
+    vendor: "-"
+    url: "https://github.com/rust-lang/cargo"
     description: "Built-in Rust package manager and test runner"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
       - name: "Test Execution"
         description: "Basic test execution capabilities"
-        minimum_standards: ["all"]
-        status: "stable"
-        limitations: ["not qualified for safety-critical use"]
 
   - name: "cargo-nextest"
-    type: "test_runner"
+    type: "test-runner"
     url: "https://nexte.st"
-    status: "stable"
+    vendor: "-"
     description: "Next-generation test runner for Rust"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
       - name: "Enhanced Test Execution"
         description: "Enhanced test execution with better performance and output"
-        minimum_standards: ["all"]
-        status: "stable"
-        limitations: ["not qualified for safety-critical use"]
 
   - name: "cargo-tarpaulin"
-    type: "coverage_tool"
+    type: "code-coverage"
     url: "https://github.com/xd009642/tarpaulin"
-    status: "community_tool"
+    vendor: "-"
     description: "Code coverage tool for Rust"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
-      - name: "Statement Coverage"
-        description: "Measures whether each executable statement is executed"
-        minimum_standards:
-          - "ASIL-A"
-          - "DAL-C"
-        status: "stable"
-      - name: "Function Coverage"
-        description: "Measures whether each function is called during testing"
-        minimum_standards:
-          - "ASIL-C"
-          - "DAL-C"
-        status: "stable"
-      - name: "Call Coverage"
-        description: "Measures whether each function call is executed"
-        minimum_standards:
-          - "ASIL-C"
-          - "DAL-C"
-        status: "stable"
-      - name: "Branch Coverage"
-        description: "Measures whether each branch of control structures is executed"
-        minimum_standards:
-          - "ASIL-B"
-          - "DAL-C"
-        status: "stable"
 
-  - name: "cargo-test"
-    type: "test_runner"
-    vendor: "Rust Foundation"
-    status: "stable"
-    description: "Built-in Rust testing framework"
-    features:
-      - name: "Test Coverage"
-        description: "General test coverage measurement"
-        minimum_standards:
-          - "ASIL-A"
-          - "DAL-D"
-        status: "stable"
 
   - name: "clippy"
     type: "linter"
-    vendor: "Rust Foundation"
-    status: "stable"
+    url: "https://github.com/rust-lang/rust-clippy"
+    vendor: "-"
     description: "Rust linter and static analysis tool"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
-      - name: "Code Metrics"
-        description: "Measuring code complexity"
-        minimum_standards:
-          - "DAL-C"
-        status: "stable"
-        limitations: ["estimation only, complains if function is too long"]
-        notes: "DO-178 linked to source code conformity - tightly linked to code guidelines"
-      - name: "Naming Convention"
-        description: "Enforcing consistent naming conventions"
-        minimum_standards:
-          - "ASIL-A"
-        status: "stable"
-        limitations: ["Only predefined and generic naming conventions"]
-        gaps: "No available tool that allows defining and enforcing custom naming conventions"
+
 
   - name: "creusot"
-    type: "formal_verification"
+    type: "formal-verification"
     url: "https://github.com/creusot-rs/creusot"
-    status: "work_in_progress"
+    vendor: "-"
     description: "Deductive verification tool for Rust"
+    license: "LGPL 2.1"
+    qualified: []
     features:
-      - name: "Formal Verification"
-        description: "Mathematical proof of program correctness"
-        minimum_standards:
-          - "ASIL-C (recommended)"
-          - "DAL-C (recommended)"
-        status: "experimental"
-        limitations: ["works only for safe Rust"]
-        objectives:
-          - "Prove absence of undefined behavior"
-          - "Prove that the code does what it should do"
 
-  - name: "defmt-test + probe.rs"
-    type: "embedded_test_runner"
-    status: "stable"
+
+  - name: "defmt-test"
+    type: "test-runner"
+    url: "https://github.com/knurling-rs/defmt"
+    vendor: "Ferrous Systems"
     description: "Embedded testing framework"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
       - name: "Embedded Testing"
         description: "Test execution for embedded systems"
-        minimum_standards: ["all"]
-        status: "stable"
-        limitations: ["not qualified for safety-critical use"]
 
-  - name: "Ferroccene"
-    type: "qualified_compiler"
+  - name: "Ferrocene"
+    type: "qualified-compiler"
+    url: "https://ferrocene.dev/en/"
     vendor: "Ferrous Systems"
-    status: "commercial"
-    description: "Safety-critical Rust toolchain"
+    description: "Open-source qualified Rust compiler toolchain for safety- and mission-critical systems"
+    license: "commercial"
+    qualified:
+      - name: "ISO 26262"
+        up-to: "ASIL-D"
+      - name: "IEC 62304"
+        up-to: "Class C"
+      - name: "IEC 61308"
+        up-to: "SIL 4"
     features:
-      - name: "Qualified Compilation"
-        description: "Compiler that has been qualified for safety-critical use"
-        minimum_standards:
-          - "ASIL-D"
-          - "DAL-D"
-        status: "available"
-        qualification: "safety_critical"
+      
 
   - name: "flamegraph"
     type: "profiler"
-    status: "stable"
+    url: "https://github.com/flamegraph-rs/flamegraph"
+    vendor: "-"
     description: "Flame graph profiler for Rust"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
-      - name: "Execution Time Measurement"
-        description: "Profiling and timing analysis tools"
-        minimum_standards:
-          - "ASIL-A (depends on requirements)"
-        status: "stable"
-        requirements: "For hard real-time applications, non-intrusive profilers are required (typically HW specific)"
 
-  - name: "gillian-creusot"
-    type: "formal_verification"
-    status: "work_in_progress"
-    description: "Formal verification tool for unsafe Rust"
+  - name: "GNAT Pro for Rust"
+    type: "compiler"
+    url: "https://www.adacore.com/gnatpro-rust"
+    vendor: "AdaCore"
+    description: "GNAT Pro for Rust delivers stability, security and dependability for your critical, embedded Rust applications"
+    license: "commercial"
+    qualified: []
     features:
-      - name: "Unsafe Formal Verification"
-        description: "Mathematical proof of program correctness for unsafe code"
-        minimum_standards:
-          - "ASIL-C (recommended)"
-          - "DAL-C (recommended)"
-        status: "not_usable"
-        capabilities: ["works for unsafe Rust"]
-
-  - name: "Intel VTune"
-    type: "profiler"
-    vendor: "Intel"
-    status: "commercial"
-    description: "Intel performance profiler"
-    features:
-      - name: "Professional Profiling"
-        description: "Professional profiling and timing analysis"
-        minimum_standards:
-          - "ASIL-A (depends on requirements)"
-        status: "stable"
-        platform: "Intel hardware"
 
   - name: "kani"
-    type: "model_checker"
-    url: "https://model-checking.github.io/kani/"
-    vendor: "Amazon"
-    status: "stable"
+    type: "formal-verification"
+    url: "https://github.com/model-checking/kani"
+    vendor: "-"
     description: "Model checking tool for Rust"
+    license: "Apache 2.0 & MIT"
+    qualified: []
     features:
-      - name: "Model Checking"
-        description: "Model checking for Rust programs"
-        minimum_standards:
-          - "ASIL-C (recommended)"
-          - "DAL-C (recommended)"
-        status: "stable"
-        objectives:
-          - "Prove absence of undefined behavior"
-          - "Prove that the code does what it should do"
-
-  - name: "LLVM Coverage"
-    type: "coverage_tool"
-    vendor: "LLVM Project"
-    version: "19 (rustc 1.82)"
-    status: "unstable"
-    description: "Built-in LLVM coverage instrumentation"
-    features:
-      - name: "Function Coverage"
-        description: "Measures whether each function is called during testing"
-        minimum_standards:
-          - "ASIL-C"
-          - "DAL-C"
-        status: "unstable"
-        limitations:
-          - "no macros support"
-          - "no pattern matching support"
-      - name: "Call Coverage"
-        description: "Measures whether each function call is executed"
-        minimum_standards:
-          - "ASIL-C"
-          - "DAL-C"
-        status: "unstable"
-        limitations:
-          - "no macros support"
-          - "no pattern matching support"
-      - name: "Branch Coverage"
-        description: "Measures whether each branch of control structures is executed"
-        minimum_standards:
-          - "ASIL-B"
-          - "DAL-C"
-        status: "unstable"
-        limitations:
-          - "no macros support"
-          - "no pattern matching support"
-      - name: "Test Coverage"
-        description: "General test coverage measurement"
-        minimum_standards:
-          - "ASIL-A"
-          - "DAL-D"
-        status: "unstable"
-        roadmap: "AdaCore report generator plans to stabilize MC coverage by end of 2025"
 
   - name: "mantra"
-    type: "traceability_tool"
+    type: "requirements-traceability"
     url: "https://crates.io/crates/mantra"
-    status: "experimental"
-    description: "Code annotation and traceability tool"
+    vendor: "-"
+    description: "Requirements traceability with structural code analysis and code coverage"
+    license: "MIT"
+    qualified: []
     features:
       - name: "Code Traceability"
-        description: "Linking code to requirements using annotations"
-        minimum_standards:
-          - "DO-178 TBD"
-        status: "experimental"
-      - name: "Traceable Test Coverage"
-        description: "Test coverage with traceability"
-        minimum_standards:
-          - "ASIL-A"
-          - "DAL-D"
-        status: "experimental"
-
-  - name: "perf"
-    type: "profiler"
-    platform: "Linux"
-    status: "stable"
-    description: "Linux performance profiler"
-    features:
-      - name: "System Profiling"
-        description: "System-level profiling and timing analysis"
-        minimum_standards:
-          - "ASIL-A (depends on requirements)"
-        status: "stable"
-        platform: "Linux only"
-
-  - name: "Rapita"
-    type: "timing_analyzer"
-    vendor: "Rapita Systems"
-    url: "https://www.adacore.com/press/rapita-systems-showcases-adacores-gnat-pro-for-rust-at-hisc"
-    status: "commercial"
-    description: "Commercial timing analysis tool"
-    features:
-      - name: "Timing Analysis"
-        description: "Professional timing analysis for safety-critical systems"
-        minimum_standards:
-          - "ASIL-A (depends on requirements)"
-        status: "stable"
-        qualification: "available"
-
-  - name: "Rust Compiler"
-    type: "compiler"
-    vendor: "Rust Foundation"
-    status: "stable"
-    description: "Standard Rust compiler with built-in safety features"
-    features:
-      - name: "UB Prevention"
-        description: "Built-in borrow checker and type system prevent many UB cases"
-        minimum_standards:
-          - "ASIL-A"
-          - "DAL-C"
-        status: "stable"
-        approach: "Ensured by static analysis and source code conformity"
+        description: "Linking code to requirements"
+      - name: "Code Coverage"
+        description: ""
 
   - name: "TESSY"
-    type: "qualified_test_tool"
-    vendor: "Razorcat"
+    type: "test-runner"
     url: "https://www.razorcat.com/en/product-tessy.html"
-    status: "commercial"
+    vendor: "Razorcat"
     description: "Qualified unit testing tool"
-    qualification: "safety_critical"
+    license: "commercial"
+    qualified:
     features:
-      - name: "Qualified Test Execution"
-        description: "Qualified test runner for safety-critical applications"
-        minimum_standards: ["all"]
-        status: "qualified"
-      - name: "Automatic Test Generation"
-        description: "Automatic test generator for unit testing"
-        minimum_standards:
-          - "ASIL-B"
-        status: "qualified"
-        note: "Does not currently support Rust"
 
   - name: "VectorCast"
-    type: "qualified_test_tool"
-    vendor: "Vector Software"
+    type: "test-runner"
     url: "https://www.vector.com/us/en/products/products-a-z/software/vectorcast/"
-    status: "commercial"
+    vendor: "Vector Software"
     description: "Qualified test runner and generator for safety-critical applications"
-    qualification: "safety_critical"
+    license: "commercial"
+    qualified:
     features:
-      - name: "Qualified Test Execution"
-        description: "Qualified test runner for safety-critical applications"
-        minimum_standards: ["all"]
-        status: "qualified"
-      - name: "Advanced Test Generation"
-        description: "Automatic test generator based on equivalence classes and boundary values"
-        minimum_standards:
-          - "ASIL-B"
-        status: "qualified"
-        note: "Does not currently support Rust"
 
   - name: "verifast"
-    type: "formal_verification"
+    type: "formal-verification"
     url: "https://github.com/verifast/verifast"
-    status: "work_in_progress"
+    vendor: "-"
     description: "Modular verification tool"
+    license: "MIT"
+    qualified: []
     features:
-      - name: "Modular Verification"
-        description: "Mathematical proof of program correctness"
-        minimum_standards:
-          - "ASIL-C (recommended)"
-          - "DAL-C (recommended)"
-        status: "experimental"
-        objectives:
-          - "Prove absence of undefined behavior"
-          - "Prove that the code does what it should do"
-
-# Missing capabilities analysis
-missing_capabilities:
-  
-  decision_coverage:
-    need_id: "DC Coverage"
-    description: "Measures whether boolean expressions in conditions are evaluated to both true and false"
-    minimum_standards:
-      - "ASIL-D"
-      - "DAL-B"
-    status: "no_tools_available"
-    
-  modified_condition_coverage:
-    need_id: "MC Coverage"
-    description: "Each condition in a decision has been shown to independently affect that decision's outcome"
-    minimum_standards:
-      - "ASIL-C"
-      - "DAL-A"
-    status: "no_tools_available"
-    
-  fault_injection_tests:
-    need_id: "Fault Injection Tests"
-    description: "Tools to inject faults and test system resilience"
-    minimum_standards:
-      - "ASIL-D"
-      - "DAL-D"
-    status: "no_tools_available"
-    
-  static_analysis_tools:
-    need_id: "Static Analysis Tools"
-    description: "Tools for detecting code issues and enforcing coding standards"
-    minimum_standards:
-      - "DAL-C"
-    status: "no_comprehensive_tools"
-    requirements:
-      - "Coding guidelines should specify rules similar to Polyspace"
-      - "Assessment of what the Rust compiler covers is necessary"
-      - "For DO-178, such tools support the source code conformity objective"
       
-  graphical_representation:
-    need_id: "Unambiguous Graphical Representation"
-    description: "UML-like tools for Rust system design"
-    minimum_standards:
-      - "ASIL-B"
-    status: "no_tools_available"
-    requirements: "UML-like tool, but for Rust"
-    reference: "AUTOSAR suggests - Explanation of ARA Applications in Rust"
-    url: "https://www.autosar.org/fileadmin/standards/R23-11/AP/AUTOSAR_AP_EXP_ARARustApplications.pdf"
 
-# Summary statistics
-summary:
-  total_tools: 19
-  by_status:
-    stable: 8
-    commercial: 5
-    experimental: 3
-    work_in_progress: 3
-    unstable: 1
-  by_qualification:
-    safety_critical_qualified: 3
-    community_tools: 12
-    commercial_unqualified: 4
-  critical_gaps:
-    - "Decision Coverage (DC) tools"
-    - "Modified Condition Coverage (MC) tools"
-    - "Fault injection testing tools"
-    - "Comprehensive static analysis tools"
-    - "UML-like design tools for Rust"
-    - "Stable macro and pattern matching coverage"
+open-topics:
+  - name: "MC/DC"
+    description: "MC/DC is currently not supported by any Rust compiler."
+    
+  - name: "Fault Injection Tests"
+    description: "No generally applicable tool exists to inject faults and test system resilience"
+    
+  - name: "Coding Guidelines"
+    description: "No Rust coding guidelines for safety critical use currently exist"
+      
+  - name: "Graphical Representation"
+    description: "Missing tools that are capable to represent Rust code in a graphical way."
