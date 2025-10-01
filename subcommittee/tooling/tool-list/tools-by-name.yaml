@@ -1,6 +1,4 @@
-# Safety-Critical Rust Tools - Organized by Tool Name
-# This file provides a tool-centric view of safety-critical Rust tooling
-# Each tool lists its capabilities and supported safety standards
+# This file lists available safety-critical Rust tools and their qualification state.
 
 metadata:
   title: "Rust Tooling for use in Safety Critical Projects"
@@ -30,9 +28,6 @@ tools:
     description: "Built-in Rust package manager and test runner"
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
-      - name: "Test Execution"
-        description: "Basic test execution capabilities"
 
   - name: "cargo-nextest"
     type: "test-runner"
@@ -41,9 +36,6 @@ tools:
     description: "Next-generation test runner for Rust"
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
-      - name: "Enhanced Test Execution"
-        description: "Enhanced test execution with better performance and output"
 
   - name: "cargo-tarpaulin"
     type: "code-coverage"
@@ -52,28 +44,22 @@ tools:
     description: "Code coverage tool for Rust"
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
-
 
   - name: "clippy"
-    type: "linter"
+    type: "static-analysis"
     url: "https://github.com/rust-lang/rust-clippy"
     vendor: "-"
-    description: "Rust linter and static analysis tool"
+    description: "Clippy is a collection of lints to catch common mistakes and improve Rust code. It analyzes code for potential bugs, performance issues, style violations, and suggests more idiomatic Rust patterns."
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
-
 
   - name: "creusot"
     type: "formal-verification"
     url: "https://github.com/creusot-rs/creusot"
     vendor: "-"
-    description: "Deductive verification tool for Rust"
+    description: "Creusot is a deductive verifier for Rust code. It verifies your code is safe from panics, overflows, and assertion failures. By adding annotations you can take it further and verify your code does the correct thing."
     license: "LGPL 2.1"
     qualified: []
-    features:
-
 
   - name: "defmt-test"
     type: "test-runner"
@@ -82,13 +68,10 @@ tools:
     description: "Embedded testing framework"
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
-      - name: "Embedded Testing"
-        description: "Test execution for embedded systems"
 
   - name: "Ferrocene"
     type: "qualified-compiler"
-    url: "https://ferrocene.dev/en/"
+    url: "https://ferrocene.dev"
     vendor: "Ferrous Systems"
     description: "Open-source qualified Rust compiler toolchain for safety- and mission-critical systems"
     license: "commercial"
@@ -99,7 +82,6 @@ tools:
         up-to: "Class C"
       - name: "IEC 61308"
         up-to: "SIL 4"
-    features:
       
 
   - name: "flamegraph"
@@ -109,25 +91,40 @@ tools:
     description: "Flame graph profiler for Rust"
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
 
   - name: "GNAT Pro for Rust"
     type: "compiler"
     url: "https://www.adacore.com/gnatpro-rust"
     vendor: "AdaCore"
-    description: "GNAT Pro for Rust delivers stability, security and dependability for your critical, embedded Rust applications"
+    description: "AdaCore's Toolsuite for High-Assurance Rust Software; Includes stable toolchain for long-term development, long-term support, and qualification"
     license: "commercial"
     qualified: []
-    features:
+
+  - name: "HighTec Rust Compiler"
+    type: "compiler"
+    url: "https://hightec-rt.com/products/rust-development-platform"
+    vendor: "HighTec"
+    description: "ISO 26262 ASIL D qualified Rust Compiler Development Platform for ARM based Stellar from STMicroelectronics and Infineon AURIX"
+    licsense: "commercial"
+    qualified:
+      - name: "ISO 26262"
+        up-to: "ASIL-D"
 
   - name: "kani"
     type: "formal-verification"
     url: "https://github.com/model-checking/kani"
     vendor: "-"
-    description: "Model checking tool for Rust"
+    description: "Kani is an open-source verification tool that uses model checking to analyze Rust programs. Kani is particularly useful for verifying unsafe code blocks in Rust, where the 'unsafe superpowers' are unchecked by the compiler."
     license: "Apache 2.0 & MIT"
     qualified: []
-    features:
+
+  - name: "Lauterbach Trace32 Debugger"
+    type: "debugger"
+    url: "https://www.lauterbach.com/"
+    vendor: "Lauterbach"
+    description: "Lauterbach‘s TRACE32® tools are a suite of leading-edge hardware and software components that enables you to analyze, optimize and certify all kinds of embedded systems."
+    license: "commercial"
+    qualified: []
 
   - name: "mantra"
     type: "requirements-traceability"
@@ -136,11 +133,38 @@ tools:
     description: "Requirements traceability with structural code analysis and code coverage"
     license: "MIT"
     qualified: []
-    features:
-      - name: "Code Traceability"
-        description: "Linking code to requirements"
-      - name: "Code Coverage"
-        description: ""
+
+  - name: "OpenFastTrace"
+    type: "requirements-traceability"
+    url: "https://github.com/itsallcode/openfasttrace"
+    vendor: "-"
+    description: "OpenFastTrace (short OFT) is a requirement tracing suite."
+    license: "GPL-3.0"
+    qualified: []
+
+  - name: "PLS UDE"
+    type: "debugger"
+    url: "https://www.pls-mc.com/products/universal-debug-engine/"
+    vendor: "PLS Programmierbare Logik & Systeme GmbH"
+    description: "UDE® Universal Debug Engine is the powerful development tool for debugging, tracing, and testing embedded software for a wide range of multicore SoCs and microcontrollers."
+    license: "commercial"
+    qualified: []
+
+  - name: "Reqtify"
+    type: "requirements-traceability"
+    url: "https://www.3ds.com/products/catia/reqtify"
+    vendor: "Dassault Systèmes"
+    description: "Reqtify is a solution which allows implementing an End-To-End Traceability along the whole V-Cycle across very different types of document and data bases (by plugin connector)."
+    license: "commercial"
+    qualified: []
+
+  - name: "sphinx-needs"
+    type: "requirements-traceability"
+    url: "https://sphinxcontrib-needs.readthedocs.io/"
+    vendor: ""
+    description: "Sphinx Needs is a requirements management extension for Sphinx documentation that enables tracing and linking of requirements, specifications, test cases, and other project artifacts"
+    license: "MIT"
+    qualified: []
 
   - name: "TESSY"
     type: "test-runner"
@@ -148,8 +172,15 @@ tools:
     vendor: "Razorcat"
     description: "Qualified unit testing tool"
     license: "commercial"
-    qualified:
-    features:
+    qualified: []
+
+  - name: "TrustInSoft Analyzer"
+    type: "static-analysis"
+    url: "https://www.trust-in-soft.com/trustinsoft-analyzer"
+    vendor: "TrustInSoft"
+    description: "Static analysis for C, C++, and soon to be Rust code"
+    license: "commercial"
+    qualified: []
 
   - name: "VectorCast"
     type: "test-runner"
@@ -157,28 +188,23 @@ tools:
     vendor: "Vector Software"
     description: "Qualified test runner and generator for safety-critical applications"
     license: "commercial"
-    qualified:
-    features:
+    qualified: []
 
   - name: "verifast"
     type: "formal-verification"
     url: "https://github.com/verifast/verifast"
     vendor: "-"
-    description: "Modular verification tool"
+    description: "VeriFast is a tool for modular formal verification of the absence of undefined behavior in Rust1 programs that use unsafe blocks and the soundness of Rust modules that use unsafe blocks."
     license: "MIT"
     qualified: []
-    features:
       
 
 open-topics:
-  - name: "MC/DC"
-    description: "MC/DC is currently not supported by any Rust compiler."
-    
   - name: "Fault Injection Tests"
-    description: "No generally applicable tool exists to inject faults and test system resilience"
+    description: "No generally applicable tool exists to inject faults in Rust projects during testing."
     
   - name: "Coding Guidelines"
-    description: "No Rust coding guidelines for safety critical use currently exist"
+    description: "No Rust coding guidelines currently exist, so no tool can enforce them."
       
   - name: "Graphical Representation"
-    description: "Missing tools that are capable to represent Rust code in a graphical way."
+    description: "Missing tools that are capable to represent Rust code in a graphical way (e.g. flow chart)."
