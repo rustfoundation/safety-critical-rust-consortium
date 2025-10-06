@@ -28,7 +28,10 @@
      * Integers \- Félix
      * Arrays \- Alex
      * Floating Point \- Andrew
-8. Round table
+8. Discuss collaboration with ANSSI regarding their Secure Rust Coding Guidelines
+   * [deployed version](https://anssi-fr.github.io/rust-guide/)
+   * [repo](https://github.com/ANSSI-FR/rust-guide) 
+9. Round table
 
 ## **Check-in area**
 
