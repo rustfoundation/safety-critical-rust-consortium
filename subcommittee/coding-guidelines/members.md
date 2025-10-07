@@ -58,3 +58,5 @@
 | Mehedi Hasan Ridoy      | Individual                             | Producer                    | @senseix21         |
 | William Cunningham      | Woven by Toyota                        | Observer                    | @wcunning          |
 | Daniel Krippner         | ETAS GmbH                              | Observer                    | @AnotherDaniel     |
+| Nivir Roy               | Coretura                               | Observer                    | @nivir             |
+| Max Jacinto             | Other Entity                           | Observer                    | @Maxito7           |
