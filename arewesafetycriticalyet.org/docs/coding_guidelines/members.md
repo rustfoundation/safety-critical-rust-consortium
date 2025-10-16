@@ -32,7 +32,7 @@
 | Abir Abbas              | Individual                             | Producer                    | @mdabir1203        |
 | Arthur Hicken           | Parasoft                               | Producer                    | @codecurmudgeon    |
 | Espen Halsaa Albrektsen | Sonair AS                              | Observer                    | @espenalb          |
-| Koppany Pazman          | HighTec                                | Observer                    | @pazmank           |
+| Daniel Szucs            | HighTec                                | Observer                    | @Quasar6X          |
 | Nadhmi JAZI             | Ampere Software Technology             | Observer                    | @jazi007           |
 | Felix Gilcher           | Ferrous Systems                        | Producer                    | @Xylakant          |
 | Lukas Wirth             | Ferrous Systems                        | Producer                    | @Veykril           |
