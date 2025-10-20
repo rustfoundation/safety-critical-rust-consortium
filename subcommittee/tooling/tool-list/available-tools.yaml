@@ -70,7 +70,7 @@ tools:
     qualified: []
 
   - name: "Ferrocene"
-    type: "qualified-compiler"
+    type: "compiler"
     url: "https://ferrocene.dev"
     vendor: "Ferrous Systems"
     description: "Open-source qualified Rust compiler toolchain for safety- and mission-critical systems"
