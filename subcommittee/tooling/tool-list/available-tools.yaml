@@ -105,7 +105,7 @@ tools:
     url: "https://hightec-rt.com/products/rust-development-platform"
     vendor: "HighTec"
     description: "ISO 26262 ASIL D qualified Rust Compiler Development Platform for ARM based Stellar from STMicroelectronics and Infineon AURIX"
-    licsense: "commercial"
+    license: "commercial"
     qualified:
       - name: "ISO 26262"
         up-to: "ASIL-D"
