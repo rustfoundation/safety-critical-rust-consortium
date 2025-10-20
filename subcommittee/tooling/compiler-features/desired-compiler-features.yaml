@@ -7,7 +7,7 @@ metadata:
   date: "2025-10-01"
   purpose: "Track missing compiler features needed for safety-critical Rust applications"
   considered-standards:
-    - name: "ISO-26262"
+    - name: "ISO 26262"
       levels: ["ASIL-A", "ASIL-B", "ASIL-C", "ASIL-D"]
       description: "Road vehicles - Functional safety"
     - name: "DO-178C"
