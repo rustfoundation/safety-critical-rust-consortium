@@ -60,3 +60,5 @@
 | Daniel Krippner         | ETAS GmbH                              | Observer                    | @AnotherDaniel     |
 | Nivir Roy               | Coretura                               | Observer                    | @nivir             |
 | Max Jacinto             | Other Entity                           | Observer                    | @Maxito7           |
+| Satoshi Kaneko          | Denso Automotive Germany               | Observer                    | @satoshi58         |
+| Dániel Szűcs            | HighTec EDV-Systeme GmbH               | Observer                    | @Quasar6X          |
