@@ -19,7 +19,7 @@ position: 2
 - Joe Johnson (Modularity Inc.)
 - Oreste Bernardi (Infineon)
 - Tiago Manczak
-- Koppany Pazman (HighTec)
+- Daniel Szucs (HighTec)
 - Manuel Hatzl (Ferrous Systems)
 - Xander Cesari (Pictorus Inc)
 - Chris de Claverie (GAMA)
