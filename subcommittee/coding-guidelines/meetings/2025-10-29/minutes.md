@@ -11,7 +11,7 @@
 ## **Agenda**
 
 1. Solicitation of notetaker
-2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-10-22/minutes.md
+2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-10-22/minutes.md)
 3. Introduction of new member
 4. Share launch milestone & Kanban board (Pete LeVasseur)
    * [Prepare for launch to wider Rust community](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1)
