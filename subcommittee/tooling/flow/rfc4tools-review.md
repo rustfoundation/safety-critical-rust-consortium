@@ -103,7 +103,7 @@ flowchart TD
 This Mermaid diagram represents the RFC4Tools review workflow with three main phases:
 
 ### 1. **Assigning Phase**
-- Anyone can create issues for tool changes (new, change, delete)
+- Anyone can create issues to request changes related to the tools list (add, change, delete)
 - Tooling Committee manages the process
 - Tools Taskforce presents unassigned issues marked with a `submit tooling` or `tooling` label
 - Issues are assigned to volunteers or taken over by the Taskforce
@@ -118,7 +118,7 @@ This Mermaid diagram represents the RFC4Tools review workflow with three main ph
 - **PR Process**: Includes remark resolution cycle if needed
 
 ### 3. **Review Complete List (Annual)**
-- Task Force Member initiates annual review
+- Task Force Member initiates annual review of tools listed in available.tools.yaml
 - Tools to review distributed evenly among assessors
 - Evaluation based on:
   - Tool maintenance status
