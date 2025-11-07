@@ -20,13 +20,13 @@ metadata:
 
 # Tools organized alphabetically by name
 tools:
-
   - name: "cargo"
     type: "package-manager"
     vendor: "-"
     url: "https://github.com/rust-lang/cargo"
     description: "Built-in Rust package manager and test runner"
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "cargo-nextest"
@@ -35,6 +35,7 @@ tools:
     vendor: "-"
     description: "Next-generation test runner for Rust"
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "cargo-tarpaulin"
@@ -43,6 +44,7 @@ tools:
     vendor: "-"
     description: "Code coverage tool for Rust"
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "clippy"
@@ -51,6 +53,7 @@ tools:
     vendor: "-"
     description: "Clippy is a collection of lints to catch common mistakes and improve Rust code. It analyzes code for potential bugs, performance issues, style violations, and suggests more idiomatic Rust patterns."
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "creusot"
@@ -59,6 +62,7 @@ tools:
     vendor: "-"
     description: "Creusot is a deductive verifier for Rust code. It verifies your code is safe from panics, overflows, and assertion failures. By adding annotations you can take it further and verify your code does the correct thing."
     license: "LGPL 2.1"
+    liability: "user"
     qualified: []
 
   - name: "defmt-test"
@@ -67,6 +71,7 @@ tools:
     vendor: "Ferrous Systems"
     description: "Embedded testing framework"
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "Ferrocene"
@@ -74,7 +79,8 @@ tools:
     url: "https://ferrocene.dev"
     vendor: "Ferrous Systems"
     description: "Open-source qualified Rust compiler toolchain for safety- and mission-critical systems"
-    license: "commercial"
+    license: "Apache 2.0 & MIT"
+    liability: "Pre-qualified binaries and support available with a monthly/yearly subscription, and qualification kit available for an additional fee"
     qualified:
       - name: "ISO 26262"
         up-to: "ASIL-D"
@@ -82,7 +88,6 @@ tools:
         up-to: "Class C"
       - name: "IEC 61308"
         up-to: "SIL 4"
-      
 
   - name: "flamegraph"
     type: "profiler"
@@ -90,6 +95,7 @@ tools:
     vendor: "-"
     description: "Flame graph profiler for Rust"
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "GNAT Pro for Rust"
@@ -97,7 +103,8 @@ tools:
     url: "https://www.adacore.com/gnatpro-rust"
     vendor: "AdaCore"
     description: "AdaCore's Toolsuite for High-Assurance Rust Software; Includes stable toolchain for long-term development, long-term support, and qualification"
-    license: "commercial"
+    license: "Apache 2.0 & MIT"
+    liability: "Contact AdaCore for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "HighTec Rust Compiler"
@@ -105,7 +112,8 @@ tools:
     url: "https://hightec-rt.com/products/rust-development-platform"
     vendor: "HighTec"
     description: "ISO 26262 ASIL D qualified Rust Compiler Development Platform for ARM based Stellar from STMicroelectronics and Infineon AURIX"
-    license: "commercial"
+    license: "Apache 2.0 & MIT"
+    liability: "Contact HighTec for costs and legalities related to qualification and support."
     qualified:
       - name: "ISO 26262"
         up-to: "ASIL-D"
@@ -116,6 +124,7 @@ tools:
     vendor: "-"
     description: "Kani is an open-source verification tool that uses model checking to analyze Rust programs. Kani is particularly useful for verifying unsafe code blocks in Rust, where the 'unsafe superpowers' are unchecked by the compiler."
     license: "Apache 2.0 & MIT"
+    liability: "user"
     qualified: []
 
   - name: "Lauterbach Trace32 Debugger"
@@ -124,6 +133,7 @@ tools:
     vendor: "Lauterbach"
     description: "Lauterbach‘s TRACE32® tools are a suite of leading-edge hardware and software components that enables you to analyze, optimize and certify all kinds of embedded systems."
     license: "commercial"
+    liability: "Contact Lauterbach for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "mantra"
@@ -132,6 +142,7 @@ tools:
     vendor: "-"
     description: "Requirements traceability with structural code analysis and code coverage"
     license: "MIT"
+    liability: "user"
     qualified: []
 
   - name: "OpenFastTrace"
@@ -140,6 +151,7 @@ tools:
     vendor: "-"
     description: "OpenFastTrace (short OFT) is a requirement tracing suite."
     license: "GPL-3.0"
+    liability: "user"
     qualified: []
 
   - name: "PLS UDE"
@@ -148,6 +160,7 @@ tools:
     vendor: "PLS Programmierbare Logik & Systeme GmbH"
     description: "UDE® Universal Debug Engine is the powerful development tool for debugging, tracing, and testing embedded software for a wide range of multicore SoCs and microcontrollers."
     license: "commercial"
+    liability: "Contact PLS for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "Reqtify"
@@ -156,6 +169,7 @@ tools:
     vendor: "Dassault Systèmes"
     description: "Reqtify is a solution which allows implementing an End-To-End Traceability along the whole V-Cycle across very different types of document and data bases (by plugin connector)."
     license: "commercial"
+    liability: "Contact Dassault Systèmes for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "sphinx-needs"
@@ -164,6 +178,7 @@ tools:
     vendor: ""
     description: "Sphinx Needs is a requirements management extension for Sphinx documentation that enables tracing and linking of requirements, specifications, test cases, and other project artifacts"
     license: "MIT"
+    liability: "user"
     qualified: []
 
   - name: "TESSY"
@@ -172,6 +187,7 @@ tools:
     vendor: "Razorcat"
     description: "Qualified unit testing tool"
     license: "commercial"
+    liability: "Contact Razorcat for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "TrustInSoft Analyzer"
@@ -180,6 +196,7 @@ tools:
     vendor: "TrustInSoft"
     description: "Static analysis for C, C++, and soon to be Rust code"
     license: "commercial"
+    liability: "Contact TrustInSoft for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "VectorCast"
@@ -188,6 +205,7 @@ tools:
     vendor: "Vector Software"
     description: "Qualified test runner and generator for safety-critical applications"
     license: "commercial"
+    liability: "Contact Vector Software for costs and legalities related to qualification and support."
     qualified: []
 
   - name: "verifast"
@@ -196,8 +214,8 @@ tools:
     vendor: "-"
     description: "VeriFast is a tool for modular formal verification of the absence of undefined behavior in Rust1 programs that use unsafe blocks and the soundness of Rust modules that use unsafe blocks."
     license: "MIT"
+    liability: "user"
     qualified: []
-      
 
 open-topics:
   - name: "Fault Injection Tests"
