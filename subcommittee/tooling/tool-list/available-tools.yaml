@@ -1,4 +1,9 @@
 # This file lists available safety-critical Rust tools and their qualification state.
+#
+# DISCLAIMER:
+# This tools list only provides an overview of tools that may be useful for safety-critical Rust projects.
+# No legal guarantees are made for the tool information mentioned in this list. 
+# It is highly recommended to contact the tool vendor/maintainer before use especially for commercial tools.
 
 metadata:
   title: "Rust Tooling for use in Safety Critical Projects"
