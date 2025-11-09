@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -32,6 +32,12 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -131,7 +137,7 @@ const config: Config = {
           position: 'left',
           label: 'Liaison',
         },
-        {to: '/blog', label: 'News', position: 'left'},
+        { to: '/blog', label: 'News', position: 'left' },
         {
           href: 'https://github.com/rustfoundation/safety-critical-rust-consortium',
           label: 'GitHub',
