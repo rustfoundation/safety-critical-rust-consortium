@@ -108,6 +108,7 @@ flowchart TD
     C4 --> C5{Changes?}
     C5 --> |Yes| C7[See section:<br/>Changes to the Tools List]
     C5 --> |No| C6[Mark tool as reviewed<br/>in corresponding issue]
+    C7 --> |Merged| C6
 
     %% Styling
     classDef actor fill:#e1f5fe,stroke:#01579b,stroke-width:2px
