@@ -91,8 +91,8 @@ const config: Config = {
         redirects: [
           // /index.html -> /
           {
-            to: '/',
-            from: '/index.html',
+            to: 'https://arewesafetycriticalyet.org',
+            from: 'https://arewesafetycriticalyet.org/index.html',
           },
         ],
       },
