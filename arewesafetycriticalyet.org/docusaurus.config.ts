@@ -87,12 +87,7 @@ const config: Config = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: [
-          {
-            to: '/',
-            from: ['/index.html'],
-          },
-        ],
+        fromExtensions: ['html', 'htm'],
       },
     ]
   ],
