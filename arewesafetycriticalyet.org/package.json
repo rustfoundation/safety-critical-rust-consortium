@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "NODE_OPTIONS=\"--no-webstorage\" docusaurus start",
-    "build": "NODE_OPTIONS=\"--no-webstorage\" docusaurus build",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
