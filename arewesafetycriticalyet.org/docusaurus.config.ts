@@ -15,7 +15,7 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl,
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -45,21 +45,7 @@ const config: Config = {
           editUrl:
             'https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/arewesafetycriticalyet.org',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -97,6 +83,17 @@ const config: Config = {
         sidebarPath: './docs/sidebarsLiaison.ts',
         // ... other options
       },
+    ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/',
+            from: ['/index.html', '/docs/'],
+          },
+        ],
+      },
     ]
   ],
 
@@ -131,7 +128,6 @@ const config: Config = {
           position: 'left',
           label: 'Liaison',
         },
-        {to: '/blog', label: 'News', position: 'left'},
         {
           href: 'https://github.com/rustfoundation/safety-critical-rust-consortium',
           label: 'GitHub',
@@ -141,6 +137,17 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      links: [
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'This site is powered through Netlify',
+              href: 'https://netlify.com',
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} The Rust Safety Critical Working Group within the Rust Foundation.`,
     },
     prism: {
