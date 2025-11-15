@@ -92,7 +92,7 @@ const config: Config = {
           // /index.html -> /
           {
             to: '/',
-            from: '/index',
+            from: '/index.html',
           },
         ],
       },
