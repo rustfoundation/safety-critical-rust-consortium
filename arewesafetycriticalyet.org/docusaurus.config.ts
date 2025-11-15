@@ -88,6 +88,13 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         fromExtensions: ['html', 'htm'],
+        redirects: [
+          // /index.html -> /
+          {
+            to: '/index',
+            from: '/',
+          },
+        ],
       },
     ]
   ],
