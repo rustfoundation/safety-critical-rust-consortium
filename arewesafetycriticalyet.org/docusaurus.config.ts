@@ -90,7 +90,7 @@ const config: Config = {
         redirects: [
           {
             to: '/',
-            from: ['/index.html', '/docs/'],
+            from: ['/index.html'],
           },
         ],
       },
