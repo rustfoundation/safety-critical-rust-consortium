@@ -91,8 +91,8 @@ const config: Config = {
         redirects: [
           // /index.html -> /
           {
-            to: '/index',
-            from: '/',
+            to: '/',
+            from: '/index',
           },
         ],
       },
