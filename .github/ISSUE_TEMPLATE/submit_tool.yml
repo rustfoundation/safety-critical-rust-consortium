@@ -23,13 +23,19 @@ body:
   - type: textarea
     id: tool_description
     attributes:
-      label: What is a description of the tool, what it does, how it would be used?
+      label: Add a concise description of the tool. Please refrain from marketing claims and stick to what the tool is, does, and how it would be used?
     validations:
       required: true
   - type: input
     id: tool_link
     attributes:
       label: Link to the tool repo or homepage
+    validations:
+      required: true
+  - type: input
+    id: tool_license
+    attributes:
+      label: License of the tool
     validations:
       required: true
   - type: dropdown
@@ -44,18 +50,39 @@ body:
         - 'Other'
     validations:
       required: true
+  - type: input
+    id: tool_vendor
+    attributes:
+      label: Optional name of the tool vendor
+    validations:
+      required: false
+  - type: input
+    id: tool_liability
+    attributes:
+      label: Optional liability provided by the tool vendor
+    validations:
+      required: false
+  - type: input
+    id: tool_qualification
+    attributes:
+      label: List any standards the tool is qualified for
+    validations:
+      required: false
   - type: dropdown
     id: tool_type
     attributes:
       label: Tool category
       description: Specific use and type of this tool
       options:
-        - "coverage"
+        - "code-coverage"
         - "requirements-traceability"
-        - "qualified-compiler"
+        - "compiler"
         - "test-runner"
         - "formal-verification"
         - "static-analysis"
         - "tests-generation"
+        - "package-manager"
+        - "profiler"
+        - "debugger"
     validations:
       required: false
