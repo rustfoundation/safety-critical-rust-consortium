@@ -72,10 +72,22 @@ tools:
     qualified:
       - name: "ISO 26262"
         up-to: "ASIL-D"
+        info: '''
+          TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
+          For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
+          '''
       - name: "IEC 62304"
         up-to: "Class C"
+        info: '''
+          TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
+          For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
+          '''
       - name: "IEC 61508"
         up-to: "SIL 4"
+        info: '''
+          TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
+          For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
+          '''
 
   - name: "flamegraph"
     type: "profiler"

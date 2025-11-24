@@ -65,6 +65,24 @@ pub struct ToolEntry {
     pub vendor: Option<String>,
     /// Optional liability statement for the tool.
     pub liability: Option<String>,
+    /// Optional list of safety-critical standards the tool is (pre-)qualified for.
+    pub qualified: Option<Vec<QualifiedInfo>>,
+}
+
+/// Represents a safety-critical standard.
+#[derive(
+    Debug, Clone, PartialEq, Eq, serde::Serialize, serde::Deserialize, schemars::JsonSchema,
+)]
+#[serde(rename_all = "kebab-case")]
+pub struct QualifiedInfo {
+    /// The name of the safety-critical standard the tool is qualified for.
+    /// e.g. ISO-26262
+    pub name: String,
+    /// The highest safety level of the standard the tool is qualified for.
+    /// e.g. ASIL-A
+    pub up_to: String,
+    /// Optional information to support the qualification claim.
+    pub info: Option<String>,
 }
 
 /// Represents the possible types tools are grouped by in the list.
