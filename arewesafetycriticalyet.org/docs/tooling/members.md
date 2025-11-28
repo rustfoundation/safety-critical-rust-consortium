@@ -30,4 +30,9 @@ position: 2
 - Alexander Senier (Ferrous Systems)
 - Lachlan Dowling (NVIDIA)
 - Tshepang Mbambo (Ferrous Systems)
+- William Cunningham (Woven by Toyota)
+- Nivir Roy
+- Satoshi Kaneko (Denso Automotive Germany)
+- Raiki Tamura
+- Dániel Szűcs (HighTec EDV-Systeme GmbH)
 - Alexandru Radovici (Moderator)
