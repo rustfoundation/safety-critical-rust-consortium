@@ -1,0 +1,84 @@
+# This file lists desired Rust compiler features for security and safety-critical applications,
+# which are currently missing or incomplete in the standard Rust toolchain.
+
+metadata:
+  title: "Desired Rust Compiler Features"
+  version: "1.0"
+  date: "2025-10-01"
+  purpose: "Track missing compiler features needed for safety-critical Rust applications"
+  considered-standards:
+    - name: "ISO 26262"
+      levels: ["ASIL A", "ASIL B", "ASIL C", "ASIL D"]
+      description: "Road vehicles - Functional safety"
+    - name: "DO-178C"
+      levels: ["DAL-E", "DAL-D", "DAL-C", "DAL-B", "DAL-A"]
+      description: "Software Considerations in Airborne Systems and Equipment Certification"
+    - name: "IEC 62304"
+      levels: ["Class A", "Class B", "Class C"]
+      description: "Medical device software - software life cycle processes"
+    - name: "IEC 61508"
+      levels: ["SIL-1", "SIL-2", "SIL-3", "SIL-4"]
+      description: "Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems"
+    - name: "ISO/SAE 21434"
+      levels: ["CAL 1", "CAL 2", "CAL 3", "CAL 4"]
+      description: "Road vehicles — Cybersecurity engineering"
+
+topics:
+- name: "Stack Protector"
+  description: "Stack buffer overflow detection and protection mechanism"
+  priority: "High"
+  status: "Missing"
+  category: "Security"
+  rationale: "Stack protection is not available in any Rust compiler, but required for runtime stack overflow detection in safety-critical systems"
+  related-links:
+  - "https://developer.arm.com/documentation/dui0774/l/Compiler-Command-line-Options/-fstack-protector---fstack-protector-all---fstack-protector-strong---fno-stack-protector"
+  - "https://github.com/rust-lang/rust/issues/114903"
+
+- name: "TrustZone"
+  description: "TrustZone support for ARM Cortex-M processors"
+  priority: "High"
+  status: "Nightly"
+  category: "Security"
+  rationale: "TrustZone support is available only on nightly Rust. Stabilizing it is required for data sagmentation on cortex-m devices"
+  related-links:
+  - "https://developer.arm.com/documentation/100690/latest/"
+  - "https://github.com/rust-lang/rust/issues/81391"
+  - "https://github.com/rust-lang/rust/issues/75835"
+
+- name: "Control Flow Integrity (CFI)"
+  description: "Control flow integrity protection against ROP/JOP attacks"
+  priority: "Medium"
+  status: "Partial"
+  category: "Security"
+  rationale: "Prevents control flow hijacking attacks in safety-critical applications. Currently limited CFI support, not comprehensive for all control flow transfers"
+  related-links:
+  - "https://clang.llvm.org/docs/ControlFlowIntegrity.html"
+  - "https://github.com/rust-lang/rust/issues/89653"
+  
+- name: "Deterministic Code Generation"
+  description: "Reproducible binary output for certification requirements"
+  priority: "High"
+  status: "Partial"
+  category: "Safety"
+  rationale: "Not fully deterministic across different build environments. Required for certification processes that mandate reproducible builds"
+  related-links:
+  - "https://github.com/rust-lang/rust/issues/34902"
+  
+- name: "Coverage Instrumentation for Macros"
+  description: "Code coverage that includes macro expansions"
+  priority: "High"
+  status: "Missing"
+  category: "Safety"
+  rationale: "Coverage tools cannot instrument macro-generated code. Complete coverage analysis required for safety certification"
+  related-links:
+  - "https://github.com/rust-lang/rust/issues/79417"
+
+- name: "MC/DC"
+  description: "MC/DC is currently not supported by any Rust compiler."
+  priority: "High"
+  status: "Missing"
+  category: "Safety"
+  rationale: "MC/DC is needed to reach highest levels of safety-critical software for example in DO-178C."
+  related-links:
+  - "https://github.com/rust-lang/rust/issues/124144"
+  - "https://github.com/rust-lang/rust/pull/144999"

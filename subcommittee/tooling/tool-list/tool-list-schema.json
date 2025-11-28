@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ToolsList",
+  "description": "This struct represents the base for the tool list YAML file schema.",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "description": "Contains general metadata related to the tool list.",
+      "$ref": "#/$defs/ToolsListMetadata"
+    },
+    "open-topics": {
+      "description": "List of open topics where tools are missing or are lacking support and stability.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/OpenToolTopic"
+      }
+    },
+    "tools": {
+      "description": "The actual tool list.",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ToolEntry"
+      }
+    }
+  },
+  "required": [
+    "metadata",
+    "tools",
+    "open-topics"
+  ],
+  "$defs": {
+    "OpenToolTopic": {
+      "description": "Represents an open topic that is lacking tooling support.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "Short description of the open topic.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the open topic.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "description"
+      ]
+    },
+    "QualifiedInfo": {
+      "description": "Represents a safety-critical standard.",
+      "type": "object",
+      "properties": {
+        "info": {
+          "description": "Optional information to support the qualification claim.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "name": {
+          "description": "The name of the safety-critical standard the tool is qualified for.\ne.g. ISO-26262",
+          "type": "string"
+        },
+        "up-to": {
+          "description": "The highest safety level of the standard the tool is qualified for.\ne.g. ASIL-A",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "up-to"
+      ]
+    },
+    "StandardInfo": {
+      "description": "Represents a safety-critical standard.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "The short description of the standard.",
+          "type": "string"
+        },
+        "levels": {
+          "description": "The safety levels of the standard.\ne.g. ASIL-B",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "name": {
+          "description": "The name of the safety-critical standard.\ne.g. ISO-26262",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "levels",
+        "description"
+      ]
+    },
+    "ToolEntry": {
+      "description": "The representation of a tool entry in the list.",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "Short description of the tool.",
+          "type": "string"
+        },
+        "liability": {
+          "description": "Optional liability statement for the tool.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "license": {
+          "description": "The license of the tool.",
+          "type": "string"
+        },
+        "name": {
+          "description": "The tool name.",
+          "type": "string"
+        },
+        "qualified": {
+          "description": "Optional list of safety-critical standards the tool is (pre-)qualified for.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/QualifiedInfo"
+          }
+        },
+        "type": {
+          "description": "The type of tool.\ne.g. debugger, compiler, ...",
+          "$ref": "#/$defs/ToolType"
+        },
+        "url": {
+          "description": "URL to the tool homepage.",
+          "type": "string"
+        },
+        "vendor": {
+          "description": "Optional name of the tool vendor.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "url",
+        "description",
+        "license"
+      ]
+    },
+    "ToolType": {
+      "description": "Represents the possible types tools are grouped by in the list.",
+      "type": "string",
+      "enum": [
+        "package-manager",
+        "compiler",
+        "test-runner",
+        "formal-verification",
+        "profiler",
+        "debugger",
+        "requirements-traceability",
+        "static-analysis",
+        "code-coverage",
+        "other"
+      ]
+    },
+    "ToolsListMetadata": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "description": "The date the tool list was last checked.\n\n**Note:** This is used to show that the list has been reviewed even if no changes to the list were made.",
+          "type": "string"
+        },
+        "title": {
+          "description": "The title of the tool list.",
+          "type": "string"
+        },
+        "tracked-standards": {
+          "description": "A list of safety-critical standards that are considered for the listed tools.",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/StandardInfo"
+          }
+        },
+        "version": {
+          "description": "The version of the tool list.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "version",
+        "date",
+        "tracked-standards"
+      ]
+    }
+  }
+}

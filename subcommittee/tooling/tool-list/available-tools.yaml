@@ -1,0 +1,203 @@
+# This file lists available safety-critical Rust tools and their qualification state.
+#
+# DISCLAIMER:
+# This tools list only provides an overview of tools that may be useful for safety-critical Rust projects.
+# No legal guarantees are made for the tool information mentioned in this list. 
+# It is highly recommended to contact the tool vendor/maintainer before use especially for commercial tools.
+
+metadata:
+  title: "Rust Tooling for use in Safety Critical Projects"
+  version: "1.0"
+  date: "2025-09-29"
+  tracked-standards:
+    - name: "ISO-26262"
+      levels: ["ASIL-A", "ASIL-B", "ASIL-C", "ASIL-D"]
+      description: "Road vehicles - Functional safety"
+    - name: "DO-178C"
+      levels: ["DAL-E", "DAL-D", "DAL-C", "DAL-B", "DAL-A"]
+      description: "Software Considerations in Airborne Systems and Equipment Certification"
+    - name: "IEC 62304"
+      levels: ["Class A", "Class B", "Class C"]
+      description: "Medical device software - software life cycle processes"
+    - name: "IEC 61508"
+      levels: ["SIL-1", "SIL-2", "SIL-3", "SIL-4"]
+      description: "Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems"
+
+# Tools organized alphabetically by name
+tools:
+  - name: "cargo"
+    type: "package-manager"
+    url: "https://github.com/rust-lang/cargo"
+    description: "Built-in Rust package manager and test runner"
+    license: "Apache 2.0 & MIT"
+
+  - name: "cargo-nextest"
+    type: "test-runner"
+    url: "https://nexte.st"
+    description: "Next-generation test runner for Rust"
+    license: "Apache 2.0 & MIT"
+
+  - name: "cargo-tarpaulin"
+    type: "code-coverage"
+    url: "https://github.com/xd009642/tarpaulin"
+    description: "Code coverage tool for Rust"
+    license: "Apache 2.0 & MIT"
+
+  - name: "clippy"
+    type: "static-analysis"
+    url: "https://github.com/rust-lang/rust-clippy"
+    description: "Clippy is a collection of lints to catch common mistakes and improve Rust code. It analyzes code for potential bugs, performance issues, style violations, and suggests more idiomatic Rust patterns."
+    license: "Apache 2.0 & MIT"
+
+  - name: "creusot"
+    type: "formal-verification"
+    url: "https://github.com/creusot-rs/creusot"
+    description: "Creusot is a deductive verifier for Rust code. It verifies your code is safe from panics, overflows, and assertion failures. By adding annotations you can take it further and verify your code does the correct thing."
+    license: "LGPL 2.1"
+
+  - name: "defmt-test"
+    type: "test-runner"
+    url: "https://github.com/knurling-rs/defmt"
+    vendor: "Ferrous Systems GmbH"
+    description: "Embedded testing framework"
+    license: "Apache 2.0 & MIT"
+
+  - name: "Ferrocene"
+    type: "compiler"
+    url: "https://ferrocene.dev"
+    vendor: "Critical Section GmbH"
+    description: "Open-source qualified Rust compiler toolchain for safety- and mission-critical systems"
+    license: "Apache 2.0 & MIT"
+    liability: "Pre-qualified binaries and support are available with monthly/yearly subscriptions. Qualification kits are also available for an additional fee."
+    qualified:
+      - name: "ISO 26262"
+        up-to: "ASIL-D"
+        info: '''
+          TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
+          For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
+          '''
+      - name: "IEC 62304"
+        up-to: "Class C"
+        info: '''
+          TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
+          For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
+          '''
+      - name: "IEC 61508"
+        up-to: "SIL 4"
+        info: '''
+          TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
+          For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
+          '''
+
+  - name: "flamegraph"
+    type: "profiler"
+    url: "https://github.com/flamegraph-rs/flamegraph"
+    description: "Flame graph profiler for Rust"
+    license: "Apache 2.0 & MIT"
+
+  - name: "GNAT Pro for Rust"
+    type: "compiler"
+    url: "https://www.adacore.com/gnatpro-rust"
+    vendor: "AdaCore"
+    description: "AdaCore's Toolsuite for High-Assurance Rust Software; Includes stable toolchain for long-term development, long-term support, and qualification"
+    license: "Apache 2.0 & MIT"
+    liability: "Contact AdaCore for costs and legalities related to qualification and support."
+
+  - name: "HighTec Rust Compiler"
+    type: "compiler"
+    url: "https://hightec-rt.com/products/rust-development-platform"
+    vendor: "HighTec"
+    description: "ISO 26262 ASIL D qualified Rust Compiler Development Platform for ARM based Stellar from STMicroelectronics and Infineon AURIX"
+    license: "Apache 2.0 & MIT"
+    liability: "Contact HighTec for costs and legalities related to qualification and support."
+    qualified:
+      - name: "ISO 26262"
+        up-to: "ASIL-D"
+
+  - name: "kani"
+    type: "formal-verification"
+    url: "https://github.com/model-checking/kani"
+    description: "Kani is an open-source verification tool that uses model checking to analyze Rust programs. Kani is particularly useful for verifying unsafe code blocks in Rust, where the 'unsafe superpowers' are unchecked by the compiler."
+    license: "Apache 2.0 & MIT"
+
+  - name: "Lauterbach Trace32 Debugger"
+    type: "debugger"
+    url: "https://www.lauterbach.com/"
+    vendor: "Lauterbach"
+    description: "Lauterbach‘s TRACE32® tools are a suite of leading-edge hardware and software components that enables you to analyze, optimize and certify all kinds of embedded systems."
+    license: "commercial"
+    liability: "Contact Lauterbach for costs and legalities related to qualification and support."
+
+  - name: "mantra"
+    type: "requirements-traceability"
+    url: "https://crates.io/crates/mantra"
+    description: "Requirements traceability with structural code analysis and code coverage"
+    license: "MIT"
+
+  - name: "OpenFastTrace"
+    type: "requirements-traceability"
+    url: "https://github.com/itsallcode/openfasttrace"
+    description: "OpenFastTrace (short OFT) is a requirement tracing suite."
+    license: "GPL-3.0"
+
+  - name: "PLS UDE"
+    type: "debugger"
+    url: "https://www.pls-mc.com/products/universal-debug-engine/"
+    vendor: "PLS Programmierbare Logik & Systeme GmbH"
+    description: "UDE® Universal Debug Engine is the powerful development tool for debugging, tracing, and testing embedded software for a wide range of multicore SoCs and microcontrollers."
+    license: "commercial"
+    liability: "Contact PLS for costs and legalities related to qualification and support."
+
+  - name: "Reqtify"
+    type: "requirements-traceability"
+    url: "https://www.3ds.com/products/catia/reqtify"
+    vendor: "Dassault Systèmes"
+    description: "Reqtify is a solution which allows implementing an End-To-End Traceability along the whole V-Cycle across very different types of document and data bases (by plugin connector)."
+    license: "commercial"
+    liability: "Contact Dassault Systèmes for costs and legalities related to qualification and support."
+
+  - name: "sphinx-needs"
+    type: "requirements-traceability"
+    url: "https://sphinxcontrib-needs.readthedocs.io/"
+    description: "Sphinx Needs is a requirements management extension for Sphinx documentation that enables tracing and linking of requirements, specifications, test cases, and other project artifacts"
+    license: "MIT"
+
+  - name: "TESSY"
+    type: "test-runner"
+    url: "https://www.razorcat.com/en/product-tessy.html"
+    vendor: "Razorcat"
+    description: "Qualified unit testing tool"
+    license: "commercial"
+    liability: "Contact Razorcat for costs and legalities related to qualification and support."
+
+  - name: "TrustInSoft Analyzer"
+    type: "static-analysis"
+    url: "https://www.trust-in-soft.com/trustinsoft-analyzer"
+    vendor: "TrustInSoft"
+    description: "Static analysis for C, C++, and soon to be Rust code"
+    license: "commercial"
+    liability: "Contact TrustInSoft for costs and legalities related to qualification and support."
+
+  - name: "VectorCast"
+    type: "test-runner"
+    url: "https://www.vector.com/us/en/products/products-a-z/software/vectorcast/"
+    vendor: "Vector Software"
+    description: "Qualified test runner and generator for safety-critical applications"
+    license: "commercial"
+    liability: "Contact Vector Software for costs and legalities related to qualification and support."
+
+  - name: "verifast"
+    type: "formal-verification"
+    url: "https://github.com/verifast/verifast"
+    description: "VeriFast is a tool for modular formal verification of the absence of undefined behavior in Rust1 programs that use unsafe blocks and the soundness of Rust modules that use unsafe blocks."
+    license: "MIT"
+
+open-topics:
+  - name: "Fault Injection Tests"
+    description: "No generally applicable tool exists to inject faults in Rust projects during testing."
+    
+  - name: "Coding Guidelines"
+    description: "No Rust coding guidelines currently exist, so no tool can enforce them."
+      
+  - name: "Graphical Representation"
+    description: "Missing tools that are capable to represent Rust code in a graphical way (e.g. flow chart)."
