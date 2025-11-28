@@ -1,10 +1,10 @@
-# RFC: Tools List Maintenance Flows
+# Tools List Maintenance Flows
 
 This section defines how the tools list is managed by the tooling subcommittee.
 
 ## TLDR
 
-The RFC consists of three main phases:
+The tool proposal consists of three main phases:
 
 ### 1. **Assigning Phase**
 
@@ -70,7 +70,7 @@ flowchart TD
     B4 --> B5{Valid change/<br/>new tool for<br/>safety-critical<br/>Rust projects}
     B5 --> |No| B6[Close Issue with justification]
     B5 --> |Yes| B7[Fill up new entry in<br/>available.tools.yaml]
-    B7 --> B8[<strong>Optional:</strong><br/><ul><li>-Contact vendor</li><li>Test/Present tool</li><li>Collect user feedback</li></ul>]
+    B7 --> B8[<strong>Optional:</strong><br/><ul><li>Contact vendor</li><li>Test/Present tool</li><li>Collect user feedback</li></ul>]
     
     %% Delete Path
     B3 --> B12{Valid?}
@@ -104,7 +104,7 @@ flowchart TD
     %% Review Complete List Phase - Once a year
     C1[Task Force Member] --> C2[Create an issue with a check list<br/>of the tools to review.<br/>Distribute the tools evenly<br/>among assessors]
     C2 --> C3[Each assignee evaluates<br/>their assigned tools]
-    C3 --> C4[<strong>Evaluation Criteria:</strong><ul><li>- Tool maintenance status</li><li>- License update</li><li>- Vendor status</li></ul>]
+    C3 --> C4[<strong>Evaluation Criteria:</strong><ul><li>Tool maintenance status</li><li>License update</li><li>Vendor status</li></ul>]
     C4 --> C5{Changes?}
     C5 --> |Yes| C7[See section:<br/>Changes to the Tools List]
     C5 --> |No| C6[Mark tool as reviewed<br/>in corresponding issue]
