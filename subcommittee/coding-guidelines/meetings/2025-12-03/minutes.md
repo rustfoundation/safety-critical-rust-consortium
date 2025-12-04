@@ -12,6 +12,7 @@
 
 1. Solicitation of notetaker  
 2. Acceptance of Previous Meeting Minutes  
+   * Minutes for 2025-11-19 are missing  
 3. Introduction of new members  
 4. “Reviewer circle”  
    * Volunteers to go on a list of assignable reviewers  
@@ -36,15 +37,18 @@
 
 **Please add your name, and an emoji that describes your day.**
 
-* X  
-* X  
-* X  
+* Markus Hosch 🍀  
+* Alex Celeste ☕  
+* Tiago Manczak  
+* Oreste Bernardi  
+* Achim Kriso  
+* Christof Petig 🥣  
 * X  
 * X
 
 **Notetaker:**
 
-* X
+* Markus Hosch
 
 For tips on how we take notes in the Safety-Critical Rust Consortium, please see the [Meeting Notetaker Role](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/docs/notetaker-role.md) doc.
 
@@ -58,11 +62,41 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 
 ## **Tasks**
 
-* …
+* Minutes from 2025-11-19 need to be updated  
+* Can only accept minutes from a slot everybody actually attended  
+* Reviewer list to be written down either as a membership-style list or as a GitHub automation  
+* Fix non-unique IDs on [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/220](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/220)   
+* Check whether non-unique IDs would be detected by CI  
+* Merge [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/232](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/232)  
+* Figure out how to cross-reference rules inline (e.g. to refer to a title without literally repeating it). Exercise on an open PR  
+* Emphasize the MISRA, CERT, Clippy etc work so that people check on Zulip whether there is already something in the works that watches their guideline suggestion
 
 ## **Meeting Minutes**
 
-* …
+* Not accepting the meeting from 2025-11-19, PR needs to be updated, see [https://github.com/rustfoundation/safety-critical-rust-consortium/pull/510](https://github.com/rustfoundation/safety-critical-rust-consortium/pull/510) \[TODO: Markus H.\]  
+* Check for the meeting minutes from the NA/Pacific meeting \[TODO: ??\]  
+* No new members  
+* Call for volunteers for PR reviewers  
+* Would we want to make all Producers to be reviewer? If no, we need to add another list of reviewers. We might also make Github auto-assign people to new PRs. \[TODO\]  
+* Correct \> complete → We should actually formalize this a bit, so that it’s clear that a small but correct piece of content for each chapter is enough to get stuff merged.  
+* Reviewing [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/220](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/220)  
+  * Maybe too many compliant examples? We might want to create an issue to reduce the number of examples to make the rule easier to comprehend  
+  * Q: Does every subsection also have a state? → Yes, that’s how thie guidelines were designed  
+  * Q: How do compiler flags influence the rule? → Seems there were some out-of-band discussions to avoid panics/aborts. We might want to consider compiler flags in the future  
+  * Examples have the same ID from the examples, which is unintentional. Needs to be fixed before PR merge. Would CI see that? \[TODO: Alex or David: Update PR to use unique IDs\]  
+  * PR can be merged after ID update  
+* Review [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/232](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/232)  
+  * We might want to enable the tooling to refer to the title by link instead of repeating  
+  * Having links inline makes the source harder to read → Do we want to add this to the guidelines as a general rule?  
+  * Otherwise approved  
+* Review [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/234](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/234)   
+  * Rule gets “reused” → We should not do that but create new rule, with the old rule being deprecated  
+  * We might want to also support linking deprecated rules to other rules that replace the now-deprecated rule → Could be implemented by the rules linking facility used for subset vs defect. \[TODO: Markus H.\]  
+  * Content is fine, though, we will progress with the merge once the rule has been turned into a new one.  
+* Round table  
+  * We would want to coordinate rule work by also using Zulip to find out whether someone else is working on that, e.g. because a similar rule is inside MISRA, CERT etcpp  
+  * Same story for clippy lints. One could work on lints, but coordinating might still be beneficial to avoid double work.  
+  * We might want to link that to the reviewer circle?
 
 ## **Material**
 
