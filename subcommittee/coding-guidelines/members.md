@@ -62,3 +62,4 @@
 | Max Jacinto             | Other Entity                           | Observer                    | @Maxito7           |
 | Satoshi Kaneko          | Denso Automotive Germany               | Observer                    | @satoshi58         |
 | Dániel Szűcs            | HighTec EDV-Systeme GmbH               | Observer                    | @Quasar6X          |
+| Roberto Bagnara         | BUGSENG / University of Parma          | Observer                    | @RobertoBagnara    |
