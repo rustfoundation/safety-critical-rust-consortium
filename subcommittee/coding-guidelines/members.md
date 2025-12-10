@@ -6,7 +6,7 @@
 | Joel Marcey                | Rust Foundation                        | Observer                    | @JoelMarcey        |
 | Alex Celeste               | Perforce Software                      | Producer                    | @AlexCeleste       |
 | Florian Gilcher            | Ferrous Systems                        | Producer                    | @skade             |
-| Pete LeVasseur             | Eclipse uProtocol &<br>Woven by Toyota | Producer &<br>Initial Chair | @PLeVasseur        |
+| Pete LeVasseur             | Eclipse uProtocol & Woven by Toyota    | Producer & Initial Chair    | @PLeVasseur        |
 | Marc Schoolderman          | Tweede golf                            | Producer                    | @squell            |
 | Jordan McQueen             | Woven by Toyota                        | Producer                    | @jmqd              |
 | Christof Petig             | Aptiv                                  | Producer                    | @cpetig            |
