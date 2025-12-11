@@ -133,7 +133,7 @@ flowchart TD
     B3 --> |Yes| B4[Resolve Remarks]
     B4 --> B5((Return))
     B5 --> B2
-    B3 --> |No| B6[Taskfore Member<br/>merges PR]
+    B3 --> |No| B6[Taskforce Member<br/>merges PR]
 
     %% Styling
     classDef process fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
