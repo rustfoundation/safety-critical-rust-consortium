@@ -43,7 +43,7 @@ flowchart TD
     A1[Anyone] --> A2["Creates new issue for a tool related change<br/>(new, change, delete)"]
     A2 --> A3[Tooling Subcommittee]
     A3 --> A4[Tools Taskforce/Author present<br/>overview of unassigned issues with <em>submit tooling</em> or <em>tooling</em> label]
-    A4 --> A5[Issue is assigned for review<br/>to Tools Committee Volunteer]
+    A4 --> A5[Issue is assigned for review<br/>to Tooling Subcommittee Volunteer]
     A5 --> A6[In case of no volunteer<br/>Taskforce takes over the review]
 
     %% Styling
