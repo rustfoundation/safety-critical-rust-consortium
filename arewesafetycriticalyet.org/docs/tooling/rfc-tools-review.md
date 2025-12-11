@@ -75,7 +75,7 @@ flowchart TD
     %% Delete Path
     B3 --> B12{Valid?}
     B12 --> |No| B6
-    B12 --> |Yes| B13[Delete entry from<br/>available.tools.yaml]
+    B12 --> |Yes| B13[Delete entry from<br/>available-tools.yaml]
 
     %% PR
     B8 --> B14[See section:<br/>Changes to the Tools List]
