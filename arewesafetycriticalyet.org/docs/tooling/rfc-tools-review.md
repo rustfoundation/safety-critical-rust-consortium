@@ -143,4 +143,3 @@ flowchart TD
     class B3 decision
     class B1,B4,B6 process
     class B2 time
-```
