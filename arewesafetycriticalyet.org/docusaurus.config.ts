@@ -123,7 +123,6 @@ const config: Config = {
           position: 'left',
           label: 'Liaison',
         },
-        { to: '/blog', label: 'News', position: 'left' },
         {
           href: 'https://github.com/rustfoundation/safety-critical-rust-consortium',
           label: 'GitHub',
