@@ -26,7 +26,7 @@ The tool proposal consists of three main phases:
 ### 3. **Review Complete List (Annually)**
 
 - Task Force Member initiates annual review of tools listed in [available-tools.yaml]
-- Tools to review distributed evenly among assessors
+- Tools to review distributed evenly among task force members
 - Evaluation based on:
   - Tool maintenance status
   - License updates
