@@ -102,7 +102,7 @@ This flowchart defines how the "Once a Year" review of the tools list is handled
 ```mermaid
 flowchart TD
     %% Review Complete List Phase - Once a year
-    C1[Task Force Member] --> C2[Create an issue with a check list<br/>of the tools to review.<br/>Distribute the tools evenly<br/>among assessors]
+    C1[Task Force Member] --> C2[Create an issue with a check list<br/>of the tools to review.<br/>Distribute the tools evenly<br/>among task force members]
     C2 --> C3[Each assignee evaluates<br/>their assigned tools]
     C3 --> C4[<strong>Evaluation Criteria:</strong><ul><li>Tool maintenance status</li><li>License update</li><li>Vendor status</li></ul>]
     C4 --> C5{Changes?}
