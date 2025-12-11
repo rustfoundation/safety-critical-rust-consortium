@@ -69,7 +69,7 @@ flowchart TD
     %% New/Change Path
     B4 --> B5{Valid change/<br/>new tool for<br/>safety-critical<br/>Rust projects}
     B5 --> |No| B6[Close Issue with justification]
-    B5 --> |Yes| B7[Fill up new entry in<br/>available.tools.yaml]
+    B5 --> |Yes| B7[Fill up new entry in<br/>available-tools.yaml]
     B7 --> B8[<strong>Optional:</strong><br/><ul><li>Contact vendor</li><li>Test/Present tool</li><li>Collect user feedback</li></ul>]
     
     %% Delete Path
