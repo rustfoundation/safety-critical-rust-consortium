@@ -17,7 +17,7 @@ The tool proposal consists of three main phases:
 
 - **New/Change Path**: 15-day review period including:
   - Tool information checking
-  - Entry creation in available.tools.yaml
+  - Entry creation in [available-tools.yaml]
   - Optional: vendor contact, testing, and user feedback collection
 - **Delete Path**: Review deletion reasoning
 - **Common validation**: Valid requests proceed to PR creation and merge process
