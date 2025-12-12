@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkarewesafetycriticalyet_org=globalThis.webpackChunkarewesafetycriticalyet_org||[]).push([[6674],{2874:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"coding_guidelines"}')}}]);
