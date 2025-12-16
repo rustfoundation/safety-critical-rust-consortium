@@ -9,7 +9,7 @@
 ## Agenda
 
 1. Solicitation of notetaker
-2. Review last time’s meeting minutes
+2. Review last time’s [meeting minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/tooling/meetings/2025-11-28/minutes.md)
 3. Present new members
 4. Rust Project Bridge Task Force \- Project Goals
    1. Survey: [https://www.surveyhero.com/c/rust-safety-critical](https://www.surveyhero.com/c/rust-safety-critical)
