@@ -90,7 +90,7 @@
 
 -----
 
-Niko, via email to some people regarding the Rust Project Goals process (Pete to verify if there’s another place this is posted or how public we can make this):
+Niko, via email to some people regarding the Rust Project Goals process, and then later publicly:
 
 Hi everyone,
 
