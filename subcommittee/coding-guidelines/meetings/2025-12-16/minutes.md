@@ -1,6 +1,7 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-12-16 @ 0800 UTC / 0900 CET / 1700 JST**
+# **Coding Guidelines Subcommittee Meeting on 2025-12-16 @ 20:00 EST / 2025-12-17 10:00 JST**
 
-[Link](https://www.worldtimebuddy.com/?qm=1&lid=14,12,1850147,5&h=14&date=2025-11-12&sln=8-9&hf=1) to meeting time in common time zones.
+
+[Link](https://www.worldtimebuddy.com/?qm=1&lid=5,1850147,212&h=5&date=2025-12-16&sln=20-21&hf=1) to meeting time in common time zones.
 
 | Search Key | Description |
 | ----- | ----- |
@@ -11,9 +12,10 @@
 ## **Agenda**
 
 1. Solicitation of notetaker
-2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-11-12/minutes.md)
+2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-11-26/minutes.md)
 3. Introduction of new members
 4. Merging of [https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/251](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/pull/251) has happened to update [CONTRIBUTING.md](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/blob/main/CONTRIBUTING.md) to latest workflow
+   * Mini walkthrough
    * Have a read on GOALS.md, README.md and CONTRIBUTING.md and think about valuable additions and clarifications
    * If you can think of other ways to improve contribution, please open an issue with
 5. Proposals and ideas for new rules
