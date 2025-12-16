@@ -12,7 +12,6 @@
 
 1. Solicitation of notetaker  
 2. Acceptance of Previous Meeting Minutes  
-   * Minutes for 2025-11-19 are missing  
 3. Introduction of new members  
 4. “Reviewer circle”  
    * Volunteers to go on a list of assignable reviewers  
