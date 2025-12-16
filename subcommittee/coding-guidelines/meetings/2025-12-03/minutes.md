@@ -11,7 +11,7 @@
 ## **Agenda**
 
 1. Solicitation of notetaker  
-2. Acceptance of Previous Meeting Minutes  
+2. Acceptance of [Previous Meeting Minutes](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2025-11-26/minutes.md)
 3. Introduction of new members  
 4. “Reviewer circle”  
    * Volunteers to go on a list of assignable reviewers  
