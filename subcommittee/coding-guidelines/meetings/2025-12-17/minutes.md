@@ -47,7 +47,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 
 ## **Tasks**
 
-* Mikhail Antoshkin - leave comment on [#284](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/284) regarding Sphinx versioning.
+* [todo] Mikhail Antoshkin - leave comment on [#284](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/284) regarding Sphinx versioning.
 
 ## **Meeting Minutes**
 
