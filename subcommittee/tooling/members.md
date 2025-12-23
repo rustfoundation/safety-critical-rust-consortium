@@ -2,7 +2,6 @@
 
 - Tony Aiello (AdaCore)
 - Jordan McQueen (Woven by Toyota)
-- Sasha Pourcelot (TrustInSoft)
 - Arnaud Fontaine (Airbus)
 - Daniel Frassinelli (Veecle)
 - Roland Schabenberger (Veecle)
