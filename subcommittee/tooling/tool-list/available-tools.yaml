@@ -25,6 +25,12 @@ metadata:
 
 # Tools organized alphabetically by name
 tools:
+  - name: "aiT WCET Analyzer"
+    type: "static analyzer"
+    url: "https://www.absint.com/ait/index.htm"
+    description: "Tool to statically compute the worst-case execution time of each task."
+    license: "commercial"
+
   - name: "cargo"
     type: "package-manager"
     url: "https://github.com/rust-lang/cargo"
