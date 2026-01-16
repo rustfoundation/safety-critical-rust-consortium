@@ -26,7 +26,6 @@
 | Tiago Manczak              | Infineon                               | Observer                    | @manczak-ifx       |
 | Julius Gustavsson          | Volvo Car Corporation                  | Producer                    | @vccjgust          |
 | Sarah Dietrich             | Festo SE & Co. KG                      | Observer                    | @sarahkarolina     |
-| Sasha Pourcelot            | TrustInSoft                            | Producer                    | @scrabsha          |
 | Monadic Cat                | Blue Bed Studio Inc.                   | Observer                    | @Monadic-Cat       |
 | Abir Abbas                 | Individual                             | Producer                    | @mdabir1203        |
 | Arthur Hicken              | Parasoft                               | Producer                    | @codecurmudgeon    |
