@@ -2,7 +2,7 @@
 #
 # DISCLAIMER:
 # This tools list only provides an overview of tools that may be useful for safety-critical Rust projects.
-# No legal guarantees are made for the tool information mentioned in this list. 
+# No legal guarantees are made for the tool information mentioned in this list.
 # It is highly recommended to contact the tool vendor/maintainer before use especially for commercial tools.
 
 metadata:
@@ -192,12 +192,18 @@ tools:
     description: "VeriFast is a tool for modular formal verification of the absence of undefined behavior in Rust1 programs that use unsafe blocks and the soundness of Rust modules that use unsafe blocks."
     license: "MIT"
 
+  - name: "Verus"
+    type: "formal-verification"
+    url: "https://github.com/verus-lang/verus"
+    description: "Verified Rust for low-level systems code"
+    license: "MIT"
+
 open-topics:
   - name: "Fault Injection Tests"
     description: "No generally applicable tool exists to inject faults in Rust projects during testing."
-    
+
   - name: "Coding Guidelines"
     description: "No Rust coding guidelines currently exist, so no tool can enforce them."
-      
+
   - name: "Graphical Representation"
     description: "Missing tools that are capable to represent Rust code in a graphical way (e.g. flow chart)."
