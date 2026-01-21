@@ -16,10 +16,13 @@
 4. `@guidelines-bot` and its use
     * Helps fairly distribute reviews in round-robin fashion to Producers
     * Other abilities too, leave a comment as @guidelines-bot /commands to see what's possible
-5. Rust Project Goals
-6. Proposals and ideas for new rules
-7. Progress on ongoing tasks
-8. Round table
+5. CERT C \=\> Rust Mapping (Félix)
+   * Some [open questions](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/336#issuecomment-3678192763)
+6. Batch of rules involving `unsafe` \- knowledgeable folks? (Félix)
+7. Rust Project Goals
+8. Proposals and ideas for new rules
+9. Progress on ongoing tasks
+10. Round table
 
 ## **Check-in area**
 
