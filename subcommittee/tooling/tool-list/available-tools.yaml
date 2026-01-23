@@ -45,7 +45,7 @@ tools:
       info: '''
         Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm
         '''
-    - name: "IEC 62304"    - name: "IEC 61508"
+    - name: "IEC 61508"
       up-to: "SIL-4"
       info: '''
         Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm
