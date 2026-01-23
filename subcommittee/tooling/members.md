@@ -2,7 +2,6 @@
 
 - Tony Aiello (AdaCore)
 - Jordan McQueen (Woven by Toyota)
-- Sasha Pourcelot (TrustInSoft)
 - Arnaud Fontaine (Airbus)
 - Daniel Frassinelli (Veecle)
 - Roland Schabenberger (Veecle)
@@ -36,4 +35,8 @@
 - Satoshi Kaneko (Denso Automotive Germany)
 - Raiki Tamura
 - Dániel Szűcs (HighTec EDV-Systeme GmbH)
+- Dorian Péron (AdaCore)
+- Sam K
+- Arnaud Riess
+- Jonatan Hatakeyama Zeidler (Brainlab SE)
 - Alexandru Radovici (Moderator)
