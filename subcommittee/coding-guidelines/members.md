@@ -63,4 +63,6 @@
 | Sam K                      | Individual                             | Observer                    | @hashcatHitman     |
 | Jonatan Hatakeyama Zeidler | Individual                             | Observer                    | @jonatanzeidler    |
 | Roberto Bagnara            | BUGSENG (and the University of Parma)  | Observer                    | @RobertoBagnara    |
+| Masahiro Sakurai           | Woven by Toyota                        | Observer                    | @manhatsu          |
+| Andreas Weis               | ekxide IO GmbH                         | Producer                    | @ComicSansMS       |
 
