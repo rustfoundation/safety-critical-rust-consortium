@@ -134,6 +134,8 @@ flowchart TD
     B4 --> B5((Return))
     B5 --> B2
     B3 --> |No| B6[Taskforce Member<br/>merges PR]
+    B6 --> B7[Optional: Task Force member<br/>informs Vendor about update]
+    B7 --> B8((End))
 
     %% Styling
     classDef process fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
@@ -141,5 +143,5 @@ flowchart TD
     classDef time fill:#f5e3e3,stroke:#666666,stroke-width:1px
     
     class B3 decision
-    class B1,B4,B6 process
+    class B1,B4,B6,B7 process
     class B2 time

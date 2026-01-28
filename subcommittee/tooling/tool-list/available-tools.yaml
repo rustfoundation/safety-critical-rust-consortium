@@ -7,7 +7,7 @@
 
 metadata:
   title: "Rust Tooling for use in Safety Critical Projects"
-  version: "1.0"
+  version: "1.1"
   date: "2025-09-29"
   tracked-standards:
     - name: "ISO-26262"
@@ -22,9 +22,41 @@ metadata:
     - name: "IEC 61508"
       levels: ["SIL-1", "SIL-2", "SIL-3", "SIL-4"]
       description: "Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems"
+    - name: "EN 50128"
+      levels: ["SIL-1", "SIL-2", "SIL-3", "SIL-4"]
+      description: "Railway applications - Communication, signalling and processing systems - Software for railway control and protection systems"
+
 
 # Tools organized alphabetically by name
 tools:
+  - name: "aiT WCET Analyzer"
+    type: "static-analysis"
+    url: "https://www.absint.com/ait/index.htm"
+    description: "Tool to statically compute the worst-case execution time of each task."
+    license: "commercial"
+    qualified:
+    - name: "ISO-26262"
+      up-to: "ASIL-D"
+      info: '''
+        Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm
+        '''
+    - name: "DO-178C"
+      up-to: "DAL-A"
+      info: '''
+        Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm
+        '''
+    - name: "IEC 61508"
+      up-to: "SIL-4"
+      info: '''
+        Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm
+        '''
+
+    - name: "EN 50128"
+      up-to: "SIL-4"
+      info: '''
+        Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm
+        '''
+
   - name: "cargo"
     type: "package-manager"
     url: "https://github.com/rust-lang/cargo"
@@ -70,7 +102,7 @@ tools:
     license: "Apache 2.0 & MIT"
     liability: "Pre-qualified binaries and support are available with monthly/yearly subscriptions. Qualification kits are also available for an additional fee."
     qualified:
-      - name: "ISO 26262"
+      - name: "ISO-26262"
         up-to: "ASIL-D"
         info: '''
           TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
@@ -83,7 +115,7 @@ tools:
           For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
           '''
       - name: "IEC 61508"
-        up-to: "SIL 4"
+        up-to: "SIL-4"
         info: '''
           TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01.
           For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene.
@@ -111,7 +143,7 @@ tools:
     license: "Apache 2.0 & MIT"
     liability: "Contact HighTec for costs and legalities related to qualification and support."
     qualified:
-      - name: "ISO 26262"
+      - name: "ISO-26262"
         up-to: "ASIL-D"
 
   - name: "kani"
