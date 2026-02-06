@@ -76,6 +76,5 @@
 - Expected contribution from new member who is a consultant and assessor in safety critical space.
 - Coding guidelines have not yet reached a great state.
   - Improved contributing experience.
-  - New security guidelines from ANSSI will be released shortlyare going to be translated in French.
+  - New security guidelines from ANSSI will be released shortly. They are going to be translated in French.
   - Wish to have common guidelines for cybersecurity and safety but sometimes they can conflict.
-  -
