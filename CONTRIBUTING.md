@@ -30,5 +30,14 @@ for more information on using pull requests.
 Do you just want to file an issue for the project? Please do so in GitHub under 
 the `Issues` tab.
 
+### Local checks
+
+For changes under the website directory, you can run typo checks locally before
+pushing:
+
+```shell
+typos arewesafetycriticalyet.org
+```
+
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [pull-requests]: https://help.github.com/articles/about-pull-requests/
