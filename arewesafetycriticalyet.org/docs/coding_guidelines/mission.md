@@ -22,7 +22,7 @@ An effort led out of the [AUTOSAR Foundation](https://www.autosar.org/) titled t
 
 An outcome of this working group is the [Explanation of ARA Applications in Rust](https://www.autosar.org/fileadmin/standards/R23-11/AP/AUTOSAR_AP_EXP_ARARustApplications.pdf) document which outlines the API which can be used to write Rust applications within an Adaptive AUTOSAR environment.
 
-## Other Safety-Critial Guidelines
+## Other Safety-Critical Guidelines
 
 ### MISRA C, C++
 
