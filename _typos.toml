@@ -1,0 +1,7 @@
+# Project typo configuration for CI.
+# Keep allowlists narrow and add entries only for verified false positives.
+
+[default]
+extend-ignore-identifiers-re = []
+
+[default.extend-words]

@@ -1,0 +1,24 @@
+name: Check typos
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  merge_group:
+
+jobs:
+  check_typos:
+    name: check_typos
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check for typos
+        uses: crate-ci/typos@v1.40.0
+        with:
+          files: ./arewesafetycriticalyet.org
