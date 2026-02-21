@@ -1,0 +1,77 @@
+name: Missing Tool/Process
+description: Identification of a gap in the safety-critical tooling ecosystem and request for a solution
+title: Tooling Request
+labels: ["tooling gap analysis", "tooling request"]
+assignees:
+  - joelmarcey, alexandruradovici
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Process/Tooling Gap
+        If you or your organization is working in the Rust certification space, preferably directly developing certified software in Rust, and has identified a gap in the development process you can submit this form to bring this issue up to the consortium. We will attempt to bring these gaps to the correct organization that may be able to address it, usually through the development of new tools or the modification of existing tooling. This may be other organizations within the Rust Project or Rust Foundation, the open-source community, tooling vendor companies, or even members of the consortium.
+
+        Optionally, if you have a good idea of exactly what tool or tool modification would close this process gap we invite you to describe the tool.
+  - type: input
+    id: title
+    attributes:
+      label: What is a brief summary of the gap you have identified?
+      placeholder: "Example: no documentation is generated when all clippy lints pass."
+    validations:
+      required: true
+  - type: textarea
+    id: gap_description
+    attributes:
+      label: Please elaborate on the process you or your organization is attempting and what the pain points are.
+      placeholder: "Example: When clippy lints are generating errors or warning there is terminal content to be printed but when all clippy lints are passing or failing there's no way to generate traceability documentation indicating that the code passed the built-in checks. This would be useful for certification and code auditing."
+    validations:
+      required: true
+  - type: input
+    id: specification
+    attributes:
+      label: What certification/specification does this process pertain to (if any)?
+      placeholder: "Example: ISO-26262 ASIL-D"
+  - type: markdown
+    attributes:
+      value: |
+        ## Tooling Suggestion
+        Optionally, if you've identified exactly or approximately what tool would solve this gap please share more details here.
+  - type: markdown
+    attributes:
+      value: |
+        ### crate/certifiable crate
+        Use this category if you're interested in a crate, library, or a certifiable version of an existing crate.
+
+        *Examples: Mathematical analysis crate, Certifiable version of `heapless`*
+
+        ### Internal Rust project tooling
+        Use this category if the feature you're interested in is in a Rust Project managed piece of software.
+
+        *Examples: rustc compiler flag, clippy lints, Cargo extensions*
+
+        ### Developer tool
+        This would be a development tool, an additional program used in the process of writing or verifying Rust.
+
+        *Examples: Formal verification tool, IDE, Debugging tools*
+
+        ### Other
+  - type: dropdown
+    id: tooling-type
+    attributes:
+      label: What type of tool are you proposing?
+      description: Including
+      options:
+        - 'crate/certifiable crate'
+        - 'Internal Rust project tooling (rustc, clippy, cargo, etc)'
+        - 'Developer tool (IDE, analysis tool, etc)'
+        - 'Other'
+      default: 1
+    validations:
+      required: false
+  - type: textarea
+    id: tool_suggestion
+    attributes:
+      label: What tool or tool improvement would solve this process gap?
+      placeholder: "Example: a cargo flag that would generate a log file of all clippy lints that ran and their result"
+    validations:
+      required: false
