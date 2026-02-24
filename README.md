@@ -6,9 +6,9 @@ See the full announcement [here](https://foundation.rust-lang.org/news/announcin
 
 ## Consortium Membership
 
-Membership to the Safety Critical Rust Consortium is free. Please [file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) to submit your membership application. 
+Membership to the Safety Critical Rust Consortium is free. Please [file this GitHub issue](https://github.com/rustfoundation/safety-critical-rust-consortium/issues/new?assignees=joelmarcey&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml) to submit your membership application.
 
-> Note: When you file the issue for membership, the name, email address and any company you provide will be public as GitHub issues are inherently public. We do not use your information for any reason other than membership purposes. 
+> Note: When you file the issue for membership, the name, email address and any company you provide will be public as GitHub issues are inherently public. We do not use your information for any reason other than membership purposes.
 
 If for some reason you are unable or willing to file the application for membership via a GitHub issue, please send an email to `safety-critical-rust-consortium-contact [at] rustfoundation [dot] org`.
 
@@ -16,7 +16,7 @@ Whether you become a member or not, you can join the consortium's [public Zulip 
 
 ### Subcommittee Membership
 
-The Safety Critical Rust Consortium has subcommittees that focuses on specific areas of work. 
+The Safety Critical Rust Consortium has subcommittees that focuses on specific areas of work.
 
 Here are the subcommittees:
 
@@ -65,8 +65,8 @@ Rust is primarily distributed under the terms of both the MIT license and the
 Apache License (Version 2.0), with documentation portions covered by the
 Creative Commons Attribution 4.0 International license..
 
-See [LICENSE-APACHE](LICENSE-APACHE), [LICENSE-MIT](LICENSE-MIT), 
-[LICENSE-documentation](LICENSE-documentation), and 
+See [LICENSE-APACHE](LICENSE-APACHE), [LICENSE-MIT](LICENSE-MIT),
+[LICENSE-documentation](LICENSE-documentation), and
 [COPYRIGHT](COPYRIGHT) for details.
 
 You can also read more under the Foundation's [intellectual property
@@ -74,15 +74,14 @@ policy][ip-policy].
 
 ## Privacy Policy
 
-You can read about the consortium's privacy policy [here](PRIVACY.md).
+Read the consortium's [privacy policy](PRIVACY.md).
 
 ## Other Policies
 
-You can read about other Rust Foundation policies in the footer of the Foundation
-[website][foundation-website].
+Read other Rust Foundation [policies][foundation-website].
 
 [code-of-conduct]: https://foundation.rust-lang.org/policies/code-of-conduct/
-[foundation-website]: https://foundation.rust-lang.org
+[foundation-website]: https://rustfoundation.org/policies-resources/
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [media-guide and trademark]: https://foundation.rust-lang.org/policies/logo-policy-and-media-guide/
 [privacy-policy]: ./PRIVACY.md
