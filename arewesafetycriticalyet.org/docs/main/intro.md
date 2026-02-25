@@ -9,7 +9,7 @@ sidebar_position: 1
 A piece of software or a standalone ECU cannot be 'safe' in isolation because they cannot inherently cause physical harm. Hazards arise only when these elements control or take action in the environment (real world) and are e.g. capable of injuring people or environmental/financial damage. Therefore, if something is safety-critical is defined by it’s context.
 
 If the software does contribute to a hazard, it is deemed safety-critical. The contribution of the software to these hazards is determined/designed through the overall product life cycle.
-Note to delimit from Cybersecurity: Functional Safety generally stems from malfcuntions, while Cybersecurity stems from malicious outside actors.
+Note to delimit from Cybersecurity: Functional Safety generally stems from malfunctions, while Cybersecurity stems from malicious outside actors.
 
 ## How to judge safety-critical readiness of “Rust”?
 
@@ -27,7 +27,7 @@ We will be using the following scale:
 🟡 Possible with some manual extra effort
 🔴 Possible with high manual extra effort
 
-Note: Additionally it has to be stated, that there is always room for interpretation in those standards. In some standards an assessor will have to judge at the end of the development lifecylce, if conformity to the standard can be claimed.
+Note: Additionally it has to be stated, that there is always room for interpretation in those standards. In some standards an assessor will have to judge at the end of the development lifecycle, if conformity to the standard can be claimed.
 
 ### ISO 26262
 
