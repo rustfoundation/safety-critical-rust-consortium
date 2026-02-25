@@ -4,43 +4,44 @@ sidebar_position: 1
 
 # Are We Safety Critical Yet?
 
-## What is safety-critical?
+## What is Safety-Critical?
 
-A piece of software or a standalone ECU cannot be 'safe' in isolation because they cannot inherently cause physical harm. Hazards arise only when these elements control or take action in the environment (real world) and are e.g. capable of injuring people or environmental/financial damage. Therefore, if something is safety-critical is defined by it’s context.
+Software is not inherently "safe" or "unsafe" in isolation - it becomes safety-critical when it controls actions in the physical world that could potentially cause harm to people or the environment. Whether software is safety-critical is thus determined by its operational context: specifically, whether it contributes to system hazards as established through risk analysis and system design.
 
-If the software does contribute to a hazard, it is deemed safety-critical. The contribution of the software to these hazards is determined/designed through the overall product life cycle.
-Note to delimit from Cybersecurity: Functional Safety generally stems from malfunctions, while Cybersecurity stems from malicious outside actors.
+**Note:** Functional safety addresses risks from unintended malfunctions. It is distinct from cybersecurity, which addresses intentional malicious attacks.
 
-## How to judge safety-critical readiness of “Rust”?
+## Evaluating safety-critical readiness of “Rust”
 
-In general the software is presumed to be safe by conforming to the relevant safety-standard in your industry (context!).
-It should be mentioned, that conformity to a standard (like ISO 26262) is a proxy for safety, but they are not identical, as conform systems can be unsafe, as well as non-conforming systems can be safe.
+In practice, software is considered safe by demonstrating compliance with the relevant safety standard for the target industry and application. It is worth noting that compliance is a proxy for safety: compliant systems can still be unsafe, and non-compliant systems can be safe. The standard provides a structured framework, not a guarantee.
 
-For this context safety-critical readiness is judged by how well the requirements of the specific standards can be achieved when using Rust as programming language to implement safety-critical software. This includes the language itself, the toolchain as well as overall ecosystem.
+For this analysis, safety-critical readiness is measured by how well Rust's language design, toolchain, and ecosystem enable developers to meet the requirements of the relevant safety standards when developing safety-critical applications.
 
-## Readiness in terms of standards
+## Standards-Based Evaluations
 
-In the following the safety-critical readiness is judged by looking at the specific requirements of relevant industry standards and how well an organization can conform to them when using Rust. For example there might some direct requirement that a programming language has to conform to e.g. a strong typing system. This directly is required by Rust. There might are also indirect requirements, e.g. that certain test coverage metrics need to be achieved - here we would judge how well the existing toolchain, ecosystem etc. can be used to satisfy these requirements.
+The following evaluation examines how well specific safety-standard requirements can be satisfied when using Rust, based on the following scale:
 
-We will be using the following scale:
-🟢 Well supported with no extra effort
-🟡 Possible with some manual extra effort
-🔴 Possible with high manual extra effort
+🟢 Well supported - requirement can be met with no additional effort
 
-Note: Additionally it has to be stated, that there is always room for interpretation in those standards. In some standards an assessor will have to judge at the end of the development lifecycle, if conformity to the standard can be claimed.
+🟡 Achievable - requirement can be met with moderate additional effort
+
+🔴 Gap - requirement needs substantial additional effort or qualification activity
+
+⚪ Not impacted - requirement is not directly affected by the choice of programming language
+
+**Note:** Safety standards generally leave room for interpretation. In standards such as ISO 26262, final compliance claims are subject to the assessor's judgment.
 
 ### ISO 26262
 
-🟡 Possible with some manual effort
-TODO: add executive summary
+🟡 Achievable with moderate additional effort
 
-See detailed explanation:
-[ISO 26262 vs. Rust detailed gap analysis](iso26262.md)
+Rust's core language features-memory safety, strong typing, and data race prevention provide excellent basis for ISO 26262 compliance. However, critical gaps exist in qualified tools, control/data flow analysis, and qualified RTOS/HAL/PAC support. These require individual qualification efforts and are barriers for production use.
+
+[Detailed Rust vs. ISO 26262 gap analysis](iso26262.md)
 
 ### IEC 61508
 
-TODO
+Analysis in preparation. Contributions welcome via [GitHub](https://github.com/rustfoundation/safety-critical-rust-consortium).
 
 ### DO-178C
 
-TODO
+Analysis in preparation. Contributions welcome via [GitHub](https://github.com/rustfoundation/safety-critical-rust-consortium).
