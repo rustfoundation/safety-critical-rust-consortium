@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "generate:tools-list": "node ./scripts/generate-tools-list.mjs",
+    "prestart": "npm run generate:tools-list",
     "start": "docusaurus start",
+    "prebuild": "npm run generate:tools-list",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -12,6 +15,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "pretypecheck": "npm run generate:tools-list",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -22,7 +26,8 @@
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "yaml": "^2.4.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
