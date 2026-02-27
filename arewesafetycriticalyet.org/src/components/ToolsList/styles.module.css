@@ -1,0 +1,51 @@
+.metaTitle {
+  margin-bottom: 0.25rem;
+}
+
+.metaSubtitle {
+  margin-top: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.95rem;
+}
+
+.typeHeading {
+  margin-top: 2rem;
+}
+
+.toolName {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.secondaryLine {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.details {
+  margin-top: 0.5rem;
+}
+
+.details summary {
+  cursor: pointer;
+}
+
+.infoBlock {
+  margin-top: 0.5rem;
+}
+
+.infoText {
+  margin-top: 0.25rem;
+  white-space: pre-wrap;
+}
+
+.spacedSection {
+  margin-top: 0.75rem;
+}
