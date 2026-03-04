@@ -16,11 +16,12 @@
 4. [Safety-Critical Rust Flagship Theme](https://rust-lang.github.io/rust-project-goals/2026/roadmap-safety-critical-rust.html) (Pete)
 5. Embedded World: shout out of SCRC (Alex Celeste)
 6. Reviewer Bot: How's it going?
-7. CERT C \=\> Rust Mapping (Tentative: Félix / David)  
+7. Coverage of MISRA C and CERT C in 2026
+8. CERT C \=\> Rust Mapping (Tentative: Félix / David)  
    * WIPs are resolved!
-8. Proposals and ideas for new rules (all)  
-9. Progress on ongoing tasks (all)  
-10. Round table
+9. Proposals and ideas for new rules (all)  
+10. Progress on ongoing tasks (all)  
+11. Round table
 
 ## **Check-in area**
 
