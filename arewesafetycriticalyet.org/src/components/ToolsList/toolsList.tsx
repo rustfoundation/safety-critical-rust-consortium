@@ -115,32 +115,35 @@ function renderDetailsRow(tool: ToolEntry) {
 
   return (
     <div className={styles.detailsRow}>
-      {hasLiability && (
-        <div>
-          <strong>Liability / notes:</strong>
-          <ReactMarkdown>{tool.liability ?? ""}</ReactMarkdown>
-        </div>
-      )}
-      {hasQualifiedInfo && (
-        <div className={hasLiability ? styles.spacedSection : undefined}>
-          <strong>Qualification info:</strong>
-          {qualified
-            .filter((q) => q.info)
-            .map((q) => (
-              <div
-                key={`${q.name}:${q["up-to"]}:info`}
-                className={styles.infoBlock}
-              >
-                <div>
-                  <strong>{q.name}</strong> (up to {q["up-to"]})
+      <details>
+        <summary>Details</summary>
+        {hasLiability && (
+          <div>
+            <strong>Liability / notes:</strong>{" "}
+            <ReactMarkdown>{tool.liability ?? ""}</ReactMarkdown>
+          </div>
+        )}
+        {hasQualifiedInfo && (
+          <div className={hasLiability ? styles.spacedSection : undefined}>
+            <strong>Qualification info:</strong>
+            {qualified
+              .filter((q) => q.info)
+              .map((q) => (
+                <div
+                  key={`${q.name}:${q["up-to"]}:info`}
+                  className={styles.infoBlock}
+                >
+                  <div>
+                    <strong>{q.name}</strong> (up to {q["up-to"]})
+                  </div>
+                  <div className={styles.infoText}>
+                    <ReactMarkdown>{q.info ?? ""}</ReactMarkdown>
+                  </div>
                 </div>
-                <div className={styles.infoText}>
-                  <ReactMarkdown>{q.info ?? ""}</ReactMarkdown>
-                </div>
-              </div>
-            ))}
-        </div>
-      )}
+              ))}
+          </div>
+        )}
+      </details>
     </div>
   );
 }
@@ -175,7 +178,7 @@ export default function ToolsList(): React.ReactElement {
                 <tbody>
                   {tools_list.metadata["tracked-standards"].map((s) => (
                     <tr key={s.name}>
-                      <td style={{ "white-space": "nowrap" }}>{s.name}</td>
+                      <td style={{ whiteSpace: "nowrap" }}>{s.name}</td>
                       <td>{s.levels.join(", ")}</td>
                       <td>{s.description}</td>
                     </tr>
@@ -196,48 +199,50 @@ export default function ToolsList(): React.ReactElement {
           <section key={type}>
             <h2 className={styles.typeHeading}>{TOOL_TYPE_LABEL[type]}</h2>
             <div className={styles.gridContainer}>
-              {/* Header row */}
-              <div className={styles.gridHeader}>Tool</div>
-              <div className={styles.gridHeader}>Description</div>
-              <div className={styles.gridHeader}>License</div>
-              <div className={styles.gridHeader}>Qualification / notes</div>
+              <div className={styles.gridHeaderRow}>
+                <div className={styles.gridHeader}>Tool</div>
+                <div className={styles.gridHeader}>Description</div>
+                <div className={styles.gridHeader}>License</div>
+                <div className={styles.gridHeader}>Qualification / notes</div>
+              </div>
 
-              {/* Data rows */}
               {toolsOfType.map((tool) => {
                 const qualified = tool.qualified ?? [];
                 return (
                   <React.Fragment key={tool.name}>
-                    <div className={styles.gridCell}>
-                      <div className={styles.toolName}>
-                        <Link to={tool.url}>{tool.name}</Link>
-                        {tool.vendor && (
-                          <div className={styles.secondaryLine}>
-                            Vendor: {tool.vendor}
+                    <div className={styles.toolRow}>
+                      <div className={styles.toolRowContent}>
+                        <div className={styles.gridCell}>
+                          <div className={styles.toolName}>
+                            <Link to={tool.url}>{tool.name}</Link>
+                            {tool.vendor && (
+                              <div className={styles.secondaryLine}>
+                                Vendor: {tool.vendor}
+                              </div>
+                            )}
                           </div>
-                        )}
+                        </div>
+
+                        <div className={styles.gridCell}>
+                          <ReactMarkdown>{tool.description}</ReactMarkdown>
+                        </div>
+
+                        <div className={styles.gridCell}>
+                          <span className="badge badge--primary">
+                            {tool.license}
+                          </span>
+                        </div>
+
+                        <div className={styles.gridCell}>
+                          {qualified.length > 0 ? (
+                            renderQualifiedBadges(qualified)
+                          ) : (
+                            <span>—</span>
+                          )}
+                        </div>
                       </div>
+                      {renderDetailsRow(tool)}
                     </div>
-
-                    <div className={styles.gridCell}>
-                      <ReactMarkdown>{tool.description}</ReactMarkdown>
-                    </div>
-
-                    <div className={styles.gridCell}>
-                      <span className="badge badge--primary">
-                        {tool.license}
-                      </span>
-                    </div>
-
-                    <div className={styles.gridCell}>
-                      {qualified.length > 0 ? (
-                        renderQualifiedBadges(qualified)
-                      ) : (
-                        <span>—</span>
-                      )}
-                    </div>
-
-                    {/* Optional details row */}
-                    {renderDetailsRow(tool)}
                   </React.Fragment>
                 );
               })}
