@@ -117,9 +117,7 @@ function renderDetailsRow(tool: ToolEntry) {
   return (
     <div className={styles.detailsRow}>
       <details>
-        <summary>
-          <strong>Details</strong>
-        </summary>
+        <summary>Details</summary>
         {hasLiability && (
           <div>
             <strong>Liability:</strong>{" "}

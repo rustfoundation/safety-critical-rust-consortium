@@ -16,11 +16,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    font-weight: 600;
 }
 
 .secondaryLine {
     color: var(--ifm-color-emphasis-700);
     font-size: 0.85rem;
+    font-weight: 400;
 }
 
 .badges {
@@ -70,7 +72,7 @@
 }
 
 .gridHeader {
-    font-weight: 600;
+    font-weight: 800;
     background: var(--ifm-table-header-bg);
     padding: 0.3rem;
 }
@@ -102,6 +104,7 @@
     padding-right: 0.5rem;
 
     & summary {
+        font-weight: 500;
         padding-bottom: 0.3rem;
     }
 }
