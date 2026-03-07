@@ -72,11 +72,11 @@
 .gridHeader {
     font-weight: 600;
     background: var(--ifm-table-header-bg);
-    /* No bottom border on individual cells */
+    padding: 0.3rem;
 }
 
 .gridCell {
-    /* No bottom border on individual cells */
+    padding: 0.3rem;
 }
 
 .toolRow {
@@ -98,5 +98,10 @@
 .detailsRow {
     grid-column: 1 / -1; /* span all four columns */
     border-top: 1px dashed var(--ifm-table-border-color);
-    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    & summary {
+        padding-bottom: 0.3rem;
+    }
 }
