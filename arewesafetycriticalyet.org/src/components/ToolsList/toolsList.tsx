@@ -116,31 +116,35 @@ function renderDetailsRow(tool: ToolEntry) {
   return (
     <div className={styles.detailsRow}>
       <details>
-        <summary>Details</summary>
+        <summary>
+          <strong>Details</strong>
+        </summary>
         {hasLiability && (
           <div>
-            <strong>Liability / notes:</strong>{" "}
+            <strong>Liability:</strong>{" "}
             <ReactMarkdown>{tool.liability ?? ""}</ReactMarkdown>
           </div>
         )}
         {hasQualifiedInfo && (
           <div className={hasLiability ? styles.spacedSection : undefined}>
-            <strong>Qualification info:</strong>
-            {qualified
-              .filter((q) => q.info)
-              .map((q) => (
-                <div
-                  key={`${q.name}:${q["up-to"]}:info`}
-                  className={styles.infoBlock}
-                >
-                  <div>
-                    <strong>{q.name}</strong> (up to {q["up-to"]})
-                  </div>
-                  <div className={styles.infoText}>
-                    <ReactMarkdown>{q.info ?? ""}</ReactMarkdown>
-                  </div>
-                </div>
-              ))}
+            <strong>Qualification Info:</strong>
+            <ul>
+              {qualified
+                .filter((q) => q.info)
+                .map((q) => (
+                  <li
+                    key={`${q.name}:${q["up-to"]}:info`}
+                    className={styles.infoBlock}
+                  >
+                    <div>
+                      <strong>{q.name}</strong> (up to {q["up-to"]})
+                    </div>
+                    <div className={styles.infoText}>
+                      <ReactMarkdown>{q.info ?? ""}</ReactMarkdown>
+                    </div>
+                  </li>
+                ))}
+            </ul>
           </div>
         )}
       </details>
@@ -203,7 +207,7 @@ export default function ToolsList(): React.ReactElement {
                 <div className={styles.gridHeader}>Tool</div>
                 <div className={styles.gridHeader}>Description</div>
                 <div className={styles.gridHeader}>License</div>
-                <div className={styles.gridHeader}>Qualification / notes</div>
+                <div className={styles.gridHeader}>Qualification</div>
               </div>
 
               {toolsOfType.map((tool) => {
