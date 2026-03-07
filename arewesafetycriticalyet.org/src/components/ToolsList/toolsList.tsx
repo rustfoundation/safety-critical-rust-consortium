@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 import raw_tools_list from "./available-tools.json";
@@ -105,22 +106,19 @@ function renderQualifiedBadges(qualified: QualifiedInfo[]) {
   );
 }
 
-function renderExtraDetails(tool: ToolEntry) {
+function renderDetailsRow(tool: ToolEntry) {
   const hasLiability = Boolean(tool.liability);
   const qualified = tool.qualified ?? [];
   const hasQualifiedInfo = qualified.some((q) => Boolean(q.info));
 
-  if (!hasLiability && !hasQualifiedInfo) {
-    return null;
-  }
+  if (!hasLiability && !hasQualifiedInfo) return null;
 
   return (
-    <details className={styles.details}>
-      <summary>Details</summary>
+    <div className={styles.detailsRow}>
       {hasLiability && (
         <div>
           <strong>Liability / notes:</strong>
-          <div>{tool.liability}</div>
+          <ReactMarkdown>{tool.liability ?? ""}</ReactMarkdown>
         </div>
       )}
       {hasQualifiedInfo && (
@@ -136,12 +134,14 @@ function renderExtraDetails(tool: ToolEntry) {
                 <div>
                   <strong>{q.name}</strong> (up to {q["up-to"]})
                 </div>
-                <div className={styles.infoText}>{q.info}</div>
+                <div className={styles.infoText}>
+                  <ReactMarkdown>{q.info ?? ""}</ReactMarkdown>
+                </div>
               </div>
             ))}
         </div>
       )}
-    </details>
+    </div>
   );
 }
 
@@ -195,49 +195,53 @@ export default function ToolsList(): React.ReactElement {
         return (
           <section key={type}>
             <h2 className={styles.typeHeading}>{TOOL_TYPE_LABEL[type]}</h2>
-            <table className="table table--striped table--compact">
-              <thead>
-                <tr>
-                  <th style={{ width: "22%" }}>Tool</th>
-                  <th>Description</th>
-                  <th style={{ width: "12%" }}>License</th>
-                  <th style={{ width: "26%" }}>Qualification / notes</th>
-                </tr>
-              </thead>
-              <tbody>
-                {toolsOfType.map((tool) => {
-                  const qualified = tool.qualified ?? [];
-                  return (
-                    <tr key={tool.name}>
-                      <td>
-                        <div className={styles.toolName}>
-                          <Link to={tool.url}>{tool.name}</Link>
-                          {tool.vendor && (
-                            <div className={styles.secondaryLine}>
-                              Vendor: {tool.vendor}
-                            </div>
-                          )}
-                        </div>
-                      </td>
-                      <td>{tool.description}</td>
-                      <td>
-                        <span className="badge badge--primary">
-                          {tool.license}
-                        </span>
-                      </td>
-                      <td>
-                        {qualified.length > 0 ? (
-                          renderQualifiedBadges(qualified)
-                        ) : (
-                          <span>—</span>
+            <div className={styles.gridContainer}>
+              {/* Header row */}
+              <div className={styles.gridHeader}>Tool</div>
+              <div className={styles.gridHeader}>Description</div>
+              <div className={styles.gridHeader}>License</div>
+              <div className={styles.gridHeader}>Qualification / notes</div>
+
+              {/* Data rows */}
+              {toolsOfType.map((tool) => {
+                const qualified = tool.qualified ?? [];
+                return (
+                  <React.Fragment key={tool.name}>
+                    <div className={styles.gridCell}>
+                      <div className={styles.toolName}>
+                        <Link to={tool.url}>{tool.name}</Link>
+                        {tool.vendor && (
+                          <div className={styles.secondaryLine}>
+                            Vendor: {tool.vendor}
+                          </div>
                         )}
-                        {renderExtraDetails(tool)}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                      </div>
+                    </div>
+
+                    <div className={styles.gridCell}>
+                      <ReactMarkdown>{tool.description}</ReactMarkdown>
+                    </div>
+
+                    <div className={styles.gridCell}>
+                      <span className="badge badge--primary">
+                        {tool.license}
+                      </span>
+                    </div>
+
+                    <div className={styles.gridCell}>
+                      {qualified.length > 0 ? (
+                        renderQualifiedBadges(qualified)
+                      ) : (
+                        <span>—</span>
+                      )}
+                    </div>
+
+                    {/* Optional details row */}
+                    {renderDetailsRow(tool)}
+                  </React.Fragment>
+                );
+              })}
+            </div>
           </section>
         );
       })}

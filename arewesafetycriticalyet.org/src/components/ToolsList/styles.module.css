@@ -1,51 +1,75 @@
 .metaTitle {
-  margin-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .metaSubtitle {
-  margin-top: 0;
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.95rem;
+    margin-top: 0;
+    color: var(--ifm-color-emphasis-700);
+    font-size: 0.95rem;
 }
 
 .typeHeading {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .toolName {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .secondaryLine {
-  color: var(--ifm-color-emphasis-700);
-  font-size: 0.85rem;
+    color: var(--ifm-color-emphasis-700);
+    font-size: 0.85rem;
 }
 
 .badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
 }
 
 .details {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .details summary {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .infoBlock {
-  margin-top: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .infoText {
-  margin-top: 0.25rem;
-  white-space: pre-wrap;
+    margin-top: 0.25rem;
+    white-space: pre-wrap;
 }
 
 .spacedSection {
-  margin-top: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+/* --- Grid layout for the tools list --- */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 22% 1fr 12% 26%;
+    gap: 0.5rem 1rem;
+    align-items: start;
+    width: 100%;
+}
+
+.gridHeader {
+    font-weight: 600;
+    border-bottom: 1px solid var(--ifm-table-border-color);
+    padding-bottom: 0.25rem;
+}
+
+.gridCell {
+    /* optional: keep this empty or add padding if needed */
+}
+
+.detailsRow {
+    grid-column: 1 / -1; /* span all four columns */
+    margin-top: 0.5rem;
 }
