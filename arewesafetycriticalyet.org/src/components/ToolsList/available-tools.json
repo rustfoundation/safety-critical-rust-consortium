@@ -1,63 +1,32 @@
-/*
- * This file is auto-generated.
- * Source: ../subcommittee/tooling/tool-list/available-tools.yaml
- * Script: scripts/generate-tools-list.mjs
- */
-
-const toolsList = {
+{
   "metadata": {
     "title": "Rust Tooling for use in Safety Critical Projects",
-    "version": "1.1",
-    "date": "2025-09-29",
+    "version": "1.2",
+    "date": "2026-03-07",
     "tracked-standards": [
       {
-        "name": "ISO-26262",
-        "levels": [
-          "ASIL-A",
-          "ASIL-B",
-          "ASIL-C",
-          "ASIL-D"
-        ],
+        "name": "ISO 26262",
+        "levels": ["ASIL A", "ASIL B", "ASIL C", "ASIL D"],
         "description": "Road vehicles - Functional safety"
       },
       {
         "name": "DO-178C",
-        "levels": [
-          "DAL-E",
-          "DAL-D",
-          "DAL-C",
-          "DAL-B",
-          "DAL-A"
-        ],
+        "levels": ["DAL-E", "DAL-D", "DAL-C", "DAL-B", "DAL-A"],
         "description": "Software Considerations in Airborne Systems and Equipment Certification"
       },
       {
         "name": "IEC 62304",
-        "levels": [
-          "Class A",
-          "Class B",
-          "Class C"
-        ],
+        "levels": ["Class A", "Class B", "Class C"],
         "description": "Medical device software - software life cycle processes"
       },
       {
         "name": "IEC 61508",
-        "levels": [
-          "SIL-1",
-          "SIL-2",
-          "SIL-3",
-          "SIL-4"
-        ],
+        "levels": ["SIL 1", "SIL 2", "SIL 3", "SIL 4"],
         "description": "Functional Safety of Electrical/Electronic/Programmable Electronic Safety-related Systems"
       },
       {
         "name": "EN 50128",
-        "levels": [
-          "SIL-1",
-          "SIL-2",
-          "SIL-3",
-          "SIL-4"
-        ],
+        "levels": ["SIL 1", "SIL 2", "SIL 3", "SIL 4"],
         "description": "Railway applications - Communication, signalling and processing systems - Software for railway control and protection systems"
       }
     ]
@@ -71,24 +40,24 @@ const toolsList = {
       "license": "commercial",
       "qualified": [
         {
-          "name": "ISO-26262",
-          "up-to": "ASIL-D",
-          "info": "' Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm '"
+          "name": "ISO 26262",
+          "up-to": "ASIL D",
+          "info": "Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm"
         },
         {
           "name": "DO-178C",
           "up-to": "DAL-A",
-          "info": "' Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm '"
+          "info": "Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm"
         },
         {
           "name": "IEC 61508",
-          "up-to": "SIL-4",
-          "info": "' Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm '"
+          "up-to": "SIL 4",
+          "info": "Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm"
         },
         {
           "name": "EN 50128",
-          "up-to": "SIL-4",
-          "info": "' Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm '"
+          "up-to": "SIL 4",
+          "info": "Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm"
         }
       ]
     },
@@ -145,19 +114,19 @@ const toolsList = {
       "liability": "Pre-qualified binaries and support are available with monthly/yearly subscriptions. Qualification kits are also available for an additional fee.",
       "qualified": [
         {
-          "name": "ISO-26262",
-          "up-to": "ASIL-D",
-          "info": "' TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01. For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene. '"
+          "name": "ISO 26262",
+          "up-to": "ASIL D",
+          "info": "TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01. For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene."
         },
         {
           "name": "IEC 62304",
           "up-to": "Class C",
-          "info": "' TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01. For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene. '"
+          "info": "TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01. For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene."
         },
         {
           "name": "IEC 61508",
-          "up-to": "SIL-4",
-          "info": "' TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01. For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene. '"
+          "up-to": "SIL 4",
+          "info": "TÜV SÜD certificate: https://www.tuvsud.com/en/customer-hub/ps-cert/?q=Z10+123030+0001+Rev.+01. For more information, contact Ferrous Systems GmbH at https://ferrous-systems.com/contact#ferrocene."
         }
       ]
     },
@@ -187,8 +156,8 @@ const toolsList = {
       "liability": "Contact HighTec for costs and legalities related to qualification and support.",
       "qualified": [
         {
-          "name": "ISO-26262",
-          "up-to": "ASIL-D"
+          "name": "ISO 26262",
+          "up-to": "ASIL D"
         }
       ]
     },
@@ -281,21 +250,5 @@ const toolsList = {
       "description": "VeriFast is a tool for modular formal verification of the absence of undefined behavior in Rust1 programs that use unsafe blocks and the soundness of Rust modules that use unsafe blocks.",
       "license": "MIT"
     }
-  ],
-  "open-topics": [
-    {
-      "name": "Fault Injection Tests",
-      "description": "No generally applicable tool exists to inject faults in Rust projects during testing."
-    },
-    {
-      "name": "Coding Guidelines",
-      "description": "No Rust coding guidelines currently exist, so no tool can enforce them."
-    },
-    {
-      "name": "Graphical Representation",
-      "description": "Missing tools that are capable to represent Rust code in a graphical way (e.g. flow chart)."
-    }
   ]
-} as const;
-
-export default toolsList;
+}
