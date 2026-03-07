@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 import raw_tools_list from "./available-tools.json";
@@ -122,7 +123,9 @@ function renderDetailsRow(tool: ToolEntry) {
         {hasLiability && (
           <div>
             <strong>Liability:</strong>{" "}
-            <ReactMarkdown>{tool.liability ?? ""}</ReactMarkdown>
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
+              {tool.liability ?? ""}
+            </ReactMarkdown>
           </div>
         )}
         {hasQualifiedInfo && (
@@ -140,7 +143,9 @@ function renderDetailsRow(tool: ToolEntry) {
                       <strong>{q.name}</strong> (up to {q["up-to"]})
                     </div>
                     <div className={styles.infoText}>
-                      <ReactMarkdown>{q.info ?? ""}</ReactMarkdown>
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {q.info ?? ""}
+                      </ReactMarkdown>
                     </div>
                   </li>
                 ))}
@@ -228,7 +233,9 @@ export default function ToolsList(): React.ReactElement {
                         </div>
 
                         <div className={styles.gridCell}>
-                          <ReactMarkdown>{tool.description}</ReactMarkdown>
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                            {tool.description}
+                          </ReactMarkdown>
                         </div>
 
                         <div className={styles.gridCell}>
