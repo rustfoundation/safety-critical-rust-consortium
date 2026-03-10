@@ -17,7 +17,7 @@ The tool proposal consists of three main phases:
 
 - **New/Change Path**: 15-day review period including:
   - Tool information checking
-  - Entry creation in [available-tools.yaml]
+  - Entry creation in [available-tools.json]
   - Optional: vendor contact, testing, and user feedback collection
 - **Delete Path**: Review deletion reasoning
 - **Common validation**: Valid requests proceed to PR creation and merge process
@@ -25,7 +25,7 @@ The tool proposal consists of three main phases:
 
 ### 3. **Review Complete List (Annually)**
 
-- Task Force Member initiates annual review of tools listed in [available-tools.yaml]
+- Task Force Member initiates annual review of tools listed in [available-tools.json]
 - Tools to review distributed evenly among task force members
 - Evaluation based on:
   - Tool maintenance status
@@ -69,13 +69,13 @@ flowchart TD
     %% New/Change Path
     B4 --> B5{Valid change/<br/>new tool for<br/>safety-critical<br/>Rust projects}
     B5 --> |No| B6[Close Issue with justification]
-    B5 --> |Yes| B7[Fill up new entry in<br/>available-tools.yaml]
+    B5 --> |Yes| B7[Fill up new entry in<br/>available-tools.json]
     B7 --> B8[<strong>Optional:</strong><br/><ul><li>Contact vendor</li><li>Test/Present tool</li><li>Collect user feedback</li></ul>]
     
     %% Delete Path
     B3 --> B12{Valid?}
     B12 --> |No| B6
-    B12 --> |Yes| B13[Delete entry from<br/>available-tools.yaml]
+    B12 --> |Yes| B13[Delete entry from<br/>available-tools.json]
 
     %% PR
     B8 --> B14[See section:<br/>Changes to the Tools List]
