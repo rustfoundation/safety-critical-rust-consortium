@@ -1,4 +1,4 @@
-# Paid books (last 5 years)
+# Print books (last 5 years)
 
 | Book Title                                  | Publisher           | Last edition | Target audience |
 | ------------------------------------------- | ------------------- | -----------: | --------------: |
