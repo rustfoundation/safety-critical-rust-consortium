@@ -39,4 +39,6 @@
 - Sam K
 - Arnaud Riess
 - Jonatan Hatakeyama Zeidler (Brainlab SE)
+- Stefan Akatyschew
+- Zalán Bálint Lévai
 - Alexandru Radovici (Moderator)
