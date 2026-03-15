@@ -34,7 +34,7 @@ The following evaluation examines how well specific safety-standard requirements
 
 🟡 Achievable with moderate additional effort
 
-Rust's core language features-memory safety, strong typing, and data race prevention provide excellent basis for ISO 26262 compliance. However, critical gaps exist in qualified tools, control/data flow analysis, and qualified RTOS/HAL/PAC support. These require individual qualification efforts and are barriers for production use.
+Rust's core language features - memory safety, strong typing, and data race prevention - provide excellent basis for ISO 26262 compliance. However, critical gaps exist in qualified tools, control/data flow analysis, and qualified RTOS/HAL/PAC support. These require individual qualification efforts and are barriers for production use.
 
 [Detailed Rust vs. ISO 26262 gap analysis](iso26262.md)
 
