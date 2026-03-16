@@ -16,10 +16,11 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
-  --rating-green: #2e7d32;
-  --rating-yellow: #f57f17;
-  --rating-red: #c62828;
-  --rating-grey: #757575;
+  /* Match the emoji colors: 🟢 🟡 🔴 ⚪ */
+  --rating-green: #4caf50;
+  --rating-yellow: #fdd835;
+  --rating-red: #f44336;
+  --rating-grey: #bdbdbd;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -32,9 +33,4 @@
   --ifm-color-primary-lighter: #abcafe;
   --ifm-color-primary-lightest: #e2edff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-
-  --rating-green: #66bb6a;
-  --rating-yellow: #ffca28;
-  --rating-red: #ef5350;
-  --rating-grey: #9e9e9e;
 }

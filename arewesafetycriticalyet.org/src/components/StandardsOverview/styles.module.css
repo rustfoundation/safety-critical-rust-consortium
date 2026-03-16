@@ -13,14 +13,13 @@
   gap: 1.5rem;
   justify-content: center;
   margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-700);
 }
 
 .legendItem {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-700);
 }
 
 .dot {
@@ -88,16 +87,13 @@
 .verdict {
   font-weight: 600;
   margin-bottom: 0.5rem;
-  font-size: 0.95rem;
 }
 
 .description {
-  font-size: 0.9rem;
   color: var(--ifm-color-emphasis-700);
   flex: 1;
 }
 
 .detailsLink {
   margin-top: 0.75rem;
-  font-size: 0.9rem;
 }
