@@ -8,7 +8,7 @@ const baseUrl = process.env.BASE_URL || '/';
 
 const config: Config = {
   title: 'Are We Safety Critical Yet?',
-  tagline: 'It depends 🤔, we have a few certified compilers, a few certification products in-progress and a few use cases.',
+  tagline: 'Tracking Rust\'s readiness for safety-critical development across industry standards.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

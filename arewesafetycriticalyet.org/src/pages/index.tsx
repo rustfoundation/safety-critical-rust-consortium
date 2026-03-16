@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import StandardsOverview from '@site/src/components/StandardsOverview';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
@@ -21,7 +22,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Find out!
+            Read the overview
           </Link>
         </div>
       </div>
@@ -30,13 +31,14 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Are We Safety Critical Yet?"
+      description="Tracking Rust's readiness for safety-critical software development across ISO 26262, IEC 61508, and DO-178C.">
       <HomepageHeader />
       <main>
+        <StandardsOverview />
+        <div className={styles.divider} />
         <HomepageFeatures />
       </main>
     </Layout>
