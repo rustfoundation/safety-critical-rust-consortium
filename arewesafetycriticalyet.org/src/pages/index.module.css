@@ -21,3 +21,9 @@
   align-items: center;
   justify-content: center;
 }
+
+.divider {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  max-width: 800px;
+  margin: 0 auto;
+}

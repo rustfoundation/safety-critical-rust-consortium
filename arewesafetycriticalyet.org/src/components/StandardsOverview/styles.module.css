@@ -1,0 +1,103 @@
+.overview {
+  padding: 2rem 0;
+}
+
+.introText {
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.dotGreen {
+  background-color: var(--rating-green);
+}
+
+.dotYellow {
+  background-color: var(--rating-yellow);
+}
+
+.dotRed {
+  background-color: var(--rating-red);
+}
+
+.dotGrey {
+  background-color: var(--rating-grey);
+}
+
+.standardCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 4px solid var(--rating-grey);
+  border-radius: 6px;
+  padding: 1.25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.standardCardGreen {
+  border-left-color: var(--rating-green);
+}
+
+.standardCardYellow {
+  border-left-color: var(--rating-yellow);
+}
+
+.standardCardRed {
+  border-left-color: var(--rating-red);
+}
+
+.standardCardPending {
+  opacity: 0.6;
+  border-left-style: dashed;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardHeader h3 {
+  margin: 0;
+}
+
+.verdict {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  flex: 1;
+}
+
+.detailsLink {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
