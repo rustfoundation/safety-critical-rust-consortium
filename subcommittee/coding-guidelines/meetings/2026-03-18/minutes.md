@@ -88,7 +88,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
   * It will add a lot of credibility to the guidelines if we can show mapping to established guidelines.  
 * **Question**: When do you plan to add this to the addendum? We should have uniform mappings for all the different guidelines in the end.  
   * The MISRA C table is good but it is missing some info.  
-  * I was more worried about the form of the content. All table entries should have the same fields in the columns in the end.  
+  * Discussion about ensuring the same form of the content. All table entries should have the same fields in the columns in the end.  
   * Reading difficulties:  
     1. With the MISRA C table not all columns fit on the page without scrolling, making it difficult to read (**note that this is a CSS issue, not a content issue**). There are no headlines in the table, only directives.  
     2. The rationale acronyms should be explained before the table, because they are required to understand the table.  
