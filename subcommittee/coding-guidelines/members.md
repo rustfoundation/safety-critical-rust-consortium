@@ -7,7 +7,7 @@
 | Alex Celeste               | Perforce Software                      | Producer                    | @AlexCeleste       |
 | Florian Gilcher            | Ferrous Systems                        | Producer                    | @skade             |
 | Pete LeVasseur             | Eclipse uProtocol & Woven by Toyota    | Producer & Initial Chair    | @PLeVasseur        |
-| Marc Schoolderman          | Tweede golf                            | Producer                    | @squell            |
+| Marc Schoolderman          | Tweede golf                            | Observer                    | @squell            |
 | Jordan McQueen             | Woven by Toyota                        | Producer                    | @jmqd              |
 | Christof Petig             | Aptiv                                  | Producer                    | @cpetig            |
 | Alex Vochescu              | OxidOS Automotive                      | Observer                    | @valexandru        |
