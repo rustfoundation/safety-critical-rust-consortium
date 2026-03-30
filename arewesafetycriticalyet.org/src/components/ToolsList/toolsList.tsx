@@ -167,35 +167,33 @@ export default function ToolsList(): React.ReactElement {
         {tools_list.metadata.date}
       </p>
 
-      <div className="row">
-        <div className="col col--7">
-          <div className="card">
-            <div className="card__header">
-              <strong>Tracked standards</strong>
-            </div>
-            <div className="card__body">
-              <table className="table table--striped table--compact">
-                <thead>
-                  <tr>
-                    <th>Standard</th>
-                    <th>Levels</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {tools_list.metadata["tracked-standards"].map((s) => (
-                    <tr key={s.name}>
-                      <td style={{ whiteSpace: "nowrap" }}>{s.name}</td>
-                      <td>{s.levels.join(", ")}</td>
-                      <td>{s.description}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h3>Tracked standards</h3>
+      <table className="table table--striped table--compact">
+        <thead>
+          <tr>
+            <th>Standard</th>
+            <th>Levels</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tools_list.metadata["tracked-standards"].map((s) => (
+            <tr key={s.name}>
+              <td style={{ whiteSpace: "nowrap" }}>{s.name}</td>
+              <td>
+                {s.levels.map((level, index) => (
+                  <>
+                    <span key={index} style={{ whiteSpace: "nowrap" }}>{level}</span>
+                    <br />
+                  </>
+                ))}
+              </td >
+              <td>{s.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
 
       {TOOL_TYPE_ORDER.filter(
         (type) => (grouped_tools.get(type) ?? []).length > 0,
