@@ -167,6 +167,18 @@ export default function ToolsList(): React.ReactElement {
         {tools_list.metadata.date}
       </p>
 
+      <h3>Tool Categories</h3>
+      <ul>
+        {TOOL_TYPE_ORDER.filter(
+          (type) => (grouped_tools.get(type) ?? []).length > 0,
+        ).map((type) => {
+          const anchor = "#" + TOOL_TYPE_LABEL[type]
+          return (
+            <li><a href={anchor} >{TOOL_TYPE_LABEL[type]}</a></li>
+          )
+        })}
+      </ul>
+
       <h3>Tracked standards</h3>
       <table className="table table--striped table--compact">
         <thead>
@@ -194,14 +206,13 @@ export default function ToolsList(): React.ReactElement {
         </tbody>
       </table>
 
-
       {TOOL_TYPE_ORDER.filter(
         (type) => (grouped_tools.get(type) ?? []).length > 0,
       ).map((type) => {
         const toolsOfType = grouped_tools.get(type) ?? [];
 
         return (
-          <section key={type}>
+          <section id={TOOL_TYPE_LABEL[type]} key={type}>
             <h2 className={styles.typeHeading}>{TOOL_TYPE_LABEL[type]}</h2>
             <div className={styles.gridContainer}>
               <div className={styles.gridHeaderRow}>

@@ -98,7 +98,8 @@
 }
 
 .detailsRow {
-    grid-column: 1 / -1; /* span all four columns */
+    grid-column: 1 / -1;
+    /* span all four columns */
     border-top: 1px dashed var(--ifm-table-border-color);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -107,4 +108,9 @@
         font-weight: 500;
         padding-bottom: 0.3rem;
     }
+}
+
+/* To see the tool category header if jumped to by category list */
+:target {
+    scroll-margin-top: 5rem;
 }
