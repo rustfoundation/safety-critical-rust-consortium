@@ -11,7 +11,7 @@
       },
       {
         "name": "DO-178C",
-        "levels": ["DAL-E", "DAL-D", "DAL-C", "DAL-B", "DAL-A"],
+        "levels": ["DAL E", "DAL D", "DAL C", "DAL B", "DAL A"],
         "description": "Software Considerations in Airborne Systems and Equipment Certification"
       },
       {
@@ -46,7 +46,7 @@
         },
         {
           "name": "DO-178C",
-          "up-to": "DAL-A",
+          "up-to": "DAL A",
           "info": "Part of the Generic Qualification Kit. For more information: https://www.absint.com/ait/qualification.htm"
         },
         {
