@@ -36,7 +36,7 @@
 * Alex Celeste ☕  
 * William Barsse  
 * Max Jacinto ⚽  
-* [Arshad Mahmood](mailto:arshadm@collabli.com)☔  
+* Arshad Mahmood ☔  
 * Pete LeVasseur 🎊🦀  
 
 **Please add your name, and an emoji that describes your day.**
