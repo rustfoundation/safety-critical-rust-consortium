@@ -31,18 +31,13 @@
 
 ## **Check-in area**
 
-* x  
 * David Svoboda (:  
-* xx  
 * Douglas Deslauriers 🎨  
-* xx  
-* xx  
 * Alex Celeste ☕  
 * William Barsse  
 * Max Jacinto ⚽  
 * [Arshad Mahmood](mailto:arshadm@collabli.com)☔  
 * Pete LeVasseur 🎊🦀  
-* xx
 
 **Please add your name, and an emoji that describes your day.**
 
