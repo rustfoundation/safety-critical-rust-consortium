@@ -66,4 +66,5 @@
 | Masahiro Sakurai           | Woven by Toyota                        | Observer                    | @manhatsu          |
 | Andreas Weis               | ekxide IO GmbH                         | Producer                    | @ComicSansMS       |
 | Arshad Mahmood             | SpinorML                               | Producer                    | @arshadm           |
+| Jason Newcomb              | Rust Project - Clippy Team             | Producer                    | @Jarcho            |
 
