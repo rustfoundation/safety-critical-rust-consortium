@@ -1,0 +1,116 @@
+.metaTitle {
+    margin-bottom: 0.25rem;
+}
+
+.metaSubtitle {
+    margin-top: 0;
+    color: var(--ifm-color-emphasis-700);
+    font-size: 0.95rem;
+}
+
+.typeHeading {
+    margin-top: 2rem;
+}
+
+.toolName {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-weight: 600;
+}
+
+.secondaryLine {
+    color: var(--ifm-color-emphasis-700);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.details {
+    margin-top: 0.5rem;
+}
+
+.details summary {
+    cursor: pointer;
+}
+
+.infoBlock {
+    margin-top: 0.5rem;
+}
+
+.infoText {
+    margin-top: 0.25rem;
+    white-space: pre-wrap;
+}
+
+.spacedSection {
+    margin-top: 0.75rem;
+}
+
+/* --- Grid layout for the tools list --- */
+.gridContainer {
+    display: grid;
+    grid-template-columns: 22% 1fr 12% 26%;
+    gap: 0.5rem 1rem;
+    align-items: start;
+    width: 100%;
+    border: 1px solid var(--ifm-table-border-color);
+}
+
+.gridHeaderRow {
+    display: grid;
+    grid-template-columns: 22% 1fr 12% 26%;
+    gap: 0.5rem 1rem;
+    align-items: start;
+    grid-column: 1 / -1;
+    border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+.gridHeader {
+    font-weight: 800;
+    background: var(--ifm-table-header-bg);
+    padding: 0.3rem;
+}
+
+.gridCell {
+    padding: 0.3rem;
+}
+
+.toolRow {
+    grid-column: 1 / -1;
+    border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+.toolRow:last-child {
+    border-bottom: none;
+}
+
+.toolRowContent {
+    display: grid;
+    grid-template-columns: 22% 1fr 12% 26%;
+    gap: 0.5rem 1rem;
+    align-items: start;
+}
+
+.detailsRow {
+    grid-column: 1 / -1;
+    /* span all four columns */
+    border-top: 1px dashed var(--ifm-table-border-color);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    & summary {
+        font-weight: 500;
+        padding-bottom: 0.3rem;
+    }
+}
+
+/* To see the tool category header if jumped to by category list */
+:target {
+    scroll-margin-top: 5rem;
+}
