@@ -1,3 +1,6 @@
+---
+sidebar_position: 5
+---
 # Open Topics
 
 This page lists open topics related to Rust tooling for safety critical domains.
@@ -6,7 +9,7 @@ This page lists open topics related to Rust tooling for safety critical domains.
 
   No generally applicable tool exists to inject faults in Rust projects during testing.
 
-- **Coding Guideline:**
+- Coding Guideline:
 
   No official Rust coding guidelines currently exist, so no tool can enforce them.
   The Coding Guidelines subcommittee is actively working on defining Rust coding guidelines.

@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Mission Statement
 
 Develop a community-vetted coding guideline for Rust in safety-critical applications. A living document that is updated as features are added to Rust and we learn more by doing.

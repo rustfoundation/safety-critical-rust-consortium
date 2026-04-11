@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-08-20 @ 0800 BST / 0900 CEST / 1600 JST /  0300 EDT**
+# Coding Guidelines Subcommittee Meeting on 2025-08-20 @ 0800 BST / 0900 CEST / 1600 JST /  0300 EDT
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=14,12,1850147,5&h=14&date=2025-8-20&sln=8-9&hf=1) to meeting time in common time zones.
 
@@ -88,4 +88,3 @@ Any material to read before the meeting should be included here.
 ### **GitHub Project Board for Work Items**
 
 * [Work Item Board](https://github.com/orgs/rustfoundation/projects/1)
-

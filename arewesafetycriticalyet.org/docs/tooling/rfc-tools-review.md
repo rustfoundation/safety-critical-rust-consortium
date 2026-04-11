@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # Tools List Maintenance Flows
 
 This section defines how the tools list is managed by the tooling subcommittee.

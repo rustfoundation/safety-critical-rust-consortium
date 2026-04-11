@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2026-03-11 @ 1600 CET / 1100 EDT**
+# Coding Guidelines Subcommittee Meeting on 2026-03-11 @ 1600 CET / 1100 EDT
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=5,12,2643743,8,1850147,100,14&h=5&date=2026-3-11&sln=11-12&hf=1) to meeting time in common time zones.
 
@@ -80,4 +80,3 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 Any material to read before the meeting should be included here.
 
 * Milestone: [Prepare for launch to wider Rust community](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1)
-

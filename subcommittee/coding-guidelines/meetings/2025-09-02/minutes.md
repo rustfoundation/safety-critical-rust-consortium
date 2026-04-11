@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-09-02 @ 2000 EDT / 2025-09-03 0900 JST**
+# Coding Guidelines Subcommittee Meeting on 2025-09-02 @ 2000 EDT / 2025-09-03 0900 JST
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=5,100,2643743,12,1850147,2193733,1880252,8,6&h=5&date=2025-9-2&sln=20-21&hf=1) to meeting time in common time zones.
 
@@ -86,4 +86,3 @@ Any material to read before the meeting should be included here.
 
 * Milestone: [Prepare for launch to wider Rust community](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1)  
 * [Github Issue to discuss about panicking in Safety Critical](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/158)
-

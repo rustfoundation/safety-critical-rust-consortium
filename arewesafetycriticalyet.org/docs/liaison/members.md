@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Members
 
 | Member Name             | Affiliation                                         | GitHub Username    |

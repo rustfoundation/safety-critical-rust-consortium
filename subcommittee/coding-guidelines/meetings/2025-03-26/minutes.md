@@ -44,7 +44,7 @@ Supplemental material to the agenda can be found on the [GitHub repo](https://gi
 * Andrew Herridge 😀
 * Lukas Wirth 🙁
 * Espen Albrektsen 🙂
-* Markus Hosch <_<
+* Markus Hosch
 * Enow Scott 🙂
 * Achim Kriso 🙂
 * Koppany Pazman

@@ -4,7 +4,7 @@
   rules apply.
 - **Membership Status:** Currently 109 members; discussion on maintaining a
   low-friction join process while continuing to vet new member legitimacy.
-- **Coding Guidelines:** Focus on drafting guidelines, starter project of “Learn
+- Coding Guidelines: Focus on drafting guidelines, starter project of “Learn
   Unsafe Rust” chapters contribution, aliged on standards mapping as an appendix
   item, north star to be safe use of Rust, useful patterns for eliminating
   safety issues, with standards compliance as a second-order effect of following
