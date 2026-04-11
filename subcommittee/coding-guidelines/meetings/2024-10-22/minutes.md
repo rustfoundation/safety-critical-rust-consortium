@@ -60,10 +60,10 @@ Joel Marcey
     * Understanding Rust and/or safety critical  
   * How are the guidelines enforced?  
   * (These are _not_ presented here due to decision to rework these in 2024-11-11 meeting)
-* [**Mission Statement**](../../mission-statement.md)
+* [**Mission Statement**](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines/mission-statement.md)
   * Develop a community-vetted coding guideline for Rust in safety-critical applications  
   * Provide feedback offline  
-* [**Unsafe coding guidelines proposal**](../../initiatives/safe-use-of-unsafe-guidelines/safe-use-of-unsafe-guidelines-proposal.md)
+* [**Unsafe coding guidelines proposal**](https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines/initiatives/safe-use-of-unsafe-guidelines/safe-use-of-unsafe-guidelines-proposal.md)
   * How does the `unsafe` keyword and usage fit into our coding guidelines?  
   * This will be the first item of output by the subcommittee  
   * Peter \- check and see what we can use out of JAE1020  
@@ -84,4 +84,3 @@ Joel Marcey
 ## Material
 
 Any material to read before the meeting should be included here.
-
