@@ -128,7 +128,7 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
     * Further actions pending Felix’s availability  
   * MISRA C 2023 has an Addendum with a mapping to CERT C; this content will also be imported to CERT C itself  
     * Some possible discrepancies on things like the definition of “decidable” (MISRA “decidable” approximately equals CERT “detectable”)  
-* Andrew Banks / David Ward declined permission to use the MISRA C rule headlines  
+* We heard back from MISRA and their stance is to disallow permission to use the MISRA C rule headlines  
   * Possible arrangement to be made in future but not currently for use in public  
   * CERT C may have permission to use the titles (unclear where this came from)  
   * Rule numbers are always OK to use  
