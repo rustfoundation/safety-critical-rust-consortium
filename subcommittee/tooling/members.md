@@ -41,4 +41,8 @@
 - Jonatan Hatakeyama Zeidler (Brainlab SE)
 - Stefan Akatyschew
 - Zalán Bálint Lévai
+- Máté János Kovács
+- Kartik Ohlan
+- Everton Oriente
+- Adam Milner (Waabi)
 - Alexandru Radovici (Moderator)
