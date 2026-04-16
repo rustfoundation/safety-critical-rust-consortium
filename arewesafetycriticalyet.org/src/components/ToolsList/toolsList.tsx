@@ -4,14 +4,25 @@ import remarkGfm from "remark-gfm";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 import raw_tools_list from "./available-tools.json";
+/*
+* `testing` ... for tools that are primarily used while testing. Merging `test-runner` and `test-generation`. `mutest-rs` would imo also fall into this category, because it helps to improve your testsuite, and improving your testsuite is a testing activity. Without tests, `mutest-rs` would have nothing to check against.
+* `formal-verification` ... It may be for testing, but can also be part of implementation. e.g. specifying contracts in your source code
+* `static-analysis` ... `formal-verification` is part of this, so we could combine those two, but since we already have \~3 tools dedicated to `formal-verification` and I expect this to grow, having them separate is ok
+* `profiling` ... rename of `profiler`, because it better fits the *activity* intent
+* `debugging` ... same as `profiling`
+* `code-coverage` ... although mostly used while testing, you could measure coverage while executing your regular application or benchmarks. The name is not that fitting for an activity, but I cannot think of a better name right now
+* `requirements-traceability` ... is it's own activity, because you may trace requirements to source code, tests, or other artifacts
+* `package-manager` ... not an activity, but e.g. `supply chain management` also doesn't feel right. `cargo` is also special, because it manages dependencies, builds, tests, publishes your Crates... for `cargo`, the tags approach would be good
+* `compiler` ... `building` might be a better category name, but imo people looking for safety critical tools will expect a `compiler` category to be there, since a compiler is that important
+*/
 
 type ToolType =
   | "package-manager"
   | "compiler"
-  | "test-runner"
+  | "testing"
   | "formal-verification"
-  | "profiler"
-  | "debugger"
+  | "profiling"
+  | "debugging"
   | "requirements-traceability"
   | "static-analysis"
   | "code-coverage"
@@ -50,17 +61,22 @@ type ToolsList = {
   tools: ToolEntry[];
 };
 
-const TOOL_TYPE_LABEL: Record<ToolType, string> = {
-  "package-manager": "Package Managers",
-  compiler: "Compilers",
-  "test-runner": "Test Runners",
-  "formal-verification": "Formal Verification",
-  profiler: "Profilers",
-  debugger: "Debuggers",
-  "requirements-traceability": "Requirements Traceability",
-  "static-analysis": "Static Analysis",
-  "code-coverage": "Code Coverage",
-  other: "Other",
+type ToolCategory = {
+  title: string,
+  description: string,
+}
+
+const TOOL_TYPE_LABEL: Record<ToolType, ToolCategory> = {
+  "package-manager": { title: "Package Managers", description: "Tools for automating the management of a project's dependencies, its compilation and linking." },
+  compiler: { title: "Compilers", description: "Tools for transforming source code into either executable binaries or dynamic libraries." },
+  testing: { title: "Testing", description: "Tools for evaluating the correctness of a program under a finite set of scenarios through its execution." },
+  "formal-verification": { title: "Formal Verification", description: "Tools for obtaining mathematical assurance of the behavior of the program. Such as, for example, its required level of functional safety." },
+  profiling: { title: "Profiling", description: "Tools for measurement of program performance along different types of resources." },
+  debugging: { title: "Debugging", description: "Tools for interactively inspecting the dynamic behavior of a program." },
+  "requirements-traceability": { title: "Requirements Traceability", description: "Tools to manage traces between requirements and related source and/or object code." },
+  "static-analysis": { title: "Static Analysis", description: "Tools for analyzing source code without executing it." },
+  "code-coverage": { title: "Code Coverage", description: "Tools for calculating the quality of a test suite, under the metric of code coverage." },
+  other: { title: "Other", description: "Tools that fall under none of the other categories." },
 };
 
 const TOOL_TYPE_ORDER: ToolType[] = [
@@ -68,10 +84,10 @@ const TOOL_TYPE_ORDER: ToolType[] = [
   "compiler",
   "static-analysis",
   "formal-verification",
-  "test-runner",
+  "testing",
   "code-coverage",
-  "debugger",
-  "profiler",
+  "debugging",
+  "profiling",
   "requirements-traceability",
   "other",
 ];
@@ -172,9 +188,9 @@ export default function ToolsList(): React.ReactElement {
         {TOOL_TYPE_ORDER.filter(
           (type) => (grouped_tools.get(type) ?? []).length > 0,
         ).map((type) => {
-          const anchor = "#" + TOOL_TYPE_LABEL[type]
+          const anchor = "#" + TOOL_TYPE_LABEL[type].title
           return (
-            <li><a href={anchor} >{TOOL_TYPE_LABEL[type]}</a></li>
+            <li><a href={anchor} >{TOOL_TYPE_LABEL[type].title}</a></li>
           )
         })}
       </ul>
@@ -212,8 +228,11 @@ export default function ToolsList(): React.ReactElement {
         const toolsOfType = grouped_tools.get(type) ?? [];
 
         return (
-          <section id={TOOL_TYPE_LABEL[type]} key={type}>
-            <h2 className={styles.typeHeading}>{TOOL_TYPE_LABEL[type]}</h2>
+          <section id={TOOL_TYPE_LABEL[type].title} key={type}>
+            <h2 className={styles.typeHeading}>{TOOL_TYPE_LABEL[type].title}</h2>
+
+            <p>{TOOL_TYPE_LABEL[type].description}</p>
+
             <div className={styles.gridContainer}>
               <div className={styles.gridHeaderRow}>
                 <div className={styles.gridHeader}>Tool</div>
