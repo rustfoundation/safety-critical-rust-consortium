@@ -4,17 +4,6 @@ import remarkGfm from "remark-gfm";
 import Link from "@docusaurus/Link";
 import styles from "./styles.module.css";
 import raw_tools_list from "./available-tools.json";
-/*
-* `testing` ... for tools that are primarily used while testing. Merging `test-runner` and `test-generation`. `mutest-rs` would imo also fall into this category, because it helps to improve your testsuite, and improving your testsuite is a testing activity. Without tests, `mutest-rs` would have nothing to check against.
-* `formal-verification` ... It may be for testing, but can also be part of implementation. e.g. specifying contracts in your source code
-* `static-analysis` ... `formal-verification` is part of this, so we could combine those two, but since we already have \~3 tools dedicated to `formal-verification` and I expect this to grow, having them separate is ok
-* `profiling` ... rename of `profiler`, because it better fits the *activity* intent
-* `debugging` ... same as `profiling`
-* `code-coverage` ... although mostly used while testing, you could measure coverage while executing your regular application or benchmarks. The name is not that fitting for an activity, but I cannot think of a better name right now
-* `requirements-traceability` ... is it's own activity, because you may trace requirements to source code, tests, or other artifacts
-* `package-manager` ... not an activity, but e.g. `supply chain management` also doesn't feel right. `cargo` is also special, because it manages dependencies, builds, tests, publishes your Crates... for `cargo`, the tags approach would be good
-* `compiler` ... `building` might be a better category name, but imo people looking for safety critical tools will expect a `compiler` category to be there, since a compiler is that important
-*/
 
 type ToolType =
   | "package-manager"
