@@ -28,8 +28,10 @@ topics:
   description: "Stack buffer overflow detection and protection mechanism"
   priority: "High"
   status: "Missing"
-  category: "Security"
-  rationale: "Stack protection is not available in any Rust compiler, but required for runtime stack overflow detection in safety-critical systems"
+  category: ["Security"]
+  rationale: >
+    Stack protection is not available in any Rust compiler, but required for runtime stack overflow detection in
+    safety-critical systems
   related-links:
   - "https://developer.arm.com/documentation/dui0774/l/Compiler-Command-line-Options/-fstack-protector---fstack-protector-all---fstack-protector-strong---fno-stack-protector"
   - "https://github.com/rust-lang/rust/issues/114903"
@@ -38,8 +40,10 @@ topics:
   description: "TrustZone support for ARM Cortex-M processors"
   priority: "High"
   status: "Nightly"
-  category: "Security"
-  rationale: "TrustZone support is available only on nightly Rust. Stabilizing it is required for data sagmentation on cortex-m devices"
+  category: ["Security"]
+  rationale: >
+    TrustZone support is available only on nightly Rust. Stabilizing it is required for data sagmentation on cortex-m
+    devices
   related-links:
   - "https://developer.arm.com/documentation/100690/latest/"
   - "https://github.com/rust-lang/rust/issues/81391"
@@ -49,27 +53,38 @@ topics:
   description: "Control flow integrity protection against ROP/JOP attacks"
   priority: "Medium"
   status: "Partial"
-  category: "Security"
-  rationale: "Prevents control flow hijacking attacks in safety-critical applications. Currently limited CFI support, not comprehensive for all control flow transfers"
+  category: ["Security"]
+  rationale: >
+    Prevents control flow hijacking attacks in safety-critical applications. Currently limited CFI support, not
+    comprehensive for all control flow transfers
   related-links:
   - "https://clang.llvm.org/docs/ControlFlowIntegrity.html"
   - "https://github.com/rust-lang/rust/issues/89653"
   
-- name: "Deterministic Code Generation"
+- name: "Reproducible Build"
   description: "Reproducible binary output for certification requirements"
   priority: "High"
   status: "Partial"
-  category: "Safety"
-  rationale: "Not fully deterministic across different build environments. Required for certification processes that mandate reproducible builds"
+  category: ["Safety", "Security"]
+  rationale: >
+    ISO 26262 Part 7 Section 7.4.4 mentions the workproducts need to be reproducable throughout the product lifecycle.
+    ISO/SAE 21434 requires supply chain security and software integrity verification - reproducible builds enable
+    independent verification that binaries match source code and detect unauthorized modifications in the build pipeline.
+    Current Rust builds can vary based on environment, timestamps, etc. Other security standards also require reproducible
+    builds, see links.
   related-links:
-  - "https://github.com/rust-lang/rust/issues/34902"
+  - "https://github.com/rust-lang/rust/issues/129080"
+  - "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf"
+  - "https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/TechGuidelines/TR03185/BSI-TR-03185.pdf?__blob=publicationFile&v=4"
+  - "https://slsa.dev/spec/v1.2/build-provenance"
   
 - name: "Coverage Instrumentation for Macros"
   description: "Code coverage that includes macro expansions"
   priority: "High"
   status: "Missing"
   category: "Safety"
-  rationale: "Coverage tools cannot instrument macro-generated code. Complete coverage analysis required for safety certification"
+  rationale: >
+    Coverage tools cannot instrument macro-generated code. Complete coverage analysis required for safety certification
   related-links:
   - "https://github.com/rust-lang/rust/issues/79417"
 
