@@ -249,6 +249,13 @@
       "url": "https://github.com/verifast/verifast",
       "description": "VeriFast is a tool for modular formal verification of the absence of undefined behavior in Rust1 programs that use unsafe blocks and the soundness of Rust modules that use unsafe blocks.",
       "license": "MIT"
+    },
+    {
+      "name": "Verus",
+      "type": "formal-verification",
+      "url": "https://github.com/verus-lang/verus",
+      "description": "Verified Rust for low-level systems code.",
+      "license": "MIT"
     }
   ]
 }
