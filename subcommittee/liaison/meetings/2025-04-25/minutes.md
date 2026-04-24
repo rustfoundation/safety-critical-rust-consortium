@@ -1,4 +1,4 @@
-# **Liaison Subcommittee Meeting on 2025-04-25 @ 2 PM UTC**
+# Liaison Subcommittee Meeting on 2025-04-25 @ 2 PM UTC
 
 [Conversion](https://www.worldtimebuddy.com/?qm=1&lid=5,14,8,12&h=5&date=2025-4-25&sln=10-11&hf=1) between common time zones of attendees.
 
@@ -93,5 +93,4 @@
 
 Any material to read before the meeting should be included here.
 
-* 
-
+*

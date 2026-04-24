@@ -1,4 +1,4 @@
-# **Liaison Subcommittee Meeting on 2025-10-02 @ 1600 BST / 1700 CEST / 1100 EDT**
+# Liaison Subcommittee Meeting on 2025-10-02 @ 1600 BST / 1700 CEST / 1100 EDT
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=14,12,1850147,5&h=14&date=2025-10-2&sln=16-17&hf=1) to meeting time in common time zones.
 

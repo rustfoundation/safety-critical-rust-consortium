@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-12-10 @ 1700 CEST / 1100 EDT**
+# Coding Guidelines Subcommittee Meeting on 2025-12-10 @ 1700 CEST / 1100 EDT
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=5,100,2643743,12,1850147,2193733,8,6,2673730,1261481&h=5&date=2025-12-10&sln=11-12&hf=1) to meeting time in common time zones.
 

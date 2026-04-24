@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-10-22 @ 0800 BST / 0900 CEST / 1600 JST / 0300 EDT**
+# Coding Guidelines Subcommittee Meeting on 2025-10-22 @ 0800 BST / 0900 CEST / 1600 JST / 0300 EDT
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=14,12,1850147,5&h=14&date=2025-10-22&sln=8-9&hf=1) to meeting time in common time zones.
 
@@ -123,4 +123,3 @@ Any material to read before the meeting should be included here.
 * Milestone: [Prepare for launch to wider Rust community](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/milestone/1)  
 * FLS Maintenance: [FLS Team \- North Star](https://hackmd.io/@plevasseur/HJb6qomOge/edit)  
 * [Github Issue to discuss about panicking in Safety Critical](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/158)
-

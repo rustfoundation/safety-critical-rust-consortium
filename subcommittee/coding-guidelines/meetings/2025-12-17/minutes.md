@@ -1,4 +1,4 @@
-# **Coding Guidelines Subcommittee Meeting on 2025-12-16 @ 20:00 EST / 2025-12-17 10:00 JST**
+# Coding Guidelines Subcommittee Meeting on 2025-12-16 @ 20:00 EST / 2025-12-17 10:00 JST
 
 [Link](https://www.worldtimebuddy.com/?qm=1&lid=5,1850147,212&h=5&date=2025-12-16&sln=20-21&hf=1) to meeting time in common time zones.
 
