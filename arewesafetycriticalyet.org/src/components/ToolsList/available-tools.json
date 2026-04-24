@@ -70,7 +70,7 @@
     },
     {
       "name": "cargo-nextest",
-      "type": "test-runner",
+      "type": "testing",
       "url": "https://nexte.st",
       "description": "Next-generation test runner for Rust",
       "license": "Apache 2.0 & MIT"
@@ -98,7 +98,7 @@
     },
     {
       "name": "defmt-test",
-      "type": "test-runner",
+      "type": "testing",
       "url": "https://github.com/knurling-rs/defmt",
       "vendor": "Ferrous Systems GmbH",
       "description": "Embedded testing framework",
@@ -132,7 +132,7 @@
     },
     {
       "name": "flamegraph",
-      "type": "profiler",
+      "type": "profiling",
       "url": "https://github.com/flamegraph-rs/flamegraph",
       "description": "Flame graph profiler for Rust",
       "license": "Apache 2.0 & MIT"
@@ -170,7 +170,7 @@
     },
     {
       "name": "Lauterbach Trace32 Debugger",
-      "type": "debugger",
+      "type": "debugging",
       "url": "https://www.lauterbach.com/",
       "vendor": "Lauterbach",
       "description": "Lauterbach‘s TRACE32® tools are a suite of leading-edge hardware and software components that enables you to analyze, optimize and certify all kinds of embedded systems.",
@@ -193,7 +193,7 @@
     },
     {
       "name": "PLS UDE",
-      "type": "debugger",
+      "type": "debugging",
       "url": "https://www.pls-mc.com/products/universal-debug-engine/",
       "vendor": "PLS Programmierbare Logik & Systeme GmbH",
       "description": "UDE® Universal Debug Engine is the powerful development tool for debugging, tracing, and testing embedded software for a wide range of multicore SoCs and microcontrollers.",
@@ -218,7 +218,7 @@
     },
     {
       "name": "TESSY",
-      "type": "test-runner",
+      "type": "testing",
       "url": "https://www.razorcat.com/en/product-tessy.html",
       "vendor": "Razorcat",
       "description": "Qualified unit testing tool",
@@ -236,7 +236,7 @@
     },
     {
       "name": "VectorCast",
-      "type": "test-runner",
+      "type": "testing",
       "url": "https://www.vector.com/us/en/products/products-a-z/software/vectorcast/",
       "vendor": "Vector Software",
       "description": "Qualified test runner and generator for safety-critical applications",
