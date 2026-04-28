@@ -1,6 +1,6 @@
-# **Coding Guidelines Subcommittee Meeting on 2026-04-22 @ 1600 CEST / 1100 EDT**
+# **Coding Guidelines Subcommittee Meeting on 2026-04-29 @ 1600 CEST / 1100 EDT**
 
-[Link](https://www.worldtimebuddy.com/?qm=1&lid=5,12,2643743,8,1850147,100,14&h=5&date=2026-4-22&sln=11-12&hf=1) to meeting time in common time zones.
+[Link](https://www.worldtimebuddy.com/?qm=1&lid=5,12,2643743,8,1850147,100,14,14&h=5&date=2026-4-29&sln=11-12&hf=1) to meeting time in common time zones.
 
 | Search Key | Description |
 | :---- | :---- |
@@ -11,10 +11,9 @@
 ## **Agenda**
 
 1. Solicitation of notetaker  
-2. Acceptance of [Previous Meeting Minutes](https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2026-04-15/minutes.md)  
+2. Acceptance of [Previous Meeting Minutes](https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-consortium/blob/main/subcommittee/coding-guidelines/meetings/2026-04-22/minutes.md)  
 3. Introduction of new members  
 4. Review batches for [CERT C \=\> Rust Mapping](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/336) (Pete)  
-   - Félix can share updates from his side on reviewing feedback  
    - Let's split up again, to get some feedback on batches 1 & 2  
    - [\#427 \[CERT C Review Batch 1/5\] Review proposed Rust categorization](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/427)  
    - [\#428 \[CERT C Review Batch 2/5\] Review proposed Rust categorization](https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/428)  
@@ -36,17 +35,20 @@
 
 **Please add your name, and an emoji that describes your day.**
 
-* Markus Hosch  
-* Oreste Bernardi🏥  
-* Arshad Mahmood 🌞  
-* Andreas Weis ☀️  
-* Max Jacinto 👾  
-* William Barsse  
-* Christof Petig 🌞  
+* xx
+* xx
+* xx
+* xx
+* xx
+* xx
+* xx
+* xx
+* xx
+* xx
 
 **Notetaker:**
 
-* Markus Hosch
+* xx
 
 For tips on how we take notes in the Safety-Critical Rust Consortium, please see the [Meeting Notetaker Role](https://github.com/rustfoundation/safety-critical-rust-consortium/blob/main/docs/notetaker-role.md) doc.
 
@@ -60,26 +62,11 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 
 ## **Tasks**
 
-* Markus to also review [https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/issues/430](https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/issues/430)  
-* Oreste will create an issue on the operator precedence issue
+* xx
 
 ## **Meeting Minutes**
 
-* Previous meeting minutes accepted  
-* Looking at [https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/issues/336](https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/issues/336), this has been split into 5 subissues, see [https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/issues/336\#issuecomment-4040940602](https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/issues/336#issuecomment-4040940602)   
-* [https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/pull/432](https://github.com/Safety-Critical-Rust-Consortium/safety-critical-rust-coding-guidelines/pull/432) will be merged by 04/25/26 if there are no more comments.  
-* Pointed to the thread and asked for interest  
-* [https://rust-lang.github.io/rust-project-goals/2026/safe-unsafe-for-safety-critical.html](https://rust-lang.github.io/rust-project-goals/2026/safe-unsafe-for-safety-critical.html): Unsafe is not documented well enough; goal is to look at the “dark corners” and shed some light; Iceoryx2 is used as an example.  
-  * Q: How can you “define” undefined behavior? The spec sometimes does not say *anything* about a specific part of the language, so it is unknown whether it will (at some point) be sound or not  
-  * Last FAQ point gets debated, wording seems unclear. The intent is to describe what preconditions sound code has; it is not intended to define things that are UB today.  
-* New rules  
-  * MISRA C rule “follow contracts” could that lead to a rule “use typestate”?  
-    1. Maybe too strict. The rule should be more open to also allow other ways  
-    2. Rule not very useful as it cannot be checked / enforced.  
-    3. Might be useful as an implementation pattern to help enforce more high level rules or other rules  
-  * Operator precedence change in the face of generics  
-    1. Evaluation order changes depending on whether the left hand side of the add\_assign operator is generic or not.  
-* No topics for the round table
+* xx
 
 ## **Material**
 
