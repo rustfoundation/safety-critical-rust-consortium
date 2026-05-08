@@ -251,6 +251,13 @@
       "license": "MIT"
     },
     {
+      "name": "Verus",
+      "type": "formal-verification",
+      "url": "https://github.com/verus-lang/verus",
+      "description": "Verified Rust for low-level systems code.",
+      "license": "MIT"
+    },
+    {
       "name": "mutest-rs",
       "type": "testing",
       "url": "https://mutest.rs/",
