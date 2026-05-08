@@ -34,3 +34,14 @@
   --ifm-color-primary-lightest: #e2edff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* Improve visibility of links inside coding_guidelines documentation */
+.markdown a {
+  color: var(--ifm-color-primary);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
