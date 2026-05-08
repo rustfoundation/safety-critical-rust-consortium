@@ -72,17 +72,17 @@ body:
     id: tool_type
     attributes:
       label: Tool category
-      description: Specific use and type of this tool
+      description: Specific use and type of this tool. For more details about the categories, please visit the https://arewesafetycriticalyet.org/tooling/tools-list website.
       options:
         - "code-coverage"
         - "requirements-traceability"
         - "compiler"
-        - "test-runner"
+        - "testing"
         - "formal-verification"
         - "static-analysis"
-        - "tests-generation"
         - "package-manager"
-        - "profiler"
-        - "debugger"
+        - "profiling"
+        - "debugging"
+        - "other"
     validations:
       required: false
